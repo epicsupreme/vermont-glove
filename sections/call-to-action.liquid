@@ -1,0 +1,90 @@
+<div
+   class="relative flex flex-col items-center justify-center h-screen"
+   style="--primary:{{ section.settings.primary_color }};--secondary:{{ section.settings.secondary_color }};">
+   {{ section.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full absolute object-cover z-[-1]' }}
+
+   <div
+      class="text-5xl text-center text-[color:var(--primary)] font-display mb-6">
+      {{ section.settings.title | newline_to_br }}
+   </div>
+
+   {% if section.blocks.size > 0 %}
+   <div class="flex justify-center">
+      {% for block in section.blocks %}
+         <div class="mx-2">
+            {%- render 'button', url: block.settings.button_url, text: block.settings.button_text, size: "m" -%}
+         </div>
+      {% endfor %}
+   </div>
+   {% endif %}
+
+</div>
+
+
+{% schema %}
+{
+   "name": "Call to Action",
+   "settings": [
+      {
+         "type": "textarea",
+         "id": "title",
+         "label": "Title"
+      },
+     {
+        "type": "color",
+        "id": "primary_color",
+        "label": "Primary Color",
+        "default": "#452C80"
+     },
+     {
+      "type": "color",
+      "id": "secondary_color",
+      "label": "Secondary Color",
+      "default": "#ffffff"
+   },
+   {
+      "type": "paragraph",
+      "content": "This section will prioritize video. If you want to use an image instead of video remove the video url."
+   },
+   {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+   },
+   {
+      "type": "url",
+      "id": "video_url",
+      "label": "Video URL"
+   },
+   {
+      "type": "checkbox",
+      "id": "full",
+      "label": "Full Width",
+      "default": true
+   }
+   ],
+   "blocks": [
+         {
+            "name": "Button",
+            "type": "button",
+            "settings": [
+            {
+               "type": "text",
+               "id": "button_text",
+               "label": "Button Text"
+            },
+            {
+               "type": "url",
+               "id": "button_url",
+               "label": "Button URL"
+            }
+            ]
+         }
+      ],
+      "presets": [
+         {
+            "name": "Call to Action"
+         }
+      ]
+}
+{% endschema %}

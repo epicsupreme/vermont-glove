@@ -1,0 +1,56 @@
+{%- comment -%}
+  image
+  width?
+  asset?
+{%- endcomment -%}
+
+{%- liquid
+   assign width = width | default: image.width
+   assign height = width | divided_by: image.aspect_ratio | floor
+   assign src = width | append: 'x'
+
+   assign sizes = '50,100,200,300,400,500,600,750,900,1200,1500,2000' | split: ','
+ -%}
+
+{%- capture srcset -%}
+   {%- for size in sizes -%}
+      {%- liquid
+       assign size_int = size | times: 1
+       assign img_url = size | append: 'x'
+     -%}
+      {%- if width >= size_int -%}
+         {%- unless forloop.first -%},
+         {%- endunless -%}
+
+         {%- if asset -%}
+            {%- unless forloop.last -%}
+               {{ image | asset_img_url: img_url }}
+               {{ size }}w
+            {%- else -%}
+               {{ image | asset_img_url: 'master' }}
+               {{ width }}w
+            {%- endunless -%}
+
+         {%- else -%}
+            {%- unless forloop.last -%}
+               {{ image | img_url: img_url }}
+               {{ size }}w
+            {%- else -%}
+               {{ image | img_url: 'master' }}
+               {{ width }}w
+            {%- endunless -%}
+         {%- endif -%}
+      {%- endif -%}
+   {%- endfor -%}
+{%- endcapture -%}
+
+
+
+{%- capture output -%}
+<img
+      src="{{ image | img_url: '600x' }}" srcset="{{ srcset }}" loading="lazy"
+      class="{{ classes }}"
+      width="{{ width }}" height="{{ height }}" alt="{{ image.alt | escape }}">
+{%- endcapture -%}
+
+{{ output | strip | strip_newlines }}

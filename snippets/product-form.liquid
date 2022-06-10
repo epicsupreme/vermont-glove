@@ -1,0 +1,117 @@
+{{ 'component-add-to-cart.css' | asset_url | stylesheet_tag }}
+<script
+   src="{{- 'component-add-to-cart.js' | asset_url -}}"></script>
+
+
+<form
+   @submit.prevent="onSubmit"
+   accept-charset="UTF-8"
+   action="/cart/add"
+   class="mb-6 shopify-product-form"
+   enctype="multipart/form-data"
+   id="product-form"
+   method="post"
+   x-data="productData()">
+   <input
+      name="form_type"
+      type="hidden"
+      value="product">
+   <input
+      name="utf8"
+      type="hidden"
+      value="✓">
+   <div
+      class="flex flex-wrap ">
+
+
+      {% unless product.has_only_default_variant %}
+         <div
+            class="w-full uppercase ">
+
+
+            {% for option in product.options_with_values %}
+               {%- assign mainIndex = forloop.index0 -%}
+               {% unless option.name == "Title" %}
+
+
+                  <div
+                     class="block mt-6">
+                     <label
+                        class="mb-1.5 text-sm font-bold block">{{ option.name }}</label>
+                     {% if option.values.size > 1 %}
+
+                        {% if option.name == "Size" %}
+
+
+                           <div class="relative select w-80">
+                              <select
+                              name="options[{{ option.name | escape }}]"
+                              id="Option{{ value | handleize }}"
+                              class="relative w-full px-5 py-2 pt-2.5 text-sm tracking-wide uppercase border border-black rounded-full appearance-none"
+                              index="{{ mainIndex}}" @change="update($event.target.value, $event.target.getAttribute('index'))">
+                              {% for value in option.values %}
+                                 <option
+                                    value="{{ value }}">{{ value }}</option>
+                              {% endfor %}
+                           </select>
+                           </div>
+                        {% else %}
+                           {% for value in option.values %}
+
+
+                                 <label
+                                    class="flex items-center mb-2 text-xs product-label"
+                                    for="Option{{ value | handleize }}">
+                                    <input
+                                       type="radio"
+                                       id="Option{{ value | handleize }}"
+                                       name="options[{{ option.name | escape }}]"
+                                       value="{{ value | escape }}" class="hidden peer"
+                                       index="{{ mainIndex }}" @change="update($event.target.value, $event.target.getAttribute('index'))"
+                                       {% if forloop.first %} checked
+                                       {% endif %}/>
+                                    <span
+                                       class="w-[18px] h-[18px] border block border-black rounded-full mr-2 peer-checked:bg-black"></span>
+                                    {{ value }}
+                                 </label>
+
+                           {% endfor %}
+                        {% endif %}
+                     {% else %}
+                        <div
+                           class="mt-0.5 ">
+                           {{ option.values[0] }}
+                        </div>
+                     {% endif %}
+                  </div>
+               {% endunless %}
+            {% endfor %}
+
+
+         </div>
+      {% endunless %}
+
+   </div>
+
+   <div>
+      <label for="qantity">Qty</label>
+      <input type="number" name="qantity" value="1" if="qantity">
+    </div>
+
+
+   <input
+      type="hidden"
+      name="id"
+      value="{{ product.selected_or_first_available_variant.id }}">
+
+   <button
+      :disabled="disabled"
+      class=""
+      type="submit"
+      x-text="button">Add to Cart</button>
+</form>
+
+
+<script>
+   var productJson = {{ product | json }};
+</script>

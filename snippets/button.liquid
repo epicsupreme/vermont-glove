@@ -1,0 +1,13 @@
+{% case size %}
+   {% when "m" %}
+      {%- assign classes = 'text-lg py-2 pb-2.5 ' -%}
+   {% else %}
+   {%- assign classes = 'text-2xl py-4 ' -%}
+
+{% endcase %}
+
+<a
+   href="{{ url }}" class="bg-[color:var(--primary)] font-headline text-[color:var(--secondary)] {{ classes }} leading-none px-10 text-center uppercase"
+   title="{{ text }}">
+   {{ text }}
+</a>

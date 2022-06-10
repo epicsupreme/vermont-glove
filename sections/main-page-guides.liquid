@@ -1,0 +1,75 @@
+<div class="container mx-auto mb-32">
+
+   <div class="mb-3 text-4xl text-center uppercase font-display">
+      {{ section.settings.title }}
+   </div>
+   <div class="mb-10 text-3xl text-center font-headline">
+      {{ section.settings.text }}
+   </div>
+
+   <div class="grid grid-cols-2 gap-x-5 gap-y-10">
+      {% for block in section.blocks %}
+         <a href="{{ block.settings.page.url }}" title="{{ section.settings.title }}" class="block">
+            <div class="mb-2 aspect-[746/585]">
+               {{ block.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-cover' }}
+            </div>
+            <div class="text-2xl uppercase font-headline">
+               {{ block.settings.title }}
+            </div>
+            <div class="">
+               {{ block.settings.text }}
+            </div>
+         </a>
+      {% endfor %}
+   </div>
+
+</div>
+
+
+{% schema %}
+{
+   "name": "Guides",
+   "settings": [
+      {
+         "type": "text",
+         "id": "title",
+         "label": "Title",
+         "default": "Need a hand?"
+      },
+      {
+         "type": "textarea",
+         "id": "text",
+         "label": "Text",
+         "default": "Everything you’ll ever need to know about goat leather gloves."
+      }
+   ],
+   "blocks": [
+         {
+            "name": "Guide",
+            "type": "guide",
+            "settings": [
+               {
+                  "type": "image_picker",
+                  "id": "image",
+                  "label": "Image"
+               },
+               {
+                  "type": "page",
+                  "id": "page",
+                  "label": "Page"
+               },
+               {
+                  "type": "text",
+                  "id": "title",
+                  "label": "Title"
+               },
+               {
+                  "type": "textarea",
+                  "id": "text",
+                  "label": "Text"
+               }
+            ]
+         }
+      ]
+}
+{% endschema %}

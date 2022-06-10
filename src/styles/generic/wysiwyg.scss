@@ -1,0 +1,63 @@
+.wysiwyg {
+  // max-width: 65ch;
+  // font-size: 14px;
+  h1 {
+    font-size: 175%;
+    @media (min-width: 640px) {
+      font-size: 200%;
+    }
+  }
+  h2 {
+    font-size: 150%;
+    @media (min-width: 640px) {
+      font-size: 175%;
+    }
+  }
+  h3 {
+    font-size: 125%;
+    @media (min-width: 640px) {
+      font-size: 150%;
+    }
+  }
+  h4 {
+    font-size: 110%;
+    @media (min-width: 640px) {
+      font-size: 125%;
+    }
+  }
+  h5 {
+    font-size: 100%;
+    @media (min-width: 640px) {
+      font-size: 110%;
+    }
+  }
+  ul {
+    @apply list-disc list-inside;
+
+    li {
+      font-size: 115%;
+    }
+  }
+  ul,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    @apply mb-4;
+  }
+  a {
+    @apply underline decoration-2 underline-offset-1;
+    &:hover {
+      @apply no-underline;
+    }
+  }
+}
+
+.richtext {
+  p {
+    @apply mb-4 last:mb-0;
+  }
+}

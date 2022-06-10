@@ -1,0 +1,98 @@
+<div
+   class="relative px-4 py-12 text-white bg-brand"
+   id="footer">
+
+   {%- render 'footer-mark' -%}
+
+   <div
+      class="container relative z-10 px-4 mx-auto">
+      <div
+         class="grid grid-cols-12 gap-5 ">
+
+         <div class="col-span-2 pt-2">
+            <div class="w-48 mx-auto mb-2">
+               {%- render 'svg-logo-stacked' -%}
+            </div>
+            <div class="leading-tight text-center ">
+               {{ section.settings.contact }}
+            </div>
+         </div>
+         <div class="col-span-3">
+            <div class="mb-3 text-xl uppercase font-headline">
+               Subscibe to our newsletter
+            </div>
+            <form action="" class="relative flex items-center">
+               <input type="email" class="w-full p-4 text-black placeholder:text-gray-400" placeholder="EMAIL ADDRESS" >
+               <input type="submit" value="Subscribe →" class="absolute -mt-0.5 text-xl leading-none text-black uppercase right-5 font-headline">
+            </form>
+         </div>
+         <div class="flex justify-center col-span-1">
+            <div class="w-10 mt-11">
+               {%- render 'svg-ig' -%}
+            </div>
+         </div>
+
+         {% for block in section.blocks %}
+            {%- assign nav = linklists[block.settings.nav] -%}
+            <div
+               class="col-span-2 mb-8 text-center md:text-left">
+               <div
+                  class="pb-1.5 mb-3 text-xl uppercase border-b border-white font-headline">
+                  {{ nav.title }}
+               </div>
+               <ul
+                  class="list-none">
+                  {% for link in nav.links %}
+                     <li
+                        class="mb-0.5">
+                        <a
+                           href="{{ link.url }}" title="{{ link.title }}" class="text-xs font-light uppercase">{{ link.title }}</a>
+                     </li>
+                  {% endfor %}
+               </ul>
+            </div>
+         {% endfor %}
+
+         <div
+         class="col-span-6 col-start-7">
+         ©
+         {{ shop.name }}
+         {{ 'now' | date: '%Y' }}
+      </div>
+
+      </div>
+
+
+   </div>
+
+</div>
+
+{% schema %}
+
+{
+   "name": "t:sections.footer.name",
+   "tag": "footer",
+   "settings": [
+      {
+         "type": "richtext",
+         "id": "contact",
+         "label": "Contact Info"
+      }
+   ],
+   "blocks": [
+      {
+         "type": "nav",
+         "name": "Navs",
+         "limit": 3,
+         "settings": [
+            {
+               "type": "link_list",
+               "id": "nav",
+               "label": "Nav"
+            }
+         ]
+      }
+   ]
+}
+
+{% endschema %}

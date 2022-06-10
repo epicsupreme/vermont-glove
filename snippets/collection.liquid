@@ -1,0 +1,19 @@
+{%- assign borderT = "border-t" -%}
+{% if index > 1 %}
+   {%- assign borderT = "" -%}
+{% endif %}
+
+<div class="container px-4 pt-10 mx-auto md:pt-8">
+   <div
+   class="grid grid-cols-1 gap-16 mx-auto md:w-3/4 md:grid-cols-2">
+   {% for product in collection.products %}
+      <a
+         href="{{ product.url }}" title="{{ product.title }}" class="relative group "
+         style="--background:{{ product.metafields.judy.background_color }}">
+
+         {%- render 'collection-product', product: product -%}
+      </a>
+   {% endfor %}
+
+</div>
+</div>

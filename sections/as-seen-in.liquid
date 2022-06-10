@@ -1,0 +1,40 @@
+{{ 'component-as-seen-in.css' | asset_url | stylesheet_tag }}
+<script src="{{- 'component-as-seen-in.js' | asset_url -}}" defer></script>
+
+{% schema %}
+{
+   "name": "As Seen In",
+   "settings": [
+      {
+         "type": "textarea",
+         "id": "title",
+         "label": "Title",
+         "default": "As Seen In"
+      },
+      {
+         "type": "color",
+         "id": "bg_color",
+         "label": "Background Color",
+         "default": "#F5F5F5"
+      }
+   ],
+   "blocks": [
+         {
+            "name": "Logo",
+            "type": "logo",
+            "settings": [
+               {
+                  "type": "image_picker",
+                  "id": "logo",
+                  "label": "Logo"
+               },
+               {
+                  "type": "url",
+                  "id": "link",
+                  "label": "Link"
+               }
+            ]
+         }
+      ]
+}
+{% endschema %}

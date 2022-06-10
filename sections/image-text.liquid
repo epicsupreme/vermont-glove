@@ -1,0 +1,41 @@
+<div class=" px-4 my-10  md:px-[4vw]">
+
+   <div class="flex flex-col md:pb-32 md:border-b md:border-primary md:items-end md:flex-row-reverse">
+      <div class="w-full mb-8 text-base text-center md:mb-0 md:pr-[8.333vw]">
+         <div class="mb-6 font-basedisplay text-[6.280vw] md:text-[3.333vw] md:text-left font-extralight leading-normal">
+            {{ section.settings.text }}
+         </div>
+         <div class="w-[6vw] mx-auto md:mx-0 md:w-[3.194vw]">
+            {%- render 'svg-leaf' -%}
+         </div>
+      </div>
+
+      <div class="w-full  md:w-4/12 md:mr-[8.333vw]">
+         <div class="w-full rounded-[10px] overflow-hidden">
+
+            {%- render 'image', image: section.settings.image, classes: 'w-full  ' -%}
+         </div>
+      </div>
+   </div>
+
+</div>
+
+{% schema %}
+
+{
+   "name": "Image + Text",
+   "settings": [
+      {
+         "type": "image_picker",
+         "id": "image",
+         "label": "Image"
+      },
+      {
+         "type": "textarea",
+         "id": "text",
+         "label": "Text"
+      }
+   ]
+}
+
+{% endschema %}

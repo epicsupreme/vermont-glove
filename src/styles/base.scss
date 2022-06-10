@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import 'generic/wysiwyg';
+@import 'generic/form-elements';
+
+html {
+  font-size: 16px;
+}
+
+body {
+  @apply font-base text-primary;
+}
+
+[x-cloak] {
+  display: none !important ;
+}
+

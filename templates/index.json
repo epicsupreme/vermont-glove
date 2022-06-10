@@ -1,0 +1,93 @@
+{
+  "sections": {
+    "main": {
+      "type": "hero",
+      "settings": {
+        "title": "DESIGNED FOR THE PROS,\nMADE FOR YOU",
+        "button_text": "Shop Now",
+        "button_url": "shopify:\/\/collections\/all",
+        "location": "justify-end",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "image": "shopify:\/\/shop_images\/VTG-SDF-SpringGreenhouse-1.jpg",
+        "video_url": ""
+      }
+    },
+    "16539672525d0bb668": {
+      "type": "featured-products",
+      "blocks": {
+        "44361ba1-de0d-40ef-bea1-85a5a2ccf3d0": {
+          "type": "product",
+          "settings": {
+            "product": "the-vermonter",
+            "tagline": "Our flagship work glove."
+          }
+        },
+        "fd9becec-b574-4b46-a51b-d1655137ab05": {
+          "type": "product",
+          "settings": {
+            "product": "the-uphill-skier",
+            "tagline": "Versatile winter work glove."
+          }
+        },
+        "f16e5cd5-aa1f-4f32-9264-8e662ca906de": {
+          "type": "product",
+          "settings": {
+            "product": "choppers-mitt",
+            "tagline": "Versatile winter work glove."
+          }
+        }
+      },
+      "block_order": [
+        "44361ba1-de0d-40ef-bea1-85a5a2ccf3d0",
+        "fd9becec-b574-4b46-a51b-d1655137ab05",
+        "f16e5cd5-aa1f-4f32-9264-8e662ca906de"
+      ],
+      "settings": {
+        "title": "FEATURED PRODUCTS"
+      }
+    },
+    "165396725578574650": {
+      "type": "call-to-action",
+      "blocks": {
+        "79420ec7-0c07-4e81-8a85-f3d32defc272": {
+          "type": "button",
+          "settings": {
+            "button_text": "How They're Made",
+            "button_url": "shopify:\/\/pages\/faq"
+          }
+        },
+        "60517964-a99b-4ffc-b971-e1bd3cda3bba": {
+          "type": "button",
+          "settings": {
+            "button_text": "Our History",
+            "button_url": "shopify:\/\/pages\/about"
+          }
+        }
+      },
+      "block_order": [
+        "79420ec7-0c07-4e81-8a85-f3d32defc272",
+        "60517964-a99b-4ffc-b971-e1bd3cda3bba"
+      ],
+      "settings": {
+        "title": "ACTUALLY MADE IN VERMONT\nSINCE 1920",
+        "primary_color": "#ffffff",
+        "secondary_color": "#452c80",
+        "image": "shopify:\/\/shop_images\/VTG-SDF-SeedStarting-22_04_07-2.jpg",
+        "video_url": "",
+        "full": true
+      }
+    },
+    "1654839019c2e2d28d": {
+      "type": "instagram",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16539672525d0bb668",
+    "165396725578574650",
+    "1654839019c2e2d28d"
+  ]
+}

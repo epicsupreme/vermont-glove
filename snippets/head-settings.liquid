@@ -1,0 +1,59 @@
+<style>
+  @font-face {
+    font-family: "basis";
+    src: url('{{ 'basis-grotesque-regular.woff2' | asset_url }}');
+    src: url("{{ 'basis-grotesque-regular.woff' | asset_url }}") format("woff");
+    font-style: normal;
+    font-weight: normal;
+
+  }
+
+
+  @font-face {
+    font-family: "founders";
+    src: url('{{ 'FoundersGroteskCondensedWeb-Semibold.woff2' | asset_url }}');
+    src: url("{{ 'FoundersGroteskCondensedWeb-Semibold.woff' | asset_url }}") format("woff");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "marche";
+    src: url('{{ 'marche-super.woff2' | asset_url }}');
+    src: url("{{ 'marche-super.woff' | asset_url }}") format("woff");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+
+  :root {
+    --theme-color-primary: {{ settings.colors_primary }};
+    --theme-color-brand: {{ settings.colors_brand}};
+    --theme-color-accent-primary: {{ settings.colors_accent }};
+    --theme-color-accent-secondary: {{ settings.colors_accent_secondary }};
+  }
+
+
+    </style>
+
+
+{% comment %} JavaScript/Liquid Settings {% endcomment %}
+<script>
+  window.routes = {
+    cart: '{{ routes.cart_url }}',
+    cartAdd: '{{ routes.cart_add_url }}',
+    cartChange: '{{ routes.cart_change_url }}',
+    cartUpdate: '{{ routes.cart_update_url }}',
+    predictiveSearch: '{{ routes.predictive_search_url }}',
+    recommendations:  '{{ routes.product_recommendations_url }}',
+  };
+
+  window.cartStrings = {
+    error: `{{ 'sections.cart.cart_error' | t }}`,
+    quantityError: `{{ 'sections.cart.cart_quantity_error' | t }}`
+  };
+
+  document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+</script>
+
+{%- render 'schema' -%}

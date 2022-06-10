@@ -1,0 +1,102 @@
+{{ 'component-featured-products.css' | asset_url | stylesheet_tag }}
+<script
+   src="{{- 'component-featured-products.js' | asset_url -}}" defer></script>
+
+<div
+   class="container mx-auto my-20 ">
+
+   <h2
+      class="mb-8 text-3xl text-center uppercase font-headline">
+      {{ section.settings.title }}
+   </h2>
+
+   <div
+      class="flex items-center featured-slider">
+      <button
+         class="w-12 text-gray-500 featured-slider-prev">
+         {%- render 'svg-arrow-prev' -%}
+      </button>
+      <div
+         class="flex-1 min-w-0 ">
+         <div
+            class="relative min-w-0 px-10 overflow-hidden ">
+            <div
+               class=" swiper">
+               <div
+                  class="swiper-wrapper">
+                  {% for block in section.blocks %}
+                     {%- assign featureProduct = all_products[block.settings.product] -%}
+                     <div
+                        class="h-auto swiper-slide">
+                        <a
+                           href="{{ featureProduct.url }}" title="{{ featureProduct.title }}" class="block">
+                           <div
+                              class="aspect-[437/546] mb-2">
+                              {{ featureProduct.featured_image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-contain' }}
+                           </div>
+                           <div
+                              class="mb-2 text-xl text-center uppercase font-headline">
+                              {{ featureProduct.title }}
+                           </div>
+                           <div
+                              class="mb-2 text-center">
+                              {{ featureProduct.price | money_with_currency }}
+                           </div>
+                           <div
+                              class="text-sm text-center">
+                              {{ block.settings.tagline }}
+                           </div>
+                        </a>
+                     </div>
+                  {% endfor %}
+               </div>
+            </div>
+         </div>
+      </div>
+      <button
+         class="w-12 text-gray-500 featured-slider-next">
+         {%- render 'svg-arrow-next' -%}
+
+      </button>
+   </div>
+
+</div>
+
+
+{% schema %}
+{
+   "name": "Featured Products",
+   "settings": [
+      {
+         "type": "textarea",
+         "id": "title",
+         "label": "Title"
+      }
+   ],
+   "blocks": [
+         {
+            "name": "Product",
+            "type": "product",
+            "settings": [
+               {
+                  "type": "product",
+                  "id": "product",
+                  "label": "Product"
+               },
+               {
+                  "type": "text",
+                  "id": "tagline",
+                  "label": "Tagline"
+               }
+            ]
+         }
+      ],
+      "presets": [
+         {
+            "name": "Featured Products"
+         }
+      ],
+      "templates": ["index"]
+}
+
+{% endschema %}

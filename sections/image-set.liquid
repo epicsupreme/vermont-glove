@@ -1,0 +1,46 @@
+{%- case section.blocks.size -%}
+  {%- when 1 -%}
+    {%- assign sizeClass = "w-full" -%}
+  {%- when 2 -%}
+    {%- assign sizeClass = "w-1/2" -%}
+  {%- when 3 -%}
+    {%- assign sizeClass = "w-1/3" -%}
+
+{%- endcase -%}
+<div class="container flex py-10 mx-auto">
+
+  {% for image in section.blocks %}
+    <div class="self-stretch ml-4 first:ml-0 {{ sizeClass }}">
+      {{ image.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-cover' }}
+    </div>
+  {% endfor %}
+
+</div>
+
+{% schema %}
+{
+  "name": "Image Set",
+  "max_blocks": 3,
+  "blocks": [
+    {
+      "name": "Image",
+      "type": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Set"
+    }
+  ],
+  "templates": [
+    "page"
+  ]
+}
+{% endschema %}

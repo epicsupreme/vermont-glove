@@ -1,0 +1,53 @@
+{
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "top_bar": true,
+          "text": "<p>ANNOUNCEMENT BAR. CHANGE TEXT, BG COLOR, LINK LOCATION<\/p>",
+          "text_coloe": "#ffffff",
+          "bg_color": "#82cdbb"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "be148116-14b9-414f-b56b-edcc77f7775e": {
+            "type": "nav",
+            "settings": {
+              "nav": "footer_nav"
+            }
+          },
+          "894d035e-58df-4f62-972e-4848b74f0885": {
+            "type": "nav",
+            "settings": {
+              "nav": "footer"
+            }
+          },
+          "27feeef6-1526-4160-8270-5a02e0eb9024": {
+            "type": "nav",
+            "settings": {
+              "nav": "main-menu"
+            }
+          }
+        },
+        "block_order": [
+          "be148116-14b9-414f-b56b-edcc77f7775e",
+          "894d035e-58df-4f62-972e-4848b74f0885",
+          "27feeef6-1526-4160-8270-5a02e0eb9024"
+        ],
+        "settings": {
+          "contact": "<p>18 Pearl<\/p><p>St.Randolph, VT 05032<\/p>"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  },
+  "presets": {
+    "Default": {
+    }
+  }
+}

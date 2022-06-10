@@ -1,0 +1,96 @@
+<!doctype html>
+<html
+   class="no-js"
+   lang="{{- request.locale.iso_code -}}" dir="ltr">
+   <head>
+      <meta
+         charset="utf-8">
+      <meta
+         content="IE=edge,chrome=1"
+         http-equiv="X-UA-Compatible">
+      <meta
+         content="width=device-width,initial-scale=1,shrink-to-fit=no"
+         name="viewport">
+
+      <link
+         crossorigin
+         href="https://cdn.shopify.com"
+         rel="preconnect">
+      {%- unless settings.fonts_header.system? and settings.fonts_body.system? -%}
+         <link
+            crossorigin
+            href="https://fonts.shopifycdn.com"
+            rel="preconnect">
+      {%- endunless -%}
+
+      {%- unless settings.fonts_header.system? -%}
+         <link
+            rel="preload"
+            href="{{ settings.fonts_header | font_url }}" type="font/woff2"
+            as="font"
+            crossorigin>
+      {%- endunless -%}
+
+      {%- unless settings.fonts_body.system? -%}
+         <link
+            rel="preload"
+            href="{{ settings.fonts_body | font_url }}" type="font/woff2"
+            as="font"
+            crossorigin>
+      {%- endunless -%}
+
+      <link
+         rel="preload"
+         href="{{ 'base.css' | asset_url }}" as="style">
+      <link
+         rel="preload"
+         href="{{ 'base.js' | asset_url }}" as="script">
+
+      {%- liquid
+      render 'head-seo'
+      render 'head-metas'
+      render 'head-settings'
+    -%}
+
+      {{ 'base.css' | asset_url | stylesheet_tag }}
+      <script
+         src="{{- 'base.js' | asset_url -}}" defer="defer"></script>
+
+      <!-- Start vendor third party libaries -->
+      <script
+         src="{{- 'vendors.js' | asset_url -}}" defer="defer"></script>
+      <!-- End vendor third party libaries -->
+
+          <!-- Header hook for plugins -->
+      {{ content_for_header }}
+
+	{{ shop.metafields.loox["global_html_head"] }}
+</head>
+   <body
+      :class="{'overflow-hidden': cartOpen}"
+      class="layout-theme template-{{- template.name -}}{%- if template.suffix -%}-{{- template.suffix -}}{%- endif -%}"
+      x-data="{ template: '{{- template.name | handleize -}}', newsletterOpen: false, cartOpen: false, cartCount: {{ cart.item_count }}, navStatus: {%- if template.name == 'index' -%} true {% else %} false {%- endif  -%} }"
+      x-on:updatecartcount.window="cartCount = $event.detail.cartTotal"
+      x-on:updatecartstatus.window="cartOpen = $event.detail.cartOpen"
+      x-on:updatenavstatus.window="navStatus = $event.detail.navStatus">
+
+
+      {%- section 'header' -%}
+
+      {%- render 'cart' -%}
+
+      <main
+         class="min-h-[calc(100vh-var(--header-height)-var(--footer-height))] pt-[var(--header-height)]"
+         id="main-content"
+         role="main"
+         tabindex="-1">
+         {{ content_for_layout }}
+      </main>
+
+      {%- section 'footer' -%}
+
+
+
+	{{ shop.metafields.loox["global_html_body"] }}
+</body>
+</html>

@@ -1,0 +1,63 @@
+<div class="container py-20 mx-auto">
+   <div class="mb-1 text-4xl text-center uppercase font-display">
+      {{ section.settings.headline }}
+   </div>
+   <div class="mb-4 text-3xl text-center uppercase font-headline">
+      {{ section.settings.subhead }}
+   </div>
+   <div class="max-w-4xl mx-auto">
+      <div class="mb-2 prose max-w-none">
+         {{ section.settings.text }}
+      </div>
+      {% if section.settings.link_text and section.settings.link %}
+      <a href="{{ section.settings.link }}" title="{{ section.settings.link_text }}" class="underline uppercase font-headline">{{ section.settings.link_text }}</a>
+      {% endif %}
+   </div>
+</div>
+
+{% schema %}
+
+{
+   "name": "Text",
+   "settings": [
+     {
+       "type": "textarea",
+       "id": "headline",
+       "label": "Headline",
+       "default": "Headline"
+     },
+     {
+       "type": "textarea",
+       "id": "subhead",
+       "label": "Subhead",
+       "default": "Subhead"
+     },
+     {
+       "type": "richtext",
+       "id": "text",
+       "label": "Text",
+       "default": "<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>"
+     },
+     {
+       "type": "text",
+       "id": "link_text",
+       "label": "Link Text",
+       "default": "Read More"
+     },
+     {
+       "type": "url",
+       "id": "link",
+       "label": "Link"
+     }
+   ],
+   "presets": [
+     {
+       "name": "Text"
+     }
+   ],
+   "templates": [
+     "page"
+   ]
+ }
+
+{% endschema %}

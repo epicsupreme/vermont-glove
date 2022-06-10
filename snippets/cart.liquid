@@ -1,0 +1,156 @@
+<script
+   src="{{- 'component-add-to-cart.js' | asset_url -}}"></script>
+
+<div
+   :class="{'hidden': !cartOpen}"
+   class="w-full h-[calc(var(--window-height))] bg-[rgba(255,255,255,0.5)] fixed top-0 z-50"
+   id="cart"
+
+   x-data="{ cart: {total: '', products: []}}"
+   x-on:updateproducts.window="cart = $event.detail.cart">
+
+   <button
+      @click.prevent="cartOpen = false"
+      class="absolute top-0 z-0 w-full h-full"></button>
+
+   <div
+      class="absolute right-0 z-10 h-[calc(var(--window-height))] bottom-0 bg-white w-full max-w-[400px]"
+      id="cart-container">
+
+      <div
+         class="flex px-4 md:px-16 justify-between items-center h-[var(--header-height)] border-black border-b-2">
+
+         <button
+            @click="cartOpen = false"
+            class="w-4"
+            id="cart-cart-close">
+            Close
+         </button>
+         <div
+            class="font-bold uppercase">Your Cart</div>
+         <div
+            class="text-xs md:text-base"
+            id="cart-cart-count"
+            x-text="cartCount">{{ cart.item_count }}</div>
+
+      </div>
+
+
+      <template
+         x-if="cart.products.length < 1">
+         <div
+            class="px-6 py-20 italic border-b border-primary">
+            No Products
+         </div>
+      </template>
+
+      <div
+         class="h-[calc(var(--window-height)-var(--header-height))] pb-44 px-4 overflow-y-auto">
+         <div
+            class="mx-auto pt-12  max-w-[458px] relative  border-primary">
+            <template
+               x-for="product in cart.products">
+               <div
+                  class="flex mb-6">
+                  <div
+                     class="relative w-5/12 overflow-hidden rounded-[20px]">
+                     <img
+                        :alt="product.title"
+                        :src="product.image"
+                        class="object-cover w-full h-full"
+                        loading="lazy">
+
+                  </div>
+                  <div
+                     class="flex items-baseline justify-between flex-1 pt-10 pb-6 pl-6 pr-0 ">
+                     <div
+                        class="flex flex-col self-stretch justify-between">
+                        <div>
+                           <div
+                              class="mb-2 text-sm leading-tight md:text-xl font-display"
+                              x-text="product.title"></div>
+
+                           <div>
+                              <template
+                                 x-for="option in product.options">
+                                 <template
+                                    x-if="option.value != 'Default Title'">
+                                    <div
+                                       class="mb-2 text-xs "
+                                       x-text="option.value"></div>
+                                 </template>
+                              </template>
+                           </div>
+                        </div>
+
+                        <div
+                           class="">
+                           <label
+                              :for="'id_' + product.id">QTY</label>
+                           <input
+                              :id="'id_' + product.id"
+                              :value="product.qty"
+                              @change="product.update($event.target.value)"
+                              @keyup="product.update($event.target.value)"
+                              type="number">
+                        </div>
+                        <div>
+                           <button
+                              class="text-xs font-bold uppercase"
+                              x-on:click.prevent="product.remove()">Remove</button>
+                        </div>
+                     </div>
+
+                     <div
+                        class="text-sm font-light ">$<span
+                           x-text="product.price"></span>
+                     </div>
+
+                  </div>
+
+
+               </div>
+
+            </template>
+
+
+         </div>
+
+         <template
+            x-if="cart.products.length > 0">
+
+
+            <div
+               class="absolute bottom-0 left-0 flex w-full px-4 bg-white">
+               <div
+                  class=" max-w-[458px] w-full mx-auto py-12 border-t-2 border-black">
+                  <div
+                     class="flex justify-between">
+                     <div
+                        class="text-sm uppercase">
+                        Subtotal
+                     </div>
+                     <div
+                        class="text-sm"
+                        x-text="'$' + cart.total"></div>
+                  </div>
+
+
+                  <a
+                     class="block w-full py-3 mt-6 text-sm text-center text-white uppercase bg-black rounded-full"
+                     href="/checkout"
+                     title="Checkout">
+                     Checkout
+                  </a>
+               </div>
+            </div>
+         </template>
+
+
+      </div>
+
+
+   </div>
+
+
+</div>

@@ -5,6 +5,116 @@
       "settings": {
       }
     },
+    "165484190389f43ba1": {
+      "type": "call-to-action",
+      "settings": {
+        "title": "ACTUALLY MADE RIGHT HERE IN\nRANDOLPH SINCE 1920",
+        "primary_color": "#ffffff",
+        "secondary_color": "#ffffff",
+        "image": "shopify:\/\/shop_images\/Lineworker_1967.gif",
+        "video_url": "",
+        "full": true
+      }
+    },
+    "1654841758b9200a12": {
+      "type": "image-set",
+      "blocks": {
+        "ff62ca11-7a9d-4ff3-974e-7026a5044218": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG-MelissaSmith-29.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "ff62ca11-7a9d-4ff3-974e-7026a5044218"
+      ],
+      "settings": {
+      }
+    },
+    "1654841760e514180b": {
+      "type": "image-set",
+      "blocks": {
+        "06db2464-35b0-4383-a8a9-683514af85b7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG-WovenCuff-Feb22-27.jpg"
+          }
+        },
+        "44986808-d4ba-4010-9de4-2121ecee29d8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/B94A8558-S.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "06db2464-35b0-4383-a8a9-683514af85b7",
+        "44986808-d4ba-4010-9de4-2121ecee29d8"
+      ],
+      "settings": {
+      }
+    },
+    "1654841783953f1040": {
+      "type": "image-set",
+      "blocks": {
+        "8af96e09-f88e-4c85-838b-da5fbc3b9a97": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lineworker_1967.gif"
+          }
+        },
+        "e84e8df1-eec3-47b8-ac4d-82e979e09801": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG_March_2019_Selects_111_of_359.jpg"
+          }
+        },
+        "92b61a8a-fd13-4795-81be-36c2b1da0c27": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Crew_Photo_1960s.png"
+          }
+        }
+      },
+      "block_order": [
+        "8af96e09-f88e-4c85-838b-da5fbc3b9a97",
+        "e84e8df1-eec3-47b8-ac4d-82e979e09801",
+        "92b61a8a-fd13-4795-81be-36c2b1da0c27"
+      ],
+      "settings": {
+      }
+    },
+    "1654842496ce5b26d6": {
+      "type": "history",
+      "settings": {
+        "title": "1920",
+        "subhead": "brief title sentence",
+        "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>",
+        "image": "shopify:\/\/shop_images\/Crew_Photo_1960s.png",
+        "button_link": "link",
+        "button_text": "Read More",
+        "button_url": "shopify:\/\/pages\/faq",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "1654842498e01db199": {
+      "type": "history",
+      "settings": {
+        "title": "1934",
+        "subhead": "brief title sentence",
+        "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>",
+        "image": "shopify:\/\/shop_images\/Kurt_and_Kurt_web.gif",
+        "button_link": "button",
+        "button_text": "Shop Now",
+        "button_url": "shopify:\/\/collections\/all",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
     "16548406038815170c": {
       "type": "text",
       "settings": {
@@ -18,6 +128,12 @@
   },
   "order": [
     "main",
+    "165484190389f43ba1",
+    "1654841758b9200a12",
+    "1654841760e514180b",
+    "1654841783953f1040",
+    "1654842496ce5b26d6",
+    "1654842498e01db199",
     "16548406038815170c"
   ]
 }

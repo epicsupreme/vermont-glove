@@ -1,8 +1,58 @@
 {
   "sections": {
     "main": {
-      "type": "main-page-guides"
+      "type": "main-page-guides",
+      "blocks": {
+        "edd55677-948d-44ea-a9ff-413b34ed1a31": {
+          "type": "guide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG_Liner2020.jpg",
+            "page": "glove-care",
+            "title": "Glove Care",
+            "text": "Protect your investment by applying the right goos and lubes at the right time."
+          }
+        },
+        "44201e49-2c22-4039-8a9f-f24989cc117e": {
+          "type": "guide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG_Size_Chart_2020.png",
+            "page": "sizing",
+            "title": "SIZING",
+            "text": "Learn the best ways to measure your hands so your gloves fit the best they can."
+          }
+        },
+        "ee6fdfa5-9680-4b66-ad5d-939af5bb4d15": {
+          "type": "guide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG_Glove_Care.jpg",
+            "page": "liner-fit",
+            "title": "REMOVABLE LINER",
+            "text": "Protect your investment by applying the right goos and lubes at the right time."
+          }
+        },
+        "b6e7c7fe-be14-425f-9e36-0501bd195875": {
+          "type": "guide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG_September_2019_13_of_26.jpg",
+            "page": "glove-care",
+            "title": "GOAT LEATHER",
+            "text": "Learn the best ways to measure your hands so your gloves fit the best they can."
+          }
+        }
+      },
+      "block_order": [
+        "edd55677-948d-44ea-a9ff-413b34ed1a31",
+        "44201e49-2c22-4039-8a9f-f24989cc117e",
+        "ee6fdfa5-9680-4b66-ad5d-939af5bb4d15",
+        "b6e7c7fe-be14-425f-9e36-0501bd195875"
+      ],
+      "settings": {
+        "title": "Need a hand?",
+        "text": "Everything you’ll ever need to know about goat leather gloves."
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }

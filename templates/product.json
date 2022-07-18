@@ -79,6 +79,18 @@
         "full": true
       }
     },
+    "16581299038ac67c2a": {
+      "type": "image-title",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/VTG-SDF-SeedStarting-22_04_07-2.jpg",
+        "title": "A little glove love\ngoes a long way.",
+        "button_text": "Learn to care for your gloves",
+        "button_url": "shopify:\/\/pages\/glove-care",
+        "primary_color": "#000000",
+        "secondary_color": "#f5ea60",
+        "flip": true
+      }
+    },
     "loox-product-reviews-app-section": {
       "type": "apps",
       "blocks": {
@@ -98,25 +110,13 @@
       "settings": {
         "include_container": true
       }
-    },
-    "16581299038ac67c2a": {
-      "type": "image-title",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/VTG-SDF-SeedStarting-22_04_07-2.jpg",
-        "title": "A little glove love\ngoes a long way.",
-        "button_text": "Learn to care for your gloves",
-        "button_url": "shopify:\/\/pages\/glove-care",
-        "primary_color": "#000000",
-        "secondary_color": "#f5ea60",
-        "flip": true
-      }
     }
   },
   "order": [
     "main",
     "1658129066b65c424e",
     "165812977493b0d20f",
-    "loox-product-reviews-app-section",
-    "16581299038ac67c2a"
+    "16581299038ac67c2a",
+    "loox-product-reviews-app-section"
   ]
 }

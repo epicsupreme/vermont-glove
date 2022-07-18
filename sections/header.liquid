@@ -33,13 +33,13 @@
 
          <a
             @click.prevent="cartOpen = true"
-            class="block pl-3 text-xs md:pl-8 md:text-base hover:text-red"
+            class="relative flex items-center justify-center w-6 text-xs text-brand"
             href="/cart"
             title="Cart">
-            Cart
+            {%- render 'svg-bag' -%}
 
             <span
-               class="font-bold text-red"
+               class="absolute font-bold bottom-1"
                id="cart-count"
                x-text="cartCount">
                {{ cart.item_count }}

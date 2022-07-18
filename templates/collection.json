@@ -1,8 +1,33 @@
 {
   "sections": {
     "main": {
-      "type": "main-collection"
+      "type": "main-collection",
+      "blocks": {
+        "58e19a8e-94ac-4da0-86b6-aab17a21b23b": {
+          "type": "collection",
+          "settings": {
+            "collection": "google-shopping-collection"
+          }
+        },
+        "29f9a603-41d2-455d-bb7a-062b77aef86e": {
+          "type": "collection",
+          "settings": {
+            "collection": "all-products"
+          }
+        }
+      },
+      "block_order": [
+        "58e19a8e-94ac-4da0-86b6-aab17a21b23b",
+        "29f9a603-41d2-455d-bb7a-062b77aef86e"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/VTG-HomeHero-Chainsaw.jpg",
+        "title": "Goat leather work gloves, handmade in Vermont since 1920.",
+        "text": "A secondary sentence that is optimized for SEO, bots, robots, computer algorithms and first time visitors directed directly to this page."
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }

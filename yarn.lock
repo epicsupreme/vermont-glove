@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@alpinejs/collapse@^3.10.2":
+  version "3.10.2"
+  resolved "https://registry.yarnpkg.com/@alpinejs/collapse/-/collapse-3.10.2.tgz#c7c10db6ebf42499b02a4fa32b7440c5828e58a4"
+  integrity sha512-ZI7ysUXPjtrdI61dyF23vNRnDLWW/BMeqrdoQtUMENHx7lsYAKvG9asFUM8hV0eF7KVQiHz/K9oV3qX2i6UXhQ==
+
 "@ampproject/remapping@^2.1.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@ampproject/remapping/-/remapping-2.2.0.tgz#56c133824780de3174aed5ab6834f3026790154d"
@@ -1051,6 +1056,11 @@
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/@shopify/theme-cart/-/theme-cart-4.1.1.tgz#70f9c27906538484c21359f99732a59eb065b104"
   integrity sha512-gC0rYG4bcsfaefpD96eZO/S2UR0KbIwhfQtSK62iKG4SLzebP4Qct/r4pRpT3Jv4qJEer5uAhEY/tcjceICF0A==
+
+"@shopify/theme-currency@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@shopify/theme-currency/-/theme-currency-4.1.1.tgz#26d95500c85f0b7d89647f82d3a439ce4d276dea"
+  integrity sha512-m7eMeI4B7R8e8tMeI1dI0CQP+JkM7fMVN1+qKwkUll+MqbHtF/6iuiyDxTGiOJxvDMOpGtS5vRIoly7fsD4CTQ==
 
 "@shopify/theme-product-form@^4.1.1":
   version "4.1.1"

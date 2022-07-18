@@ -21,6 +21,7 @@ module.exports = {
         brand: 'var(--theme-color-brand)',
         accent: 'var(--theme-color-accent-primary)',
         secondary: 'var(--theme-color-accent-secondary)',
+        tertiary: '#F5EA60'
       },
     },
   },

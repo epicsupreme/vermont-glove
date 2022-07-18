@@ -1,0 +1,87 @@
+<div class="py-8 text-center">
+   <div class="mb-8 text-5xl uppercase font-headline">
+      {{ section.settings.title }}
+   </div>
+   <div class="flex items-start justify-center gap-10">
+      {% for block in section.blocks %}
+         <div class="flex flex-col items-center">
+            <div class="w-16 mb-1">
+               {{ block.settings.icon | image_url: width: 600 | image_tag: width: nil, class: 'w-full' }}
+            </div>
+            <div class="text-sm text-center">
+               {{ block.settings.text | newline_to_br }}
+            </div>
+         </div>
+      {% endfor %}
+      {% for block in section.blocks %}
+         <div class="flex flex-col items-center">
+            <div class="w-16 mb-1">
+               {{ block.settings.icon | image_url: width: 600 | image_tag: width: nil, class: 'w-full' }}
+            </div>
+            <div class="text-sm text-center">
+               {{ block.settings.text | newline_to_br }}
+            </div>
+         </div>
+      {% endfor %}
+      {% for block in section.blocks %}
+         <div class="flex flex-col items-center">
+            <div class="w-16 mb-1">
+               {{ block.settings.icon | image_url: width: 600 | image_tag: width: nil, class: 'w-full' }}
+            </div>
+            <div class="text-sm text-center">
+               {{ block.settings.text | newline_to_br }}
+            </div>
+         </div>
+      {% endfor %}
+      {% for block in section.blocks %}
+         <div class="flex flex-col items-center">
+            <div class="w-16 mb-1">
+               {{ block.settings.icon | image_url: width: 600 | image_tag: width: nil, class: 'w-full' }}
+            </div>
+            <div class="text-sm text-center">
+               {{ block.settings.text | newline_to_br }}
+            </div>
+         </div>
+      {% endfor %}
+   </div>
+</div>
+
+{% schema %}
+{
+   "name": "Excellent For",
+   "settings": [
+      {
+         "type": "text",
+         "id": "title",
+         "label": "Title",
+         "default": "Excellent For"
+      }
+   ],
+   "blocks": [
+         {
+            "name": "Icon",
+            "type": "Icon",
+            "settings": [
+               {
+                  "type": "image_picker",
+                  "id": "icon",
+                  "label": "Icon"
+               },
+               {
+                  "type": "textarea",
+                  "id": "text",
+                  "label": "Text"
+               }
+            ]
+         }
+      ],
+      "presets": [
+    {
+      "name": "Excellent For"
+    }
+  ],
+  "templates": [
+    "product"
+  ]
+}
+{% endschema %}

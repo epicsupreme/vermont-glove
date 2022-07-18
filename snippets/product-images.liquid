@@ -1,0 +1,23 @@
+{{ 'component-product-images.css' | asset_url | stylesheet_tag }}
+<script src="{{- 'component-product-images.js' | asset_url -}}" defer></script>
+
+<div
+   id="product-images" style="--swiper-theme-color:#F5EA60">
+   <div
+      class="swiper">
+      <div
+         class="swiper-wrapper">
+         {% for image in product.images %}
+            <div
+               class="swiper-slide">
+               <div
+                  class="aspect-square">
+                  {{ image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full  object-contain h-full' }}
+               </div>
+            </div>
+         {% endfor %}
+      </div>
+      <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+   </div>
+</div>

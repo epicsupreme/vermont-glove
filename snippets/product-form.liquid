@@ -1,7 +1,46 @@
-{{ 'component-add-to-cart.css' | asset_url | stylesheet_tag }}
-<script
-   src="{{- 'component-add-to-cart.js' | asset_url -}}"></script>
+{%- capture productJson -%}
+   {
+                  "product":
+   {{ product | json }},
+                  "variants": [
+   {%- for variant in product.variants -%}
+      {{ variant | json }}
+      {%- unless forloop.last -%},
+      {%- endunless -%}
+   {%- endfor -%}
+   ],
+                  "variantStock": [
+   {%- for variant in product.variants -%}
+      {
+                     "id":{{ variant.id }},
+                     "stock":
+      {{ variant.inventory_quantity }}
+      }
+      {%- unless forloop.last -%},
+      {%- endunless -%}
+   {%- endfor -%}
+   ],
+         "addOnProducts": [
+   {%- for block in section.blocks -%}
+      {%- if block.type == "add_on_product" -%}
+         {%- assign addOnProduct = all_products[block.settings.product] -%}
+         {
+                                       "addOnProduct" :
+         {{ addOnProduct | json }}
+         }
+         {%- unless forloop.last -%},
+         {%- endunless -%}
+      {%- endif -%}
+   {%- endfor -%}
+   ]
+         }
+{%- endcapture -%}
 
+<script>
+   const productJson_{{ product.id }} = {{ productJson }};
+</script>
+
+{% assign current_variant = product.selected_or_first_available_variant %}
 
 <form
    @submit.prevent="onSubmit"
@@ -11,107 +50,118 @@
    enctype="multipart/form-data"
    id="product-form"
    method="post"
-   x-data="productData()">
+   x-data="product(productJson_{{ product.id }})">
    <input
       name="form_type"
       type="hidden"
-      value="product">
+      value="product"/>
    <input
       name="utf8"
       type="hidden"
-      value="✓">
+      value="✓"/>
+
+
    <div
-      class="flex flex-wrap ">
+      class="text-2xl uppercase"
+      x-text="price.actualPrice">
+      {{ current_variant.price | money_without_trailing_zeros }}
+   </div>
+
+   <div
+      class="my-4">
+      <div
+         class="loox-rating"
+         data-id="{{ product.id }}" data-rating="{{ product.metafields.loox.avg_rating }}" data-raters="{{ product.metafields.loox.num_reviews }}"></div>
+   </div>
+
+   <div
+      class="mb-4 text-xl">
+      Our flagship goat leather work glove.
+   </div>
+
+   <div
+      class="mb-0.5"
+      x-data="{ expanded: false }">
+      <button
+         @click.prevent="expanded = !expanded"
+         class="text-lg font-headline">
+         &gt; Product Description
+      </button>
+      <div
+         x-collapse
+         x-show="expanded">
+         {{ product.description }}
+      </div>
+   </div>
+
+   <div
+      class="mb-2"
+      x-data="{ expanded: false }">
+      <button
+         @click.prevent="expanded = !expanded"
+         class="text-lg font-headline">
+         &gt; Tech Specs
+      </button>
+      <div
+         x-collapse
+         x-show="expanded">
+         {{ product.description }}
+      </div>
+   </div>
 
 
-      {% unless product.has_only_default_variant %}
-         <div
-            class="w-full uppercase ">
-
-
-            {% for option in product.options_with_values %}
-               {%- assign mainIndex = forloop.index0 -%}
-               {% unless option.name == "Title" %}
-
-
-                  <div
-                     class="block mt-6">
-                     <label
-                        class="mb-1.5 text-sm font-bold block">{{ option.name }}</label>
-                     {% if option.values.size > 1 %}
-
-                        {% if option.name == "Size" %}
-
-
-                           <div class="relative select w-80">
-                              <select
-                              name="options[{{ option.name | escape }}]"
-                              id="Option{{ value | handleize }}"
-                              class="relative w-full px-5 py-2 pt-2.5 text-sm tracking-wide uppercase border border-black rounded-full appearance-none"
-                              index="{{ mainIndex}}" @change="update($event.target.value, $event.target.getAttribute('index'))">
-                              {% for value in option.values %}
-                                 <option
-                                    value="{{ value }}">{{ value }}</option>
-                              {% endfor %}
-                           </select>
-                           </div>
-                        {% else %}
-                           {% for value in option.values %}
-
-
-                                 <label
-                                    class="flex items-center mb-2 text-xs product-label"
-                                    for="Option{{ value | handleize }}">
-                                    <input
-                                       type="radio"
-                                       id="Option{{ value | handleize }}"
-                                       name="options[{{ option.name | escape }}]"
-                                       value="{{ value | escape }}" class="hidden peer"
-                                       index="{{ mainIndex }}" @change="update($event.target.value, $event.target.getAttribute('index'))"
-                                       {% if forloop.first %} checked
-                                       {% endif %}/>
-                                    <span
-                                       class="w-[18px] h-[18px] border block border-black rounded-full mr-2 peer-checked:bg-black"></span>
-                                    {{ value }}
-                                 </label>
-
-                           {% endfor %}
-                        {% endif %}
-                     {% else %}
-                        <div
-                           class="mt-0.5 ">
-                           {{ option.values[0] }}
-                        </div>
-                     {% endif %}
-                  </div>
-               {% endunless %}
-            {% endfor %}
-
-
-         </div>
-      {% endunless %}
+   <div
+      class="mt-4 mb-4">
+      {%- render 'product-form-variants', current_variant: current_variant -%}
 
    </div>
 
-   <div>
-      <label for="qantity">Qty</label>
-      <input type="number" name="qantity" value="1" if="qantity">
-    </div>
+
+   <div
+      class="w-32 ">
+      {%- render 'product-form-qty' -%}
+   </div>
 
 
    <input
       type="hidden"
       name="id"
-      value="{{ product.selected_or_first_available_variant.id }}">
+      :value="formData.id"
+      value="{{ current_variant.id }}"/>
 
    <button
       :disabled="disabled"
-      class=""
+      class="w-full max-w-sm py-3 mb-2 text-lg text-black uppercase bg-tertiary font-headline"
       type="submit"
       x-text="button">Add to Cart</button>
+
+   <button
+      class="w-full max-w-sm py-3 text-lg text-black uppercase border border-tertiary hover:bg-tertiary font-headline">Size Guide</button>
+
+
+   <template
+      x-if="addOnProducts.length > 0">
+      <div
+         class="mt-4">
+         <div
+            class="mb-1">Add On</div>
+         <div>
+            <template
+               x-for="addOn in addOnProducts">
+               <div
+                  class="flex items-center justify-between w-full max-w-sm gap-2 mb-2">
+                  <button
+                     :class="checkAddOns(addOn.addOnProduct.variants[0].id) ? 'bg-tertiary' : ''"
+                     @click.prevent="selectAddon(addOn.addOnProduct.variants[0].id, selectedAddOnProducts, addOn.addOnProduct.variants[0].price)"
+                     class="w-3/4 py-3 text-lg text-black uppercase border border-gray-300 hover:bg-tertiary font-headline"
+                     x-text="addOn.addOnProduct.title"></button>
+                  <div>+$<span
+                        x-text="addOn.addOnProduct.variants[0].price / 100"></span>
+                  </div>
+               </div>
+            </template>
+         </div>
+      </div>
+   </template>
+
 </form>
-
-
-<script>
-   var productJson = {{ product | json }};
-</script>

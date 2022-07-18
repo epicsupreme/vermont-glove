@@ -1,0 +1,74 @@
+{% if product.selling_plan_groups %}
+
+   {% assign sellingPlanCount = 0 %}
+
+   <div
+      class="w-full mt-6 uppercase ">
+
+         <div
+            class="mb-2  {% if current_variant.requires_selling_plan %} hidden {% endif %}"
+            :class="sellingPlans.requiresSellingPlan ? 'hidden' : ''"
+            >
+            <label
+               class="flex items-center mb-2 text-xs product-label"
+               for="selling_group_default">
+
+               <input
+                  @change="updateSellingPlan($event.target.value)"
+                  {% if sellingPlanCount == 0 %} checked
+                  {% endif %} class="hidden peer"
+                  id="selling_group_default"
+                  name="options[selling_plan]"
+                  type="radio"
+                  value=""/>
+               <span
+                  class="w-[18px] h-[18px] border block border-black rounded-full mr-2 peer-checked:bg-black"></span>
+               One time purchase
+            </label>
+         </div>
+
+      {% unless current_variant.requires_selling_plan %}
+         {% assign sellingPlanCount = sellingPlanCount | plus: 1 %}
+      {% endunless %}
+
+      {% for selling_plan_group in product.selling_plan_groups %}
+
+         <div
+            class="block mt-6"
+            :class="sellingPlans.availableSellingPlanGroups.includes('{{ selling_plan_group.id }}') ? '' : 'hidden'"
+            >
+            <div
+               class="text-xl">
+               {{ selling_plan_group.name }}
+            </div>
+
+
+            {% for selling_plan in selling_plan_group.selling_plans %}
+               <div
+                  class="mb-2"
+                  :class="sellingPlans.availableSellingPlans.includes({{ selling_plan.id }}) ? '' : 'hidden'"
+                  >
+                  <label
+                     class="flex items-center mb-2 text-xs product-label"
+                     for="selling_group_{{ selling_plan.id }}">
+
+                     <input
+                        type="radio"
+                        {% if sellingPlanCount == 0 %} checked
+                        {% endif %} id="selling_group_{{ selling_plan.id }}"
+                        name="options[selling_plan]"
+                        value="{{ selling_plan.id }}" class="hidden peer"
+                        @change="updateSellingPlan($event.target.value)"/>
+                     <span
+                        class="w-[18px] h-[18px] border block border-black rounded-full mr-2 peer-checked:bg-black"></span>
+                     {{ selling_plan.name }}
+                  </label>
+               </div>
+               {% assign sellingPlanCount = sellingPlanCount | plus: 1 %}
+            {% endfor %}
+         </div>
+      {% endfor %}
+   </div>
+
+
+{% endif %}

@@ -2,7 +2,81 @@
   "sections": {
     "main": {
       "type": "main-product",
+      "blocks": {
+        "268d88be-0517-43ac-a233-78c641e895a7": {
+          "type": "add_on_product",
+          "settings": {
+            "product": "wool-glove-liner"
+          }
+        },
+        "255b23fd-8bc3-4e56-910a-6efcd67df8d5": {
+          "type": "add_on_product",
+          "settings": {
+            "product": "leather-conditioner"
+          }
+        },
+        "48204da5-44d1-4570-befd-915e2374a4b2": {
+          "type": "add_on_product",
+          "settings": {
+            "product": "beeswax-waterproofing"
+          }
+        }
+      },
+      "block_order": [
+        "268d88be-0517-43ac-a233-78c641e895a7",
+        "255b23fd-8bc3-4e56-910a-6efcd67df8d5",
+        "48204da5-44d1-4570-befd-915e2374a4b2"
+      ],
       "settings": {
+      }
+    },
+    "1658129066b65c424e": {
+      "type": "excellent-for",
+      "blocks": {
+        "1d6bbccb-c327-427b-be7c-ac76e1072de2": {
+          "type": "Icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Artboard_36_copy_7_4x_918f1197-e1da-4097-9941-d8ace43c4069.png",
+            "text": "Icon\nText"
+          }
+        },
+        "c157807c-a613-4ce5-9d2e-78117e9b730c": {
+          "type": "Icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Artboard_36_copy_7_4x_918f1197-e1da-4097-9941-d8ace43c4069.png",
+            "text": "Another Icon"
+          }
+        }
+      },
+      "block_order": [
+        "1d6bbccb-c327-427b-be7c-ac76e1072de2",
+        "c157807c-a613-4ce5-9d2e-78117e9b730c"
+      ],
+      "settings": {
+        "title": "Excellent For"
+      }
+    },
+    "165812977493b0d20f": {
+      "type": "call-to-action",
+      "blocks": {
+        "172de59a-d609-4e6f-b024-86f6ee27f960": {
+          "type": "button",
+          "settings": {
+            "button_text": "Explore our factory",
+            "button_url": "shopify:\/\/pages\/faq"
+          }
+        }
+      },
+      "block_order": [
+        "172de59a-d609-4e6f-b024-86f6ee27f960"
+      ],
+      "settings": {
+        "title": "How the gloves are made",
+        "primary_color": "#fff",
+        "secondary_color": "#f5ea60",
+        "image": "shopify:\/\/shop_images\/VTG_Glove_Care.jpg",
+        "video_url": "",
+        "full": true
       }
     },
     "loox-product-reviews-app-section": {
@@ -22,11 +96,27 @@
         "loox-product-reviews"
       ],
       "settings": {
+        "include_container": true
+      }
+    },
+    "16581299038ac67c2a": {
+      "type": "image-title",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/VTG-SDF-SeedStarting-22_04_07-2.jpg",
+        "title": "A little glove love\ngoes a long way.",
+        "button_text": "Learn to care for your gloves",
+        "button_url": "shopify:\/\/pages\/glove-care",
+        "primary_color": "#000000",
+        "secondary_color": "#f5ea60",
+        "flip": true
       }
     }
   },
   "order": [
     "main",
-    "loox-product-reviews-app-section"
+    "1658129066b65c424e",
+    "165812977493b0d20f",
+    "loox-product-reviews-app-section",
+    "16581299038ac67c2a"
   ]
 }

@@ -1,4 +1,4 @@
-# Helium 
+# Helium
 
 > This was made as a follow-up to the Shopify Unite 2021 event revealing the new theme online store 2.0 that has supports for JSON templates and section everywhere concept and few other features.
 
@@ -17,5 +17,7 @@ Everyone is welcome to make Shopify theme development better! Please read the [C
 ## License
 
 Copyright (c) 2021 Youness Id bakkasse. See [LICENSE](/LICENSE) for further details.
+
 # frenf
+
 # vermont-glove

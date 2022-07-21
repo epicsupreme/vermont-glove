@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @import 'generic/wysiwyg';
 @import 'generic/form-elements';
 
@@ -17,4 +16,3 @@ body {
 [x-cloak] {
   display: none !important ;
 }
-

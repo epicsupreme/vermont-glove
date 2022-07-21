@@ -5,11 +5,11 @@ window.topBar = () => {
   return {
     active: true,
     close() {
-      this.active = false;
+      this.active = false
       setTimeout(() => {
-        const headerHeight = document.getElementById("header").offsetHeight;
-        document.body.style.setProperty("--header-height", `${headerHeight}px`);
-      }, 200);
+        const headerHeight = document.getElementById('header').offsetHeight
+        document.body.style.setProperty('--header-height', `${headerHeight}px`)
+      }, 200)
     },
-  };
-};
+  }
+}

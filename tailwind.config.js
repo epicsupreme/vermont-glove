@@ -5,15 +5,30 @@ module.exports = {
     './layout/**/*.liquid',
     './snippets/**/*.{liquid, *}',
   ],
-  safelist: [
-    'justify-start',
-    'justify-end'
-  ],
+  safelist: ['justify-start', 'justify-end'],
   theme: {
     fontFamily: {
-      base: ['basis', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif'],
-      headline: ['founders', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif'],
-      display: ['marche', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif'],
+      base: [
+        'basis',
+        'Franklin Gothic Medium',
+        'Arial Narrow',
+        'Arial',
+        'sans-serif',
+      ],
+      headline: [
+        'founders',
+        'Franklin Gothic Medium',
+        'Arial Narrow',
+        'Arial',
+        'sans-serif',
+      ],
+      display: [
+        'marche',
+        'Franklin Gothic Medium',
+        'Arial Narrow',
+        'Arial',
+        'sans-serif',
+      ],
     },
     extend: {
       colors: {
@@ -21,11 +36,9 @@ module.exports = {
         brand: 'var(--theme-color-brand)',
         accent: 'var(--theme-color-accent-primary)',
         secondary: 'var(--theme-color-accent-secondary)',
-        tertiary: '#F5EA60'
+        tertiary: '#F5EA60',
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [require('@tailwindcss/typography')],
 }

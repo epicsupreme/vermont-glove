@@ -15,7 +15,7 @@
         "44201e49-2c22-4039-8a9f-f24989cc117e": {
           "type": "guide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/VTG_Size_Chart_2020.png",
+            "image": "shopify:\/\/shop_images\/VTG-SDF-SpringGreenhouse-1.jpg",
             "page": "sizing",
             "title": "SIZING",
             "text": "Learn the best ways to measure your hands so your gloves fit the best they can."
@@ -38,13 +38,23 @@
             "title": "GOAT LEATHER",
             "text": "Learn the best ways to measure your hands so your gloves fit the best they can."
           }
+        },
+        "105f5a1a-9a89-4573-ae6f-3e9993804cb1": {
+          "type": "guide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VermontGloveCompany-12_15ff963c-683d-4d0c-a7d8-197593dd7baf.jpg",
+            "page": "",
+            "title": "How to Sew Like Pam",
+            "text": "She's a pro, and so can you."
+          }
         }
       },
       "block_order": [
         "edd55677-948d-44ea-a9ff-413b34ed1a31",
         "44201e49-2c22-4039-8a9f-f24989cc117e",
         "ee6fdfa5-9680-4b66-ad5d-939af5bb4d15",
-        "b6e7c7fe-be14-425f-9e36-0501bd195875"
+        "b6e7c7fe-be14-425f-9e36-0501bd195875",
+        "105f5a1a-9a89-4573-ae6f-3e9993804cb1"
       ],
       "settings": {
         "title": "Need a hand?",

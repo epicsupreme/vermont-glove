@@ -6,10 +6,10 @@
         "title": "DESIGNED FOR THE PROS,\nMADE FOR YOU",
         "button_text": "Shop Now",
         "button_url": "shopify:\/\/collections\/all",
-        "location": "justify-end",
+        "location": "justify-start",
         "primary_color": "#452c80",
         "secondary_color": "#ffffff",
-        "image": "shopify:\/\/shop_images\/VTG-SDF-SpringGreenhouse-1.jpg",
+        "image": "shopify:\/\/shop_images\/VTG-FreeVerseFarm-18.jpg",
         "video_url": ""
       }
     },
@@ -73,14 +73,27 @@
         "title": "ACTUALLY MADE IN VERMONT\nSINCE 1920",
         "primary_color": "#ffffff",
         "secondary_color": "#452c80",
-        "image": "shopify:\/\/shop_images\/VTG-SDF-SeedStarting-22_04_07-2.jpg",
+        "image": "shopify:\/\/shop_images\/Kurt_and_Karl_web.gif",
         "video_url": "",
         "full": true
+      }
+    },
+    "1658262751819df341": {
+      "type": "image-title",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/VTG_Vermonter_2020_Features_1.png",
+        "title": "FEATURE RICH, NO INSTRUCTIONS REQUIRED",
+        "button_text": "SHOP NOW",
+        "button_url": "shopify:\/\/collections",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": false
       }
     },
     "1654839019c2e2d28d": {
       "type": "instagram",
       "settings": {
+        "title": "In Action"
       }
     }
   },
@@ -88,6 +101,7 @@
     "main",
     "16539672525d0bb668",
     "165396725578574650",
+    "1658262751819df341",
     "1654839019c2e2d28d"
   ]
 }

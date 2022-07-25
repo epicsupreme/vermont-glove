@@ -71,10 +71,10 @@
         "172de59a-d609-4e6f-b024-86f6ee27f960"
       ],
       "settings": {
-        "title": "How the gloves are made",
-        "primary_color": "#fff",
-        "secondary_color": "#f5ea60",
-        "image": "shopify:\/\/shop_images\/VTG_Glove_Care.jpg",
+        "title": "HOW THE GLOVES ARE MADE",
+        "primary_color": "#ffffff",
+        "secondary_color": "#452C80",
+        "image": "shopify:\/\/shop_images\/VermontGloveCompany-12_15ff963c-683d-4d0c-a7d8-197593dd7baf.jpg",
         "video_url": "",
         "full": true
       }
@@ -82,12 +82,12 @@
     "16581299038ac67c2a": {
       "type": "image-title",
       "settings": {
-        "image": "shopify:\/\/shop_images\/VTG-SDF-SeedStarting-22_04_07-2.jpg",
+        "image": "shopify:\/\/shop_images\/VTG-SDF_Aug21-18.jpg",
         "title": "A little glove love\ngoes a long way.",
         "button_text": "Learn to care for your gloves",
         "button_url": "shopify:\/\/pages\/glove-care",
-        "primary_color": "#000000",
-        "secondary_color": "#f5ea60",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
         "flip": true
       }
     },

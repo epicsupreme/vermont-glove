@@ -1,8 +1,131 @@
 {
   "sections": {
     "main": {
-      "type": "main-page"
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "16583238777ef57ff8": {
+      "type": "text",
+      "settings": {
+        "headline": "GOAT LEATHER GLOVES, ACTUALLY MADE IN VERMONT SINCE 1920",
+        "subhead": "",
+        "text": "",
+        "link_text": "Read More",
+        "link": ""
+      }
+    },
+    "16583239292fb88d99": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "QUALITY ABOVE ALL",
+        "text": "<p>Here at Vermont Glove, we are stubborn as hell and committed to functional design, the highest quality materials and the most effective methods.We value social and environmental sustainability as much as we value hard work, and are madly committed to using natural, renewable materials. We aspire to use our business as a platform to advocate for environmental stewardship, economic equity and social responsibility. On top of all that, we make damn good gloves.<\/p>",
+        "image": "shopify:\/\/shop_images\/VermontGloveCompany-12_15ff963c-683d-4d0c-a7d8-197593dd7baf.jpg",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
+    "16583240705801df1d": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "102 YEARS AND COUNTING",
+        "text": "<p>More than 100 years, to be precise. Been making goat leather work gloves for the most rugged 10 finger tasks imaginable.We survived world wars, trade wars, trends and yadda yaddas. Here we are, still in the old milk factory right here in Randolph.<\/p>",
+        "image": "shopify:\/\/shop_images\/VermontGloveCompany-12_15ff963c-683d-4d0c-a7d8-197593dd7baf.jpg",
+        "button_link": "button",
+        "button_text": "LEARN MORE ABOUT OUR HISTORY",
+        "button_url": "",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "165832412906cfa391": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "HOW THEY'RE MADE",
+        "text": "<p>Every pair of our gloves is hand-sewn in our factory in Randolph, Vermont. We use exceptional care and attention to detail in making our gloves, from the strength of our threaed to the wellbeing of our employees. <\/p>",
+        "image": "shopify:\/\/shop_images\/VermontGloveCompany-12_15ff963c-683d-4d0c-a7d8-197593dd7baf.jpg",
+        "button_link": "button",
+        "button_text": "EXPLORE OUR PROCESS",
+        "button_url": "",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
+    "16583241809e61ce3e": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "SUSTAINABILITY",
+        "text": "<p>Considering our environmental and social impact are not trends or checkboxes for us, they are the foundation on which our company is built.<\/p>",
+        "image": "shopify:\/\/shop_images\/VermontGloveCompany-12_15ff963c-683d-4d0c-a7d8-197593dd7baf.jpg",
+        "button_link": "button",
+        "button_text": "LEARN ABOUT OUR INITIATIVES",
+        "button_url": "",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "165832425672cbba32": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "GOAT LEATHER",
+        "text": "<p>Plain and simple, goat leather is the G.O.A.T. Rugged and supple, it performs incredibly well in hard wearing situations, for a very long time. <\/p>",
+        "image": "shopify:\/\/shop_images\/VermontGloveCompany-12_15ff963c-683d-4d0c-a7d8-197593dd7baf.jpg",
+        "button_link": "button",
+        "button_text": "LEARN ABOUT GOAT LEATHER",
+        "button_url": "",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
+    "16583242906eba7624": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "OUR DESIGN",
+        "text": "<p>Our unique glove design is driven by utility. They work better and last longer this way.<\/p>",
+        "image": "shopify:\/\/shop_images\/VermontGloveCompany-12_15ff963c-683d-4d0c-a7d8-197593dd7baf.jpg",
+        "button_link": "button",
+        "button_text": "EXPLORE OUR GLOVE DESIGN",
+        "button_url": "",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "1658324329a53551a6": {
+      "type": "call-to-action",
+      "settings": {
+        "title": "AN EPIC CONCLUDING MESSAGE",
+        "primary_color": "#ffffff",
+        "secondary_color": "#ffffff",
+        "image": "shopify:\/\/shop_images\/VTG-FreeVerseFarm-18.jpg",
+        "video_url": "",
+        "full": true
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main",
+    "16583238777ef57ff8",
+    "16583239292fb88d99",
+    "16583240705801df1d",
+    "165832412906cfa391",
+    "16583241809e61ce3e",
+    "165832425672cbba32",
+    "16583242906eba7624",
+    "1658324329a53551a6"
+  ]
 }

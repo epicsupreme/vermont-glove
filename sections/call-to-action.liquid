@@ -1,6 +1,6 @@
 <div
-   class="relative flex flex-col items-center justify-center h-screen"
-   style="--primary:{{ section.settings.primary_color }};--secondary:{{ section.settings.secondary_color }};">
+   class="relative flex flex-col items-center justify-center  w-full aspect-[var(--ratio)]"
+   style="--primary:{{ section.settings.primary_color }};--secondary:{{ section.settings.secondary_color }};--ratio:{{ section.settings.ratio }}/100;">
    {{ section.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full absolute object-cover z-[-1]' }}
 
    <div
@@ -61,7 +61,14 @@
       "id": "full",
       "label": "Full Width",
       "default": true
-   }
+   },
+   {
+      "type": "number",
+      "id": "ratio",
+      "label": "Ratio",
+      "info": "Choose a ratio for the section, default is 250/100",
+      "default": 250
+    }
    ],
    "blocks": [
          {

@@ -855,6 +855,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: grid;
 }.hidden {
   display: none;
+}.aspect-\[var\(--ratio\)\] {
+  aspect-ratio: var(--ratio);
 }.aspect-\[437\/546\] {
   aspect-ratio: 437 / 546;
 }.aspect-\[192\/52\] {
@@ -869,8 +871,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 10rem;
 }.h-20 {
   height: 5rem;
-}.h-screen {
-  height: 100vh;
 }.h-full {
   height: 100%;
 }.h-auto {
@@ -879,6 +879,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 8rem;
 }.h-\[calc\(100vh-var\(--header-height\)\)\] {
   height: calc(100vh - var(--header-height));
+}.h-screen {
+  height: 100vh;
 }.h-\[calc\(var\(--window-height\)\)\] {
   height: calc(var(--window-height));
 }.h-\[calc\(var\(--window-height\)-var\(--header-height\)\)\] {

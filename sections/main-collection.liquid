@@ -1,65 +1,93 @@
-<div class="aspect-[192/52] relative flex items-center text-[color:var(--color)] mb-8"
-  style="--color:{{ section.settings.color }};">
+<div
+   class="aspect-[192/52] relative flex items-center text-[color:var(--color)] mb-8"
+   style="--color:{{ section.settings.color }};">
 
-  <div class="grid grid-cols-12 leading-tight">
-    <div class="col-span-8 col-start-3">
-      <div class="mb-4 text-4xl uppercase font-display">
-        {{ section.settings.title | newline_to_br }}
+   <div
+      class="grid grid-cols-12 leading-tight">
+      <div
+         class="col-span-8 col-start-3">
+         <div
+            class="mb-4 text-4xl uppercase font-display">
+            {{ section.settings.title | newline_to_br }}
+         </div>
+         <div
+            class="text-lg ">
+            {{ section.settings.text | newline_to_br }}
+         </div>
       </div>
-      <div class="text-lg ">
-        {{ section.settings.text | newline_to_br }}
-      </div>
-    </div>
-  </div>
+   </div>
 
-  {{ section.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full absolute object-cover
+   {{ section.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full absolute object-cover
   left-0 pointer-events-none h-full top-0 -z-10' }}
 
 </div>
 
-<div class="container relative grid grid-cols-12 gap-5 px-4 mx-auto">
+<div
+   class="container relative grid grid-cols-12 gap-5 px-4 mx-auto">
 
-  <div class="sticky col-span-2 pt-12 top-[var(--header-height)] self-start">
-    <div class="mb-2 border-b border-black font-headline">
-      Categories
-    </div>
-    <ul class="text-xs">
+   <div
+      class="sticky col-span-2 pt-12 top-[var(--header-height)] self-start">
+      <div
+         class="mb-2 border-b border-black font-headline">
+         Categories
+      </div>
+      <ul
+         class="text-xs">
+         {% for block in section.blocks %}
+            {%- assign col = collections[block.settings.collection] -%}
+
+            <li
+               class="mb-1">
+               <a
+                  href="#{{ col.handle }}">{{ col.title }}</a>
+            </li>
+         {% endfor %}
+      </ul>
+   </div>
+
+   <div
+      class="col-span-9">
       {% for block in section.blocks %}
-      {%- assign col = collections[block.settings.collection] -%}
+         {%- assign col = collections[block.settings.collection] -%}
+         <div
+            id="{{ col.handle }}" class="mb-8 scroll-m-44 ">
 
-      <li class="mb-1">
-        <a href="#{{ col.handle }}">{{ col.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-
-  <div class="col-span-9">
-    {% for block in section.blocks %}
-    <div id="{{ col.handle }}" class="mb-8 scroll-m-44">
-      {%- assign col = collections[block.settings.collection] -%}
-      <div  class="mb-4 text-2xl font-headline">
-        {{ col.title }}
-      </div>
-      <div class="grid grid-cols-3 gap-5">
-        {% for item in col.products %}
-        <a href="{{ item.url }}" title="{{ item.title }}" class="block">
-          <div class="aspect-[437/542]">
-            {{ item.featured_image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full
-            object-contain' }}
-          </div>
-          <div class="text-center">
-            <div class="text-lg uppercase font-headline">
-              {{ item.title }}
+            <div
+               class="mb-4 text-2xl font-headline">
+               {{ col.title }}
             </div>
-            <div>{{ item.price | money_without_trailing_zeros }}</div>
-          </div>
-        </a>
-        {% endfor %}
-      </div>
-    </div>
-    {% endfor %}
-  </div>
+            <div
+               class="grid grid-cols-3 gap-5">
+               {% for item in col.products %}
+                  <a
+                     href="{{ item.url }}" title="{{ item.title }}" class="block group">
+                     <div
+                        class="aspect-[437/542] relative">
+                        {{ item.featured_image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full
+            object-contain absolute top-0 group-hover:hidden' }}
+                        {{ item.images[1] | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full
+            object-contain hidden group-hover:block absolute top-0' }}
+                     </div>
+                     <div
+                        class="text-center">
+                        <div
+                           class="text-lg uppercase font-headline">
+                           {{ item.title }}
+                        </div>
+
+                        <div>{{ item.price | money_without_trailing_zeros }}</div>
+                        <div>
+                          <div
+                             class="loox-rating"
+                             data-id="{{ item.id }}" data-rating="{{ item.metafields.loox.avg_rating }}" data-raters="{{ item.metafields.loox.num_reviews }}"></div>
+                       </div>
+                     </div>
+                  </a>
+               {% endfor %}
+            </div>
+         </div>
+      {% endfor %}
+   </div>
 
 </div>
 

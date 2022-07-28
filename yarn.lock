@@ -3563,9 +3563,9 @@ supports-preserve-symlinks-flag@^1.0.0:
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
 swiper@^8.1.6:
-  version "8.1.6"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-8.1.6.tgz#740613aa453c85b11223e5bbf7cd3656488b1997"
-  integrity sha512-KqnqIBbIQaIiG/sK2ckcQZbqK38486WlvJe99s2KOCu8jOOQGra6cdShdI9LDyh8DALV/5nwycczFmmNWhxs2A==
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-8.3.2.tgz#55a2637125b0514e58715aa51e040dc070203b47"
+  integrity sha512-8wsC7ORYvVSnLUoxs2+xmfLrDPNjBVQXMCFbOlqtHeON6wtu/blOyySDr8TCBCdse1bdcIbn7m8xJNxVFL8o4Q==
   dependencies:
     dom7 "^4.0.4"
     ssr-window "^4.0.2"

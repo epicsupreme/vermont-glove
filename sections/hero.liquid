@@ -1,86 +1,141 @@
+<script
+   src="{{- 'component-hero.js' | asset_url -}}" defer></script>
 <div
-   class="h-[calc(100vh-var(--header-height))] relative flex items-center px-32 {{ section.settings.location }}"
-   style="--primary:{{ section.settings.primary_color }};--secondary:{{ section.settings.secondary_color }};">
-   {{ section.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full absolute object-cover left-0 pointer-events-none h-full top-0 z-0' }}
-
-   <div class="relative z-10">
+   class="hero-swiper">
+   <div
+      class="swiper ">
       <div
-      class="uppercase font-display text-[color:var(--primary)] text-5xl mb-8">
-      {{ section.settings.title | newline_to_br }}
+         class="swiper-wrapper">
+         {% for block in section.blocks %}
+            <div
+               class="swiper-slide">
+               <div
+                  class="h-[calc(100vh-var(--header-height))] relative flex w-full items-center px-32 {{ block.settings.location }}"
+                  style="--primary:{{ block.settings.primary_color }};--secondary:{{ block.settings.secondary_color }};">
+
+                  {% if block.settings.video_url %}
+                     <video src="{{ block.settings.video_url }}" autoplay playsinline loop muted class="absolute top-0 object-cover left-0 z-0 {{ block.settings.mobile_position }} w-full h-full pointer-events-none"></video>
+                  {% else %}
+
+                  {%- capture imageClasses -%}
+                  w-full absolute object-cover left-0 pointer-events-none h-full top-0 z-0 {{ block.settings.mobile_position }}
+                  {%- endcapture -%}
+
+                  {{ block.settings.image | image_url: width: 2000 | image_tag: width: nil, class: imageClasses }}
+
+                  {% endif %}
+                  <div
+                     class="relative z-10">
+                     <div
+                        class="uppercase font-display text-[color:var(--primary)] text-5xl mb-8">
+                        {{ block.settings.title | newline_to_br }}
+                     </div>
+
+                     {%- render 'button', url: block.settings.button_url, text: block.settings.button_text -%}
+
+                  </div>
+
+               </div>
+            </div>
+         {% endfor %}
+      </div>
    </div>
-
-   {%- render 'button', url: section.settings.button_url, text: section.settings.button_text -%}
-
-   </div>
-
 </div>
 
 {% schema %}
 {
    "name": "Hero Image/Video",
-   "settings": [
-      {
-         "type": "textarea",
-         "id": "title",
-         "label": "Title"
-      },
-      {
-         "type": "text",
-         "id": "button_text",
-         "label": "Button Text"
-      },
-      {
-         "type": "url",
-         "id": "button_url",
-         "label": "Button URL"
-      },
+   "blocks": [
      {
-        "type": "select",
-        "id": "location",
-        "label": "Location",
-        "options": [
-           {
-              "value": "justify-start",
-              "label": "Left"
-           },
-           {
-            "value": "justify-end",
-            "label": "Right"
-         }
-        ]
-     },
-     {
-        "type": "color",
-        "id": "primary_color",
-        "label": "Primary Color",
-        "default": "#452C80"
-     },
-     {
-      "type": "color",
-      "id": "secondary_color",
-      "label": "Secondary Color",
-      "default": "#ffffff"
-   },
-   {
-      "type": "paragraph",
-      "content": "This section will prioritize video. If you want to use an image instead of video remove the video url."
-   },
-   {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image"
-   },
-   {
-      "type": "url",
-      "id": "video_url",
-      "label": "Video URL"
-   }
+       "name": "Hero Slide",
+       "type": "hero_slide",
+       "settings": [
+         {
+           "type": "textarea",
+           "id": "title",
+           "label": "Title"
+         },
+         {
+           "type": "text",
+           "id": "button_text",
+           "label": "Button Text"
+         },
+         {
+           "type": "url",
+           "id": "button_url",
+           "label": "Button URL"
+         },
+         {
+           "type": "select",
+           "id": "location",
+           "label": "Location",
+           "options": [
+             {
+               "value": "justify-start",
+               "label": "Left"
+             },
+             {
+               "value": "justify-end",
+               "label": "Right"
+             }
+           ]
+         },
+         {
+           "type": "color",
+           "id": "primary_color",
+           "label": "Primary Color",
+           "default": "#452C80"
+         },
+         {
+           "type": "color",
+           "id": "secondary_color",
+           "label": "Secondary Color",
+           "default": "#ffffff"
+         },
+         {
+           "type": "paragraph",
+           "content": "This section will prioritize video. If you want to use an image instead of video remove the video url."
+         },
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         },
+         {
+           "type": "url",
+           "id": "video_url",
+           "label": "Video URL"
+         },
+         {
+            "type": "select",
+            "id": "mobile_position",
+            "label": "Mobile Position",
+            "info": "Position of image/video on mobile devices",
+            "options": [
+               {
+                  "value": "object-center",
+                "label": "Center"
+               },
+              {
+                "value": "object-left",
+                "label": "Left"
+              },
+              {
+                "value": "object-right",
+                "label": "Right"
+              }
+            ]
+          }
+       ]
+     }
    ],
    "presets": [
-         {
-            "name": "Hero Image/Video"
-         }
-      ],
-      "templates": ["index"]
-}
+     {
+       "name": "Hero Image/Video"
+     }
+   ],
+   "templates": [
+     "index"
+   ]
+ }
 {% endschema %}

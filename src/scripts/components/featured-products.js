@@ -6,19 +6,15 @@ document.querySelectorAll('.featured-slider')?.forEach((slider) => {
 
   const featuredProductSwiper = new Swiper(slides, {
     loop: true,
-    slidesPerView: 3,
-    spaceBetween: 20,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    breakpoints: {
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      }
+    }
   })
 
-  slider
-    .querySelector('.featured-slider-prev')
-    .addEventListener('click', () => {
-      featuredProductSwiper.slidePrev()
-    })
 
-  slider
-    .querySelector('.featured-slider-next')
-    .addEventListener('click', () => {
-      featuredProductSwiper.slideNext()
-    })
 })

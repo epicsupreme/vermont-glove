@@ -2,15 +2,41 @@
   "sections": {
     "main": {
       "type": "hero",
+      "blocks": {
+        "cab8a4be-4648-4e7f-92fe-25ff65448681": {
+          "type": "hero_slide",
+          "settings": {
+            "title": "DESIGNED FOR THE PROS,\nMADE FOR YOU",
+            "button_text": "Shop Now",
+            "button_url": "shopify:\/\/collections\/all",
+            "location": "justify-start",
+            "primary_color": "#452c80",
+            "secondary_color": "#ffffff",
+            "image": "shopify:\/\/shop_images\/VTG-FreeVerseFarm-18.jpg",
+            "video_url": "",
+            "mobile_position": "object-right"
+          }
+        },
+        "d92e3b7d-5422-4fdb-9191-c163a0802752": {
+          "type": "hero_slide",
+          "settings": {
+            "title": "DESIGNED FOR THE PROS,\nMADE FOR YOU",
+            "button_text": "Shop Now",
+            "button_url": "shopify:\/\/collections\/all",
+            "location": "justify-end",
+            "primary_color": "#452c80",
+            "secondary_color": "#ffffff",
+            "image": "shopify:\/\/shop_images\/VermontGloveCompany-12.jpg",
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e96e2e7198f741939eb1d3ca63eccc39.mp4",
+            "mobile_position": "object-center"
+          }
+        }
+      },
+      "block_order": [
+        "cab8a4be-4648-4e7f-92fe-25ff65448681",
+        "d92e3b7d-5422-4fdb-9191-c163a0802752"
+      ],
       "settings": {
-        "title": "DESIGNED FOR THE PROS,\nMADE FOR YOU",
-        "button_text": "Shop Now",
-        "button_url": "shopify:\/\/collections\/all",
-        "location": "justify-start",
-        "primary_color": "#452c80",
-        "secondary_color": "#ffffff",
-        "image": "shopify:\/\/shop_images\/VTG-FreeVerseFarm-18.jpg",
-        "video_url": ""
       }
     },
     "16539672525d0bb668": {
@@ -75,7 +101,8 @@
         "secondary_color": "#452c80",
         "image": "shopify:\/\/shop_images\/Kurt_and_Karl_web.gif",
         "video_url": "",
-        "full": true
+        "full": true,
+        "ratio": 250
       }
     },
     "1658262751819df341": {
@@ -92,6 +119,7 @@
     },
     "1654839019c2e2d28d": {
       "type": "instagram",
+      "disabled": true,
       "settings": {
         "title": "In Action"
       }

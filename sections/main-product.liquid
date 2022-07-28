@@ -2,12 +2,14 @@
 
 
 <div
-   class="container items-center gap-4 mx-auto md:flex md:px-0">
+   class="container relative gap-4 mx-auto product-container md:flex md:px-0">
 
 
    <div
-      class="relative block product-images md:w-8/12">
-      {%- render 'product-images' -%}
+      class="top-0 block  md:w-8/12">
+      <div class="product-images">
+         {%- render 'product-images' -%}
+      </div>
    </div>
 
    <div

@@ -69,10 +69,12 @@
    <body
       :class="{'overflow-hidden': cartOpen}"
       class="layout-theme template-{{- template.name -}}{%- if template.suffix -%}-{{- template.suffix -}}{%- endif -%}"
-      x-data="{ template: '{{- template.name | handleize -}}', newsletterOpen: false, cartOpen: false, cartCount: {{ cart.item_count }}, navStatus: {%- if template.name == 'index' -%} true {% else %} false {%- endif  -%} }"
+      x-data="{ template: '{{- template.name | handleize -}}', newsletterOpen: false, cartOpen: false, cartCount: {{ cart.item_count }}, navStatus: {%- if template.name == 'index' -%} true {% else %} false {%- endif  -%}, navOpen: false }"
       x-on:updatecartcount.window="cartCount = $event.detail.cartTotal"
       x-on:updatecartstatus.window="cartOpen = $event.detail.cartOpen"
-      x-on:updatenavstatus.window="navStatus = $event.detail.navStatus">
+      x-on:updatenavstatus.window="navStatus = $event.detail.navStatus"
+      style="--header-height:176px;"
+      >
 
 
       {%- section 'header' -%}

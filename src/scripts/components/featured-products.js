@@ -12,9 +12,7 @@ document.querySelectorAll('.featured-slider')?.forEach((slider) => {
       640: {
         slidesPerView: 3,
         spaceBetween: 20,
-      }
-    }
+      },
+    },
   })
-
-
 })

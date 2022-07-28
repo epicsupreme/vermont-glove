@@ -1,5 +1,5 @@
 import Swiper, { Navigation, Pagination } from 'swiper'
-import hcSticky from 'hc-sticky';
+import hcSticky from 'hc-sticky'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -21,9 +21,8 @@ const proudctSwiper = new Swiper(slides, {
 
 var Sticky = new hcSticky('.product-images', {
   stickTo: '.product-container',
-  top: 176
-});
-
+  top: 176,
+})
 
 // slider.querySelector(".featured-slider-prev").addEventListener("click", () => {
 //   featuredProductSwiper.slidePrev();

@@ -26,10 +26,20 @@
                      <div
                         class="h-auto swiper-slide">
                         <a
-                           href="{{ featureProduct.url }}" title="{{ featureProduct.title }}" class="block">
+                           href="{{ featureProduct.url }}" title="{{ featureProduct.title }}" class="block group">
                            <div
-                              class="aspect-[437/546] mb-2">
-                              {{ featureProduct.featured_image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-contain' }}
+                              class="aspect-[437/546] mb-2 relative">
+                              {% if block.settings.image %}
+                                 {{ block.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-contain     absolute group-hover:hidden' }}
+                              {% else %}
+                                 {{ featureProduct.featured_image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full  absolute   group-hover:hidden  object-contain' }}
+                              {% endif %}
+
+                              {% if block.settings.rollover_image %}
+                                 {{ block.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-contain     absolute group-hover:block hidden' }}
+                              {% else %}
+                                 {{ featureProduct.images[1] | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full  absolute   group-hover:block hidden  object-contain' }}
+                              {% endif %}
                            </div>
                            <div
                               class="mb-2 text-xl text-center uppercase font-headline">
@@ -80,6 +90,17 @@
                   "type": "text",
                   "id": "tagline",
                   "label": "Tagline"
+               },
+               {
+                  "type": "image_picker",
+                  "id": "image",
+                  "label": "Image"
+               }
+               ,
+               {
+                  "type": "image_picker",
+                  "id": "rollover_image",
+                  "label": "Rollover Image"
                }
             ]
          }

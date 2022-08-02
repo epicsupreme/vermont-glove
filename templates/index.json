@@ -58,16 +58,25 @@
         },
         "f16e5cd5-aa1f-4f32-9264-8e662ca906de": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "choppers-mitt",
             "tagline": "Versatile winter work glove."
+          }
+        },
+        "2d0f7b4e-1ee7-4b51-a79c-f95dbe0efdec": {
+          "type": "product",
+          "settings": {
+            "product": "the-jefflo-mitt",
+            "tagline": ""
           }
         }
       },
       "block_order": [
         "44361ba1-de0d-40ef-bea1-85a5a2ccf3d0",
         "fd9becec-b574-4b46-a51b-d1655137ab05",
-        "f16e5cd5-aa1f-4f32-9264-8e662ca906de"
+        "f16e5cd5-aa1f-4f32-9264-8e662ca906de",
+        "2d0f7b4e-1ee7-4b51-a79c-f95dbe0efdec"
       ],
       "settings": {
         "title": "FEATURED PRODUCTS"

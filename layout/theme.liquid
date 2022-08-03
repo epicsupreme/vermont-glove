@@ -69,7 +69,7 @@
    <body
       :class="{'overflow-hidden': cartOpen}"
       class="layout-theme template-{{- template.name -}}{%- if template.suffix -%}-{{- template.suffix -}}{%- endif -%}"
-      x-data="{ template: '{{- template.name | handleize -}}', newsletterOpen: false, cartOpen: false, cartCount: {{ cart.item_count }}, navStatus: {%- if template.name == 'index' -%} true {% else %} false {%- endif  -%}, navOpen: false }"
+      x-data="{ template: '{{- template.name | handleize -}}', newsletterOpen: false, cartOpen: false, cartCount: {{ cart.item_count }}, navStatus: {%- if template.name == 'index' -%} true {% else %} false {%- endif  -%}, navOpen: false, sizingGuide: false }"
       x-on:updatecartcount.window="cartCount = $event.detail.cartTotal"
       x-on:updatecartstatus.window="cartOpen = $event.detail.cartOpen"
       x-on:updatenavstatus.window="navStatus = $event.detail.navStatus"
@@ -82,7 +82,7 @@
       {%- render 'cart' -%}
 
       <main
-         class="min-h-[calc(100vh-var(--header-height)-var(--footer-height))] pt-[var(--header-height)]"
+         class="min-h-[calc(100vh-var(--header-height)-var(--footer-height))] pt-[var(--sizes-mobile-header)] lg:pt-[calc(var(--sizes-header)+48px)] "
          id="main-content"
          role="main"
          tabindex="-1">

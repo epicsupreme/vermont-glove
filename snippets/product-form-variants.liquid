@@ -23,8 +23,8 @@
                   {% endif %} class="hidden peer"
                   @change="updateVariant($event.target.value, '{{ option.name | escape }}')"/>
                <span
-                  class="absolute top-0 w-full h-full bg-gray-300 peer-checked:bg-brand group-hover:bg-brand -z-10"></span>
-               <div class="relative peer-checked:text-white">{{ value }}</div>
+                  class="absolute top-0 w-full h-full border-2 border-brand peer-checked:bg-brand group-hover:bg-brand -z-10"></span>
+               <div class="relative peer-checked:text-white group-hover:text-white">{{ value }}</div>
             </label>
 
          {% endfor %}

@@ -1,17 +1,17 @@
 <div
-   class="relative flex flex-col items-center justify-center  w-full aspect-[var(--ratio)]"
+   class="relative flex flex-col items-center justify-center px-4  w-full h-mobile-fullscreen lg:h-auto lg:aspect-[var(--ratio)]"
    style="--primary:{{ section.settings.primary_color }};--secondary:{{ section.settings.secondary_color }};--ratio:{{ section.settings.ratio }}/100;">
    {{ section.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full absolute object-cover z-[-1]' }}
 
    <div
-      class="text-5xl text-center text-[color:var(--primary)] font-display mb-6">
+      class="text-3xl lg:text-5xl  lg:text-center text-[color:var(--primary)] font-display mb-4 lg:mb-6">
       {{ section.settings.title | newline_to_br }}
    </div>
 
    {% if section.blocks.size > 0 %}
-   <div class="flex justify-center">
+   <div class="flex flex-col w-full lg:flex-row lg:justify-center">
       {% for block in section.blocks %}
-         <div class="mx-2">
+         <div class="w-5/6 mb-2 lg:mx-2 lg:w-auto lg:mb-0">
             {%- render 'button', url: block.settings.button_url, text: block.settings.button_text, size: "m" -%}
          </div>
       {% endfor %}

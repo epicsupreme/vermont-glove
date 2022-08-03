@@ -1,0 +1,98 @@
+{{ 'component-press.css' | asset_url | stylesheet_tag }}
+<script
+   src="{{- 'component-press.js' | asset_url -}}" defer></script>
+
+<div
+   class="bg-[color:var(--bg-color)] text-[color:var(--color)] py-8 lg:py-10"
+   style="--bg-color:{{ section.settings.bg_color }};--color:{{ section.settings.color }};">
+
+   <div
+      class="mb-6 text-4xl text-center uppercase font-headline">
+      {{ section.settings.title }}
+   </div>
+
+   <div
+      class="lg:container lg:mx-auto">
+      <div
+         class="w-full ">
+         <div
+            class="press-swiper swiper">
+            <div
+               class="swiper-wrapper">
+               {% for block in section.blocks %}
+                  <div
+                     class="swiper-slide">
+                     <div
+                        class="w-[40vw] lg:w-[14vw]">
+                        {% if block.settings.url %}
+                           <a
+                              href="{{ block.settings.url }}" target="_blank"
+                              class="w-full">
+                              {{ block.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full' }}
+                           </a>
+
+                        {% else %}
+                           {{ block.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full' }}
+                        {% endif %}
+                     </div>
+                  </div>
+               {% endfor %}
+            </div>
+         </div>
+      </div>
+   </div>
+
+</div>
+
+
+{% schema %}
+{
+   "name": "Press",
+   "settings": [
+     {
+       "type": "text",
+       "id": "title",
+       "label": "Title",
+       "default": "As Seen In"
+     },
+     {
+       "type": "color",
+       "id": "color",
+       "label": "Color",
+       "default": "#452C80"
+     },
+     {
+       "type": "color",
+       "id": "bg_color",
+       "label": "Background Color",
+       "default": "#D9D9D9"
+     }
+   ],
+   "blocks": [
+     {
+       "name": "Press Item",
+       "type": "press_item",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         },
+         {
+           "type": "url",
+           "id": "url",
+           "label": "URL"
+         }
+       ]
+     }
+   ],
+   "presets": [
+     {
+       "name": "Press"
+     }
+   ],
+   "templates": [
+     "index"
+   ]
+ }
+{% endschema %}

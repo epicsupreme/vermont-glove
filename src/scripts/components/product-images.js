@@ -10,18 +10,24 @@ const slides = document.querySelector('#product-images .swiper')
 const proudctSwiper = new Swiper(slides, {
   modules: [Navigation, Pagination],
   loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
   },
 })
 
 var Sticky = new hcSticky('.product-images', {
   stickTo: '.product-container',
   top: 176,
+  responsive: {
+    768: {
+      disable: true
+    }
+  }
 })
 
 // slider.querySelector(".featured-slider-prev").addEventListener("click", () => {

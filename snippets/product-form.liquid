@@ -21,16 +21,16 @@
    {%- endfor -%}
    ],
          "addOnProducts": [
-   {%- for block in section.blocks -%}
-      {%- if block.type == "add_on_product" -%}
-         {%- assign addOnProduct = all_products[block.settings.product] -%}
+    {% for addon in product.metafields.vermont.add_on_products.value %}
+
+
          {
                                        "addOnProduct" :
-         {{ addOnProduct | json }}
+         {{ addon | json }}
          }
          {%- unless forloop.last -%},
          {%- endunless -%}
-      {%- endif -%}
+
    {%- endfor -%}
    ]
          }
@@ -76,7 +76,7 @@
 
    <div
       class="mb-4 text-xl">
-      Our flagship goat leather work glove.
+      {{ product.metafields.vermont.tagline }}
    </div>
 
    <div
@@ -105,7 +105,7 @@
       <div
          x-collapse
          x-show="expanded">
-         {{ product.description }}
+         {{ product.metafields.vermont.tech_specs }}
       </div>
    </div>
 
@@ -136,8 +136,8 @@
       x-text="button">Add to Cart</button>
 
    <button
+   @click.prevent="sizingGuide = true"
       class="w-full max-w-sm py-3 text-lg text-black uppercase border border-brand hover:text-white hover:bg-brand font-headline">Size Guide</button>
-
 
    <template
       x-if="addOnProducts.length > 0">
@@ -156,6 +156,7 @@
                      class="w-3/4 py-3 text-lg uppercase border hover:border-brand hover:text-white hover:bg-brand font-headline"
                      x-text="addOn.addOnProduct.title"></button>
                   <div>+$<span
+                     :class="checkAddOns(addOn.addOnProduct.variants[0].id) ? 'font-bold' : ''"
                         x-text="addOn.addOnProduct.variants[0].price / 100"></span>
                   </div>
                </div>

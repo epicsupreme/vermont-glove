@@ -1,11 +1,9 @@
-<div class="container py-20 mx-auto">
+<div class="container py-10 mx-auto md:py-20">
    <div class="mb-1 text-4xl text-center uppercase font-display">
       {{ section.settings.headline }}
    </div>
-   <div class="mb-4 text-3xl text-center uppercase font-headline">
-      {{ section.settings.subhead }}
-   </div>
-   <div class="max-w-4xl mx-auto">
+   <div class="mb-4 text-3xl text-center uppercase font-headline empty:hidden">{{ section.settings.subhead }}</div>
+   <div class="max-w-4xl mx-auto empty:hidden">
       <div class="mb-2 prose max-w-none">
          {{ section.settings.text }}
       </div>
@@ -48,6 +46,18 @@
        "type": "url",
        "id": "link",
        "label": "Link"
+     },
+     {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+     },
+     {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
      }
    ],
    "presets": [

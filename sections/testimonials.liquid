@@ -1,0 +1,95 @@
+{{ 'component-testimonials.css' | asset_url | stylesheet_tag }}
+<script src="{{- 'component-testimonials.js' | asset_url -}}" defer></script>
+<div class="container mx-auto">
+   <div class="testimonial-swiper swiper" style="--swiper-theme-color:#8C8C8C;">
+      <div class="swiper-wrapper">
+         {% for block in section.blocks %}
+            <div class="swiper-slide" style="--primary:{{ block.settings.primary_color }};--secondary:{{ block.settings.secondary_color }};">
+               <div class="md:grid md:grid-cols-2 md:gap-5">
+                  <div class="aspect-[4/3] mb-4 md:aspect-[6/6]">
+                     {{ block.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-cover' }}
+                  </div>
+                  <div class="px-4 text-[color:var(--primary)] lg:pt-16">
+                     <div class="flex gap-2 mb-4 lg:mb-16">
+                        {% for i in (1..5) %}
+                           <div class="w-7 text-secondary">
+                              {%- render 'svg-star' -%}
+                           </div>
+                        {% endfor %}
+                     </div>
+
+                     <div class="mb-4 text-3xl leading-none uppercase lg:text-5xl font-headline">
+                        {{ block.settings.text }}
+                     </div>
+                     <div class="mb-4">
+                        -{{ block.settings.reviewer  }}
+                     </div>
+                     {%- render 'button', url: block.settings.button_url, text: block.settings.button_text, size: "m" -%}
+                  </div>
+               </div>
+            </div>
+         {% endfor %}
+      </div>
+
+
+   </div>
+</div>
+
+{% schema %}
+{
+   "name": "Testimonials",
+   "blocks": [
+     {
+       "name": "Testimonial",
+       "type": "testimonial",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         },
+         {
+           "type": "textarea",
+           "id": "text",
+           "label": "Text"
+         },
+         {
+           "type": "text",
+           "id": "reviewer",
+           "label": "Reviewer"
+         },
+         {
+           "type": "text",
+           "id": "button_text",
+           "label": "Button Text"
+         },
+         {
+           "type": "url",
+           "id": "button_link",
+           "label": "Button Link"
+         },
+         {
+           "type": "color",
+           "id": "primary_color",
+           "label": "Primary Color",
+           "default": "#452C80"
+         },
+         {
+           "type": "color",
+           "id": "secondary_color",
+           "label": "Secondary Color",
+           "default": "#ffffff"
+         }
+       ]
+     }
+   ],
+   "presets": [
+     {
+       "name": "Testimonials"
+     }
+   ],
+   "templates": [
+     "index"
+   ]
+ }
+{% endschema %}

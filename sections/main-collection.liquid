@@ -1,17 +1,17 @@
 <div
-   class="aspect-[192/52] relative flex items-center text-[color:var(--color)] mb-8"
+   class="lg:aspect-[192/52] relative flex items-center text-[color:var(--color)] mb-4 lg:mb-8"
    style="--color:{{ section.settings.color }};">
 
    <div
-      class="grid grid-cols-12 leading-tight">
+      class="grid grid-cols-12 pt-20 pb-10 leading-tight">
       <div
-         class="col-span-8 col-start-3">
+         class="col-span-12 px-4 lg:col-start-3 lg:col-span-8">
          <div
-            class="mb-4 text-4xl uppercase font-display">
+            class="mb-4 text-3xl uppercase md:text-4xl font-display">
             {{ section.settings.title | newline_to_br }}
          </div>
          <div
-            class="text-lg ">
+            class="md:text-lg ">
             {{ section.settings.text | newline_to_br }}
          </div>
       </div>
@@ -23,24 +23,41 @@
 </div>
 
 <div
-   class="container relative grid grid-cols-12 gap-5 px-4 mx-auto">
+   class="container relative gap-5 px-4 mx-auto lg:grid lg:grid-cols-12">
 
    <div
-      class="sticky col-span-2 pt-12 top-[var(--header-height)] self-start">
+      class="lg:sticky hidden col-span-2 lg:pt-12 lg:top-[var(--header-height)] lg:self-start">
       <div
-         class="mb-2 border-b border-black font-headline">
+         class="hidden mb-2 border-b border-black lg:block font-headline">
          Categories
       </div>
+
+
+   </div>
+
+   <div
+      class="sticky z-10 self-start lg:hidden top-[calc(var(--sizes-mobile-header)+36px)] bg-white"
+      x-data="{open: false}">
+      <button
+         class="flex items-center gap-2" @click="open = !open">
+         <div
+            class="w-4 text-black">
+            {%- render 'svg-filter' -%}
+         </div>
+         <div
+            class="text-sm uppercase">
+            Filter
+         </div>
+      </button>
       <ul
-         class="text-xs">
+         :class="open ? 'block' : 'hidden'"
+         class="absolute pt-2 text-xs bg-white group top-full">
          {% for block in section.blocks %}
             {%- assign col = collections[block.settings.collection] -%}
 
-            <li
-               class="mb-1">
-               <a
-                  href="#{{ col.handle }}">{{ col.title }}</a>
-            </li>
+            <a
+               class="block px-2 py-2 border-b border-black first:border-t"
+               href="#{{ col.handle }}" @click="open = false">{{ col.title }}</a>
          {% endfor %}
       </ul>
    </div>
@@ -57,16 +74,27 @@
                {{ col.title }}
             </div>
             <div
-               class="grid grid-cols-3 gap-5">
+               class="grid grid-cols-2 gap-5 lg:grid-cols-3">
                {% for item in col.products %}
                   <a
                      href="{{ item.url }}" title="{{ item.title }}" class="block group">
                      <div
                         class="aspect-[437/542] relative">
-                        {{ item.featured_image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full
-            object-contain absolute top-0 group-hover:hidden' }}
-                        {{ item.images[1] | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full
-            object-contain hidden group-hover:block absolute top-0' }}
+                        {% if item.images[1] %}
+
+                           {{ item.featured_image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full
+                        object-contain absolute top-0 group-hover:hidden' }}
+
+                           {{ item.images[1] | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full
+                        object-contain hidden group-hover:block absolute top-0' }}
+
+                        {% else %}
+
+                           {{ item.featured_image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full
+                        object-contain absolute top-0 ' }}
+
+                        {% endif %}
+
                      </div>
                      <div
                         class="text-center">
@@ -77,10 +105,10 @@
 
                         <div>{{ item.price | money_without_trailing_zeros }}</div>
                         <div>
-                          <div
-                             class="loox-rating"
-                             data-id="{{ item.id }}" data-rating="{{ item.metafields.loox.avg_rating }}" data-raters="{{ item.metafields.loox.num_reviews }}"></div>
-                       </div>
+                           <div
+                              class="loox-rating"
+                              data-id="{{ item.id }}" data-rating="{{ item.metafields.loox.avg_rating }}" data-raters="{{ item.metafields.loox.num_reviews }}"></div>
+                        </div>
                      </div>
                   </a>
                {% endfor %}

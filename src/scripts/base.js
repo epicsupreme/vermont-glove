@@ -3,7 +3,7 @@ import collapse from '@alpinejs/collapse'
 
 import product from './utils/product'
 
-// import './utils/header-height'
+import './utils/header-height'
 import './utils/cart'
 // import './animations/header'
 

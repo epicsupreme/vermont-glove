@@ -1,5 +1,5 @@
-<script
-   src="{{- 'component-hero.js' | asset_url -}}" defer></script>
+{{ 'component-hero.css' | asset_url | stylesheet_tag }}
+<script src="{{- 'component-hero.js' | asset_url -}}" defer></script>
 <div
    class="hero-swiper">
    <div
@@ -10,7 +10,7 @@
             <div
                class="swiper-slide">
                <div
-                  class="h-[calc(100vh-var(--header-height))] relative flex w-full items-center px-32 {{ block.settings.location }}"
+                  class="h-[calc(100vh-var(--sizes-mobile-header))] md:h-[calc(100vh-var(--sizes-header))] relative flex w-full items-end md:items-center px-4 md:px-32 pb-20 {{ block.settings.location }}"
                   style="--primary:{{ block.settings.primary_color }};--secondary:{{ block.settings.secondary_color }};">
 
                   {% if block.settings.video_url %}
@@ -27,11 +27,11 @@
                   <div
                      class="relative z-10">
                      <div
-                        class="uppercase font-display text-[color:var(--primary)] text-5xl mb-8">
+                        class="uppercase font-display text-[color:var(--primary)] leading-none text-3xl lg:text-5xl mb-4 md:mb-8">
                         {{ block.settings.title | newline_to_br }}
                      </div>
 
-                     {%- render 'button', url: block.settings.button_url, text: block.settings.button_text -%}
+                     {%- render 'button', url: block.settings.button_url, text: block.settings.button_text, size: 'm' -%}
 
                   </div>
 

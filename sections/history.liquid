@@ -1,25 +1,23 @@
 <div
-   class="container py-20 mx-auto"
+   class="container px-4 py-10 mx-auto md:py-20 md:px-0"
    style="--primary:{{ section.settings.primary_color }};--secondary:{{ section.settings.secondary_color }};">
 
    <div
-      class=" flex items-center justify-between -ml-4  {% if section.settings.flip %}flex-row-reverse{% endif %}">
+      class=" md:flex items-center justify-between md:-ml-4  {% if section.settings.flip %}flex-row-reverse{% endif %}">
       <div
-         class="self-stretch w-1/2 px-4">
+         class="self-stretch w-full md:px-4 md:w-1/2">
          {%- render 'image', image: section.settings.image, classes: 'w-full h-full object-cover' -%}
       </div>
       <div
-         class="w-1/2 px-4">
+         class="w-full md:px-4 md:w-1/2">
          <div
             class="text-4xl uppercase font-display text-[color:var(--primary)] mb-1">
             {{ section.settings.title | newline_to_br }}
          </div>
          <div
-            class="text-3xl uppercase font-headline text-[color:var(--primary)] mb-3">
-            {{ section.settings.subhead | newline_to_br }}
-         </div>
+            class="text-3xl uppercase font-headline text-[color:var(--primary)] mb-2 md:mb-3 empty:hidden">{{ section.settings.subhead | newline_to_br }}</div>
          <div
-            class="mb-2 prose max-w-none">
+            class="mb-2 text-sm prose md:text-base max-w-none">
             {{ section.settings.text }}
          </div>
          {% if section.settings.button_link == "button" %}

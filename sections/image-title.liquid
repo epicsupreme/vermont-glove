@@ -1,10 +1,10 @@
-<div class="container mx-auto flex flex-col items-center justify-between {% if section.settings.flip %}md:flex-row-reverse{% else %}md:flex-row{% endif %}" style="--primary:{{ section.settings.primary_color }};--secondary:{{ section.settings.secondary_color }};">
+<div class="container mx-auto flex flex-col items-center justify-between py-20 {% if section.settings.flip %}md:flex-row-reverse{% else %}md:flex-row{% endif %}" style="--primary:{{ section.settings.primary_color }};--secondary:{{ section.settings.secondary_color }};">
 
-   <div class="w-full px-4 py-20 md:w-1/2">
+   <div class="w-full px-4 md:w-1/2">
       {%- render 'image', image: section.settings.image, classes: 'w-full  ' -%}
    </div>
    <div class="w-full px-4 md:w-1/2">
-      <div class="text-5xl uppercase font-display text-[color:var(--primary)] mb-5">
+      <div class="text-4xl lg:text-5xl uppercase font-display text-[color:var(--primary)] mb-5">
          {{ section.settings.title | newline_to_br}}
       </div>
 

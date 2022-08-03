@@ -3,64 +3,66 @@
    src="{{- 'component-featured-products.js' | asset_url -}}" defer></script>
 
 <div
-   class="container mx-auto my-20 ">
+   class="container flex items-center py-6 mx-auto place-content-center lg:my-20 h-mobile-fullscreen lg:h-auto lg:block ">
 
-   <h2
-      class="mb-8 text-3xl text-center uppercase font-headline">
-      {{ section.settings.title }}
-   </h2>
-
-   <div
-      class="flex items-center featured-slider">
+   <div class="relative w-full">
+      <h2
+         class="mb-8 text-3xl text-center uppercase font-headline">
+         {{ section.settings.title }}
+      </h2>
 
       <div
-         class="flex-1 min-w-0 ">
-         <div
-            class="relative min-w-0 px-10 overflow-hidden ">
-            <div
-               class=" swiper">
-               <div
-                  class="swiper-wrapper">
-                  {% for block in section.blocks %}
-                     {%- assign featureProduct = all_products[block.settings.product] -%}
-                     <div
-                        class="h-auto swiper-slide">
-                        <a
-                           href="{{ featureProduct.url }}" title="{{ featureProduct.title }}" class="block group">
-                           <div
-                              class="aspect-[437/546] mb-2 relative">
-                              {% if block.settings.image %}
-                                 {{ block.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-contain     absolute group-hover:hidden' }}
-                              {% else %}
-                                 {{ featureProduct.featured_image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full  absolute   group-hover:hidden  object-contain' }}
-                              {% endif %}
+         class="flex items-center featured-slider">
 
-                              {% if block.settings.rollover_image %}
-                                 {{ block.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-contain     absolute group-hover:block hidden' }}
-                              {% else %}
-                                 {{ featureProduct.images[1] | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full  absolute   group-hover:block hidden  object-contain' }}
-                              {% endif %}
-                           </div>
-                           <div
-                              class="mb-2 text-xl text-center uppercase font-headline">
-                              {{ featureProduct.title }}
-                           </div>
-                           <div
-                              class="mb-2 text-center">
-                              {{ featureProduct.price | money_with_currency }}
-                           </div>
-                           <div
-                              class="text-sm text-center">
-                              {{ block.settings.tagline }}
-                           </div>
-                        </a>
-                     </div>
-                  {% endfor %}
+         <div
+            class="flex-1 min-w-0 ">
+            <div
+               class="relative min-w-0 px-10 overflow-hidden ">
+               <div
+                  class=" swiper">
+                  <div
+                     class="swiper-wrapper">
+                     {% for block in section.blocks %}
+                        {%- assign featureProduct = all_products[block.settings.product] -%}
+                        <div
+                           class="h-auto swiper-slide">
+                           <a
+                              href="{{ featureProduct.url }}" title="{{ featureProduct.title }}" class="block group">
+                              <div
+                                 class="aspect-[437/546] mb-2 relative">
+                                 {% if block.settings.image %}
+                                    {{ block.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-contain     absolute group-hover:hidden' }}
+                                 {% else %}
+                                    {{ featureProduct.featured_image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full  absolute   group-hover:hidden  object-contain' }}
+                                 {% endif %}
+
+                                 {% if block.settings.rollover_image %}
+                                    {{ block.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-contain     absolute group-hover:block hidden' }}
+                                 {% else %}
+                                    {{ featureProduct.images[1] | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full  absolute   group-hover:block hidden  object-contain' }}
+                                 {% endif %}
+                              </div>
+                              <div
+                                 class="mb-2 text-xl text-center uppercase font-headline">
+                                 {{ featureProduct.title }}
+                              </div>
+                              <div
+                                 class="mb-2 text-center">
+                                 {{ featureProduct.price | money_with_currency }}
+                              </div>
+                              <div
+                                 class="text-sm text-center">
+                                 {{ block.settings.tagline }}
+                              </div>
+                           </a>
+                        </div>
+                     {% endfor %}
+                  </div>
                </div>
             </div>
          </div>
-      </div>
 
+      </div>
    </div>
 
 </div>

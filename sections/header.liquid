@@ -1,12 +1,12 @@
 <header
    class="fixed z-40 w-full"
    id="header"
-   style="--header-color:{{ section.settings.text_coloe }};--header-bg:{{ section.settings.bg_color }}">
+   style="--header-color:{{ section.settings.text_color }};--header-bg:{{ section.settings.bg_color }}">
 
    {%- render 'header-top-bar' -%}
 
    <div
-      class="flex items-center justify-between px-6 transition-all duration-500 bg-white h-28 md:h-32 text-brand header-container">
+      class="flex items-center justify-between px-6 transition-all duration-500 bg-white h-[var(--sizes-mobile-header)] md:h-[var(--sizes-header)] text-brand header-container">
       <div
          class="w-1/6 md:hidden">
          <button
@@ -71,6 +71,15 @@
    </div>
 </header>
 
+<div :class="navOpen ? 'fixed' : 'hidden'" class=" w-full bottom-0 h-[calc(100vh_-_var(--sizes-mobile-header)_-_36px)] bg-brand text-white z-50 p-24">
+   <a
+      href="/" title="Home" class="block text-5xl uppercase font-headline">Home</a>
+   {% for link in linklists.desktop_left_nav.links %}
+   <a
+      href="{{ link.url }}" title="{{ link.title }}" class="block text-5xl uppercase font-headline">{{ link.title }}</a>
+{% endfor %}
+</div>
+
 {% schema %}
 
 {
@@ -89,7 +98,7 @@
    },
    {
       "type": "color",
-      "id": "text_coloe",
+      "id": "text_color",
       "label": "Text Color",
       "default": "#ffffff"
    },

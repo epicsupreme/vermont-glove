@@ -43,7 +43,7 @@ function cartToAlpine(state) {
   return {
     total: state.items_subtotal_price / 100,
     products: products,
-    note: state.note
+    note: state.note,
   }
 }
 
@@ -72,6 +72,6 @@ export function cartUpdateAll(state) {
   )
 }
 
-window.addEventListener("cartUpdate", (e) => {
+window.addEventListener('cartUpdate', (e) => {
   cart.updateNote(e.target.value)
 })

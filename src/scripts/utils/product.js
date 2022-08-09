@@ -17,7 +17,6 @@ export default (product) => {
         addOnPrice = addOnPrice + e.price
       })
     }
-    console.log(addOnPrice)
 
     return {
       actualPrice: '$' + (variant.price + addOnPrice) / 100,

@@ -1,36 +1,75 @@
 {% unless product.has_only_default_variant %}
-{% for option in product.options_with_values %}
-<div
-   class="flex">
+   {% if scroll %}
+      {% for option in product.options_with_values %}
+         <div
+            class="flex">
 
-   <div>
-      <div
-      class="mb-1">
-      {{ option.name }}
-   </div>
-      <div
-         class="flex gap-2">
+            <div>
+               <div
+                  class="mb-1">
+                  {{ option.name }}
+               </div>
+               <div
+                  class="flex gap-2">
 
-         {% for value in option.values %}
-            <label
-               class="relative flex items-center justify-center w-12 h-12 text-sm text-black cursor-pointer group font-headline product-label"
-               for="option_{{  option.name | handleize }}_{{ value | handleize }}">
-               <input
-                  type="radio"
-                  id="option_{{  option.name | handleize }}_{{ value | handleize }}"
-                  name="options[{{ option.name | escape }}]"
-                  value="{{ value | escape }}" {% if forloop.first %} checked
-                  {% endif %} class="hidden peer"
-                  @change="updateVariant($event.target.value, '{{ option.name | escape }}')"/>
-               <span
-                  class="absolute top-0 w-full h-full border-2 border-brand peer-checked:bg-brand group-hover:bg-brand -z-10"></span>
-               <div class="relative peer-checked:text-white group-hover:text-white">{{ value }}</div>
-            </label>
+                  {% for value in option.values %}
+                     <label
+                        class="relative flex items-center justify-center w-12 h-12 text-sm text-black cursor-pointer group font-headline product-label"
+                        for="option_{{  option.name | handleize }}_{{ value | handleize }}_scroll">
+                        <input
+                           type="radio"
+                           id="option_{{  option.name | handleize }}_{{ value | handleize }}_scroll"
+                           name="options[{{ option.name | escape }}]"
+                           value="{{ value | escape }}" {% if forloop.first %} checked
+                           {% endif %} class="hidden peer"
+                           @change="updateVariant($event.target.value, '{{ option.name | escape }}')"/>
+                        <span
+                           class="absolute top-0 w-full h-full border-2 border-brand peer-checked:bg-brand group-hover:bg-brand -z-10"></span>
+                        <div
+                           class="relative peer-checked:text-white group-hover:text-white">{{ value }}</div>
+                     </label>
 
-         {% endfor %}
-      </div>
-   </div>
-</div>
+                  {% endfor %}
+               </div>
+            </div>
+         </div>
 
-{% endfor %}
+      {% endfor %}
+   {% else %}
+      {% for option in product.options_with_values %}
+         <div
+            class="flex">
+
+            <div>
+               <div
+                  class="mb-1">
+                  {{ option.name }}
+               </div>
+               <div
+                  class="flex gap-2">
+
+                  {% for value in option.values %}
+                     <label
+                        class="relative flex items-center justify-center w-12 h-12 text-sm text-black cursor-pointer group font-headline product-label"
+                        for="option_{{  option.name | handleize }}_{{ value | handleize }}">
+                        <input
+                           type="radio"
+                           id="option_{{  option.name | handleize }}_{{ value | handleize }}"
+                           name="options[{{ option.name | escape }}]"
+                           value="{{ value | escape }}" {% if forloop.first %} checked
+                           {% endif %} class="hidden peer"
+                           @change="updateVariant($event.target.value, '{{ option.name | escape }}')"/>
+                        <span
+                           class="absolute top-0 w-full h-full border-2 border-brand peer-checked:bg-brand group-hover:bg-brand -z-10"></span>
+                        <div
+                           class="relative peer-checked:text-white group-hover:text-white">{{ value }}</div>
+                     </label>
+
+                  {% endfor %}
+               </div>
+            </div>
+         </div>
+
+      {% endfor %}
+   {% endif %}
 {% endunless %}

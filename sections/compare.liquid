@@ -1,0 +1,149 @@
+{{ 'component-compare.css' | asset_url | stylesheet_tag }}
+<script
+   src="{{- 'component-compare.js' | asset_url -}}" defer></script>
+<div
+   class="container mx-auto my-10 md:pl-0 lg:my-20">
+   <div class="mb-6 text-3xl text-center uppercase lg:text-4xl font-headline">
+      {{ section.settings.title }}
+   </div>
+   <div
+      class="compare swiper">
+      <div
+         class="swiper-wrapper">
+
+         {% for block in section.blocks %}
+            {%- assign compareItem = all_products[block.settings.product] -%}
+            <div
+               class="swiper-slide">
+               <div
+                  class="mb-1 aspect-square">
+                  {% if block.settings.image %}
+                     {{ block.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-contain' }}
+                  {% else %}
+                     {{ compareItem.featured_image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-contain' }}
+                  {% endif %}
+               </div>
+               <div class="mb-4 text-3xl uppercase font-headline">
+                  {{ compareItem.title }}
+               </div>
+               <div class="mb-4 lg:text-lg">
+                  {{ block.settings.text }}
+               </div>
+               {% if block.settings.glove_text %}
+                  <div class="flex mb-2">
+                     <div class="w-16 font-headline">
+                        Glove:
+                     </div>
+                     <div>
+                        {{ block.settings.glove_text }}
+                     </div>
+                  </div>
+               {% endif %}
+
+               {% if block.settings.cuff_text %}
+                  <div class="flex mb-2 text-sm">
+                     <div class="w-16 font-headline">
+                        Cuff:
+                     </div>
+                     <div>
+                        {{ block.settings.cuff_text }}
+                     </div>
+                  </div>
+               {% endif %}
+
+               {% if block.settings.liner_text %}
+                  <div class="flex mb-2 text-sm">
+                     <div class="w-16 font-headline">
+                        Liner:
+                     </div>
+                     <div>
+                        {{ block.settings.liner_text }}
+                     </div>
+                  </div>
+               {% endif %}
+
+               <div class="flex mb-4 text-sm">
+                  <div class="w-16 font-headline">
+                     Price:
+                  </div>
+                  <div>
+                     {{ compareItem.price | money_without_trailing_zeros }}
+                  </div>
+               </div>
+
+               <a href="{{ compareItem.url }}" class="block py-3 text-xl text-center text-black uppercase bg-tertiary font-headline ">
+                  {{ section.settings.button_text }}
+               </a>
+
+            </div>
+         {% endfor %}
+
+      </div>
+   </div>
+</div>
+
+{% schema %}
+{
+   "name": "Compare Gloves",
+   "settings": [
+      {
+         "type": "text",
+         "id": "title",
+         "label": "Title",
+         "default": "Compare Gloves"
+      },
+      {
+         "type": "text",
+         "id": "button_text",
+         "label": "Button Text",
+         "default": "Buy Now"
+      }
+   ],
+   "blocks": [
+         {
+            "name": "Product",
+            "type": "product",
+            "settings": [
+               {
+                  "type": "product",
+                  "id": "product",
+                  "label": "Product"
+               },
+               {
+                  "type": "image_picker",
+                  "id": "image",
+                  "label": "Image"
+               },
+               {
+                  "type": "textarea",
+                  "id": "text",
+                  "label": "Text"
+               },
+               {
+                  "type": "text",
+                  "id": "glove_text",
+                  "label": "Glove Text",
+                  "default": "100% Goat Leather"
+               },
+               {
+                  "type": "text",
+                  "id": "cuff_text",
+                  "label": "Cuff Text",
+                  "default": "100% Goat Leather"
+               },
+               {
+                  "type": "text",
+                  "id": "liner_text",
+                  "label": "Liner Text"
+               }
+            ]
+         }
+      ],
+      "presets": [
+         {
+            "name": "Compare Gloves"
+         }
+      ],
+      "templates": ["index", "product"]
+}
+{% endschema %}

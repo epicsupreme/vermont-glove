@@ -1,5 +1,6 @@
 {{ 'component-hero.css' | asset_url | stylesheet_tag }}
-<script src="{{- 'component-hero.js' | asset_url -}}" defer></script>
+<script
+   src="{{- 'component-hero.js' | asset_url -}}" defer></script>
 <div
    class="hero-swiper">
    <div
@@ -14,16 +15,24 @@
                   style="--primary:{{ block.settings.primary_color }};--secondary:{{ block.settings.secondary_color }};">
 
                   {% if block.settings.video_url %}
-                     <video src="{{ block.settings.video_url }}" autoplay playsinline loop muted class="absolute top-0 object-cover left-0 z-0 {{ block.settings.mobile_position }} w-full h-full pointer-events-none"></video>
+                     <video
+                        src="{{ block.settings.video_url }}" autoplay
+                        playsinline
+                        loop
+                        muted
+                        class="absolute top-0 object-cover left-0 z-0 {{ block.settings.mobile_position }} w-full h-full pointer-events-none"></video>
                   {% else %}
 
-                  {%- capture imageClasses -%}
-                  w-full absolute object-cover left-0 pointer-events-none h-full top-0 z-0 {{ block.settings.mobile_position }}
-                  {%- endcapture -%}
+                     {%- capture imageClasses -%}
+                        w-full absolute object-cover left-0 pointer-events-none h-full top-0 z-0
+                        {{ block.settings.mobile_position }}
+                     {%- endcapture -%}
 
-                  {{ block.settings.image | image_url: width: 2000 | image_tag: width: nil, class: imageClasses }}
+                     {{ block.settings.image | image_url: width: 2000 | image_tag: width: nil, class: imageClasses }}
 
                   {% endif %}
+
+
                   <div
                      class="relative z-10">
                      <div

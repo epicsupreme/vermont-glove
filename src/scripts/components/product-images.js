@@ -14,7 +14,6 @@ const proudctSwiper = new Swiper(slides, {
   pagination: {
     el: '.swiper-pagination',
   },
-
 })
 
 var Sticky = new hcSticky('.product-images', {

@@ -25,9 +25,9 @@ var Sticky = new hcSticky('.product-images', {
   top: 176,
   responsive: {
     768: {
-      disable: true
-    }
-  }
+      disable: true,
+    },
+  },
 })
 
 // slider.querySelector(".featured-slider-prev").addEventListener("click", () => {

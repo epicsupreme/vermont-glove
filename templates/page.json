@@ -19,13 +19,13 @@
       "type": "history",
       "settings": {
         "title": "",
-        "subhead": "QUALITY ABOVE ALL",
-        "text": "<p>Here at Vermont Glove, we are stubborn as hell and committed to functional design, the highest quality materials and the most effective methods.We value social and environmental sustainability as much as we value hard work, and are madly committed to using natural, renewable materials. We aspire to use our business as a platform to advocate for environmental stewardship, economic equity and social responsibility. On top of all that, we make damn good gloves.<\/p>",
-        "image": "shopify:\/\/shop_images\/VermontGloveCompany-12_15ff963c-683d-4d0c-a7d8-197593dd7baf.jpg",
+        "subhead": "DESIGNED FOR THE PROS",
+        "text": "<p>Here at Vermont Glove, we are stubborn as hell and committed to functional design, the highest quality materials and the most effective methods. We value social and environmental sustainability as much as we value hard work, and are madly committed to using natural, renewable materials. We aspire to use our business as a platform to advocate for environmental stewardship, economic equity and social responsibility. On top of all that, we make damn good gloves.<\/p>",
+        "image": "shopify:\/\/shop_images\/Vermont_Glove_Chainsaw.jpg",
         "button_link": "link",
         "button_text": "",
         "button_url": "",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
       }
@@ -35,12 +35,12 @@
       "settings": {
         "title": "",
         "subhead": "102 YEARS AND COUNTING",
-        "text": "<p>More than 100 years, to be precise. Been making goat leather work gloves for the most rugged 10 finger tasks imaginable.We survived world wars, trade wars, trends and yadda yaddas. Here we are, still in the old milk factory right here in Randolph.<\/p>",
-        "image": "shopify:\/\/shop_images\/VermontGloveCompany-12_15ff963c-683d-4d0c-a7d8-197593dd7baf.jpg",
+        "text": "<p>We've been making goat leather work gloves for the most rugged 10 finger tasks imaginable. We have survived world wars, trade wars, trends and disruptive technologies. <\/p>",
+        "image": "shopify:\/\/shop_images\/VTG_Factory_1961.gif",
         "button_link": "button",
         "button_text": "LEARN MORE ABOUT OUR HISTORY",
         "button_url": "",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": true
       }
@@ -55,7 +55,7 @@
         "button_link": "button",
         "button_text": "EXPLORE OUR PROCESS",
         "button_url": "",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
       }
@@ -66,11 +66,11 @@
         "title": "",
         "subhead": "SUSTAINABILITY",
         "text": "<p>Considering our environmental and social impact are not trends or checkboxes for us, they are the foundation on which our company is built.<\/p>",
-        "image": "shopify:\/\/shop_images\/VermontGloveCompany-12_15ff963c-683d-4d0c-a7d8-197593dd7baf.jpg",
+        "image": "shopify:\/\/shop_images\/VTG-Drone-Factory_Team-4.jpg",
         "button_link": "button",
         "button_text": "LEARN ABOUT OUR INITIATIVES",
         "button_url": "",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": true
       }
@@ -80,12 +80,12 @@
       "settings": {
         "title": "",
         "subhead": "GOAT LEATHER",
-        "text": "<p>Plain and simple, goat leather is the G.O.A.T. Rugged and supple, it performs incredibly well in hard wearing situations, for a very long time. <\/p>",
-        "image": "shopify:\/\/shop_images\/VermontGloveCompany-12_15ff963c-683d-4d0c-a7d8-197593dd7baf.jpg",
+        "text": "<p>Plain and simple, goat leather is the greatest of all time. Rugged and supple, it performs incredibly well in hard wearing situations, for a very long time. <\/p>",
+        "image": "shopify:\/\/shop_images\/VermontGloveCompany-46.jpg",
         "button_link": "button",
         "button_text": "LEARN ABOUT GOAT LEATHER",
         "button_url": "",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
       }
@@ -95,12 +95,12 @@
       "settings": {
         "title": "",
         "subhead": "OUR DESIGN",
-        "text": "<p>Our unique glove design is driven by utility. They work better and last longer this way.<\/p>",
-        "image": "shopify:\/\/shop_images\/VermontGloveCompany-12_15ff963c-683d-4d0c-a7d8-197593dd7baf.jpg",
+        "text": "<p>Our unique glove design is driven by utility, made by craftspeople, and outlast hardware store gloves by a longshot.<\/p>",
+        "image": "shopify:\/\/shop_images\/VTG_Glove_Care.jpg",
         "button_link": "button",
         "button_text": "EXPLORE OUR GLOVE DESIGN",
         "button_url": "",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": true
       }
@@ -108,12 +108,13 @@
     "1658324329a53551a6": {
       "type": "call-to-action",
       "settings": {
-        "title": "AN EPIC CONCLUDING MESSAGE",
+        "title": "",
         "primary_color": "#ffffff",
         "secondary_color": "#ffffff",
-        "image": "shopify:\/\/shop_images\/VTG-FreeVerseFarm-18.jpg",
+        "image": "shopify:\/\/shop_images\/VTG-HomeHero-Greenhouse.jpg",
         "video_url": "",
-        "full": true
+        "full": true,
+        "ratio": 140
       }
     }
   },

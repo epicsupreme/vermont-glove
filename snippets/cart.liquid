@@ -6,7 +6,7 @@
    class="w-full h-[calc(var(--window-height))] bg-[rgba(255,255,255,0.5)] fixed top-0 z-50"
    id="cart"
 
-   x-data="{ cart: {total: '', products: []}}"
+   x-data="{ cart: {total: '', products: [], note: ''}}"
    x-on:updateproducts.window="cart = $event.detail.cart">
 
    <button
@@ -22,7 +22,7 @@
 
          <button
             @click="cartOpen = false"
-            class="w-14 text-brand"
+            class="w-8 text-brand"
             id="cart-cart-close">
             {%- render 'svg-arrow-right' -%}
          </button>
@@ -119,7 +119,16 @@
 
 
             <div
-               class="absolute bottom-0 left-0 flex w-full px-6 bg-white">
+               class="absolute bottom-0 left-0 w-full px-6 bg-white">
+
+               <div class="w-full max-w-xl py-6 mx-auto">
+                  <div class="uppercase font-headline">
+                     Add Note
+                  </div>
+                  <textarea name="note" id="cart-note" class="w-full h-32 p-2 border-2 border-brand" @keyup="$event.target.dispatchEvent(new CustomEvent('cartUpdate', $event))" :value="cart.note" placeholder="Note..."></textarea>
+
+               </div>
+
                <div
                   class="w-full max-w-xl py-6 mx-auto border-t-2 border-black">
                   <div

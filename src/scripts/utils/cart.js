@@ -1,12 +1,13 @@
+import { convertColorVariables } from '@mertasan/tailwindcss-variables/src/helpers'
 import * as cart from '@shopify/theme-cart'
 
 cart.getState().then((state) => {
+  console.log(state)
   cartUpdateAll(state)
 })
 
 function cartToAlpine(state) {
   let products = []
-  console.log(state)
   if (state.items) {
     state.items.forEach((e) => {
       let f = e.featured_image.url
@@ -42,6 +43,7 @@ function cartToAlpine(state) {
   return {
     total: state.items_subtotal_price / 100,
     products: products,
+    note: state.note
   }
 }
 
@@ -69,3 +71,7 @@ export function cartUpdateAll(state) {
     })
   )
 }
+
+window.addEventListener("cartUpdate", (e) => {
+  cart.updateNote(e.target.value)
+})

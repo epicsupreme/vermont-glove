@@ -12,7 +12,9 @@
         "subhead": "",
         "text": "",
         "link_text": "Read More",
-        "link": ""
+        "link": "",
+        "bg_color": "#ffffff",
+        "text_color": "#452C80"
       }
     },
     "16583239292fb88d99": {

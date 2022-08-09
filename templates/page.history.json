@@ -8,16 +8,18 @@
     "165484190389f43ba1": {
       "type": "call-to-action",
       "settings": {
-        "title": "ACTUALLY MADE RIGHT HERE IN\nRANDOLPH SINCE 1920",
+        "title": "ACTUALLY MADE IN\nRANDOLPH SINCE 1920",
         "primary_color": "#ffffff",
         "secondary_color": "#ffffff",
         "image": "shopify:\/\/shop_images\/Lineworker_1967.gif",
         "video_url": "",
-        "full": true
+        "full": true,
+        "ratio": 250
       }
     },
     "1654841758b9200a12": {
       "type": "image-set",
+      "disabled": true,
       "blocks": {
         "ff62ca11-7a9d-4ff3-974e-7026a5044218": {
           "type": "image",
@@ -34,6 +36,7 @@
     },
     "1654841760e514180b": {
       "type": "image-set",
+      "disabled": true,
       "blocks": {
         "06db2464-35b0-4383-a8a9-683514af85b7": {
           "type": "image",
@@ -57,6 +60,7 @@
     },
     "1654841783953f1040": {
       "type": "image-set",
+      "disabled": true,
       "blocks": {
         "8af96e09-f88e-4c85-838b-da5fbc3b9a97": {
           "type": "image",
@@ -88,12 +92,12 @@
     "1654842496ce5b26d6": {
       "type": "history",
       "settings": {
-        "title": "1920",
-        "subhead": "brief title sentence",
-        "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>",
+        "title": "1919",
+        "subhead": "",
+        "text": "<p>Kurt Reichel moves to Randolph, VT from NY and starts a glove company making silk dress gloves, with Richard Haupt running the operation<\/p>",
         "image": "shopify:\/\/shop_images\/Crew_Photo_1960s.png",
         "button_link": "link",
-        "button_text": "Read More",
+        "button_text": "",
         "button_url": "shopify:\/\/pages\/faq",
         "primary_color": "#452c80",
         "secondary_color": "#ffffff",
@@ -103,26 +107,226 @@
     "1654842498e01db199": {
       "type": "history",
       "settings": {
-        "title": "1934",
-        "subhead": "brief title sentence",
-        "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>",
+        "title": "1920",
+        "subhead": "",
+        "text": "<p>Dress glove business fails, Richard Ernst Haupt, a German glovemaking immigrant, runs company on behalf of bank.<\/p>",
         "image": "shopify:\/\/shop_images\/Kurt_and_Kurt_web.gif",
-        "button_link": "button",
-        "button_text": "Shop Now",
+        "button_link": "link",
+        "button_text": "",
         "button_url": "shopify:\/\/collections\/all",
         "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
       }
     },
-    "16548406038815170c": {
-      "type": "text",
+    "16599907365e15f1bb": {
+      "type": "history",
       "settings": {
-        "headline": "Headline",
-        "subhead": "Subhead",
-        "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of.<\/p>",
-        "link_text": "Read More",
-        "link": "shopify:\/\/pages\/about"
+        "title": "1929",
+        "subhead": "",
+        "text": "<p>Business fails due to stock market crash, NH man buys & changes name to The Linwood Company, Richard Haupt stays on as manager<\/p>",
+        "image": "shopify:\/\/shop_images\/VTG_Factory_1961.gif",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "1659990783aa8ca72a": {
+      "type": "history",
+      "settings": {
+        "title": "1929",
+        "subhead": "",
+        "text": "<p>Richard Haupt develops lineworker glove for Central Vermont Power and realizes potential market opportunity. Company exclusively produces lineworker gloves.<\/p>",
+        "image": "shopify:\/\/shop_images\/VTG_Factory_1961.gif",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
+    "1659990822871a53c0": {
+      "type": "history",
+      "settings": {
+        "title": "1939",
+        "subhead": "",
+        "text": "<p>Richard Haupt & John Robb buy company from The Linwood Co. and change name to Green Mountain Glove Co.<\/p>",
+        "image": "shopify:\/\/shop_images\/VTG_Factory_1961.gif",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "1659990951f6fd3f05": {
+      "type": "history",
+      "settings": {
+        "title": "1945",
+        "subhead": "",
+        "text": "<p>Robb sells his shares to Haupt, enlists for WWII. Haupt begins making parajumper gloves for the war.<\/p>",
+        "image": "shopify:\/\/shop_images\/VTG_Factory_1961.gif",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
+    "165999097835c717d6": {
+      "type": "history",
+      "settings": {
+        "title": "1951",
+        "subhead": "",
+        "text": "<p>Richard sells to his sons Kurt, Karl & Walter. Walter sells his shares shortly thereafter.<\/p>",
+        "image": "shopify:\/\/shop_images\/VTG_Factory_1961.gif",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "1659991012a206938d": {
+      "type": "history",
+      "settings": {
+        "title": "1960",
+        "subhead": "",
+        "text": "<p>Factory moves to Whiting Milk Creamery (current location)<\/p>",
+        "image": "shopify:\/\/shop_images\/VTG-Drone-Factory_Team-4.jpg",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
+    "1659991072ef98a4cd": {
+      "type": "history",
+      "settings": {
+        "title": "1960s",
+        "subhead": "",
+        "text": "<p>Business booms, selling in 48 states, to electric, cable and telephone companies<\/p>",
+        "image": "shopify:\/\/shop_images\/Lineworker_1967.gif",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "1659991297d130ce96": {
+      "type": "history",
+      "settings": {
+        "title": "1980-85",
+        "subhead": "",
+        "text": "<p>U.S.A manufacturing begins to be widely outsourced overseas<\/p>",
+        "image": "shopify:\/\/shop_images\/VTG_Factory_1961.gif",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
+    "1659991321ce8bb72d": {
+      "type": "history",
+      "settings": {
+        "title": "1994",
+        "subhead": "",
+        "text": "<p>NAFTA signed, allowing overseas manufacturing to grow & become more viable, crippling GMGCo’s utility market share.<\/p>",
+        "image": "shopify:\/\/shop_images\/VTG_Factory_1961.gif",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "1659991350c35bc5ce": {
+      "type": "history",
+      "settings": {
+        "title": "Early 1990's",
+        "subhead": "",
+        "text": "<p>GMGCo develops a relationship with Smith & Hawken, selling private label to consumers.<\/p>",
+        "image": "shopify:\/\/shop_images\/VTG_Factory_1961.gif",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
+    "1659991402a4abcffa": {
+      "type": "history",
+      "settings": {
+        "title": "2000's",
+        "subhead": "",
+        "text": "<p>Business slowly dries up. Company kept in business by long standing relationship with Smith & Hawken, who continues to buy gloves because of high quality and workmanship.<\/p>",
+        "image": "shopify:\/\/shop_images\/VTG_Factory_1961.gif",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "1659991450654e2968": {
+      "type": "history",
+      "settings": {
+        "title": "2011",
+        "subhead": "",
+        "text": "<p>Kurt Sr. works in business until he dies at age 90. He gives his shares to his three sons: Kurt Jr., Kristin and Kieran. Kurt Jr. buys out other sibling’s shares.<\/p>",
+        "image": "shopify:\/\/shop_images\/VTG_Factory_1961.gif",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
+    "165999150664ea3e27": {
+      "type": "history",
+      "settings": {
+        "title": "2018",
+        "subhead": "",
+        "text": "<p>Sam Hooper buys a struggling Green Mountain Glove Co.. from Kurt Jr. He continues to produce the same utility gloves that GMG has made since 1929, because he sees value in the product, and market opportunity in the company.<\/p>",
+        "image": "shopify:\/\/shop_images\/Sam_Hooper_Vermont_Glove.jpg",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "165999158012a6b02e": {
+      "type": "history",
+      "settings": {
+        "title": "2019",
+        "subhead": "",
+        "text": "<p>GMGCo. becomes Vermont Glove, leverages current product line to reach new trades and consumers, transitions glove factory to run on 100% renewable energy, invests in operational efficiency, while continuing to use existing machinery from the 1920’s - 1950’s. Positions company for growth through sales & marketing efforts.<\/p>",
+        "image": "shopify:\/\/shop_images\/VTG-Drone-Factory_Team-4.jpg",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": false
       }
     }
   },
@@ -134,6 +338,19 @@
     "1654841783953f1040",
     "1654842496ce5b26d6",
     "1654842498e01db199",
-    "16548406038815170c"
+    "16599907365e15f1bb",
+    "1659990783aa8ca72a",
+    "1659990822871a53c0",
+    "1659990951f6fd3f05",
+    "165999097835c717d6",
+    "1659991012a206938d",
+    "1659991072ef98a4cd",
+    "1659991297d130ce96",
+    "1659991321ce8bb72d",
+    "1659991350c35bc5ce",
+    "1659991402a4abcffa",
+    "1659991450654e2968",
+    "165999150664ea3e27",
+    "165999158012a6b02e"
   ]
 }

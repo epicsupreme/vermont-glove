@@ -102,10 +102,20 @@
            "label": "Image"
          },
          {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Mobile Image"
+         },
+         {
            "type": "url",
            "id": "video_url",
            "label": "Video URL"
          },
+         {
+          "type": "url",
+          "id": "mobile_video_url",
+          "label": "Mobile Video URL"
+        },
          {
             "type": "select",
             "id": "mobile_position",
@@ -113,15 +123,15 @@
             "info": "Position of image/video on mobile devices",
             "options": [
                {
-                  "value": "object-center",
+                  "value": "lg:object-center",
                 "label": "Center"
                },
               {
-                "value": "object-left",
+                "value": "lg:object-left",
                 "label": "Left"
               },
               {
-                "value": "object-right",
+                "value": "lg:object-right",
                 "label": "Right"
               }
             ]

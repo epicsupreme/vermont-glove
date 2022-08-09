@@ -1,38 +1,18 @@
-<div class="flex justify-between max-w-sm gap-4 text-xs text-center">
+<div class="grid grid-cols-5 gap-4">
 
-   <div class="flex flex-col items-start justify-center w-1/4 max-w-16">
-      <div class="flex justify-center w-full h-16 mb-2 text-brand">
-         {%- render 'svg-goat' -%}
-      </div>
-      <div class="">
-         100% Goat Leather
-      </div>
-   </div>
+   {% for icon in product.metafields.vermont.icons.value %}
+      {% for block in section.blocks %}
+         {% if block.type == "icon_choices" and block.settings.text == icon %}
+            <div>
+               <div class="mb-1 aspect-square">
+                  {{ block.settings.icon | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-fit' }}
+               </div>
+               <div class="text-xs text-center">
+                  {{ block.settings.text }}
+               </div>
+            </div>
+         {% endif %}
+      {% endfor %}
+   {% endfor %}
 
-   <div class="flex flex-col items-center justify-center">
-      <div class="flex items-center justify-center w-full h-16 mb-2 text-brand">
-         {%- render 'svg-glove' -%}
-      </div>
-      <div class="">
-         Removeable Liner
-      </div>
-   </div>
-
-   <div class="flex flex-col items-center justify-center">
-      <div class="flex items-center justify-center w-full h-16 mb-2 text-brand">
-         {%- render 'svg-nail' -%}
-      </div>
-      <div class="">
-         Tuffer’n’ails
-      </div>
-   </div>
-
-   <div class="flex flex-col items-center justify-center">
-      <div class="flex items-center justify-center w-full h-16 mb-2 text-brand">
-         {%- render 'svg-vermont' -%}
-      </div>
-      <div class="">
-         Made In Vermont
-      </div>
-   </div>
 </div>

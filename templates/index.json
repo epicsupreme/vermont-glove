@@ -6,7 +6,7 @@
         "cab8a4be-4648-4e7f-92fe-25ff65448681": {
           "type": "hero_slide",
           "settings": {
-            "title": "DESIGNED FOR THE PROS,\nMADE FOR YOU",
+            "title": "DESIGNED FOR THE PROS, MADE FOR YOU",
             "button_text": "Shop Now",
             "button_url": "shopify:\/\/collections\/all",
             "location": "justify-start",
@@ -27,7 +27,7 @@
             "primary_color": "#452c80",
             "secondary_color": "#ffffff",
             "image": "shopify:\/\/shop_images\/VermontGloveCompany-12.jpg",
-            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e96e2e7198f741939eb1d3ca63eccc39.mp4",
+            "video_url": "",
             "mobile_position": "object-center"
           }
         }
@@ -87,6 +87,7 @@
       "blocks": {
         "79420ec7-0c07-4e81-8a85-f3d32defc272": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_text": "How They're Made",
             "button_url": "shopify:\/\/pages\/faq"
@@ -105,10 +106,10 @@
         "60517964-a99b-4ffc-b971-e1bd3cda3bba"
       ],
       "settings": {
-        "title": "ACTUALLY MADE IN VERMONT\nSINCE 1920",
+        "title": "ACTUALLY MADE IN VERMONT \nSINCE 1920",
         "primary_color": "#ffffff",
         "secondary_color": "#452c80",
-        "image": "shopify:\/\/shop_images\/Kurt_and_Karl_web.gif",
+        "image": "shopify:\/\/shop_images\/VTG_Factory_1961.gif",
         "video_url": "",
         "full": true,
         "ratio": 180
@@ -126,11 +127,54 @@
         "flip": false
       }
     },
+    "16596362201dd6fc1f": {
+      "type": "press",
+      "settings": {
+        "title": "As Seen In",
+        "color": "#452c80",
+        "bg_color": "#d9d9d9"
+      }
+    },
     "1654839019c2e2d28d": {
       "type": "instagram",
       "disabled": true,
       "settings": {
         "title": "In Action"
+      }
+    },
+    "1659635946f922f3ab": {
+      "type": "testimonials",
+      "blocks": {
+        "9b4bb979-54d0-4eb1-bf11-eafd4f79c16d": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG-EastHillTreeFarm-8.jpg",
+            "text": "\"I FREAKIN LOVE THESE GLOVES\"",
+            "reviewer": "NICKO RUBIN  |  PLAINFIELD, VERMONT",
+            "button_text": "READ MORE VERMONTER REVIEWS",
+            "button_link": "shopify:\/\/products\/the-vermonter",
+            "primary_color": "#452c80",
+            "secondary_color": "#ffffff"
+          }
+        },
+        "a9b03466-372d-4c76-81c8-33b301ed34a7": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG_September_2019_Selects_18_of_126.jpg",
+            "text": "\"BEST GLOVES I'VE EVER HAD. I'LL NEVER GO BACK TO THE HARDWARE STORE KIND.\"",
+            "reviewer": "CHARLES FRONTENAC",
+            "button_text": "READ MORE UPHILL SKIER REVIEWS",
+            "button_link": "shopify:\/\/products\/the-uphill-skier",
+            "primary_color": "#452c80",
+            "secondary_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "9b4bb979-54d0-4eb1-bf11-eafd4f79c16d",
+        "a9b03466-372d-4c76-81c8-33b301ed34a7"
+      ],
+      "settings": {
       }
     }
   },
@@ -139,6 +183,8 @@
     "16539672525d0bb668",
     "165396725578574650",
     "1658262751819df341",
-    "1654839019c2e2d28d"
+    "16596362201dd6fc1f",
+    "1654839019c2e2d28d",
+    "1659635946f922f3ab"
   ]
 }

@@ -3,11 +3,11 @@
    src="{{- 'component-press.js' | asset_url -}}" defer></script>
 
 <div
-   class="bg-[color:var(--bg-color)] text-[color:var(--color)] py-8 lg:py-10"
+   class="bg-[color:var(--bg-color)] text-[color:var(--color)] py-8 lg:py-10 lg:my-20"
    style="--bg-color:{{ section.settings.bg_color }};--color:{{ section.settings.color }};">
 
    <div
-      class="mb-6 text-4xl text-center uppercase font-headline">
+      class="mb-10 text-3xl text-center uppercase lg:text-5xl font-headline">
       {{ section.settings.title }}
    </div>
 
@@ -23,7 +23,7 @@
                   <div
                      class="swiper-slide">
                      <div
-                        class="w-[40vw] lg:w-[14vw]">
+                        class="w-[40vw]  lg:w-[14vw] mx-auto">
                         {% if block.settings.url %}
                            <a
                               href="{{ block.settings.url }}" target="_blank"

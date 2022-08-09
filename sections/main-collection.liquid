@@ -26,12 +26,23 @@
    class="container relative gap-5 px-4 mx-auto lg:grid lg:grid-cols-12">
 
    <div
-      class="lg:sticky hidden col-span-2 lg:pt-12 lg:top-[var(--header-height)] lg:self-start">
+      class="lg:sticky lg:block hidden col-span-2 lg:pt-12 lg:top-[var(--header-height)] lg:self-start">
       <div
          class="hidden mb-2 border-b border-black lg:block font-headline">
          Categories
       </div>
+      <ul
+         class="text-xs">
+         {% for block in section.blocks %}
+            {%- assign col = collections[block.settings.collection] -%}
 
+            <li
+               class="mb-1">
+               <a
+                  href="#{{ col.handle }}">{{ col.title }}</a>
+            </li>
+         {% endfor %}
+      </ul>
 
    </div>
 

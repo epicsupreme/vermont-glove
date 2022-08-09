@@ -3,9 +3,10 @@
    src="{{- 'component-featured-products.js' | asset_url -}}" defer></script>
 
 <div
-   class="container flex items-center py-6 mx-auto place-content-center lg:my-20 h-mobile-fullscreen lg:h-auto lg:block ">
+   class="container flex items-center py-6 mx-auto my-10 place-content-center lg:my-20 lg:h-auto lg:block ">
 
-   <div class="relative w-full">
+   <div
+      class="relative w-full">
       <h2
          class="mb-8 text-3xl text-center uppercase font-headline">
          {{ section.settings.title }}
@@ -19,7 +20,8 @@
             <div
                class="relative min-w-0 px-10 overflow-hidden ">
                <div
-                  class=" swiper">
+                  class=" swiper"
+                  style="--swiper-theme-color:#452C80">
                   <div
                      class="swiper-wrapper">
                      {% for block in section.blocks %}
@@ -27,7 +29,7 @@
                         <div
                            class="h-auto swiper-slide">
                            <a
-                              href="{{ featureProduct.url }}" title="{{ featureProduct.title }}" class="block group">
+                              href="{{ featureProduct.url }}" title="{{ featureProduct.title }}" class="block pb-10 group">
                               <div
                                  class="aspect-[437/546] mb-2 relative">
                                  {% if block.settings.image %}
@@ -57,6 +59,12 @@
                            </a>
                         </div>
                      {% endfor %}
+                  </div>
+
+                  <div
+                     class="md:hidden">
+                     <div
+                        class="swiper-pagination"></div>
                   </div>
                </div>
             </div>

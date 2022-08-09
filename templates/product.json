@@ -28,6 +28,14 @@
         "48204da5-44d1-4570-befd-915e2374a4b2"
       ],
       "settings": {
+        "sizing_guide_title": "Sizing Guide",
+        "sizing_guide_image": "shopify:\/\/shop_images\/VTG-SDF_Aug21-18.jpg",
+        "sizing_guide_text": "The most accurate way to determine your glove size is to download and print our hand tracing template.",
+        "button_text": "Download Here",
+        "url": "",
+        "footer_title": "For more info",
+        "footer_link_text": "Visit our sizing page",
+        "footer_url": ""
       }
     },
     "1658129066b65c424e": {
@@ -36,8 +44,8 @@
         "1d6bbccb-c327-427b-be7c-ac76e1072de2": {
           "type": "Icon",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Artboard_36_copy_7_4x_918f1197-e1da-4097-9941-d8ace43c4069.png",
-            "text": "Icon\nText"
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-Vermont.png",
+            "text": "Made In Vermont"
           }
         },
         "c157807c-a613-4ce5-9d2e-78117e9b730c": {
@@ -46,11 +54,19 @@
             "icon": "shopify:\/\/shop_images\/Artboard_36_copy_7_4x_918f1197-e1da-4097-9941-d8ace43c4069.png",
             "text": "Another Icon"
           }
+        },
+        "a6155bd1-d8fa-48ca-b17a-b560a1ff270a": {
+          "type": "Icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-MerinoWool.png",
+            "text": "Merino Wool"
+          }
         }
       },
       "block_order": [
         "1d6bbccb-c327-427b-be7c-ac76e1072de2",
-        "c157807c-a613-4ce5-9d2e-78117e9b730c"
+        "c157807c-a613-4ce5-9d2e-78117e9b730c",
+        "a6155bd1-d8fa-48ca-b17a-b560a1ff270a"
       ],
       "settings": {
         "title": "Excellent For"
@@ -73,10 +89,11 @@
       "settings": {
         "title": "HOW THE GLOVES ARE MADE",
         "primary_color": "#ffffff",
-        "secondary_color": "#452C80",
+        "secondary_color": "#452c80",
         "image": "shopify:\/\/shop_images\/VermontGloveCompany-12_15ff963c-683d-4d0c-a7d8-197593dd7baf.jpg",
         "video_url": "",
-        "full": true
+        "full": true,
+        "ratio": 250
       }
     },
     "16581299038ac67c2a": {
@@ -86,7 +103,7 @@
         "title": "A little glove love\ngoes a long way.",
         "button_text": "Learn to care for your gloves",
         "button_url": "shopify:\/\/pages\/glove-care",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": true
       }

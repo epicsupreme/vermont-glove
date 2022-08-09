@@ -4,9 +4,22 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "1659712290bdfa535d": {
+      "type": "call-to-action",
+      "settings": {
+        "title": "GREASE'EM OR RELEASE'EM",
+        "primary_color": "#ffffff",
+        "secondary_color": "#ffffff",
+        "image": "shopify:\/\/shop_images\/VTG-SDF_Aug21-18.jpg",
+        "video_url": "",
+        "full": true,
+        "ratio": 175
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1659712290bdfa535d"
   ]
 }

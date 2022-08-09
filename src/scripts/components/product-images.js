@@ -14,10 +14,7 @@ const proudctSwiper = new Swiper(slides, {
   pagination: {
     el: '.swiper-pagination',
   },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+
 })
 
 var Sticky = new hcSticky('.product-images', {

@@ -1,0 +1,69 @@
+<div
+   class="md:grid md:grid-cols-2">
+
+   <div
+      class="aspect-[959/804]">
+      {% if section.settings.video_url_1 %}
+         <video
+            src="{{ section.settings.video_url_1 }}" playsinline
+            loop
+            autoplay
+            muted
+            class="object-cover w-full h-full"></video>
+      {% else %}
+         {{ section.settings.image_1 | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-cover' }}
+      {% endif %}
+   </div>
+   <div
+      class="aspect-[959/804]">
+
+      {% if section.settings.video_url_2 %}
+         <video
+            src="{{ section.settings.video_url_2 }}" playsinline
+            loop
+            autoplay
+            muted
+            class="object-cover w-full h-full"></video>
+      {% else %}
+         {{ section.settings.image_2 | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-cover' }}
+      {% endif %}
+
+   </div>
+
+
+</div>
+
+
+{% schema %}
+{
+   "name": "Video + Image",
+   "settings": [
+      {
+         "type": "image_picker",
+         "id": "image_1",
+         "label": "Image One"
+      },
+      {
+         "type": "url",
+         "id": "video_url_1",
+         "label": "Video URL One"
+      },
+      {
+         "type": "image_picker",
+         "id": "image_2",
+         "label": "Image two"
+      },
+      {
+         "type": "url",
+         "id": "video_url_2",
+         "label": "Video URL Two"
+      }
+   ],
+   "presets": [
+         {
+            "name": "Video + Image"
+         }
+      ],
+      "templates": ["index", "product"]
+}
+{% endschema %}

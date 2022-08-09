@@ -43,7 +43,7 @@
    class="top-0 left-0 z-50 flex items-center justify-center w-full h-screen ">
 
    <div
-      class="p-6 max-w-xl w-full bg-[#F5F5F5] relative">
+      class="relative w-full max-w-xl p-6 bg-white border-2 border-brand">
 
       <button class="absolute w-6 text-black top-6 right-6" @click="sizingGuide = false">
          {%- render 'svg-close' -%}
@@ -138,13 +138,19 @@
    ],
    "blocks": [
          {
-            "name": "Add On Product",
-            "type": "add_on_product",
+            "name": "Icon Choices",
+            "type": "icon_choices",
             "settings": [
                {
-                  "type": "product",
-                  "id": "product",
-                  "label": "Product"
+                  "type": "image_picker",
+                  "id": "icon",
+                  "label": "Icon"
+               },
+               {
+                  "type": "text",
+                  "id": "text",
+                  "label": "Text",
+                  "info": "Name must match selection within products"
                }
             ]
          }

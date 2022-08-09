@@ -1,8 +1,10 @@
 {{ 'component-product-images.css' | asset_url | stylesheet_tag }}
-<script src="{{- 'component-product-images.js' | asset_url -}}" defer></script>
+<script
+   src="{{- 'component-product-images.js' | asset_url -}}" defer></script>
 
 <div
-   id="product-images" style="--swiper-theme-color:#452C80">
+   id="product-images"
+   style="--swiper-theme-color:#452C80">
    <div
       class="swiper">
       <div
@@ -17,11 +19,15 @@
             </div>
          {% endfor %}
       </div>
-      <div class="hidden lg:block">
-         <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+      <div
+         class="hidden">
+         <div
+            class="swiper-button-prev"></div>
+         <div
+            class="swiper-button-next"></div>
       </div>
 
-  <div class="swiper-pagination"></div>
+      <div
+         class="swiper-pagination"></div>
    </div>
 </div>

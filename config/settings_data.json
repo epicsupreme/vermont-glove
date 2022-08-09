@@ -6,7 +6,6 @@
         "settings": {
           "top_bar": true,
           "text": "<p>ANNOUNCEMENT BAR. CHANGE TEXT, BG COLOR, LINK LOCATION<\/p>",
-          "text_coloe": "#ffffff",
           "bg_color": "#82cdbb"
         }
       },

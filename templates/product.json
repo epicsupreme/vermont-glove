@@ -3,43 +3,135 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "268d88be-0517-43ac-a233-78c641e895a7": {
-          "type": "add_on_product",
+        "2bd0b3ce-8efd-4466-b014-3822a5bb5343": {
+          "type": "icon_choices",
           "settings": {
-            "product": "wool-glove-liner"
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-GoatLeather.png",
+            "text": "100% Goat Leather"
           }
         },
-        "255b23fd-8bc3-4e56-910a-6efcd67df8d5": {
-          "type": "add_on_product",
+        "482c6849-7ca6-42a8-9164-d70632a54327": {
+          "type": "icon_choices",
           "settings": {
-            "product": "leather-conditioner"
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-MadeInVT.png",
+            "text": "Made In Vermont"
           }
         },
-        "48204da5-44d1-4570-befd-915e2374a4b2": {
-          "type": "add_on_product",
+        "56b5c080-4c35-4c19-a9d7-319010b65e79": {
+          "type": "icon_choices",
           "settings": {
-            "product": "beeswax-waterproofing"
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-RenewableEnergy.png",
+            "text": "Made in Net Zero Factory"
+          }
+        },
+        "55cf3d0b-9b84-4a7c-a827-54ae20f6cc85": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-HandSewn_d4c603a5-311b-4a05-aaed-1bcd896a515f.png",
+            "text": "Hand Sewn"
+          }
+        },
+        "74d09016-dfb7-45f4-bb93-e49862e6eb68": {
+          "type": "icon_choices",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-Liner_Removable.png",
+            "text": "Removable Liner"
+          }
+        },
+        "3f81bef6-b975-4376-8344-b791ce4a0f05": {
+          "type": "icon_choices",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-WaxedCanvas.png",
+            "text": "Waxed Canvas"
+          }
+        },
+        "77f327e8-55bd-4b51-a583-c6a102e95cc4": {
+          "type": "icon_choices",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-Liner_SewnIn.png",
+            "text": "Lined"
+          }
+        },
+        "e4022afa-dc40-450e-94df-7e3d3fe642be": {
+          "type": "icon_choices",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-MerinoWool_d861c5ce-2f4d-4abc-9e2c-5f1d71725aad.png",
+            "text": "Merino Wool"
+          }
+        },
+        "ba8e7eb1-0abd-41e6-9f5a-7a96fb9a079d": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-Recycled_4cba49af-e647-422c-817e-39b341aa773d.png",
+            "text": "100% Recycled Poly Liner"
+          }
+        },
+        "8bb74f8b-e649-41ad-aff6-a1e2908b5e53": {
+          "type": "icon_choices",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-WarmAsHeck.png",
+            "text": "Warm As Heck"
+          }
+        },
+        "c1af1673-507b-458b-b611-739a76a719c9": {
+          "type": "icon_choices",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-WovenCuff.png",
+            "text": "Woven Cuff"
+          }
+        },
+        "ceb3ade7-c474-4d3d-952e-5ad15c0f13db": {
+          "type": "icon_choices",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-TougherNNails.png",
+            "text": "Tuffer'n Nails"
           }
         }
       },
       "block_order": [
-        "268d88be-0517-43ac-a233-78c641e895a7",
-        "255b23fd-8bc3-4e56-910a-6efcd67df8d5",
-        "48204da5-44d1-4570-befd-915e2374a4b2"
+        "2bd0b3ce-8efd-4466-b014-3822a5bb5343",
+        "482c6849-7ca6-42a8-9164-d70632a54327",
+        "56b5c080-4c35-4c19-a9d7-319010b65e79",
+        "55cf3d0b-9b84-4a7c-a827-54ae20f6cc85",
+        "74d09016-dfb7-45f4-bb93-e49862e6eb68",
+        "3f81bef6-b975-4376-8344-b791ce4a0f05",
+        "77f327e8-55bd-4b51-a583-c6a102e95cc4",
+        "e4022afa-dc40-450e-94df-7e3d3fe642be",
+        "ba8e7eb1-0abd-41e6-9f5a-7a96fb9a079d",
+        "8bb74f8b-e649-41ad-aff6-a1e2908b5e53",
+        "c1af1673-507b-458b-b611-739a76a719c9",
+        "ceb3ade7-c474-4d3d-952e-5ad15c0f13db"
       ],
       "settings": {
         "sizing_guide_title": "Sizing Guide",
-        "sizing_guide_image": "shopify:\/\/shop_images\/VTG-SDF_Aug21-18.jpg",
+        "sizing_guide_image": "shopify:\/\/shop_images\/VTG-SizingChart-Hero-45_b44ad528-f0ea-4bb1-a60b-d59bbf34a6ce.jpg",
         "sizing_guide_text": "The most accurate way to determine your glove size is to download and print our hand tracing template.",
         "button_text": "Download Here",
-        "url": "",
+        "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG_Size_Chart_2021_1965cf18-f2c9-4bd6-b227-2fa815a9733a.pdf?v=1660244832",
         "footer_title": "For more info",
         "footer_link_text": "Visit our sizing page",
-        "footer_url": ""
+        "footer_url": "shopify:\/\/pages\/sizing"
+      }
+    },
+    "1660158343930fee78": {
+      "type": "video-image",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/VTG-MelissaSmith-23.jpg",
+        "video_url_1": "",
+        "image_2": "shopify:\/\/shop_images\/VTG-HomeHero-Chainsaw.jpg",
+        "video_url_2": ""
       }
     },
     "1658129066b65c424e": {
       "type": "excellent-for",
+      "disabled": true,
       "blocks": {
         "1d6bbccb-c327-427b-be7c-ac76e1072de2": {
           "type": "Icon",
@@ -61,15 +153,75 @@
             "icon": "shopify:\/\/shop_images\/VTG-Icons22-MerinoWool.png",
             "text": "Merino Wool"
           }
+        },
+        "178cb9d2-cdc6-4ea9-8a9b-71672177302b": {
+          "type": "Icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-HandSewn.png",
+            "text": "Hand Sewn"
+          }
+        },
+        "37320272-dee0-482e-889e-ff04dbcafc8f": {
+          "type": "Icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-Goat_Alt.png",
+            "text": ""
+          }
         }
       },
       "block_order": [
         "1d6bbccb-c327-427b-be7c-ac76e1072de2",
         "c157807c-a613-4ce5-9d2e-78117e9b730c",
-        "a6155bd1-d8fa-48ca-b17a-b560a1ff270a"
+        "a6155bd1-d8fa-48ca-b17a-b560a1ff270a",
+        "178cb9d2-cdc6-4ea9-8a9b-71672177302b",
+        "37320272-dee0-482e-889e-ff04dbcafc8f"
       ],
       "settings": {
         "title": "Excellent For"
+      }
+    },
+    "16600693525c2b15f4": {
+      "type": "compare",
+      "blocks": {
+        "6d41153e-08ac-4925-8f8c-628bd23bcd9b": {
+          "type": "product",
+          "settings": {
+            "product": "choppers-mitt",
+            "text": "",
+            "glove_text": "100% Goat Leather",
+            "cuff_text": "100% Goat Leather",
+            "liner_text": ""
+          }
+        },
+        "0681eced-8bb2-43b0-8c75-a87426208331": {
+          "type": "product",
+          "settings": {
+            "product": "the-jefflo-mitt",
+            "text": "",
+            "glove_text": "100% Goat Leather",
+            "cuff_text": "100% Goat Leather",
+            "liner_text": ""
+          }
+        },
+        "605fca98-4aa2-42a4-bbbe-cbd2202a73fa": {
+          "type": "product",
+          "settings": {
+            "product": "the-vermonter",
+            "text": "",
+            "glove_text": "100% Goat Leather",
+            "cuff_text": "100% Goat Leather",
+            "liner_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "6d41153e-08ac-4925-8f8c-628bd23bcd9b",
+        "0681eced-8bb2-43b0-8c75-a87426208331",
+        "605fca98-4aa2-42a4-bbbe-cbd2202a73fa"
+      ],
+      "settings": {
+        "title": "Compare Gloves",
+        "button_text": "Buy Now"
       }
     },
     "165812977493b0d20f": {
@@ -100,12 +252,35 @@
       "type": "image-title",
       "settings": {
         "image": "shopify:\/\/shop_images\/VTG-SDF_Aug21-18.jpg",
-        "title": "A little glove love\ngoes a long way.",
+        "title": "A little glove love goes a long way.",
         "button_text": "Learn to care for your gloves",
         "button_url": "shopify:\/\/pages\/glove-care",
         "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": true
+      }
+    },
+    "1660158547c754289a": {
+      "type": "testimonials",
+      "disabled": true,
+      "blocks": {
+        "ff85be8f-647b-48e2-99f1-ee59f7220ce7": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG-SDF_Aug21-18.jpg",
+            "text": "",
+            "reviewer": "",
+            "button_text": "",
+            "button_link": "",
+            "primary_color": "#452c80",
+            "secondary_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "ff85be8f-647b-48e2-99f1-ee59f7220ce7"
+      ],
+      "settings": {
       }
     },
     "loox-product-reviews-app-section": {
@@ -131,9 +306,12 @@
   },
   "order": [
     "main",
+    "1660158343930fee78",
     "1658129066b65c424e",
+    "16600693525c2b15f4",
     "165812977493b0d20f",
     "16581299038ac67c2a",
+    "1660158547c754289a",
     "loox-product-reviews-app-section"
   ]
 }

@@ -3,38 +3,40 @@
     "main": {
       "type": "hero",
       "blocks": {
-        "cab8a4be-4648-4e7f-92fe-25ff65448681": {
+        "d92e3b7d-5422-4fdb-9191-c163a0802752": {
           "type": "hero_slide",
           "settings": {
-            "title": "DESIGNED FOR THE PROS, MADE FOR YOU",
+            "title": "IMPENETRABLE\nHAND FORTRESS",
             "button_text": "Shop Now",
             "button_url": "shopify:\/\/collections\/all",
             "location": "justify-start",
-            "primary_color": "#452c80",
-            "secondary_color": "#ffffff",
-            "image": "shopify:\/\/shop_images\/VTG-FreeVerseFarm-18.jpg",
+            "primary_color": "#ffffff",
+            "secondary_color": "#452c80",
+            "image": "shopify:\/\/shop_images\/VTG-SDF_Aug21-43.jpg",
             "video_url": "",
-            "mobile_position": "object-right"
+            "mobile_video_url": "",
+            "mobile_position": "object-center"
           }
         },
-        "d92e3b7d-5422-4fdb-9191-c163a0802752": {
+        "cab8a4be-4648-4e7f-92fe-25ff65448681": {
           "type": "hero_slide",
           "settings": {
             "title": "DESIGNED FOR THE PROS,\nMADE FOR YOU",
             "button_text": "Shop Now",
             "button_url": "shopify:\/\/collections\/all",
-            "location": "justify-end",
-            "primary_color": "#452c80",
-            "secondary_color": "#ffffff",
-            "image": "shopify:\/\/shop_images\/VermontGloveCompany-12.jpg",
+            "location": "justify-start",
+            "primary_color": "#ffffff",
+            "secondary_color": "#452c80",
+            "image": "shopify:\/\/shop_images\/Vermont_Glove_Chainsaw.jpg",
             "video_url": "",
-            "mobile_position": "object-center"
+            "mobile_video_url": "",
+            "mobile_position": "object-right"
           }
         }
       },
       "block_order": [
-        "cab8a4be-4648-4e7f-92fe-25ff65448681",
-        "d92e3b7d-5422-4fdb-9191-c163a0802752"
+        "d92e3b7d-5422-4fdb-9191-c163a0802752",
+        "cab8a4be-4648-4e7f-92fe-25ff65448681"
       ],
       "settings": {
       }
@@ -118,7 +120,7 @@
     "1658262751819df341": {
       "type": "image-title",
       "settings": {
-        "image": "shopify:\/\/shop_images\/VTG_Vermonter_2020_Features_1.png",
+        "image": "shopify:\/\/shop_images\/VTG-ProductImage-FeatureCallout-45-Vermonter.png",
         "title": "FEATURE RICH, NO INSTRUCTIONS REQUIRED",
         "button_text": "SHOP NOW",
         "button_url": "shopify:\/\/collections",
@@ -129,10 +131,78 @@
     },
     "16596362201dd6fc1f": {
       "type": "press",
+      "blocks": {
+        "010bde8b-ba48-4ead-b73f-9034e288f4ec": {
+          "type": "press_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG-PressLogos-BostonGlobe.png",
+            "url": ""
+          }
+        },
+        "ab7e8ef5-16ce-4ecc-80c9-a395b5c4e1ba": {
+          "type": "press_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG-PressLogos-Epicurious.png",
+            "url": ""
+          }
+        },
+        "67b75b37-bd9a-4260-b407-a561983fdd22": {
+          "type": "press_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG-PressLogos-MarthaStewart.png",
+            "url": ""
+          }
+        },
+        "631a0069-f077-444b-a088-fe8ef93354c9": {
+          "type": "press_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG-PressLogos-OutsideMag.png",
+            "url": ""
+          }
+        },
+        "80edf8e1-ceee-4019-9ce2-85d2bd7ec51c": {
+          "type": "press_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG-PressLogos-PopMech.png",
+            "url": ""
+          }
+        },
+        "c42a55f3-cebd-41db-b944-d7926381d1f7": {
+          "type": "press_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG-PressLogos-RealSimple.png",
+            "url": ""
+          }
+        },
+        "9e19a97e-dffa-438b-bdba-75d0f72c125c": {
+          "type": "press_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG-PressLogos-SeattleTimes.png",
+            "url": ""
+          }
+        },
+        "c04de3fb-2d49-4974-90be-d08a0c1119c2": {
+          "type": "press_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG-PressLogos-Sunset.png",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "010bde8b-ba48-4ead-b73f-9034e288f4ec",
+        "ab7e8ef5-16ce-4ecc-80c9-a395b5c4e1ba",
+        "67b75b37-bd9a-4260-b407-a561983fdd22",
+        "631a0069-f077-444b-a088-fe8ef93354c9",
+        "80edf8e1-ceee-4019-9ce2-85d2bd7ec51c",
+        "c42a55f3-cebd-41db-b944-d7926381d1f7",
+        "9e19a97e-dffa-438b-bdba-75d0f72c125c",
+        "c04de3fb-2d49-4974-90be-d08a0c1119c2"
+      ],
       "settings": {
         "title": "As Seen In",
-        "color": "#452c80",
-        "bg_color": "#d9d9d9"
+        "color": "#ffffff",
+        "bg_color": "#452c80"
       }
     },
     "1654839019c2e2d28d": {
@@ -148,9 +218,9 @@
         "9b4bb979-54d0-4eb1-bf11-eafd4f79c16d": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/VTG-EastHillTreeFarm-8.jpg",
-            "text": "\"I FREAKIN LOVE THESE GLOVES\"",
-            "reviewer": "NICKO RUBIN  |  PLAINFIELD, VERMONT",
+            "image": "shopify:\/\/shop_images\/VTG-Web-Portraits-45-Vermonter-KeithSprague.jpg",
+            "text": "\"I'VE WORN THESE SINCE MY FIRST FARM JOB AT 10 YEARS OLD\"",
+            "reviewer": "KEITH SPRAGUE  |  BROOKFIELD, VERMONT",
             "button_text": "READ MORE VERMONTER REVIEWS",
             "button_link": "shopify:\/\/products\/the-vermonter",
             "primary_color": "#452c80",
@@ -160,19 +230,32 @@
         "a9b03466-372d-4c76-81c8-33b301ed34a7": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/VTG_September_2019_Selects_18_of_126.jpg",
-            "text": "\"BEST GLOVES I'VE EVER HAD. I'LL NEVER GO BACK TO THE HARDWARE STORE KIND.\"",
-            "reviewer": "CHARLES FRONTENAC",
+            "image": "shopify:\/\/shop_images\/VTG-Web-Portraits-11-UphillSkier-MatthewTufts.jpg",
+            "text": "\"WARM ON THE WAY UP, WARM ON THE WAY DOWN.\"",
+            "reviewer": "SKI BUD | BEND, OR",
             "button_text": "READ MORE UPHILL SKIER REVIEWS",
             "button_link": "shopify:\/\/products\/the-uphill-skier",
             "primary_color": "#452c80",
+            "secondary_color": "#ffffff"
+          }
+        },
+        "cb830a46-53ac-4028-bcba-f37ea123382d": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG-Web-Portraits-11-Jefflo-ICKS.jpg",
+            "text": "\"CAN'T IMAGINE LIFE WITHOUT MY JEFFLOS\"",
+            "reviewer": "PATRICK R. | ADIRONDACKS, NY",
+            "button_text": "READ MORE JEFFLO REVIEWS",
+            "button_link": "shopify:\/\/products\/the-jefflo-mitt",
+            "primary_color": "#452C80",
             "secondary_color": "#ffffff"
           }
         }
       },
       "block_order": [
         "9b4bb979-54d0-4eb1-bf11-eafd4f79c16d",
-        "a9b03466-372d-4c76-81c8-33b301ed34a7"
+        "a9b03466-372d-4c76-81c8-33b301ed34a7",
+        "cb830a46-53ac-4028-bcba-f37ea123382d"
       ],
       "settings": {
       }

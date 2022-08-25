@@ -1,0 +1,41 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "1660265871c812811d": {
+      "type": "text",
+      "settings": {
+        "headline": "WE REALLY STITCHIN' CARE.",
+        "subhead": "We take glove quality as seriously as we take a case of beer after splitting 6 cords in an afternoon.",
+        "text": "<p>Vermont glove is dedicated to producing high quality industrial work gloves to ensure the end user’s satisfaction and safety. We’ve been making gloves for lineworkers to protect them while hanging on to 20,000V powerlines. We don’t take that lightly. We are committed to satisfying all applicable requirements and to the improvement of our Quality Management System.<\/p>",
+        "link_text": "Read More",
+        "link": "",
+        "bg_color": "#ffffff",
+        "text_color": "#000000"
+      }
+    },
+    "1660266014a2fbeb83": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "As of 2019, we are ISO 9001:2015 certified. The ISO cert is provided by an accredited third party that holds us accountable to the highest quality standards in the industry.",
+        "text": "<p><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/Supplier_Quality_Clauses.pdf?v=1617384535\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/Supplier_Quality_Clauses.pdf?v=1617384535\">View our Supplier Quality Clauses<\/a><\/p>",
+        "image": "shopify:\/\/shop_images\/VTG_ISO_Cert_Seal.png",
+        "button_link": "button",
+        "button_text": "VIEW OUR ISO CERTIFICATION",
+        "button_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG_ISO_Cert_Seal.png?v=1624313546",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1660265871c812811d",
+    "1660266014a2fbeb83"
+  ]
+}

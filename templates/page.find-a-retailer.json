@@ -1,0 +1,38 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "1661372417a2747b1e": {
+      "type": "text",
+      "settings": {
+        "headline": "FIND A RETAILER",
+        "subhead": "",
+        "text": "<p>Inventory levels fluctuate at all retailers, with some having low to zero inventory over the summer. Check availability before heading to any retail location.<\/p><p>Stores with asterisks tend to carry a larger inventory around the winter holidays.<\/p>",
+        "link_text": "Read More",
+        "link": "",
+        "bg_color": "#ffffff",
+        "text_color": "#000000"
+      }
+    },
+    "1661372264f1eaaeb5": {
+      "type": "text",
+      "settings": {
+        "headline": "",
+        "subhead": "",
+        "text": "<p><span style=\"text-decoration:underline\"><strong>VERMONT<\/strong><\/span><\/p><p>Barn Owl Bistro and Goods - East Berkshire, VT<\/p><p>Salt and Bubbles Market - Essex, VT<\/p><p>Lenny’s Shoe and Apparel -<a href=\"https:\/\/duckduckgo.com\/?ia=web&iaxm=places&q=lennys%20williston&t=ffab\"> <\/a>Barre, VT<\/p><p>*Common Deer - Burlington, VT<\/p><p>*Alpine Shop - South Burlington, VT<\/p><p>*Outdoor Gear Exchange - South Burlington, VT<\/p><p>*Forth ‘N Goal - Middlebury, VT<\/p><p>Shaw’s General Store - Stowe, VT<\/p><p>*AJ’s Ski and Sports - Stowe, VT<\/p><p>Bicycle Express - Waterbury, VT<\/p><p>Onion River Outdoors - Montpelier, VT<\/p><p>*The Gear House - Randolph, VT<\/p><p>New England Maple Museum - Pittsford, VT<\/p><p>*Elevation Clothing - Woodstock, VT<\/p><p>Gear Again - White River Junction, VT<\/p><p>Farm Way - Bradford, VT<br\/><\/p><p>Totem Pole Ski Shop - Ludlow, VT<\/p><p>JJ Hapgood General Store - Peru, VT<\/p><p>HN Williams Store - Dorset, VT<\/p><p>Mettowee Mint - Dorset, VT<\/p><p><\/p><p><span style=\"text-decoration:underline\"><strong>MAINE<\/strong><\/span><\/p><p>Organic Grower’s Supply - Clinton, ME<\/p><p>Toddy Pond Farm - Monroe, ME<\/p><p>Nomads - Portland, ME<\/p><p><\/p><p><span style=\"text-decoration:underline\"><strong>MASSACHUSETTS<\/strong><\/span><\/p><p>Intrinsic Provisions  - Hingham, MA<\/p><p>Boston General Store - Brookline, MA<\/p><p>Outside In - Cohasset, MA<\/p><p><\/p><p><span style=\"text-decoration:underline\"><strong>NEW HAMPSHIRE<\/strong><\/span><\/p><p>*Dartmouth Skiway - Lyme, NH<\/p><p><\/p><p><span style=\"text-decoration:underline\"><strong>CONNECTICUT<\/strong><\/span><\/p><p>Hardenco (Hartford Denim Company) - New Hartford, CT<\/p><p><\/p><p><span style=\"text-decoration:underline\"><strong>OREGON<\/strong><\/span><\/p><p>Ship John - Portland, OR<\/p><p><\/p><p><span style=\"text-decoration:underline\"><strong>ONLINE RETAILERS<\/strong><\/span><\/p><p>RailRiders<\/p><p>Lock N Lube<\/p>",
+        "link_text": "Read More",
+        "link": "",
+        "bg_color": "#ffffff",
+        "text_color": "#000000"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1661372417a2747b1e",
+    "1661372264f1eaaeb5"
+  ]
+}

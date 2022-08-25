@@ -16,10 +16,22 @@
         "full": true,
         "ratio": 175
       }
+    },
+    "1660313429a362b897": {
+      "type": "image-title",
+      "settings": {
+        "title": "GREASEMUP",
+        "button_text": "BURTTON TEXT",
+        "button_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/662acd249dc54716a573c4c30f0b4ca5.mp4",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
     }
   },
   "order": [
     "main",
-    "1659712290bdfa535d"
+    "1659712290bdfa535d",
+    "1660313429a362b897"
   ]
 }

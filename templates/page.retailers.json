@@ -1,0 +1,50 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "1660266540005f4381": {
+      "type": "call-to-action",
+      "blocks": {
+        "34b3267a-fc17-4ffc-892d-9c02650fbe7d": {
+          "type": "button",
+          "settings": {
+            "button_text": "DOWNLOAD OUR RETAIL BROCHURE",
+            "button_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG-Retail-SalesBrochure-22_06_10.pdf?v=1660267938"
+          }
+        }
+      },
+      "block_order": [
+        "34b3267a-fc17-4ffc-892d-9c02650fbe7d"
+      ],
+      "settings": {
+        "title": "Retail Program Winter 22\/23",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "image": "shopify:\/\/shop_images\/VTG-Images-Web54-RetailHero.jpg",
+        "video_url": "",
+        "full": true,
+        "ratio": 160
+      }
+    },
+    "1660267064880dbf5d": {
+      "type": "text",
+      "settings": {
+        "headline": "",
+        "subhead": "Email wholesale [at] vermontglove.com for further inquiries",
+        "text": "",
+        "link_text": "Read More",
+        "link": "",
+        "bg_color": "#ffffff",
+        "text_color": "#000000"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1660266540005f4381",
+    "1660267064880dbf5d"
+  ]
+}

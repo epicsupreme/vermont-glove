@@ -32,6 +32,7 @@
         },
         "b6e7c7fe-be14-425f-9e36-0501bd195875": {
           "type": "guide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/VTG_September_2019_13_of_26.jpg",
             "page": "glove-care",
@@ -41,6 +42,7 @@
         },
         "105f5a1a-9a89-4573-ae6f-3e9993804cb1": {
           "type": "guide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/VermontGloveCompany-12_15ff963c-683d-4d0c-a7d8-197593dd7baf.jpg",
             "page": "",

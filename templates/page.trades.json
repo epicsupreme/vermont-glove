@@ -1,0 +1,50 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "1660267133ad98ba31": {
+      "type": "call-to-action",
+      "blocks": {
+        "e6fa3a42-0282-4552-9a65-de6a5ca75194": {
+          "type": "button",
+          "settings": {
+            "button_text": "DOWNLOAD OUR WHOLESALE BROCHURE",
+            "button_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG_Catalogue_Industry_August_2019.pdf?v=1617382306"
+          }
+        }
+      },
+      "block_order": [
+        "e6fa3a42-0282-4552-9a65-de6a5ca75194"
+      ],
+      "settings": {
+        "title": "",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "image": "shopify:\/\/shop_images\/VTG-Images-Web54-WholesaleHero_8815a745-1849-4141-9d22-0d1984b51f27.jpg",
+        "video_url": "",
+        "full": true,
+        "ratio": 160
+      }
+    },
+    "16602672353e1dafd4": {
+      "type": "text",
+      "settings": {
+        "headline": "",
+        "subhead": "EMAIL WHOLESALE [AT] VERMONTGLOVE.COM FOR FURTHER INQUIRIES",
+        "text": "",
+        "link_text": "Read More",
+        "link": "",
+        "bg_color": "#ffffff",
+        "text_color": "#452C80"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1660267133ad98ba31",
+    "16602672353e1dafd4"
+  ]
+}

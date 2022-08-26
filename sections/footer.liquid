@@ -9,7 +9,8 @@
       <div
          class="gap-5 lg:grid lg:grid-cols-2">
 
-         <div class="xl:grid xl:grid-cols-6 xl:gap-5 xl:items-start">
+         <div
+            class="xl:grid xl:grid-cols-6 xl:gap-5 xl:items-start">
             <div
                class="hidden pt-2 md:block xl:col-span-2 md:mb-6">
                <div
@@ -92,39 +93,60 @@
          </div>
 
          <div
-            class="hidden grid-cols-3 gap-5 md:grid">
-            {% for block in section.blocks %}
-               {%- assign nav = linklists[block.settings.nav] -%}
-               <div
-                  class="mb-8 text-center md:text-left md:block">
+            class="hidden md:block">
+            <div
+               class="grid-cols-3 gap-5 md:grid">
+               {% for block in section.blocks %}
+                  {%- assign nav = linklists[block.settings.nav] -%}
                   <div
-                     class="pb-1.5 mb-3 text-xl uppercase border-b border-white font-headline">
-                     {{ nav.title }}
+                     class="mb-8 text-center md:text-left md:block">
+                     <div
+                        class="pb-1.5 mb-3 text-xl uppercase border-b border-white font-headline">
+                        {{ nav.title }}
+                     </div>
+                     <ul
+                        class="list-none">
+                        {% for link in nav.links %}
+                           <li
+                              class="mb-0.5">
+                              <a
+                                 href="{{ link.url }}" title="{{ link.title }}" class="text-xs font-light uppercase">{{ link.title }}</a>
+                           </li>
+                        {% endfor %}
+                     </ul>
                   </div>
-                  <ul
-                     class="list-none">
-                     {% for link in nav.links %}
-                        <li
-                           class="mb-0.5">
-                           <a
-                              href="{{ link.url }}" title="{{ link.title }}" class="text-xs font-light uppercase">{{ link.title }}</a>
-                        </li>
-                     {% endfor %}
-                  </ul>
+               {% endfor %}
+            </div>
+
+            <div
+               class="hidden col-span-2 col-start-2 mt-6 text-sm text-center lg:text-left lg:block xl:flex lg:gap-3 xl:gap-8">
+               <div
+                  class="mb-2">
+                  {{ section.settings.copyright }}
                </div>
-            {% endfor %}
+               <div
+                  class="flex gap-3 xl:gap-8">
+                  {% for link in linklists.footer-policy-menu.links %}
+                     <a
+                        href="{{ link.url }}" title="{{ link.title }}" class="">{{ link.title }}</a>
+                  {% endfor %}
+               </div>
+            </div>
+
          </div>
 
          <div
-            class="col-span-2 col-start-2 text-sm text-center lg:text-left lg:flex lg:gap-3 xl:gap-8">
-            <div class="mb-2">
+            class="col-span-2 col-start-2 text-sm text-center lg:text-left lg:hidden lg:gap-3 xl:gap-8">
+            <div
+               class="mb-2">
                {{ section.settings.copyright }}
             </div>
-            <div class="flex justify-center gap-3 xl:gap-8">
+            <div
+               class="flex justify-center gap-3 xl:gap-8">
                {% for link in linklists.footer-policy-menu.links %}
-               <a
-               href="{{ link.url }}" title="{{ link.title }}" class="">{{ link.title }}</a>
-            {% endfor %}
+                  <a
+                     href="{{ link.url }}" title="{{ link.title }}" class="">{{ link.title }}</a>
+               {% endfor %}
             </div>
          </div>
 

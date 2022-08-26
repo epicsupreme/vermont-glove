@@ -1,22 +1,33 @@
-<div class="container mx-auto mb-32">
+<div
+   class="container mx-auto mb-32">
 
-   <div class="mt-8 mb-3 text-4xl text-center uppercase font-display">
-      {{ section.settings.title }}
-   </div>
-   <div class="mb-10 text-3xl text-center font-headline">
-      {{ section.settings.text }}
+   <div
+      class="px-8">
+      <div
+         class="mt-8 mb-3 text-4xl text-center uppercase font-display">
+         {{ section.settings.title }}
+      </div>
+      <div
+         class="mb-10 text-3xl text-center font-headline">
+         {{ section.settings.text }}
+      </div>
    </div>
 
-   <div class="grid grid-cols-2 gap-x-5 gap-y-10">
+   <div
+      class="grid grid-cols-1 px-8 md:grid-cols-2 gap-x-5 gap-y-10">
       {% for block in section.blocks %}
-         <a href="{{ block.settings.page.url }}" title="{{ section.settings.title }}" class="block">
-            <div class="mb-2 aspect-[746/585]">
+         <a
+            href="{{ block.settings.page.url }}" title="{{ section.settings.title }}" class="block">
+            <div
+               class="mb-2 aspect-[746/585]">
                {{ block.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-cover' }}
             </div>
-            <div class="text-2xl uppercase font-headline">
+            <div
+               class="text-2xl uppercase font-headline">
                {{ block.settings.title }}
             </div>
-            <div class="">
+            <div
+               class="">
                {{ block.settings.text }}
             </div>
          </a>

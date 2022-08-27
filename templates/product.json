@@ -123,7 +123,7 @@
     "1660158343930fee78": {
       "type": "video-image",
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/VTG-MelissaSmith-23.jpg",
+        "image_1": "shopify:\/\/shop_images\/VTG-Web-Portraits-11-UphillSkier-MatthewTufts.jpg",
         "video_url_1": "",
         "image_2": "shopify:\/\/shop_images\/VTG-HomeHero-Chainsaw.jpg",
         "video_url_2": ""
@@ -183,14 +183,14 @@
     "16600693525c2b15f4": {
       "type": "compare",
       "blocks": {
-        "6d41153e-08ac-4925-8f8c-628bd23bcd9b": {
+        "605fca98-4aa2-42a4-bbbe-cbd2202a73fa": {
           "type": "product",
           "settings": {
-            "product": "choppers-mitt",
+            "product": "the-vermonter",
             "text": "",
             "glove_text": "100% Goat Leather",
             "cuff_text": "100% Goat Leather",
-            "liner_text": ""
+            "liner_text": "Optional Removable Liner"
           }
         },
         "0681eced-8bb2-43b0-8c75-a87426208331": {
@@ -200,27 +200,38 @@
             "text": "",
             "glove_text": "100% Goat Leather",
             "cuff_text": "100% Goat Leather",
-            "liner_text": ""
+            "liner_text": "Recycled Poly Liner"
           }
         },
-        "605fca98-4aa2-42a4-bbbe-cbd2202a73fa": {
+        "6d41153e-08ac-4925-8f8c-628bd23bcd9b": {
           "type": "product",
           "settings": {
-            "product": "the-vermonter",
+            "product": "choppers-mitt",
             "text": "",
             "glove_text": "100% Goat Leather",
             "cuff_text": "100% Goat Leather",
-            "liner_text": ""
+            "liner_text": "Recycled poly liner"
+          }
+        },
+        "1f23043c-901c-402b-9ff1-db349e2ce32c": {
+          "type": "product",
+          "settings": {
+            "product": "the-uphill-skier",
+            "text": "",
+            "glove_text": "100% Goat Leather",
+            "cuff_text": "100% Goat Leather",
+            "liner_text": "Removable Merino Wool"
           }
         }
       },
       "block_order": [
-        "6d41153e-08ac-4925-8f8c-628bd23bcd9b",
+        "605fca98-4aa2-42a4-bbbe-cbd2202a73fa",
         "0681eced-8bb2-43b0-8c75-a87426208331",
-        "605fca98-4aa2-42a4-bbbe-cbd2202a73fa"
+        "6d41153e-08ac-4925-8f8c-628bd23bcd9b",
+        "1f23043c-901c-402b-9ff1-db349e2ce32c"
       ],
       "settings": {
-        "title": "Compare Gloves",
+        "title": "Compare Mittens",
         "button_text": "Buy Now"
       }
     },

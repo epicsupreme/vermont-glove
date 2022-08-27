@@ -8,7 +8,7 @@
     "1659712290bdfa535d": {
       "type": "call-to-action",
       "settings": {
-        "title": "GREASE'EM OR RELEASE'EM",
+        "title": "GREAS'EM AND WEEP",
         "primary_color": "#ffffff",
         "secondary_color": "#ffffff",
         "image": "shopify:\/\/shop_images\/VTG-SDF_Aug21-18.jpg",
@@ -23,7 +23,7 @@
         "title": "GREASEMUP",
         "button_text": "BURTTON TEXT",
         "button_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/662acd249dc54716a573c4c30f0b4ca5.mp4",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
       }

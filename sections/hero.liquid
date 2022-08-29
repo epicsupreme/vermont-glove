@@ -35,10 +35,23 @@
 
                   <div
                      class="relative z-10">
-                     <div
-                        class="uppercase font-display text-[color:var(--primary)] leading-none text-3xl lg:text-5xl mb-4 md:mb-8">
-                        {{ block.settings.title | newline_to_br }}
-                     </div>
+                     {% if block.settings.mobile_title %}
+                        <div
+                           class="uppercase hidden lg:block font-display text-[color:var(--primary)] leading-none text-3xl lg:text-5xl mb-4 md:mb-8">
+                           {{ block.settings.title | newline_to_br }}
+                        </div>
+
+                        <div
+                           class="uppercase lg:hidden font-display text-[color:var(--primary)] leading-none text-3xl lg:text-5xl mb-4 md:mb-8">
+                           {{ block.settings.mobile_title | newline_to_br }}
+                        </div>
+                     {% else %}
+                        <div
+                           class="uppercase font-display text-[color:var(--primary)] leading-none text-3xl lg:text-5xl mb-4 md:mb-8">
+                           {{ block.settings.title | newline_to_br }}
+                        </div>
+                     {% endif %}
+
 
                      {%- render 'button', url: block.settings.button_url, text: block.settings.button_text, size: 'm' -%}
 
@@ -64,6 +77,11 @@
            "id": "title",
            "label": "Title"
          },
+         {
+          "type": "textarea",
+          "id": "mobile_title",
+          "label": "Mobile Title"
+        },
          {
            "type": "text",
            "id": "button_text",

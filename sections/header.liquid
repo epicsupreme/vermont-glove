@@ -1,3 +1,20 @@
+{% if section.settings.top_bar %}
+   {% assign headerHeight = "176px" %}
+   {% assign mobileHeaderHeight = "148px" %}
+{% else %}
+   {% assign headerHeight = "140px" %}
+   {% assign mobileHeaderHeight = "112px" %}
+{% endif %}
+
+
+<style>
+   :root {
+      --header-height: {{ headerHeight }};
+      --mobile-header-height: {{ mobileHeaderHeight }};
+   }
+
+</style>
+
 <header
    class="fixed z-40 w-full"
    id="header"

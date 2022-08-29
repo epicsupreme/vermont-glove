@@ -1,0 +1,19 @@
+{% case section.settings.media_type %}
+   {% when "image" %}
+      {%- render 'image', image: section.settings.image, classes: 'w-full h-full object-cover' -%}
+   {% when "uploaded_video" %}
+      <video src="{{ section.settings.upload_video_url }}" autoplay muted loop playsinline class="object-cover w-full h-full" />
+   {% when "youtube_video" %}
+      <div class="aspect-video">
+         {% case section.settings.youtube_video_url.type %}
+            {% when "youtube" %}
+             <iframe class="w-full h-full" src="https://www.youtube.com/embed/{{ section.settings.youtube_video_url.id }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         {% when "vimeo" %}
+             <iframe src="https://player.vimeo.com/video/{{ section.settings.youtube_video_url.id }}" class="w-full h-full" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+         {% endcase %}
+
+      </div>
+   {% else %}
+      {%- render 'image', image: section.settings.image, classes: 'w-full h-full object-cover' -%}
+{% endcase %}

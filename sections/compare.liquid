@@ -2,7 +2,7 @@
 <script
    src="{{- 'component-compare.js' | asset_url -}}" defer></script>
 <div
-   class="container mx-auto my-10 md:pl-0 lg:my-20">
+   class="container mx-auto my-10 md:pl-0 lg:my-20 lg:px-8">
    <div class="mb-6 text-3xl text-center uppercase lg:text-4xl font-headline">
       {{ section.settings.title }}
    </div>
@@ -11,14 +11,14 @@
       <div
          class="swiper-wrapper">
 
-         {% for block in section.blocks %}
-            {%- assign compareItem = all_products[block.settings.product] -%}
+         {% for compareItem in product.metafields.vermont.compare_products.value %}
+
             <div
                class="swiper-slide">
                <div
                   class="mb-1 aspect-square">
-                  {% if block.settings.image %}
-                     {{ block.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-contain' }}
+                  {% if compareItem.metafields.vermont.compare_image %}
+                     {{ compareItem.metafields.vermont.compare_image.value | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-contain' }}
                   {% else %}
                      {{ compareItem.featured_image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-contain' }}
                   {% endif %}
@@ -26,38 +26,43 @@
                <div class="mb-4 text-3xl uppercase font-headline">
                   {{ compareItem.title }}
                </div>
+               {% if compareItem.metafields.vermont.compare_text %}
+
                <div class="mb-4 lg:text-lg">
-                  {{ block.settings.text }}
+                  {{ compareItem.metafields.vermont.compare_text }}
                </div>
-               {% if block.settings.glove_text %}
-                  <div class="flex mb-2">
+
+               {% endif %}
+
+               {% if compareItem.metafields.vermont.compare_glove_text %}
+                  <div class="flex mb-2 text-sm">
                      <div class="w-16 font-headline">
                         Glove:
                      </div>
                      <div>
-                        {{ block.settings.glove_text }}
+                        {{ compareItem.metafields.vermont.compare_glove_text }}
                      </div>
                   </div>
                {% endif %}
 
-               {% if block.settings.cuff_text %}
+               {% if compareItem.metafields.vermont.compare_cuff_text %}
                   <div class="flex mb-2 text-sm">
                      <div class="w-16 font-headline">
                         Cuff:
                      </div>
                      <div>
-                        {{ block.settings.cuff_text }}
+                        {{ compareItem.metafields.vermont.compare_cuff_text }}
                      </div>
                   </div>
                {% endif %}
 
-               {% if block.settings.liner_text %}
+               {% if compareItem.metafields.vermont.compare_liner_text %}
                   <div class="flex mb-2 text-sm">
                      <div class="w-16 font-headline">
                         Liner:
                      </div>
                      <div>
-                        {{ block.settings.liner_text }}
+                        {{ compareItem.metafields.vermont.compare_liner_text }}
                      </div>
                   </div>
                {% endif %}
@@ -71,7 +76,7 @@
                   </div>
                </div>
 
-               <a href="{{ compareItem.url }}" class="block py-3 text-xl text-center text-black uppercase bg-tertiary font-headline ">
+               <a href="{{ compareItem.url }}" class="block py-3 text-xl text-center text-white uppercase bg-brand font-headline ">
                   {{ section.settings.button_text }}
                </a>
 

@@ -1,0 +1,67 @@
+<div class="container px-6 pt-6 pb-12 mx-auto lg:pt-8 text-brand">
+   <div class="mb-10">
+      <div class="mb-4 text-4xl text-center lg:text-5xl font-headline">
+         {{ section.settings.title }}
+      </div>
+      <div class="max-w-2xl mx-auto prose text-brand">{{ section.settings.text }}</div>
+   </div>
+
+   <div>
+      {% for block in section.blocks %}
+         <div class="mb-4">
+            <div class="max-w-2xl mx-auto mb-2 text-3xl font-headline">
+               {{ block.settings.question }}
+            </div>
+            <div class="max-w-2xl mx-auto prose text-brand">
+               {{ block.settings.answer }}
+            </div>
+         </div>
+      {% endfor %}
+   </div>
+</div>
+
+
+{% schema %}
+{
+   "name": "FAQ",
+   "settings": [
+     {
+       "type": "text",
+       "id": "title",
+       "label": "Title",
+       "default": "FAQ"
+     },
+     {
+       "type": "richtext",
+       "id": "text",
+       "label": "Text"
+     }
+   ],
+   "blocks": [
+     {
+       "name": "FAQ",
+       "type": "faq",
+       "settings": [
+         {
+           "type": "text",
+           "id": "question",
+           "label": "Question"
+         },
+         {
+           "type": "richtext",
+           "id": "answer",
+           "label": "Answer"
+         }
+       ]
+     }
+   ],
+   "presets": [
+     {
+       "name": "FAQ"
+     }
+   ],
+   "templates": [
+     "page"
+   ]
+ }
+{% endschema %}

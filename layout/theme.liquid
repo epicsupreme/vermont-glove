@@ -73,7 +73,6 @@
       x-on:updatecartcount.window="cartCount = $event.detail.cartTotal"
       x-on:updatecartstatus.window="cartOpen = $event.detail.cartOpen"
       x-on:updatenavstatus.window="navStatus = $event.detail.navStatus"
-      style="--header-height:176px;"
       >
 
 
@@ -82,7 +81,7 @@
       {%- render 'cart' -%}
 
       <main
-         class="min-h-[calc(100vh-var(--header-height)-var(--footer-height))] pt-[var(--sizes-mobile-header)] lg:pt-[calc(var(--sizes-header)+48px)] "
+         class="min-h-[calc(100vh-var(--header-height)-var(--footer-height))] pt-[var(--mobile-header-height)] lg:pt-[calc(var(--header-height))] "
          id="main-content"
          role="main"
          tabindex="-1">

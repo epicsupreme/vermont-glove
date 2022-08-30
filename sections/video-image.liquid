@@ -3,29 +3,67 @@
 
    <div
       class="aspect-[959/804]">
-      {% if section.settings.video_url_1 %}
-         <video
-            src="{{ section.settings.video_url_1 }}" playsinline
-            loop
-            autoplay
-            muted
-            class="object-cover w-full h-full"></video>
+
+      {% if product.metafields.vermont.split_media_one %}
+
+         {% if product.metafields.vermont.split_media_one.value.media_type == "video" %}
+            <video
+               src="{{ product.metafields.vermont.split_media_one.value.sources[1].url }}" playsinline
+               loop
+               autoplay
+               muted
+               class="object-cover w-full h-full"></video>
+
+         {% else %}
+            {{ product.metafields.vermont.split_media_one.value | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-cover' }}
+         {% endif %}
       {% else %}
-         {{ section.settings.image_1 | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-cover' }}
+
+         {% if section.settings.video_url_1 %}
+            <video
+               src="{{ section.settings.video_url_1 }}" playsinline
+               loop
+               autoplay
+               muted
+               class="object-cover w-full h-full"></video>
+         {% else %}
+            {{ section.settings.image_1 | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-cover' }}
+         {% endif %}
+
       {% endif %}
+
+
    </div>
    <div
       class="aspect-[959/804]">
 
-      {% if section.settings.video_url_2 %}
-         <video
-            src="{{ section.settings.video_url_2 }}" playsinline
-            loop
-            autoplay
-            muted
-            class="object-cover w-full h-full"></video>
+      {% if product.metafields.vermont.split_media_two %}
+
+         {% if product.metafields.vermont.split_media_two.value.media_type == "video" %}
+            <video
+               src="{{ product.metafields.vermont.split_media_two.value.sources[1].url }}" playsinline
+               loop
+               autoplay
+               muted
+               class="object-cover w-full h-full"></video>
+
+         {% else %}
+            {{ product.metafields.vermont.split_media_two.value | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-cover' }}
+         {% endif %}
       {% else %}
-         {{ section.settings.image_2 | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-cover' }}
+
+
+         {% if section.settings.video_url_2 %}
+            <video
+               src="{{ section.settings.video_url_2 }}" playsinline
+               loop
+               autoplay
+               muted
+               class="object-cover w-full h-full"></video>
+         {% else %}
+            {{ section.settings.image_2 | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-cover' }}
+         {% endif %}
+
       {% endif %}
 
    </div>

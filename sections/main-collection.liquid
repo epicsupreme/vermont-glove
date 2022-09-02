@@ -50,7 +50,8 @@
       class="sticky z-10 self-start lg:hidden top-[calc(var(--sizes-mobile-header)+36px)] bg-white"
       x-data="{open: false}">
       <button
-         class="flex items-center gap-2" @click="open = !open">
+         @click="open = !open"
+         class="flex items-center gap-2">
          <div
             class="w-4 text-black">
             {%- render 'svg-filter' -%}
@@ -67,8 +68,9 @@
             {%- assign col = collections[block.settings.collection] -%}
 
             <a
+               @click="open = false"
                class="block px-2 py-2 border-b border-black first:border-t"
-               href="#{{ col.handle }}" @click="open = false">{{ col.title }}</a>
+               href="#{{ col.handle }}">{{ col.title }}</a>
          {% endfor %}
       </ul>
    </div>
@@ -91,6 +93,15 @@
                      href="{{ item.url }}" title="{{ item.title }}" class="block group">
                      <div
                         class="aspect-[437/542] relative">
+                        {% if item.tags contains 'new' %}
+                           <div
+                              class="absolute right-0 z-10 w-10">
+                              <img
+                                 src="{{ 'new-badge.png' | asset_img_url: '84x' }}" alt="New"
+                                 class="w-full">
+                           </div>
+                        {% endif %}
+
                         {% if item.images[1] %}
 
                            {{ item.featured_image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full

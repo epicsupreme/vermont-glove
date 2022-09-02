@@ -153,10 +153,10 @@
                   <button
                      :class="checkAddOns(addOn.addOnProduct.variants[0].id) ? 'bg-brand border-brand text-white' : 'border-gray-300 text-black'"
                      @click.prevent="selectAddon(addOn.addOnProduct.variants[0].id, selectedAddOnProducts, addOn.addOnProduct.variants[0].price)"
-                     class="w-3/4 py-3 text-lg uppercase border hover:border-brand hover:text-white hover:bg-brand font-headline"
+                     class="w-3/4 py-3 text-lg uppercase border-2 hover:border-brand hover:text-white hover:bg-brand font-headline"
                      x-text="addOn.addOnProduct.title"></button>
-                  <div>+$<span
-                     :class="checkAddOns(addOn.addOnProduct.variants[0].id) ? 'font-bold' : ''"
+                  <div :class="checkAddOns(addOn.addOnProduct.variants[0].id) ? 'font-display' : ''">+$<span
+
                         x-text="addOn.addOnProduct.variants[0].price / 100"></span>
                   </div>
                </div>

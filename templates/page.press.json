@@ -14,7 +14,7 @@
         "link_text": "Read More",
         "link": "",
         "bg_color": "#ffffff",
-        "text_color": "#000000"
+        "text_color": "#452C80"
       }
     },
     "166026914894ef3f63": {
@@ -23,11 +23,14 @@
         "title": "DARN TOUGH",
         "subhead": "Hand in Glove: A Century of Textile Manufacturing Right in Vermont",
         "text": "",
+        "media_type": "image",
         "image": "shopify:\/\/shop_images\/DarnTough2.png",
+        "upload_video_url": "",
+        "youtube_video_url": "",
         "button_link": "button",
         "button_text": "WATCH IT",
         "button_url": "https:\/\/darntough.com\/blogs\/the-alternate-stitch\/hand-in-glove-vermont",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
       }
@@ -38,7 +41,10 @@
         "title": "THE SEATTLE TIMES",
         "subhead": "TOP PICKS FOR GARDENERS AND PLANT PARENTS",
         "text": "",
+        "media_type": "image",
         "image": "shopify:\/\/shop_images\/SeattleTimes.webp",
+        "upload_video_url": "",
+        "youtube_video_url": "",
         "button_link": "button",
         "button_text": "READ IT",
         "button_url": "",
@@ -53,11 +59,14 @@
         "title": "MARTHA STEWART",
         "subhead": "HOLIDAY GIFTS PERFECT FOR THE GUYS IN YOUR LIFE",
         "text": "",
+        "media_type": "image",
         "image": "shopify:\/\/shop_images\/MarthaStewart.webp",
+        "upload_video_url": "",
+        "youtube_video_url": "",
         "button_link": "button",
         "button_text": "READ IT",
         "button_url": "https:\/\/www.marthastewart.com\/1533573\/holiday-gifts-for-him?slide=547b5bea-ede8-4d9e-9872-6d589c198833",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": true
       }
@@ -68,11 +77,14 @@
         "title": "POPULAR MECHANICS",
         "subhead": "THE BEST WORK GLOVES FOR COLD WINTER MONTHS",
         "text": "",
+        "media_type": "image",
         "image": "shopify:\/\/shop_images\/PopMech.webp",
+        "upload_video_url": "",
+        "youtube_video_url": "",
         "button_link": "button",
         "button_text": "READ IT",
         "button_url": "https:\/\/www.popularmechanics.com\/home\/tools\/a24398976\/winter-work-gloves\/",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
       }
@@ -83,11 +95,14 @@
         "title": "EPICURIOUS",
         "subhead": "EVERYBODY CAN GROW THEIR OWN FOOD: HERE'S HOW TO GET STARTED",
         "text": "",
+        "media_type": "image",
         "image": "shopify:\/\/shop_images\/Epicurious.webp",
+        "upload_video_url": "",
+        "youtube_video_url": "",
         "button_link": "button",
         "button_text": "READ IT",
         "button_url": "https:\/\/www.epicurious.com\/expert-advice\/everybody-can-grow-their-own-food-heres-how-to-get-started-article",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": true
       }
@@ -98,11 +113,14 @@
         "title": "GEAR PATROL",
         "subhead": "THE BEST WINTER GLOVES FOR EVERY ACTIVITY",
         "text": "",
+        "media_type": "image",
         "image": "shopify:\/\/shop_images\/GearPatrol-BestWinter.webp",
+        "upload_video_url": "",
+        "youtube_video_url": "",
         "button_link": "button",
         "button_text": "READ IT",
         "button_url": "https:\/\/www.gearpatrol.com\/outdoors\/a174697\/best-winter-gloves-for-men\/",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
       }
@@ -113,11 +131,14 @@
         "title": "GEAR PATROL",
         "subhead": "16 OF THE BEST MADE IN AMERICA OUTDOOR BRANDS",
         "text": "",
+        "media_type": "image",
         "image": "shopify:\/\/shop_images\/GearPatrol-AmericanMade.webp",
+        "upload_video_url": "",
+        "youtube_video_url": "",
         "button_link": "button",
         "button_text": "READ IT",
         "button_url": "https:\/\/www.gearpatrol.com\/outdoors\/a466741\/made-in-america-outdoor-brands\/",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": true
       }
@@ -128,11 +149,14 @@
         "title": "OUTSIDE",
         "subhead": "MY FAVORITE WINTER GLOVES FOR VARIOUS ACTIVITIES",
         "text": "",
+        "media_type": "image",
         "image": "shopify:\/\/shop_images\/Outside.webp",
+        "upload_video_url": "",
+        "youtube_video_url": "",
         "button_link": "button",
         "button_text": "READ IT",
         "button_url": "https:\/\/www.outsideonline.com\/2420584\/warm-winter-gloves-review",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
       }
@@ -143,11 +167,14 @@
         "title": "D'MARGE",
         "subhead": "THE COOLEST WINTER GLOVE BRANDS MEN CAN BUY FOR CITY LIVING",
         "text": "",
+        "media_type": "image",
         "image": "shopify:\/\/shop_images\/D_MARGE.webp",
+        "upload_video_url": "",
+        "youtube_video_url": "",
         "button_link": "button",
         "button_text": "READ IT",
         "button_url": "https:\/\/www.dmarge.com\/best-winter-gloves-men",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": true
       }
@@ -158,11 +185,14 @@
         "title": "MOUNTAIN WEEKLY NEWS",
         "subhead": "VERMONT UPHILL GLOVES REVIEW",
         "text": "",
+        "media_type": "image",
         "image": "shopify:\/\/shop_images\/MountainWeekly.webp",
+        "upload_video_url": "",
+        "youtube_video_url": "",
         "button_link": "button",
         "button_text": "READ IT",
         "button_url": "https:\/\/mtnweekly.com\/reviews\/vermont-ski-gloves\/",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
       }
@@ -173,11 +203,14 @@
         "title": "All American Reviews",
         "subhead": "Spotlight Series: Vermont Glove",
         "text": "",
+        "media_type": "image",
         "image": "shopify:\/\/shop_images\/AllAmericanRevies.webp",
+        "upload_video_url": "",
+        "youtube_video_url": "",
         "button_link": "button",
         "button_text": "READ IT",
         "button_url": "https:\/\/allamericanreviews.com\/vermont-glove\/",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": true
       }

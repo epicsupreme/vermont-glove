@@ -40,7 +40,6 @@
         },
         "3f81bef6-b975-4376-8344-b791ce4a0f05": {
           "type": "icon_choices",
-          "disabled": true,
           "settings": {
             "icon": "shopify:\/\/shop_images\/VTG-Icons22-WaxedCanvas.png",
             "text": "Waxed Canvas"
@@ -48,7 +47,6 @@
         },
         "77f327e8-55bd-4b51-a583-c6a102e95cc4": {
           "type": "icon_choices",
-          "disabled": true,
           "settings": {
             "icon": "shopify:\/\/shop_images\/VTG-Icons22-Liner_SewnIn.png",
             "text": "Lined"
@@ -56,7 +54,6 @@
         },
         "e4022afa-dc40-450e-94df-7e3d3fe642be": {
           "type": "icon_choices",
-          "disabled": true,
           "settings": {
             "icon": "shopify:\/\/shop_images\/VTG-Icons22-MerinoWool_d861c5ce-2f4d-4abc-9e2c-5f1d71725aad.png",
             "text": "Merino Wool"
@@ -71,7 +68,6 @@
         },
         "8bb74f8b-e649-41ad-aff6-a1e2908b5e53": {
           "type": "icon_choices",
-          "disabled": true,
           "settings": {
             "icon": "shopify:\/\/shop_images\/VTG-Icons22-WarmAsHeck.png",
             "text": "Warm As Heck"
@@ -79,7 +75,6 @@
         },
         "c1af1673-507b-458b-b611-739a76a719c9": {
           "type": "icon_choices",
-          "disabled": true,
           "settings": {
             "icon": "shopify:\/\/shop_images\/VTG-Icons22-WovenCuff.png",
             "text": "Woven Cuff"
@@ -87,7 +82,6 @@
         },
         "ceb3ade7-c474-4d3d-952e-5ad15c0f13db": {
           "type": "icon_choices",
-          "disabled": true,
           "settings": {
             "icon": "shopify:\/\/shop_images\/VTG-Icons22-TougherNNails.png",
             "text": "Tuffer'n Nails"
@@ -206,6 +200,7 @@
           "type": "product",
           "settings": {
             "product": "choppers-mitt",
+            "image": "shopify:\/\/shop_images\/VTG-Web-Portraits-45-Vermonter-KeithSprague.jpg",
             "text": "",
             "glove_text": "100% Goat Leather",
             "cuff_text": "100% Goat Leather",
@@ -230,7 +225,7 @@
         "1f23043c-901c-402b-9ff1-db349e2ce32c"
       ],
       "settings": {
-        "title": "Compare Mittens",
+        "title": "Compare Gloves",
         "button_text": "Buy Now"
       }
     },
@@ -240,8 +235,8 @@
         "172de59a-d609-4e6f-b024-86f6ee27f960": {
           "type": "button",
           "settings": {
-            "button_text": "Explore our factory",
-            "button_url": "shopify:\/\/pages\/faq"
+            "button_text": "",
+            "button_url": ""
           }
         }
       },
@@ -249,7 +244,7 @@
         "172de59a-d609-4e6f-b024-86f6ee27f960"
       ],
       "settings": {
-        "title": "HOW THE GLOVES ARE MADE",
+        "title": "HAND-SEWN IN VERMONT",
         "primary_color": "#ffffff",
         "secondary_color": "#452c80",
         "image": "shopify:\/\/shop_images\/VermontGloveCompany-12_15ff963c-683d-4d0c-a7d8-197593dd7baf.jpg",
@@ -263,7 +258,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/VTG-SDF_Aug21-18.jpg",
         "title": "A little glove love goes a long way.",
-        "button_text": "Learn to care for your gloves",
+        "button_text": "Learn to protect your investment",
         "button_url": "shopify:\/\/pages\/glove-care",
         "primary_color": "#452c80",
         "secondary_color": "#ffffff",

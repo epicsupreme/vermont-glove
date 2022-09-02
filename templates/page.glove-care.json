@@ -5,25 +5,65 @@
       "settings": {
       }
     },
-    "1659712290bdfa535d": {
-      "type": "call-to-action",
+    "166205242313051bca": {
+      "type": "text",
       "settings": {
-        "title": "GREAS'EM AND WEEP",
-        "primary_color": "#ffffff",
-        "secondary_color": "#ffffff",
-        "image": "shopify:\/\/shop_images\/VTG-SDF_Aug21-18.jpg",
-        "video_url": "",
-        "full": true,
-        "ratio": 175
+        "headline": "",
+        "subhead": "Your glove care routine should be proportional to the amount of yeehaw you’re laying down.",
+        "text": "",
+        "link_text": "Read More",
+        "link": "",
+        "bg_color": "#ffffff",
+        "text_color": "#452C80"
       }
     },
-    "1660313429a362b897": {
-      "type": "image-title",
+    "166205238507a8bb5f": {
+      "type": "history",
       "settings": {
-        "title": "GREASEMUP",
-        "button_text": "BURTTON TEXT",
-        "button_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/662acd249dc54716a573c4c30f0b4ca5.mp4",
-        "primary_color": "#452c80",
+        "title": "",
+        "subhead": "Lanolin is the special sauce.",
+        "text": "<p>It is the unsung hero of our gloves. The cheddar to our patty melt. The vapor barrier to our dream home. The oil change to our #adventure van.<br\/><\/p><p>Seriously though, the lanolin’s the natural oil in goat leather that keeps it supple, and no matter how you use your gloves, it will eventually begin to leave your leather.<\/p><p>That’s why you’ll want to condition your gloves every now and then. We use Fiebing’s Neatsfoot Oil, a 100% natural oil that is the best in the biz.<\/p>",
+        "media_type": "youtube_video",
+        "upload_video_url": "",
+        "youtube_video_url": "https:\/\/www.youtube.com\/watch?v=-whL16_3t-Q",
+        "button_link": "button",
+        "button_text": "BUY CONDITIONER",
+        "button_url": "shopify:\/\/products\/leather-conditioner",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
+    "16620527290bee7a53": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "Goat leather is naturally porous",
+        "text": "<p>Despite being as rugged as your grandma, and protective as your grandma’s pit bull, in wet environments your goat leather gloves will eventually saturate with water.<br\/><br\/>If you’re a big skier or work underwater, you’ll want to add a waterproofing agent to your gloves, to keep as much water out as possible.<br\/><br\/>We use Skidmore’s Waterproofing, a blend of beeswax and natural oils - we’d never put petroleum products on our gloves.<\/p>",
+        "media_type": "youtube_video",
+        "upload_video_url": "",
+        "youtube_video_url": "https:\/\/www.youtube.com\/watch?v=pGeVdJZYGRc",
+        "button_link": "button",
+        "button_text": "BUY WATERPROOFER",
+        "button_url": "shopify:\/\/products\/beeswax-waterproofing",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "1662052998a5416410": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "What if I want to use both?",
+        "text": "<p>The answer is yes!<\/p><p>Just make sure to use the conditioner first, as the beeswax makes an impenetrable shield around the glove, and we want that conditioner to soak in deep.<\/p>",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/VTG-SDF_Aug21-18.jpg",
+        "upload_video_url": "",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452C80",
         "secondary_color": "#ffffff",
         "flip": false
       }
@@ -31,7 +71,9 @@
   },
   "order": [
     "main",
-    "1659712290bdfa535d",
-    "1660313429a362b897"
+    "166205242313051bca",
+    "166205238507a8bb5f",
+    "16620527290bee7a53",
+    "1662052998a5416410"
   ]
 }

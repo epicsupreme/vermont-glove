@@ -4,9 +4,117 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "1662046874bfe0f839": {
+      "type": "faq",
+      "blocks": {
+        "3728eeac-b09c-4a73-b3df-d5ac97a66ee5": {
+          "type": "faq",
+          "settings": {
+            "question": "How long will my gloves last?",
+            "answer": "<p>At least one million years, unless you use them hard.<\/p>"
+          }
+        },
+        "e025ed7a-9f0d-4743-9745-6d9521fe63b3": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you have a guarantee?",
+            "answer": "<p>Yes, we guarantee are gloves are freakin awesome.<\/p>"
+          }
+        },
+        "64486b10-a5b7-4017-8ea7-70ba8a677802": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I use both conditioner and beeswax?",
+            "answer": "<p>You betcherass you can. Just make sure to use the conditioner first, as the beeswax makes an impenetrable shield around the glove, and we want that conditioner to soak deep. <\/p>"
+          }
+        },
+        "9d7d8dff-b45e-4441-ae01-47c05f9e1c35": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I clean my gloves?",
+            "answer": "<p>Strip naked, put on your gloves, and run through a car wash. <\/p>"
+          }
+        },
+        "b090a647-faa6-4e0e-abc4-c4c3d7ada711": {
+          "type": "faq",
+          "settings": {
+            "question": "What type of leather is used?",
+            "answer": "<p>Nothin but goat. <\/p>"
+          }
+        },
+        "b219ea23-c5cd-418d-ba9a-25fc90d809d4": {
+          "type": "faq",
+          "settings": {
+            "question": "Where does the leather come from?",
+            "answer": "<p>AMERICA<\/p>"
+          }
+        },
+        "97de7682-8cd0-4745-8500-56d84c71b450": {
+          "type": "faq",
+          "settings": {
+            "question": "How warm are the gloves when worn with liners?",
+            "answer": "<p>Pretty darn warm. Depends where in the world you are and how warm your hands run. <\/p>"
+          }
+        },
+        "0a493ae7-0763-49b4-b400-50cca8a5e40e": {
+          "type": "faq",
+          "settings": {
+            "question": "What if the gloves don’t fit?",
+            "answer": "<p>Head on over to our Returns & Exchanges page and initiate a swaperoo. <\/p>"
+          }
+        },
+        "e2393ea8-e31a-4941-a563-20c638ea40be": {
+          "type": "faq",
+          "settings": {
+            "question": "Why do the color of my gloves look different from your website photo?",
+            "answer": "<p>Goat leather is a natural material that comes from goats. Like butterflies or fingerprints, no two goats are exactly alike. We do our best to standardize the color of the hides we use, the is an inevitable amount of variation among the color of hides<\/p>"
+          }
+        },
+        "eba8efb2-8bfe-48be-aba8-8b8e2f66176e": {
+          "type": "faq",
+          "settings": {
+            "question": "What is the content of the merino wool liners",
+            "answer": "<p>79% Merino wool, 19% nylon, 2% elastic.<\/p>"
+          }
+        },
+        "98711fc4-df4c-4c45-b382-33b229c2390e": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you offer repairs?",
+            "answer": "<p>Sure do. Email repairs@vermontglove.com to initiate a repair.<\/p>"
+          }
+        },
+        "9e374345-8490-4346-8e17-ebea27215505": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I get in touch about a wholesale inquiry?",
+            "answer": "<p>wholesale@vermontglove.com<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "3728eeac-b09c-4a73-b3df-d5ac97a66ee5",
+        "e025ed7a-9f0d-4743-9745-6d9521fe63b3",
+        "64486b10-a5b7-4017-8ea7-70ba8a677802",
+        "9d7d8dff-b45e-4441-ae01-47c05f9e1c35",
+        "b090a647-faa6-4e0e-abc4-c4c3d7ada711",
+        "b219ea23-c5cd-418d-ba9a-25fc90d809d4",
+        "97de7682-8cd0-4745-8500-56d84c71b450",
+        "0a493ae7-0763-49b4-b400-50cca8a5e40e",
+        "e2393ea8-e31a-4941-a563-20c638ea40be",
+        "eba8efb2-8bfe-48be-aba8-8b8e2f66176e",
+        "98711fc4-df4c-4c45-b382-33b229c2390e",
+        "9e374345-8490-4346-8e17-ebea27215505"
+      ],
+      "settings": {
+        "title": "Formidably Answered Questions",
+        "text": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1662046874bfe0f839"
   ]
 }

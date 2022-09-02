@@ -1,0 +1,48 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "1662053580058ccb69": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "Using a liner in the Vermonter",
+        "text": "<p>For the best fitting liner, wear your Vermonters for a few weeks to break them in and shape them to your hands. After that, the liners will fit like butter.<br\/><br\/>You can run the liners in a pair of freshies right out of the box, and they will be tight at first. That’s OK, and expected. The gloves will relax over the course of a few sessions and fit like<\/p>",
+        "media_type": "youtube_video",
+        "upload_video_url": "",
+        "youtube_video_url": "https:\/\/www.youtube.com\/watch?v=y5xYQsgTsUI",
+        "button_link": "button",
+        "button_text": "SHOP LINERS",
+        "button_url": "shopify:\/\/products\/wool-glove-liner",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "1662053733d5973487": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "Using a liner in the Uphill Skier",
+        "text": "<p>Your liners will fit in your Uphill Skiers like a dream, right out of the box. They are calibrated to provide optimal warmth and breathability.<br\/><\/p>",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/VTG-Web-Portraits-11-UphillSkier-MatthewTufts.jpg",
+        "upload_video_url": "",
+        "button_link": "button",
+        "button_text": "SHOP UPHILL SKIER",
+        "button_url": "shopify:\/\/products\/the-uphill-skier",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1662053580058ccb69",
+    "1662053733d5973487"
+  ]
+}

@@ -29,16 +29,71 @@
         "flip": false
       }
     },
-    "1660245877fdc768ce": {
-      "type": "text",
+    "166204788625e96eda": {
+      "type": "faq",
+      "blocks": {
+        "cbac4ecf-b325-4721-84cc-7b5730329a7d": {
+          "type": "faq",
+          "settings": {
+            "question": "What if my index finger size measurement does not match the width size measurement on your glove size chart?",
+            "answer": "<p>Here's the answer<\/p>"
+          }
+        },
+        "be465700-050d-431c-a93b-868a758321ea": {
+          "type": "faq",
+          "settings": {
+            "question": "What if I’m in between sizes?",
+            "answer": "<p>Size down<\/p>"
+          }
+        },
+        "cce25f71-8e4e-4121-9752-5d824efc83df": {
+          "type": "faq",
+          "settings": {
+            "question": "Should I size up or down in the mittens?",
+            "answer": "<p>Down<\/p>"
+          }
+        },
+        "22ecb887-4683-4b47-a6e1-47aa68946eed": {
+          "type": "faq",
+          "settings": {
+            "question": "Will the gloves shrink or stretch as I wear them?",
+            "answer": "<p>They will relax to the shape of your hand.<\/p>"
+          }
+        },
+        "09fcf3f1-15bc-4dbc-9319-eb7c3a369c8d": {
+          "type": "faq",
+          "settings": {
+            "question": "Do I need to size up when ordering the Uphill Skier and Tuttle Gloves?",
+            "answer": "<p>Maybe<\/p>"
+          }
+        },
+        "a9a39f8f-a52b-4e06-b63a-8de8d9f2ad5a": {
+          "type": "faq",
+          "settings": {
+            "question": "Do I need to size up when ordering liners to go with my gloves?",
+            "answer": "<p>No, but we recommend breaking in your Vermonters before running the liners.<\/p>"
+          }
+        },
+        "ba69e1f7-b7be-449f-a659-7aeb89a2424f": {
+          "type": "faq",
+          "settings": {
+            "question": "Will the liners stretch my gloves out?",
+            "answer": "<p>Sort of<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "cbac4ecf-b325-4721-84cc-7b5730329a7d",
+        "be465700-050d-431c-a93b-868a758321ea",
+        "cce25f71-8e4e-4121-9752-5d824efc83df",
+        "22ecb887-4683-4b47-a6e1-47aa68946eed",
+        "09fcf3f1-15bc-4dbc-9319-eb7c3a369c8d",
+        "a9a39f8f-a52b-4e06-b63a-8de8d9f2ad5a",
+        "ba69e1f7-b7be-449f-a659-7aeb89a2424f"
+      ],
       "settings": {
-        "headline": "Glove Sizing faq",
-        "subhead": "1. 90% of big tough guys wear a size 9 or 10",
-        "text": "<p>1. 90% of big tough guys wear a size 9 or 10<\/p><p>2. <\/p>",
-        "link_text": "Read More",
-        "link": "",
-        "bg_color": "#ffffff",
-        "text_color": "#000000"
+        "title": "GLOVE SIZING FAQ",
+        "text": ""
       }
     }
   },
@@ -46,6 +101,6 @@
     "main",
     "16602455754e7b2437",
     "1660245517101c5bb0",
-    "1660245877fdc768ce"
+    "166204788625e96eda"
   ]
 }

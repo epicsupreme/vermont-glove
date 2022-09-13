@@ -1,44 +1,56 @@
-{%- capture productJson -%}
-   {
-                  "product":
-   {{ product | json }},
-                  "variants": [
-   {%- for variant in product.variants -%}
-      {{ variant | json }}
-      {%- unless forloop.last -%},
-      {%- endunless -%}
-   {%- endfor -%}
-   ],
-                  "variantStock": [
-   {%- for variant in product.variants -%}
-      {
-                     "id":{{ variant.id }},
-                     "stock":
-      {{ variant.inventory_quantity }}
-      }
-      {%- unless forloop.last -%},
-      {%- endunless -%}
-   {%- endfor -%}
-   ],
-         "addOnProducts": [
-    {% for addon in product.metafields.vermont.add_on_products.value %}
-
-
-         {
-                                       "addOnProduct" :
-         {{ addon | json }}
-         }
-         {%- unless forloop.last -%},
-         {%- endunless -%}
-
-   {%- endfor -%}
+{%- capture variantJson -%}
+   [
+      {%- for variant in product.variants -%}
+         {{ variant | json }}{%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
    ]
-         }
+{%- endcapture -%}
+{%- capture variantStock -%}
+   [
+      {%- for variant in product.variants -%}
+         {
+            "id":{{ variant.id }},
+            "stock": {{ variant.inventory_quantity }}
+         }{%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
+   ]
+{%- endcapture -%}
+{%- capture addOnProducts -%}
+   [
+      {%- for addon in product.metafields.vermont.add_on_products.value -%}
+         {
+            "addOnProduct" : {{ addon | json }}
+         }{%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
+   ]
+{%- endcapture -%}
+{%- capture addOnSync -%}
+   [
+      {%- for variant in product.variants -%}
+         {%- assign variantSyncId = "null" -%}
+         {%- assign variantSyncPrice = "null" -%}
+         {%- if variant.metafields.vermont.liner_sync.value -%}
+            {%- assign variantSyncId = variant.metafields.vermont.liner_sync.value.id -%}
+            {%- assign variantSyncPrice = variant.metafields.vermont.liner_sync.value.price -%}
+         {%- endif -%}
+         {
+            "variantId": {{ variant.id }},
+            "linerId": {{ variantSyncId }},
+            "linerPrice": {{ variantSyncPrice }}
+         }{%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
+   ]
 {%- endcapture -%}
 
-<script>
-   const productJson_{{ product.id }} = {{ productJson }};
-</script>
+{%- capture productJson -%}
+   {
+      "product": {{ product | json }},
+      "variants": {{ variantJson }},
+      "variantStock": {{ variantStock }},
+      "addOnProducts": {{ addOnProducts }},
+      "linerSync": {{ addOnSync }}
+   }
+{%- endcapture -%}
 
 {% assign current_variant = product.selected_or_first_available_variant %}
 
@@ -50,7 +62,7 @@
    enctype="multipart/form-data"
    id="product-form"
    method="post"
-   x-data="product(productJson_{{ product.id }})">
+   x-data="product({{ productJson | escape | replace: '"', "'" }})">
    <input
       name="form_type"
       type="hidden"
@@ -148,18 +160,42 @@
          <div>
             <template
                x-for="addOn in addOnProducts">
-               <div
-                  class="flex items-center justify-between w-full max-w-sm gap-2 mb-2">
-                  <button
-                     :class="checkAddOns(addOn.addOnProduct.variants[0].id) ? 'bg-brand border-brand text-white' : 'border-gray-300 text-black'"
-                     @click.prevent="selectAddon(addOn.addOnProduct.variants[0].id, selectedAddOnProducts, addOn.addOnProduct.variants[0].price)"
-                     class="w-3/4 py-3 text-lg uppercase border-2 hover:border-brand hover:text-white hover:bg-brand font-headline"
-                     x-text="addOn.addOnProduct.title"></button>
-                  <div :class="checkAddOns(addOn.addOnProduct.variants[0].id) ? 'font-display' : ''">+$<span
+               <div>
+                  <template x-if="addOn.addOnProduct.handle == 'wool-glove-liner' && liner.linerInfo.linerId">
+                     <div
+                     class="flex items-center justify-between w-full max-w-sm gap-2 mb-2">
+                        <button
+                           :class="liner.addLiner ? 'bg-brand border-brand text-white' : 'border-gray-300 text-black'"
+                           @click.prevent="addLiner()"
+                           class="w-3/4 py-3 text-lg uppercase border-2 hover:border-brand hover:text-white hover:bg-brand font-headline"
+                           x-text="addOn.addOnProduct.title"></button>
+                           <div :class="liner.addLiner ? 'font-display' : ''">+$<span
 
-                        x-text="addOn.addOnProduct.variants[0].price / 100"></span>
-                  </div>
+                                 x-text="liner.linerInfo.linerPrice / 100"></span>
+                           </div>
+                     </div>
+                  </template>
                </div>
+            </template>
+            <template
+               x-for="addOn in addOnProducts">
+               <div>
+                  <template x-if="addOn.addOnProduct.handle != 'wool-glove-liner'">
+                     <div
+                     class="flex items-center justify-between w-full max-w-sm gap-2 mb-2">
+                     <button
+                        :class="checkAddOns(addOn.addOnProduct.variants[0].id) ? 'bg-brand border-brand text-white' : 'border-gray-300 text-black'"
+                        @click.prevent="selectAddon(addOn.addOnProduct.variants[0].id, selectedAddOnProducts, addOn.addOnProduct.variants[0].price)"
+                        class="w-3/4 py-3 text-lg uppercase border-2 hover:border-brand hover:text-white hover:bg-brand font-headline"
+                        x-text="addOn.addOnProduct.title"></button>
+                     <div :class="checkAddOns(addOn.addOnProduct.variants[0].id) ? 'font-display' : ''">+$<span
+
+                           x-text="addOn.addOnProduct.variants[0].price / 100"></span>
+                     </div>
+                  </div>
+                  </template>
+               </div>
+
             </template>
          </div>
       </div>

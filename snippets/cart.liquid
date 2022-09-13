@@ -106,6 +106,85 @@
 
                   </div>
 
+                  <template
+                     x-if="product.addOnProducts">
+                     <div
+                        class="col-span-4 pl-10">
+                        <div
+                           class="uppercase font-headline">Add On Products</div>
+                        <template
+                           x-for="addOnProduct in product.addOnProducts">
+                           <template
+                              x-if="addOnProduct">
+                              <div
+                                 class="">
+
+                                 <div
+                                    class="grid grid-cols-4 gap-4 mb-2">
+                                    <div
+                                       class="relative col-span-1 aspect-square">
+                                       <img
+                                          :alt="addOnProduct.title"
+                                          :src="addOnProduct.image"
+                                          class="object-contain w-full h-full"
+                                          loading="lazy">
+
+                                    </div>
+                                    <div
+                                       class="grid grid-cols-3 col-span-3 gap-4 pt-6">
+                                       <div
+                                          class="flex flex-col col-span-2">
+                                          <div>
+                                             <div
+                                                class="text-sm leading-none uppercase font-display"
+                                                x-text="addOnProduct.title"></div>
+
+                                             <div>
+                                                <template
+                                                   x-for="option in addOnProduct.options">
+                                                   <template
+                                                      x-if="option.value != 'Default Title'">
+                                                      <div
+                                                         class="mb-2 text-xs "
+                                                         x-text="option.value"></div>
+                                                   </template>
+                                                </template>
+                                             </div>
+                                          </div>
+
+                                          <div
+                                             class="text-sm ">
+                                             <label
+                                                :for="'id_' + addOnProduct.id">QTY:
+                                                <span
+                                                   x-text="addOnProduct.qty"></span>
+                                             </label>
+                                          </div>
+
+                                       </div>
+
+                                       <div
+                                          class="flex flex-col text-right">
+                                          <div
+                                             class="text-sm font-headline">$<span
+                                                x-text="addOnProduct.price"></span>
+                                          </div>
+                                          <div>
+                                             <button
+                                                class="text-xs font-bold underline"
+                                                x-on:click.prevent="addOnProduct.remove()">Remove</button>
+                                          </div>
+
+                                       </div>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </template>
+                        </template>
+                     </div>
+                  </template>
+
 
                </div>
 
@@ -121,11 +200,19 @@
             <div
                class="absolute bottom-0 left-0 w-full px-6 bg-white">
 
-               <div class="w-full max-w-xl py-6 mx-auto">
-                  <div class="uppercase font-headline">
+               <div
+                  class="w-full max-w-xl py-6 mx-auto">
+                  <div
+                     class="uppercase font-headline">
                      Add Note
                   </div>
-                  <textarea name="note" id="cart-note" class="w-full h-32 p-2 border-2 border-brand" @keyup="$event.target.dispatchEvent(new CustomEvent('cartUpdate', $event))" :value="cart.note" placeholder="Note..."></textarea>
+                  <textarea
+                     :value="cart.note"
+                     @keyup="$event.target.dispatchEvent(new CustomEvent('cartUpdate', $event))"
+                     class="w-full h-32 p-2 border-2 border-brand"
+                     id="cart-note"
+                     name="note"
+                     placeholder="Note..."></textarea>
 
                </div>
 

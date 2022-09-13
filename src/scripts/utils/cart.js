@@ -22,21 +22,51 @@ function cartToAlpine(state) {
 
       const realPrice = e.price / 100
 
-      products.push({
-        title: e.product_title,
-        key: e.key,
-        price: realPrice,
-        id: e.variant_id,
-        options: e.options_with_values,
-        image: f,
-        qty: e.quantity,
-        remove() {
-          cartRemoveItem(this.key)
-        },
-        update(qty) {
-          cartUpdateItem(this.key, parseInt(qty))
-        },
+      const addOnProducts = state.items.map(p => {
+        if(p.properties["cartParent"] === e.key) {
+          return {
+            title: p.product_title,
+            key: p.key,
+            price: p.price / 100,
+            id: p.variant_id,
+            options: p.options_with_values,
+            image: p.featured_image.url,
+            qty: p.quantity,
+            properties: p.properties,
+            remove() {
+              cartRemoveItem(this.key)
+            },
+            update(qty) {
+              cartUpdateItem(this.key, parseInt(qty))
+            },
+          }
+        }
+        return false;
       })
+
+      console.log(addOnProducts)
+
+      if(!e.properties["cartParent"]) {
+
+        products.push({
+          title: e.product_title,
+          key: e.key,
+          price: realPrice,
+          id: e.variant_id,
+          options: e.options_with_values,
+          image: f,
+          addOnProducts: addOnProducts,
+          qty: e.quantity,
+          properties: e.properties,
+          remove() {
+            cartRemoveItem(this.key)
+          },
+          update(qty) {
+            cartUpdateItem(this.key, parseInt(qty))
+          },
+        })
+
+      }
     })
   }
 

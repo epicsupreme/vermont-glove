@@ -1,5 +1,17 @@
 {
   "sections": {
+    "1662652448fc528e60": {
+      "type": "text",
+      "settings": {
+        "headline": "HOW TO MAGICALLY TRANSFORM SUMMER GLOVES INTO WINTER GLOVES",
+        "subhead": "",
+        "text": "",
+        "link_text": "Read More",
+        "link": "",
+        "bg_color": "#ffffff",
+        "text_color": "#452C80"
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -17,7 +29,7 @@
         "button_link": "button",
         "button_text": "SHOP LINERS",
         "button_url": "shopify:\/\/products\/wool-glove-liner",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": true
       }
@@ -31,16 +43,18 @@
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/VTG-Web-Portraits-11-UphillSkier-MatthewTufts.jpg",
         "upload_video_url": "",
+        "youtube_video_url": "",
         "button_link": "button",
         "button_text": "SHOP UPHILL SKIER",
         "button_url": "shopify:\/\/products\/the-uphill-skier",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
       }
     }
   },
   "order": [
+    "1662652448fc528e60",
     "main",
     "1662053580058ccb69",
     "1662053733d5973487"

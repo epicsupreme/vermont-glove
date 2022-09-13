@@ -116,9 +116,9 @@
     "1660158343930fee78": {
       "type": "video-image",
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/VTG-Web-Portraits-11-UphillSkier-MatthewTufts.jpg",
+        "image_1": "shopify:\/\/shop_images\/VTG-Drone-Factory_Team-4.jpg",
         "video_url_1": "",
-        "image_2": "shopify:\/\/shop_images\/VTG-HomeHero-Chainsaw.jpg",
+        "image_2": "shopify:\/\/shop_images\/VTG-Factory_Aug21-1.jpg",
         "video_url_2": ""
       }
     },
@@ -186,6 +186,16 @@
             "liner_text": "Optional Removable Liner"
           }
         },
+        "1f23043c-901c-402b-9ff1-db349e2ce32c": {
+          "type": "product",
+          "settings": {
+            "product": "the-uphill-skier",
+            "text": "",
+            "glove_text": "100% Goat Leather",
+            "cuff_text": "100% Goat Leather",
+            "liner_text": "Removable Merino Wool"
+          }
+        },
         "0681eced-8bb2-43b0-8c75-a87426208331": {
           "type": "product",
           "settings": {
@@ -198,6 +208,7 @@
         },
         "6d41153e-08ac-4925-8f8c-628bd23bcd9b": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "choppers-mitt",
             "image": "shopify:\/\/shop_images\/VTG-Web-Portraits-45-Vermonter-KeithSprague.jpg",
@@ -206,23 +217,13 @@
             "cuff_text": "100% Goat Leather",
             "liner_text": "Recycled poly liner"
           }
-        },
-        "1f23043c-901c-402b-9ff1-db349e2ce32c": {
-          "type": "product",
-          "settings": {
-            "product": "the-uphill-skier",
-            "text": "",
-            "glove_text": "100% Goat Leather",
-            "cuff_text": "100% Goat Leather",
-            "liner_text": "Removable Merino Wool"
-          }
         }
       },
       "block_order": [
         "605fca98-4aa2-42a4-bbbe-cbd2202a73fa",
+        "1f23043c-901c-402b-9ff1-db349e2ce32c",
         "0681eced-8bb2-43b0-8c75-a87426208331",
-        "6d41153e-08ac-4925-8f8c-628bd23bcd9b",
-        "1f23043c-901c-402b-9ff1-db349e2ce32c"
+        "6d41153e-08ac-4925-8f8c-628bd23bcd9b"
       ],
       "settings": {
         "title": "Compare Gloves",
@@ -234,6 +235,7 @@
       "blocks": {
         "172de59a-d609-4e6f-b024-86f6ee27f960": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_text": "",
             "button_url": ""

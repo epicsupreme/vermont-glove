@@ -12,28 +12,42 @@
           "type": "faq",
           "settings": {
             "question": "How long will my gloves last?",
-            "answer": "<p>At least one million years, unless you use them hard.<\/p>"
+            "answer": "<p>Hard sayin' not knowin. We don’t know how hard you work or what kind of dumb stuff you'll be doing in them. What we do know is that our gloves outlast hardware store gloves about 5 pairs to 1.<\/p>"
           }
         },
         "e025ed7a-9f0d-4743-9745-6d9521fe63b3": {
           "type": "faq",
           "settings": {
             "question": "Do you have a guarantee?",
-            "answer": "<p>Yes, we guarantee are gloves are freakin awesome.<\/p>"
+            "answer": "<p>We can’t offer a guarantee because our gloves are a handmade wearable product. Eventually, by wear and tear or pterodactyl, they'll wear out. We take a lot of pride in what we do and we do it really well, so we want you to be satisfied. If you think you did not receive a good value from your gloves get in touch and we'lll do what we can to make the situation right.<\/p>"
+          }
+        },
+        "8563a743-47ca-4891-9062-fb49738f1284": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I take care of my gloves?",
+            "answer": "<p>A bit of occasional glove love goes a long way. <\/p><p>It depends how hard you run them and what you're doing but eventually your gloves will dry out and need an oil change. This is a good time to <a href=\"\/pages\/glove-care\" title=\"Glove Care\">condition<\/a> them. <\/p><p>If you're working or playing in wet environments, you can  <a href=\"\/pages\/glove-care\" title=\"Glove Care\">waterproof<\/a> them (after conditioning) for an added layer of protection.<\/p>"
+          }
+        },
+        "9d7d8dff-b45e-4441-ae01-47c05f9e1c35": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I make my gloves water resistant?",
+            "answer": "<p>Using <a href=\"\/products\/beeswax-waterproofing\" title=\"Beeswax Waterproofing\">Skidmore's Beeswax Waterproofer<\/a>, of course. Start by warming up your gloves in the oven. This opens up the pores of the leather. Then rub beeswax all over the gloves. ALL OVER. Put them back in the oven to help the wax set into the leather. Repeat three times for wicked good coverage. Repeat the entire process anytime you need more waterproofage.<\/p>"
           }
         },
         "64486b10-a5b7-4017-8ea7-70ba8a677802": {
           "type": "faq",
           "settings": {
             "question": "Can I use both conditioner and beeswax?",
-            "answer": "<p>You betcherass you can. Just make sure to use the conditioner first, as the beeswax makes an impenetrable shield around the glove, and we want that conditioner to soak deep. <\/p>"
+            "answer": "<p>You bet. In fact your gloves prefer it. Just make sure to use the conditioner first, as the beeswax makes an impenetrable shield around the glove, and we want that conditioner to soak deep. <\/p>"
           }
         },
-        "9d7d8dff-b45e-4441-ae01-47c05f9e1c35": {
+        "23ab3813-ed86-40ad-a877-90f1fbc9851f": {
           "type": "faq",
           "settings": {
             "question": "How do I clean my gloves?",
-            "answer": "<p>Strip naked, put on your gloves, and run through a car wash. <\/p>"
+            "answer": "<p>Honestly, we never do. The grit, gouges & patina are part of your story and will make you look really cool on the internet. If you are going to the opera and absolutely must clean them, use saddle soap. If you've just cleaned your saddle and are fresh out, you can use a bit of dish soap and water as a backup. Use an old (or your enemy's) toothbrush to clean seams and hard to reach spots.<\/p>"
           }
         },
         "b090a647-faa6-4e0e-abc4-c4c3d7ada711": {
@@ -47,14 +61,14 @@
           "type": "faq",
           "settings": {
             "question": "Where does the leather come from?",
-            "answer": "<p>AMERICA<\/p>"
+            "answer": "<p>Our leather comes from North America. The majority (~85%) comes from the New England and Tri-State area while the balance (~15%) comes from Quebec and Ontario.<\/p>"
           }
         },
         "97de7682-8cd0-4745-8500-56d84c71b450": {
           "type": "faq",
           "settings": {
             "question": "How warm are the gloves when worn with liners?",
-            "answer": "<p>Pretty darn warm. Depends where in the world you are and how warm your hands run. <\/p>"
+            "answer": "<p>Quite warm. Depends where in the world you are and how warm your hands run.<\/p>"
           }
         },
         "0a493ae7-0763-49b4-b400-50cca8a5e40e": {
@@ -68,7 +82,7 @@
           "type": "faq",
           "settings": {
             "question": "Why do the color of my gloves look different from your website photo?",
-            "answer": "<p>Goat leather is a natural material that comes from goats. Like butterflies or fingerprints, no two goats are exactly alike. We do our best to standardize the color of the hides we use, the is an inevitable amount of variation among the color of hides<\/p>"
+            "answer": "<p>Goat leather is a natural material that comes from goats. Like butterflies or fingerprints, no two goats are exactly alike. We do our best to standardize the color of the hides we use, the is an inevitable amount of variation among the color of hides. We celebrate that every pair of gloves we make is unique. Once you've worn them in, the patina, look and feel is entirely yours. <\/p>"
           }
         },
         "eba8efb2-8bfe-48be-aba8-8b8e2f66176e": {
@@ -82,22 +96,24 @@
           "type": "faq",
           "settings": {
             "question": "Do you offer repairs?",
-            "answer": "<p>Sure do. Email repairs@vermontglove.com to initiate a repair.<\/p>"
+            "answer": "<p>Sure do. Email hello@vermontglove.com to initiate a repair.<\/p>"
           }
         },
         "9e374345-8490-4346-8e17-ebea27215505": {
           "type": "faq",
           "settings": {
             "question": "How do I get in touch about a wholesale inquiry?",
-            "answer": "<p>wholesale@vermontglove.com<\/p>"
+            "answer": "<p>hello@vermontglove.com<\/p>"
           }
         }
       },
       "block_order": [
         "3728eeac-b09c-4a73-b3df-d5ac97a66ee5",
         "e025ed7a-9f0d-4743-9745-6d9521fe63b3",
-        "64486b10-a5b7-4017-8ea7-70ba8a677802",
+        "8563a743-47ca-4891-9062-fb49738f1284",
         "9d7d8dff-b45e-4441-ae01-47c05f9e1c35",
+        "64486b10-a5b7-4017-8ea7-70ba8a677802",
+        "23ab3813-ed86-40ad-a877-90f1fbc9851f",
         "b090a647-faa6-4e0e-abc4-c4c3d7ada711",
         "b219ea23-c5cd-418d-ba9a-25fc90d809d4",
         "97de7682-8cd0-4745-8500-56d84c71b450",

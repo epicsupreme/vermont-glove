@@ -3,6 +3,23 @@
     "main": {
       "type": "hero",
       "blocks": {
+        "cab8a4be-4648-4e7f-92fe-25ff65448681": {
+          "type": "hero_slide",
+          "settings": {
+            "title": "DESIGNED FOR THE PROS,\nMADE FOR YOU",
+            "mobile_title": "DESIGNED FOR THE PROS, MADE FOR YOU",
+            "button_text": "Shop Now",
+            "button_url": "shopify:\/\/collections\/all",
+            "location": "justify-start",
+            "primary_color": "#ffffff",
+            "secondary_color": "#452c80",
+            "image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Desktop-Vermonter1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/VTG-Image-Web-Hero-Mobile-Vermonter4.jpg",
+            "video_url": "",
+            "mobile_video_url": "",
+            "mobile_position": "object-right"
+          }
+        },
         "d92e3b7d-5422-4fdb-9191-c163a0802752": {
           "type": "hero_slide",
           "settings": {
@@ -14,32 +31,16 @@
             "primary_color": "#ffffff",
             "secondary_color": "#452c80",
             "image": "shopify:\/\/shop_images\/VTG-SDF_Aug21-43.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/VTG-Image-Web-Hero-Mobile-Tuttle1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/VTG-Image-Web-Hero-Mobile-Vermonter3.jpg",
             "video_url": "",
             "mobile_video_url": "",
             "mobile_position": "object-center"
           }
-        },
-        "cab8a4be-4648-4e7f-92fe-25ff65448681": {
-          "type": "hero_slide",
-          "settings": {
-            "title": "DESIGNED FOR THE PROS,\nMADE FOR YOU",
-            "mobile_title": "DESIGNED FOR THE PROS, MADE FOR YOU",
-            "button_text": "Shop Now",
-            "button_url": "shopify:\/\/collections\/all",
-            "location": "justify-start",
-            "primary_color": "#ffffff",
-            "secondary_color": "#452c80",
-            "image": "shopify:\/\/shop_images\/Vermont_Glove_Chainsaw.jpg",
-            "video_url": "",
-            "mobile_video_url": "",
-            "mobile_position": "object-right"
-          }
         }
       },
       "block_order": [
-        "d92e3b7d-5422-4fdb-9191-c163a0802752",
-        "cab8a4be-4648-4e7f-92fe-25ff65448681"
+        "cab8a4be-4648-4e7f-92fe-25ff65448681",
+        "d92e3b7d-5422-4fdb-9191-c163a0802752"
       ],
       "settings": {
       }
@@ -124,6 +125,7 @@
         "primary_color": "#ffffff",
         "secondary_color": "#452c80",
         "image": "shopify:\/\/shop_images\/VTG_Factory_1961.gif",
+        "mobile_image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Desktop-History1.jpg",
         "video_url": "",
         "full": true,
         "ratio": 180
@@ -237,7 +239,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/VTG-Web-Portraits-11-UphillSkier-MatthewTufts.jpg",
             "text": "\"WARM ON THE WAY UP, WARM ON THE WAY DOWN.\"",
-            "reviewer": "SKI BUD | BEND, OR",
+            "reviewer": "FRED MCMANN | BEND, OR",
             "button_text": "READ MORE UPHILL SKIER REVIEWS",
             "button_link": "shopify:\/\/products\/the-uphill-skier",
             "primary_color": "#452c80",

@@ -95,12 +95,14 @@
                         class="aspect-[437/542] relative">
                         {% if item.tags contains 'new' %}
                            <div
-                              class="absolute right-0 z-10 w-10">
+                              class="absolute right-0 z-10 w-12">
                               <img
                                  src="{{ 'new-badge.png' | asset_img_url: '84x' }}" alt="New"
-                                 class="w-full">
+                                 class="w-full" loading="lazy">
                            </div>
                         {% endif %}
+
+
 
                         {% if item.images[1] %}
 

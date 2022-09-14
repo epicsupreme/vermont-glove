@@ -22,8 +22,8 @@ function cartToAlpine(state) {
 
       const realPrice = e.price / 100
 
-      const addOnProducts = state.items.map(p => {
-        if(p.properties["cartParent"] === e.key) {
+      const addOnProducts = state.items.map((p) => {
+        if (p.properties['cartParent'] === e.key) {
           return {
             title: p.product_title,
             key: p.key,
@@ -41,13 +41,12 @@ function cartToAlpine(state) {
             },
           }
         }
-        return false;
+        return false
       })
 
       console.log(addOnProducts)
 
-      if(!e.properties["cartParent"]) {
-
+      if (!e.properties['cartParent']) {
         products.push({
           title: e.product_title,
           key: e.key,
@@ -65,7 +64,6 @@ function cartToAlpine(state) {
             cartUpdateItem(this.key, parseInt(qty))
           },
         })
-
       }
     })
   }

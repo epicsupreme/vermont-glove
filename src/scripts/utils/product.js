@@ -140,7 +140,7 @@ export default (product) => {
           return response.json()
         })
         .then((result) => {
-          console.log(result)
+          // console.log(result)
           const lastCartItem = result.items.pop()
           if (this.selectedAddOnProducts.length < 1 && this.liner.addLiner) {
             cart.getState().then((state) => {
@@ -199,7 +199,7 @@ export default (product) => {
                 })
               })
               .catch((e) => {
-                console.log(e)
+                // console.log(e)
                 alert(`This product is unavailable at the moment`)
                 this.button = 'Unavailable'
                 this.disabled = true
@@ -207,7 +207,7 @@ export default (product) => {
           }
         })
         .catch((e) => {
-          console.log(e)
+          // console.log(e)
           alert(`This product is unavailable at the moment`)
           this.button = 'Unavailable'
           this.disabled = true

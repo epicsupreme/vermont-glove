@@ -47,8 +47,23 @@
       <div
          class="hidden text-xl uppercase md:flex md:w-1/3 font-headline">
          {% for link in linklists.desktop_left_nav.links %}
-            <a
-               href="{{ link.url }}" title="{{ link.title }}" class="mr-16 last:mr-0">{{ link.title }}</a>
+            <div
+               class="relative mr-16 last:mr-0 group">
+               <a
+                  href="{{ link.url }}" title="{{ link.title }}" class="">{{ link.title }}</a>
+
+               {% if link.links %}
+                  <ul
+                     class="absolute hidden w-48 px-4 pt-1 -ml-4 bg-white top-full group-hover:block">
+                     {% for child in link.links %}
+                        <li class="mb-1">
+                           <a
+                              href="{{ child.url }}" title="{{ child.title }}" class="">{{ child.title }}</a>
+                        </li>
+                     {% endfor %}
+                  </ul>
+               {% endif %}
+            </div>
          {% endfor %}
       </div>
       <div
@@ -88,13 +103,18 @@
    </div>
 </header>
 
-<div :class="navOpen ? 'fixed' : 'hidden'" class=" w-full bottom-0 h-[calc(100vh_-_var(--sizes-mobile-header)_-_36px)] bg-brand text-white z-50 p-24">
+<div
+   :class="navOpen ? 'fixed' : 'hidden'"
+   x-cloak=""
+   class=" w-full bottom-0 h-[calc(100vh_-_var(--sizes-mobile-header)_-_36px)] bg-brand text-white z-50 p-24">
    <a
-      href="/" title="Home" class="block text-5xl uppercase font-headline">Home</a>
+      class="block text-5xl uppercase font-headline"
+      href="/"
+      title="Home">Home</a>
    {% for link in linklists.desktop_left_nav.links %}
-   <a
-      href="{{ link.url }}" title="{{ link.title }}" class="block text-5xl uppercase font-headline">{{ link.title }}</a>
-{% endfor %}
+      <a
+         href="{{ link.url }}" title="{{ link.title }}" class="block text-5xl uppercase font-headline">{{ link.title }}</a>
+   {% endfor %}
 </div>
 
 {% schema %}

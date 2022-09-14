@@ -5,32 +5,65 @@
             class="flex">
 
             <div>
+
+               {% if option.name == "Size" %}
                <div
                   class="mb-1">
                   {{ option.name }}
                </div>
+                  <div
+                     class="flex gap-2">
+
+                     {% for value in option.values %}
+                        <label
+                           class="relative flex items-center justify-center w-12 h-12 text-sm text-black cursor-pointer group font-headline product-label"
+                           for="option_{{  option.name | handleize }}_{{ value | handleize }}_scroll">
+                           <input
+                              type="radio"
+                              id="option_{{  option.name | handleize }}_{{ value | handleize }}_scroll"
+                              name="options[{{ option.name | escape }}]"
+                              value="{{ value | escape }}" {% if forloop.first %} checked
+                              {% endif %} class="hidden peer"
+                              @change="updateVariant($event.target.value, '{{ option.name | escape }}')"/>
+                           <span
+                              class="absolute top-0 w-full h-full border-2 border-brand peer-checked:bg-brand group-hover:bg-brand -z-10"></span>
+                           <div
+                              class="relative peer-checked:text-white group-hover:text-white">{{ value }}</div>
+                        </label>
+
+                     {% endfor %}
+                  </div>
+               {% else %}
                <div
-                  class="flex gap-2">
-
-                  {% for value in option.values %}
-                     <label
-                        class="relative flex items-center justify-center w-12 h-12 text-sm text-black cursor-pointer group font-headline product-label"
-                        for="option_{{  option.name | handleize }}_{{ value | handleize }}_scroll">
-                        <input
-                           type="radio"
-                           id="option_{{  option.name | handleize }}_{{ value | handleize }}_scroll"
-                           name="options[{{ option.name | escape }}]"
-                           value="{{ value | escape }}" {% if forloop.first %} checked
-                           {% endif %} class="hidden peer"
-                           @change="updateVariant($event.target.value, '{{ option.name | escape }}')"/>
-                        <span
-                           class="absolute top-0 w-full h-full border-2 border-brand peer-checked:bg-brand group-hover:bg-brand -z-10"></span>
-                        <div
-                           class="relative peer-checked:text-white group-hover:text-white">{{ value }}</div>
-                     </label>
-
-                  {% endfor %}
+                  class="mb-1">
+                  {{ option.name }}
                </div>
+
+                  <div
+                     class="grid gap-2 grid-col-5">
+
+                     {% for value in option.values %}
+                        <label
+                           class="relative flex items-center justify-center w-full h-12 text-sm text-black cursor-pointer group font-headline product-label"
+                           for="option_{{  option.name | handleize }}_{{ value | handleize }}_scroll">
+                           <input
+                              type="radio"
+                              id="option_{{  option.name | handleize }}_{{ value | handleize }}_scroll"
+                              name="options[{{ option.name | escape }}]"
+                              value="{{ value | escape }}" {% if forloop.first %} checked
+                              {% endif %} class="hidden peer"
+                              @change="updateVariant($event.target.value, '{{ option.name | escape }}')"/>
+                           <span
+                              class="absolute top-0 w-full h-full border-2 border-brand peer-checked:bg-brand group-hover:bg-brand -z-10"></span>
+                           <div
+                              class="relative peer-checked:text-white group-hover:text-white">{{ value }}</div>
+                        </label>
+
+                     {% endfor %}
+                  </div>
+
+               {% endif %}
+
             </div>
          </div>
 
@@ -38,8 +71,8 @@
    {% else %}
       {% for option in product.options_with_values %}
          <div
-            class="flex">
-
+            class="mb-2">
+            {% if option.name == "Size" %}
             <div>
                <div
                   class="mb-1">
@@ -68,6 +101,37 @@
                   {% endfor %}
                </div>
             </div>
+            {% else %}
+            <div>
+               <div
+                  class="mb-1">
+                  {{ option.name }}
+               </div>
+               <div
+                  class="grid grid-cols-5 gap-2">
+
+                  {% for value in option.values %}
+                     <label
+                        class="relative flex items-center justify-center h-12 text-sm text-black cursor-pointer group font-headline product-label"
+                        for="option_{{  option.name | handleize }}_{{ value | handleize }}">
+                        <input
+                           type="radio"
+                           id="option_{{  option.name | handleize }}_{{ value | handleize }}"
+                           name="options[{{ option.name | escape }}]"
+                           value="{{ value | escape }}" {% if forloop.first %} checked
+                           {% endif %} class="hidden peer"
+                           @change="updateVariant($event.target.value, '{{ option.name | escape }}')"/>
+                        <span
+                           class="absolute top-0 w-full h-full border-2 border-brand peer-checked:bg-brand group-hover:bg-brand -z-10"></span>
+                        <div
+                           class="relative peer-checked:text-white group-hover:text-white">{{ value }}</div>
+                     </label>
+
+                  {% endfor %}
+               </div>
+            </div>
+            {% endif %}
+
          </div>
 
       {% endfor %}

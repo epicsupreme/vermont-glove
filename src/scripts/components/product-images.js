@@ -14,17 +14,21 @@ const proudctSwiper = new Swiper(slides, {
   pagination: {
     el: '.swiper-pagination',
   },
-})
-
-var Sticky = new hcSticky('.product-images', {
-  stickTo: '.product-container',
-  top: 176,
-  responsive: {
-    768: {
-      disable: true,
-    },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 })
+
+// var Sticky = new hcSticky('.product-images', {
+//   stickTo: '.product-container',
+//   top: 176,
+//   responsive: {
+//     1024: {
+//       disable: true,
+//     },
+//   },
+// })
 
 // slider.querySelector(".featured-slider-prev").addEventListener("click", () => {
 //   featuredProductSwiper.slidePrev();

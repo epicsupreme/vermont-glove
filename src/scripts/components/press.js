@@ -8,7 +8,7 @@ const pressSwiper = new Swiper('.press-swiper.swiper', {
   centeredSlides: true,
   breakpoints: {
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 5,
       centeredSlides: false,
     },
   },

@@ -2,6 +2,14 @@
 <script
    src="{{- 'component-product-images.js' | asset_url -}}" defer></script>
 
+
+  <style>
+    .swiper-button-next, .swiper-button-prev {
+      top: 0;
+      width: 50%;
+      height: 100%;
+   }
+  </style>
 <div
    id="product-images"
    style="--swiper-theme-color:#452C80">
@@ -20,11 +28,11 @@
          {% endfor %}
       </div>
       <div
-         class="hidden">
+         class="hidden md:block">
          <div
-            class="swiper-button-prev"></div>
+            class="top-0 w-1/2 h-full swiper-button-prev after:hidden"></div>
          <div
-            class="swiper-button-next"></div>
+            class="top-0 w-1/2 h-full swiper-button-next after:hidden"></div>
       </div>
 
       <div

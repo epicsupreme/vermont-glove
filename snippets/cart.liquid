@@ -38,7 +38,7 @@
       </template>
 
       <div
-         class="h-[calc(var(--window-height)-var(--header-height))] pb-44  overflow-y-auto">
+         class="h-[calc(var(--window-height)-var(--header-height))] pb-96  overflow-y-auto">
          <div
             class="relative mx-auto border-primary">
             <template
@@ -111,7 +111,7 @@
                      <div
                         class="col-span-4 pl-10">
                         <div
-                           class="uppercase font-headline">Add On Products</div>
+                           class="uppercase font-headline" x-show="product.addOnProducts.length > 0">Add On Products</div>
                         <template
                            x-for="addOnProduct in product.addOnProducts">
                            <template

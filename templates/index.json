@@ -112,7 +112,7 @@
           "type": "button",
           "settings": {
             "button_text": "Our History",
-            "button_url": "shopify:\/\/pages\/about"
+            "button_url": "shopify:\/\/pages\/history"
           }
         }
       },

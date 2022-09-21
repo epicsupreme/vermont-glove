@@ -162,7 +162,7 @@
         "sizing_guide_image": "shopify:\/\/shop_images\/VTG-SizingChart-Hero-45_b44ad528-f0ea-4bb1-a60b-d59bbf34a6ce.jpg",
         "sizing_guide_text": "The most accurate way to determine your glove size is to download and print our hand tracing template.",
         "button_text": "Download Here",
-        "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG_Size_Chart_2021_1965cf18-f2c9-4bd6-b227-2fa815a9733a.pdf?v=1660244832",
+        "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG_Size_Chart_2022.pdf?v=1663182821",
         "footer_title": "For more info",
         "footer_link_text": "Visit our sizing page",
         "footer_url": "shopify:\/\/pages\/sizing"
@@ -364,6 +364,12 @@
       "settings": {
         "include_container": true
       }
+    },
+    "cross-sell": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render \"cross-sell\" %}"
+      }
     }
   },
   "order": [
@@ -374,6 +380,7 @@
     "165812977493b0d20f",
     "16581299038ac67c2a",
     "1660158547c754289a",
-    "loox-product-reviews-app-section"
+    "loox-product-reviews-app-section",
+    "cross-sell"
   ]
 }

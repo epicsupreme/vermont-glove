@@ -21,7 +21,9 @@
     "pull": "shopify theme pull -n",
     "pull-data": "shopify theme pull -n --only \"*.json\"",
     "push": "shopify theme push",
+    "push-files": "shopify theme push --ignore \"*.json\"",
     "deploy": "run-s format build push",
+    "deploy-files": "run-s format build push-files",
     "create": "run-s format build && shopify theme push --unpublished",
     "prepare": "husky install .config/.husky"
   },

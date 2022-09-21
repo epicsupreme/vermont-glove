@@ -1,8 +1,19 @@
 {
   "sections": {
     "main": {
-      "type": "main-cart"
+      "type": "main-cart",
+      "settings": {
+      }
+    },
+    "cross-sell": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render \"cross-sell\" %}"
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main",
+    "cross-sell"
+  ]
 }

@@ -47,7 +47,7 @@
         "youtube_video_url": "",
         "button_link": "button",
         "button_text": "LEARN MORE ABOUT OUR HISTORY",
-        "button_url": "",
+        "button_url": "shopify:\/\/pages\/history",
         "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": true

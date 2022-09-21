@@ -17,14 +17,19 @@
         "text_color": "#452c80"
       }
     },
-    "1660245517101c5bb0": {
-      "type": "image-title",
+    "16637542065f865c6f": {
+      "type": "history",
       "settings": {
-        "image": "shopify:\/\/shop_images\/VTG-SizingChart-Hero-45_b44ad528-f0ea-4bb1-a60b-d59bbf34a6ce.jpg",
         "title": "PENTANGULATE YOUR GLOVE SIZE WITH THIS CHART",
-        "button_text": "DOWNLOAD & PRINT IT HERE",
-        "button_url": "",
-        "primary_color": "#452c80",
+        "subhead": "",
+        "text": "<p>Make sure to print at '100% Scale' or 'Do Not Resize' <\/p>",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/VTG-SizingChart-Hero-45_b44ad528-f0ea-4bb1-a60b-d59bbf34a6ce.jpg",
+        "upload_video_url": "",
+        "button_link": "button",
+        "button_text": "DOWNLOAD & PRINT HERE",
+        "button_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG_Size_Chart_2022.pdf?v=1663182821",
+        "primary_color": "#452C80",
         "secondary_color": "#ffffff",
         "flip": false
       }
@@ -100,7 +105,7 @@
   "order": [
     "main",
     "16602455754e7b2437",
-    "1660245517101c5bb0",
+    "16637542065f865c6f",
     "166204788625e96eda"
   ]
 }

@@ -29,6 +29,13 @@
             "answer": "<p>A bit of occasional glove love goes a long way. <\/p><p>It depends how hard you run them and what you're doing but eventually your gloves will dry out and need an oil change. This is a good time to <a href=\"\/pages\/glove-care\" title=\"Glove Care\">condition<\/a> them. <\/p><p>If you're working or playing in wet environments, you can  <a href=\"\/pages\/glove-care\" title=\"Glove Care\">waterproof<\/a> them (after conditioning) for an added layer of protection.<\/p>"
           }
         },
+        "e8568ed9-f697-4c7c-8f7f-8d63e83046eb": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you have to use conditioner before wearing?",
+            "answer": "<p>Nope! Not required. Some people like to use it at first. Some people don't.<\/p>"
+          }
+        },
         "9d7d8dff-b45e-4441-ae01-47c05f9e1c35": {
           "type": "faq",
           "settings": {
@@ -111,6 +118,7 @@
         "3728eeac-b09c-4a73-b3df-d5ac97a66ee5",
         "e025ed7a-9f0d-4743-9745-6d9521fe63b3",
         "8563a743-47ca-4891-9062-fb49738f1284",
+        "e8568ed9-f697-4c7c-8f7f-8d63e83046eb",
         "9d7d8dff-b45e-4441-ae01-47c05f9e1c35",
         "64486b10-a5b7-4017-8ea7-70ba8a677802",
         "23ab3813-ed86-40ad-a877-90f1fbc9851f",

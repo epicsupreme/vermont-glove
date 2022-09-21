@@ -21,7 +21,9 @@
     "pull": "shopify theme pull -n",
     "pull-data": "shopify theme pull -n --only \"*.json\"",
     "push": "shopify theme push",
+    "push-files": "shopify theme push --ignore \"*.json\"",
     "deploy": "run-s format build push",
+    "deploy-files": "run-s format build push-files",
     "create": "run-s format build && shopify theme push --unpublished",
     "prepare": "husky install .config/.husky"
   },
@@ -38,7 +40,7 @@
     "postcss-loader": "^7.0.0",
     "postcss-preset-env": "^7.6.0",
     "prettier": "^2.6.2",
-    "sass": "^1.52.1",
+    "sass": "^1.55.0",
     "sass-loader": "^13.0.0",
     "shx": "^0.3.3",
     "size-plugin": "2.0.2",

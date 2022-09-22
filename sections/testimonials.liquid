@@ -5,7 +5,7 @@
    class="container mx-auto">
    <div
       class="testimonial-swiper swiper"
-      style="--swiper-theme-color:#8C8C8C;">
+      style="--swiper-theme-color:#3d2673;">
       <div
          class="swiper-wrapper">
          {% for block in section.blocks %}
@@ -13,7 +13,7 @@
                class="swiper-slide"
                style="--primary:{{ block.settings.primary_color }};--secondary:{{ block.settings.secondary_color }};">
                <div
-                  class="md:grid md:grid-cols-2 md:gap-5 md:items-center">
+                  class="lg:px-16 md:grid md:grid-cols-2 md:gap-5 md:items-center">
                   <div
                      class="aspect-[4/3] mb-4 md:aspect-[6/6]">
                      {{ block.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-cover' }}
@@ -52,6 +52,13 @@
             </div>
          {% endfor %}
       </div>
+
+     <div class="hidden md:block">
+      <div
+      class="swiper-button-prev "></div>
+   <div
+      class="swiper-button-next "></div>
+     </div>
 
 
    </div>

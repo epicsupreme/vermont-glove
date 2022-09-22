@@ -12,6 +12,7 @@
   </style>
 <div
    id="product-images"
+   class="relative max-h-screen"
    style="--swiper-theme-color:#452C80">
    <div
       class="swiper">
@@ -21,7 +22,7 @@
             <div
                class="swiper-slide">
                <div
-                  class="aspect-square">
+                  class="max-h-[calc(100vh-var(--header-height))] aspect-square flex justify-center w-full">
                   {{ image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full  object-contain h-full' }}
                </div>
             </div>
@@ -30,9 +31,9 @@
       <div
          class="hidden md:block">
          <div
-            class="top-0 w-1/2 h-full swiper-button-prev after:hidden"></div>
+            class="top-0 w-1/2 h-full swiper-button-prev after:absolute after:left-0"></div>
          <div
-            class="top-0 w-1/2 h-full swiper-button-next after:hidden"></div>
+            class="top-0 w-1/2 h-full swiper-button-next after:absolute after:right-0"></div>
       </div>
 
       <div

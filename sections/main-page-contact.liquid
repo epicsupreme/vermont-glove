@@ -1,0 +1,149 @@
+<div
+   class="aspect-[21/9]">
+   {%- render 'media-content' -%}
+</div>
+
+<div
+
+   class="max-w-6xl px-4 py-4 mx-auto md:py-8 md:px-0 text-brand">
+
+
+   <div
+      class="w-full mx-auto md:w-1/2">
+
+
+      {% if section.settings.title %}
+
+         <div
+            class="mb-1 text-4xl uppercase font-display text-brand">
+            {{ section.settings.title | newline_to_br }}
+         </div>
+
+      {% endif %}
+
+
+      <form
+         action="https://formspree.io/f/mnqrdlgl"
+         class=""
+         id="my-form"
+         method="POST">
+         <div
+            class="mb-3">
+            <label
+               class="hidden">Name:</label>
+            <input
+               class="w-full px-4 py-2 border-2 border-brand placeholder:text-gray-400"
+               name="Name"
+               placeholder="Name"
+               type="text"/>
+         </div>
+         <div
+            class="mb-3">
+            <label
+               class="hidden">Email:</label>
+            <input
+               class="w-full px-4 py-2 border-2 border-brand placeholder:text-gray-400"
+               name="Email"
+               placeholder="Email"
+               type="email"/>
+         </div>
+         <div
+            class="mb-3">
+            <label
+               class="hidden">Message:</label>
+            <textarea
+               class="w-full px-4 py-2 border-2 border-brand placeholder:text-gray-400 h-72"
+               id="message"
+               name="MEssage"
+               placeholder="Message"></textarea>
+         </div>
+
+         <button
+            class="bg-brand font-headline text-white w-full lg:w-auto block lg:inline text-xl md:text-2xl py-2.5 md:py-4  leading-none px-8 md:px-10 text-center uppercase"
+            id="my-form-button">Submit</button>
+         <p
+            id="my-form-status" class="py-4 text-sm"></p>
+      </form>
+
+
+   </div>
+
+</div>
+
+<script>
+   var form = document.getElementById("my-form");
+
+async function handleSubmit(event) {
+   event.preventDefault();
+   var status = document.getElementById("my-form-status");
+   var data = new FormData(event.target);
+   fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+         'Accept': 'application/json'
+      }
+   }).then(response => {
+      if (response.ok) {
+         status.innerHTML = "Thanks for your message!";
+         form.reset()
+      } else {
+         response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+               status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+               status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+         })
+      }
+   }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+   });
+}
+form.addEventListener("submit", handleSubmit)
+
+</script>
+
+
+{% schema %}
+
+{
+  "name": "Contact",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "Contact Us"
+    }, {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>info [at] vermontglove.com<\/p><p>802.728.9160<\/p><p>18 Pearl St., Randolph, VT 05032<\/p>"
+    }, {
+      "type": "radio",
+      "id": "media_type",
+      "label": "Media Type",
+      "default": "image",
+      "options": [
+        {
+          "value": "image",
+          "label": "Image"
+        }, {
+          "value": "uploaded_video",
+          "label": "Uploaded Video"
+        }, {
+          "value": "youtube_video",
+          "label": "Youtube/Vimeo Video"
+        }
+      ]
+    }, {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ]
+}
+
+{% endschema %}
+

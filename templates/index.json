@@ -3,6 +3,24 @@
     "main": {
       "type": "hero",
       "blocks": {
+        "68322697-4563-48c3-ab89-66e4f3ec7ce4": {
+          "type": "hero_slide",
+          "disabled": true,
+          "settings": {
+            "title": "FREE SHIPPING ON\nGLOVES & MITTENS\nWITH CODE 'FUNSOVER'",
+            "mobile_title": "FREE SHIPPING ON GLOVES & MITTENS WITH CODE 'FUNSOVER'",
+            "button_text": "SHOP NOW",
+            "button_url": "shopify:\/\/collections",
+            "location": "justify-start",
+            "primary_color": "#ffffff",
+            "secondary_color": "#452c80",
+            "image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Desktop-FallGiveaway22_09-2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Mobile-FallGiveaway22_09-2.jpg",
+            "video_url": "",
+            "mobile_video_url": "",
+            "mobile_position": "lg:object-center"
+          }
+        },
         "cab8a4be-4648-4e7f-92fe-25ff65448681": {
           "type": "hero_slide",
           "settings": {
@@ -39,6 +57,7 @@
         }
       },
       "block_order": [
+        "68322697-4563-48c3-ab89-66e4f3ec7ce4",
         "cab8a4be-4648-4e7f-92fe-25ff65448681",
         "d92e3b7d-5422-4fdb-9191-c163a0802752"
       ],

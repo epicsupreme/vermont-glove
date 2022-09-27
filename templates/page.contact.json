@@ -1,28 +1,13 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
+      "type": "main-page-contact",
       "settings": {
-      }
-    },
-    "166024606167c0c74b": {
-      "type": "history",
-      "settings": {
-        "title": "",
-        "subhead": "Contact Us",
-        "text": "<p>info [at] vermontglove.com<\/p><p>802.728.9160<\/p><p>18 Pearl St., Randolph, VT 05032<\/p>",
-        "image": "shopify:\/\/shop_images\/VTG-Factory_Aug21-1.jpg",
-        "button_link": "link",
-        "button_text": "",
-        "button_url": "",
-        "primary_color": "#452C80",
-        "secondary_color": "#ffffff",
-        "flip": false
+        "image": "shopify:\/\/shop_images\/VTG-Factory_Aug21-1.jpg"
       }
     }
   },
   "order": [
-    "main",
-    "166024606167c0c74b"
+    "main"
   ]
 }

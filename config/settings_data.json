@@ -5,7 +5,7 @@
         "type": "header",
         "settings": {
           "top_bar": false,
-          "text": "<p>ANNOUNCEMENT BAR. CHANGE TEXT, BG COLOR, LINK LOCATION<\/p>",
+          "text": "<p><a href=\"\/collections\/all-products\" title=\"Shop All Vermont Glove Products\">FREE SHIPPING ON GLOVES AND MITTENS THROUGH 9\/25 WITH CODE \"FUNSOVER\"<\/a><\/p>",
           "text_color": "#ffffff",
           "bg_color": "#82cdbb"
         }

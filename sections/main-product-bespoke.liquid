@@ -1,0 +1,160 @@
+{% assign current_variant = product.selected_or_first_available_variant %}
+
+
+<div
+   class="container relative gap-4 mx-auto lg:flex lg:px-8">
+
+
+   <div
+      class="block lg:w-8/12">
+      <div
+         class="product-images">
+         {%- render 'product-images' -%}
+      </div>
+   </div>
+
+   <div
+
+      class="lg:w-4/12">
+
+
+      <div
+         class="px-4 pb-10 md:px-0">
+
+         <h1
+            class="text-4xl font-headline ">{{ product.title }}</h1>
+
+
+         {% render 'product-form', product: product, bespoke: true %}
+
+         <div
+            class="max-w-sm mt-6">
+            {%- render 'product-icons' -%}
+         </div>
+
+      </div>
+   </div>
+
+</div>
+
+
+
+<div
+:class="sizingGuide ? 'fixed' : 'hidden'"
+   class="top-0 left-0 z-50 flex items-center justify-center w-full h-screen ">
+
+   <div
+      class="relative w-full max-w-xl p-6 bg-white border-2 border-brand">
+
+      <button class="absolute w-6 text-black top-6 right-6" @click="sizingGuide = false">
+         {%- render 'svg-close' -%}
+      </button>
+      <div
+         class="mb-4 text-3xl text-center uppercase font-headline">
+         {{ section.settings.sizing_guide_title }}
+      </div>
+      <div
+         class="grid items-center grid-cols-2 gap-5 mb-6">
+         <div
+            class="aspect-[85/110]">
+            {{ section.settings.sizing_guide_image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full object-cover' }}
+         </div>
+         <div
+            style="--primary:#452C80;--secondary:white;">
+            <div
+               class="mb-6 text-sm lg:text-lg">
+               {{ section.settings.sizing_guide_text }}
+            </div>
+            {%- render 'button', url: section.settings.url, text: section.settings.button_text, size: "m" -%}
+         </div>
+
+      </div>
+
+      <div
+         class="text-center">
+         <div
+            class="mb-1 text-xs text-center uppercase">
+            {{ section.settings.footer_title }}
+         </div>
+         <a
+            href="{{ section.settings.footer_url }}" title="{{ section.settings.footer_link_text }}" class="mb-4 text-2xl text-center underline uppercase font-headline">
+            {{ section.settings.footer_link_text }}
+         </a>
+      </div>
+
+   </div>
+
+</div>
+
+
+{% schema %}
+{
+   "name": "Product",
+   "settings": [
+      {
+         "type": "text",
+         "id": "sizing_guide_title",
+         "label": "Sizing Guide Title",
+         "default": "Sizing Guide"
+      },
+      {
+         "type": "image_picker",
+         "id": "sizing_guide_image",
+         "label": "Image"
+      },
+      {
+         "type": "textarea",
+         "id": "sizing_guide_text",
+         "label": "Sizing Guide Text",
+         "default": "The most accurate way to determine your glove size is to download and print our hand tracing template."
+      },
+      {
+         "type": "text",
+         "id": "button_text",
+         "label": "Sizing Guide Button Text",
+         "default": "Download Here"
+      },
+      {
+         "type": "url",
+         "id": "url",
+         "label": "Sizing Guide URL"
+      },
+      {
+         "type": "text",
+         "id": "footer_title",
+         "label": "Sizing Guide Footer Title",
+         "default": "For more info"
+      },
+      {
+         "type": "text",
+         "id": "footer_link_text",
+         "label": "Sizing Guide Footer Link Text",
+         "default": "Visit our sizing page"
+      },
+      {
+         "type": "url",
+         "id": "footer_url",
+         "label": "Sizing Guide Footer URL"
+      }
+   ],
+   "blocks": [
+         {
+            "name": "Icon Choices",
+            "type": "icon_choices",
+            "settings": [
+               {
+                  "type": "image_picker",
+                  "id": "icon",
+                  "label": "Icon"
+               },
+               {
+                  "type": "text",
+                  "id": "text",
+                  "label": "Text",
+                  "info": "Name must match selection within products"
+               }
+            ]
+         }
+      ]
+}
+{% endschema %}

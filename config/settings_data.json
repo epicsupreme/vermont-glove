@@ -1,5 +1,8 @@
 {
   "current": {
+    "social_facebook_link": "https:\/\/www.facebook.com\/VermontGlove",
+    "social_instagram_link": "https:\/\/www.instagram.com\/vermontglove",
+    "favicon": "shopify:\/\/shop_images\/VTG_Logo_Icon_8a2d2afe-e515-4e5e-b42e-5ad5b66ce439.png",
     "sections": {
       "header": {
         "type": "header",

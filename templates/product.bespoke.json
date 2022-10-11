@@ -1,0 +1,386 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-bespoke",
+      "blocks": {
+        "2bd0b3ce-8efd-4466-b014-3822a5bb5343": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-GoatLeather.png",
+            "text": "100% Goat Leather"
+          }
+        },
+        "482c6849-7ca6-42a8-9164-d70632a54327": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-MadeInVT.png",
+            "text": "Made In Vermont"
+          }
+        },
+        "56b5c080-4c35-4c19-a9d7-319010b65e79": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-RenewableEnergy.png",
+            "text": "Made in Net Zero Factory"
+          }
+        },
+        "55cf3d0b-9b84-4a7c-a827-54ae20f6cc85": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-HandSewn_d4c603a5-311b-4a05-aaed-1bcd896a515f.png",
+            "text": "Hand Sewn"
+          }
+        },
+        "74d09016-dfb7-45f4-bb93-e49862e6eb68": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-Liner_Removable.png",
+            "text": "Removable Liner"
+          }
+        },
+        "3f81bef6-b975-4376-8344-b791ce4a0f05": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-WaxedCanvas.png",
+            "text": "Waxed Canvas"
+          }
+        },
+        "77f327e8-55bd-4b51-a583-c6a102e95cc4": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-Liner_SewnIn.png",
+            "text": "Lined"
+          }
+        },
+        "e4022afa-dc40-450e-94df-7e3d3fe642be": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-MerinoWool_d861c5ce-2f4d-4abc-9e2c-5f1d71725aad.png",
+            "text": "Merino Wool"
+          }
+        },
+        "ba8e7eb1-0abd-41e6-9f5a-7a96fb9a079d": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-Recycled_4cba49af-e647-422c-817e-39b341aa773d.png",
+            "text": "100% Recycled Poly Liner"
+          }
+        },
+        "8bb74f8b-e649-41ad-aff6-a1e2908b5e53": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-WarmAsHeck.png",
+            "text": "Warm As Heck"
+          }
+        },
+        "c1af1673-507b-458b-b611-739a76a719c9": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-WovenCuff.png",
+            "text": "Woven Cuff"
+          }
+        },
+        "ceb3ade7-c474-4d3d-952e-5ad15c0f13db": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-TougherNNails.png",
+            "text": "Tuffer'n Nails"
+          }
+        },
+        "ccaa8cec-89e2-49d6-8ff9-0c9a26d05d7d": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-MadeInUSA2.png",
+            "text": "Made In USA"
+          }
+        },
+        "92f89e5e-5628-4e71-9793-3f629a1e3087": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-MerinoWool_d861c5ce-2f4d-4abc-9e2c-5f1d71725aad.png",
+            "text": "100% Wool"
+          }
+        },
+        "feb4720a-adb3-4877-aa69-14e98a7f2e9f": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-Cotton.png",
+            "text": "100% Cotton"
+          }
+        },
+        "b45eb714-1417-44dc-ab3b-fbb4b4f65268": {
+          "type": "icon_choices",
+          "settings": {
+            "text": ""
+          }
+        },
+        "44ec0d7f-96ad-4a08-9035-6f0c24bc55b1": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-MadeInVT.png",
+            "text": "Printed in Vermont"
+          }
+        },
+        "24b4b740-be18-4ecb-ac3f-068ba48384cc": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-GoatLeather.png",
+            "text": "Goat Leather Patch"
+          }
+        },
+        "54a471f1-de51-4553-9292-ffbc38a6a6c9": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-Recycled_4cba49af-e647-422c-817e-39b341aa773d.png",
+            "text": "Natural Materials"
+          }
+        }
+      },
+      "block_order": [
+        "2bd0b3ce-8efd-4466-b014-3822a5bb5343",
+        "482c6849-7ca6-42a8-9164-d70632a54327",
+        "56b5c080-4c35-4c19-a9d7-319010b65e79",
+        "55cf3d0b-9b84-4a7c-a827-54ae20f6cc85",
+        "74d09016-dfb7-45f4-bb93-e49862e6eb68",
+        "3f81bef6-b975-4376-8344-b791ce4a0f05",
+        "77f327e8-55bd-4b51-a583-c6a102e95cc4",
+        "e4022afa-dc40-450e-94df-7e3d3fe642be",
+        "ba8e7eb1-0abd-41e6-9f5a-7a96fb9a079d",
+        "8bb74f8b-e649-41ad-aff6-a1e2908b5e53",
+        "c1af1673-507b-458b-b611-739a76a719c9",
+        "ceb3ade7-c474-4d3d-952e-5ad15c0f13db",
+        "ccaa8cec-89e2-49d6-8ff9-0c9a26d05d7d",
+        "92f89e5e-5628-4e71-9793-3f629a1e3087",
+        "feb4720a-adb3-4877-aa69-14e98a7f2e9f",
+        "b45eb714-1417-44dc-ab3b-fbb4b4f65268",
+        "44ec0d7f-96ad-4a08-9035-6f0c24bc55b1",
+        "24b4b740-be18-4ecb-ac3f-068ba48384cc",
+        "54a471f1-de51-4553-9292-ffbc38a6a6c9"
+      ],
+      "settings": {
+        "sizing_guide_title": "Sizing Guide",
+        "sizing_guide_image": "shopify:\/\/shop_images\/VTG-SizingChart-Hero-45_b44ad528-f0ea-4bb1-a60b-d59bbf34a6ce.jpg",
+        "sizing_guide_text": "The most accurate way to determine your glove size is to download and print our hand tracing template.",
+        "button_text": "Download Here",
+        "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG_Size_Chart_2022.pdf?v=1663182821",
+        "footer_title": "For more info",
+        "footer_link_text": "Visit our sizing page",
+        "footer_url": "shopify:\/\/pages\/sizing"
+      }
+    },
+    "1660158343930fee78": {
+      "type": "video-image",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/VTG-Drone-Factory_Team-4.jpg",
+        "video_url_1": "",
+        "image_2": "shopify:\/\/shop_images\/VTG-Factory_Aug21-1.jpg",
+        "video_url_2": ""
+      }
+    },
+    "1658129066b65c424e": {
+      "type": "excellent-for",
+      "disabled": true,
+      "blocks": {
+        "1d6bbccb-c327-427b-be7c-ac76e1072de2": {
+          "type": "Icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-Vermont.png",
+            "text": "Made In Vermont"
+          }
+        },
+        "c157807c-a613-4ce5-9d2e-78117e9b730c": {
+          "type": "Icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Artboard_36_copy_7_4x_918f1197-e1da-4097-9941-d8ace43c4069.png",
+            "text": "Another Icon"
+          }
+        },
+        "a6155bd1-d8fa-48ca-b17a-b560a1ff270a": {
+          "type": "Icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-MerinoWool.png",
+            "text": "Merino Wool"
+          }
+        },
+        "178cb9d2-cdc6-4ea9-8a9b-71672177302b": {
+          "type": "Icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-HandSewn.png",
+            "text": "Hand Sewn"
+          }
+        },
+        "37320272-dee0-482e-889e-ff04dbcafc8f": {
+          "type": "Icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-Goat_Alt.png",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "1d6bbccb-c327-427b-be7c-ac76e1072de2",
+        "c157807c-a613-4ce5-9d2e-78117e9b730c",
+        "a6155bd1-d8fa-48ca-b17a-b560a1ff270a",
+        "178cb9d2-cdc6-4ea9-8a9b-71672177302b",
+        "37320272-dee0-482e-889e-ff04dbcafc8f"
+      ],
+      "settings": {
+        "title": "Excellent For"
+      }
+    },
+    "16600693525c2b15f4": {
+      "type": "compare",
+      "blocks": {
+        "605fca98-4aa2-42a4-bbbe-cbd2202a73fa": {
+          "type": "product",
+          "settings": {
+            "product": "the-vermonter",
+            "text": "",
+            "glove_text": "100% Goat Leather",
+            "cuff_text": "100% Goat Leather",
+            "liner_text": "Optional Removable Liner"
+          }
+        },
+        "1f23043c-901c-402b-9ff1-db349e2ce32c": {
+          "type": "product",
+          "settings": {
+            "product": "the-uphill-skier",
+            "text": "",
+            "glove_text": "100% Goat Leather",
+            "cuff_text": "100% Goat Leather",
+            "liner_text": "Removable Merino Wool"
+          }
+        },
+        "0681eced-8bb2-43b0-8c75-a87426208331": {
+          "type": "product",
+          "settings": {
+            "product": "the-jefflo-mitt",
+            "text": "",
+            "glove_text": "100% Goat Leather",
+            "cuff_text": "100% Goat Leather",
+            "liner_text": "Recycled Poly Liner"
+          }
+        },
+        "6d41153e-08ac-4925-8f8c-628bd23bcd9b": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "choppers-mitt",
+            "image": "shopify:\/\/shop_images\/VTG-Web-Portraits-45-Vermonter-KeithSprague.jpg",
+            "text": "",
+            "glove_text": "100% Goat Leather",
+            "cuff_text": "100% Goat Leather",
+            "liner_text": "Recycled poly liner"
+          }
+        }
+      },
+      "block_order": [
+        "605fca98-4aa2-42a4-bbbe-cbd2202a73fa",
+        "1f23043c-901c-402b-9ff1-db349e2ce32c",
+        "0681eced-8bb2-43b0-8c75-a87426208331",
+        "6d41153e-08ac-4925-8f8c-628bd23bcd9b"
+      ],
+      "settings": {
+        "title": "Compare Gloves",
+        "button_text": "Buy Now"
+      }
+    },
+    "165812977493b0d20f": {
+      "type": "call-to-action",
+      "blocks": {
+        "172de59a-d609-4e6f-b024-86f6ee27f960": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "172de59a-d609-4e6f-b024-86f6ee27f960"
+      ],
+      "settings": {
+        "title": "HAND-SEWN IN VERMONT",
+        "primary_color": "#ffffff",
+        "secondary_color": "#452c80",
+        "image": "shopify:\/\/shop_images\/VermontGloveCompany-12_15ff963c-683d-4d0c-a7d8-197593dd7baf.jpg",
+        "video_url": "",
+        "full": true,
+        "ratio": 250
+      }
+    },
+    "16581299038ac67c2a": {
+      "type": "image-title",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/VTG-SDF_Aug21-18.jpg",
+        "title": "A little glove love goes a long way.",
+        "button_text": "Learn to protect your investment",
+        "button_url": "shopify:\/\/pages\/glove-care",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "1660158547c754289a": {
+      "type": "testimonials",
+      "disabled": true,
+      "blocks": {
+        "ff85be8f-647b-48e2-99f1-ee59f7220ce7": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG-SDF_Aug21-18.jpg",
+            "text": "",
+            "reviewer": "",
+            "button_text": "",
+            "button_link": "",
+            "primary_color": "#452c80",
+            "secondary_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "ff85be8f-647b-48e2-99f1-ee59f7220ce7"
+      ],
+      "settings": {
+      }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "blocks": {
+        "loox-product-reviews": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "loox-product-reviews"
+      ],
+      "settings": {
+        "include_container": true
+      }
+    },
+    "cross-sell": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render \"cross-sell\" %}"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1660158343930fee78",
+    "1658129066b65c424e",
+    "16600693525c2b15f4",
+    "165812977493b0d20f",
+    "16581299038ac67c2a",
+    "1660158547c754289a",
+    "loox-product-reviews-app-section",
+    "cross-sell"
+  ]
+}

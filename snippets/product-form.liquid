@@ -18,9 +18,12 @@
 {%- capture addOnProducts -%}
    [
       {%- for addon in product.metafields.vermont.add_on_products.value -%}
-         {
-            "addOnProduct" : {{ addon | json }}
-         }{%- unless forloop.last -%},{%- endunless -%}
+         {%- if addon.available -%}
+            {
+               "addOnProduct" : {{ addon | json }}
+            }{%- unless forloop.last -%},{%- endunless -%}
+         {%- endif -%}
+
       {%- endfor -%}
    ]
 {%- endcapture -%}
@@ -41,14 +44,18 @@
       {%- endfor -%}
    ]
 {%- endcapture -%}
-
+{%- assign bespokeObject = "false" -%}
+{%- if bespoke -%}
+   {%- assign bespokeObject = "true" -%}
+{%- endif -%}
 {%- capture productJson -%}
    {
       "product": {{ product | json }},
       "variants": {{ variantJson }},
       "variantStock": {{ variantStock }},
       "addOnProducts": {{ addOnProducts }},
-      "linerSync": {{ addOnSync }}
+      "linerSync": {{ addOnSync }},
+      "bespoke": {{ bespokeObject }}
    }
 {%- endcapture -%}
 
@@ -92,9 +99,14 @@
       {{ product.metafields.vermont.tagline }}
    </div>
 
+   {%- assign startOpen = "false" -%}
+   {%- if bespoke -%}
+      {%- assign startOpen = "true" -%}
+   {%- endif -%}
+
    <div
-      class="mb-0.5"
-      x-data="{ expanded: false }">
+      class="mb-1"
+      x-data="{ expanded: {{ startOpen }} }">
       <button
          @click.prevent="expanded = !expanded"
          class="text-lg font-headline">
@@ -107,9 +119,10 @@
       </div>
    </div>
 
+
    <div
       class="mb-2"
-      x-data="{ expanded: false }">
+      x-data="{ expanded: {{ startOpen }} }">
       <button
          @click.prevent="expanded = !expanded"
          class="text-lg font-headline">
@@ -129,11 +142,18 @@
 
    </div>
 
-
+   {% if bespoke %}
+      <input
+         type="hidden"
+         name="quantity"
+         value="1"/>
+   {% else %}
    <div
       class="w-32 ">
       {%- render 'product-form-qty' -%}
    </div>
+   {% endif %}
+
 
 
    <input
@@ -142,16 +162,28 @@
       :value="formData.id"
       value="{{ current_variant.id }}"/>
 
+
+      {% if bespoke %}
+        <div class="mb-4">
+         <div class="text-2xl font-bold uppercase text-brand font-headline">Monogram</div>
+         <input type="text" maxlength="3" placeholder="ABC" class="p-3 text-5xl tracking-widest uppercase border-2 font-headline w-36 border-brand placeholder:text-gray-300 text-brand" @keyup="updateMonogram($event.target.value)" >
+        </div>
+      {% endif %}
+
    <button
       :disabled="disabled"
       class="w-full max-w-sm py-3 mb-2 text-lg text-white uppercase bg-brand font-headline"
       type="submit"
       x-text="button">Add to Cart</button>
 
-   <button
-   @click.prevent="sizingGuide = true"
-      class="w-full max-w-sm py-3 text-lg text-black uppercase border-2 border-brand hover:text-white hover:bg-brand font-headline">Size Guide</button>
 
+      {%- unless bespoke -%}
+
+         <button
+            @click.prevent="sizingGuide = true"
+            class="w-full max-w-sm py-3 text-lg text-black uppercase border-2 border-brand hover:text-white hover:bg-brand font-headline">Size Guide</button>
+
+         {%- endunless -%}
    <template
       x-if="addOnProducts.length > 0">
       <div
@@ -162,7 +194,7 @@
             <template
                x-for="addOn in addOnProducts">
                <div>
-                  <template x-if="addOn.addOnProduct.handle == 'wool-glove-liner' && liner.linerInfo.linerId">
+                  <template x-if="addOn.addOnProduct.id == '6589886300340' && liner.linerInfo.linerId">
                      <div
                      class="flex items-center justify-between w-full max-w-sm gap-2 mb-2">
                         <button

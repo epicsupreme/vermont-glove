@@ -92,6 +92,8 @@ export default (product) => {
       addLiner: false,
     },
 
+    properties: {},
+
     //form actions
     checkAddOns(id) {
       const checkStatus = this.selectedAddOnProducts.filter(
@@ -119,6 +121,16 @@ export default (product) => {
       this.formData.qty =
         this.formData.qty - 1 === 0 ? 1 : this.formData.qty - 1
     },
+    updateMonogram(val) {
+      console.log(val)
+      if (val) {
+        this.properties = {
+          Monogram: val,
+        }
+      } else {
+        this.properties = {}
+      }
+    },
     onSubmit() {
       this.button = 'Adding...'
       this.disabled = true
@@ -132,6 +144,7 @@ export default (product) => {
             {
               id: this.formData.id,
               quantity: this.formData.qty,
+              properties: this.properties,
             },
           ],
         }),
@@ -140,9 +153,12 @@ export default (product) => {
           return response.json()
         })
         .then((result) => {
-          // console.log(result)
           const lastCartItem = result.items.pop()
-          if (this.selectedAddOnProducts.length < 1 && this.liner.addLiner) {
+
+          console.log('last cart item', lastCartItem)
+          console.log('line', this.liner)
+
+          if (this.selectedAddOnProducts.length < 1 && !this.liner.addLiner) {
             cart.getState().then((state) => {
               cartUpdateAll(state)
               this.button = 'Add to Cart'
@@ -157,24 +173,27 @@ export default (product) => {
           } else {
             const addOnCartProducts = []
 
-            this.selectedAddOnProducts.forEach((e) => {
-              addOnCartProducts.push({
-                id: e.id,
-                qty: 1,
-                properties: {
-                  cartParent: lastCartItem.key,
-                },
-              })
-            })
             if (this.liner.addLiner) {
+              console.log('liner')
               addOnCartProducts.push({
                 id: this.liner.linerInfo.linerId,
                 qty: this.formData.qty,
                 properties: {
-                  cartParent: lastCartItem.key,
+                  _cartParent: lastCartItem.key,
                 },
               })
             }
+
+            if (this.selectedAddOnProducts.length > 0)
+              this.selectedAddOnProducts.forEach((e) => {
+                addOnCartProducts.push({
+                  id: e.id,
+                  qty: 1,
+                  properties: {
+                    _cartParent: lastCartItem.key,
+                  },
+                })
+              })
 
             fetch(window.Shopify.routes.root + 'cart/add.js', {
               method: 'POST',

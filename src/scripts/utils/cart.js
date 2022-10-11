@@ -2,7 +2,7 @@ import { convertColorVariables } from '@mertasan/tailwindcss-variables/src/helpe
 import * as cart from '@shopify/theme-cart'
 
 cart.getState().then((state) => {
-  // console.log(state)
+  console.log(state)
   cartUpdateAll(state)
 })
 
@@ -24,7 +24,7 @@ function cartToAlpine(state) {
 
       const addOnProducts = state.items
         .map((p) => {
-          if (p.properties?.cartParent === e.key) {
+          if (p.properties?._cartParent === e.key) {
             return {
               title: p.product_title,
               key: p.key,
@@ -50,7 +50,7 @@ function cartToAlpine(state) {
 
       // console.log(addOnProducts)
 
-      if (!e.properties?.cartParent) {
+      if (!e.properties?._cartParent) {
         products.push({
           title: e.product_title,
           key: e.key,
@@ -84,8 +84,12 @@ function cartRemoveItem(key) {
 
   cart.getState().then((state) => {
     console.log(state)
+
     const addOnRemove = state.items.forEach((item) => {
-      if (key === item.properties.cartParent) {
+      if (
+        item.properties._cartParent != null &&
+        key === item.properties._cartParent
+      ) {
         removeProducts[item.key] = 0
       }
     })
@@ -96,7 +100,7 @@ function cartRemoveItem(key) {
 
     removeProducts[parentItem.key] = 0
 
-    console.log(removeProducts)
+    // console.log(removeProducts)
 
     fetch(window.Shopify.routes.root + 'cart/update.js', {
       method: 'POST',

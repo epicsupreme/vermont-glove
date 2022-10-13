@@ -3,14 +3,30 @@
     "main": {
       "type": "hero",
       "blocks": {
+        "aedc400d-2c69-482f-b2d6-08ab95e301d3": {
+          "type": "hero_slide",
+          "settings": {
+            "title": "INTRODUCING:\nKNIT WRISTS",
+            "mobile_title": "INTRODUCING: KNIT WRISTS",
+            "button_text": "SHOP NEW GLOVES",
+            "button_url": "shopify:\/\/products\/tuttle",
+            "location": "justify-start",
+            "primary_color": "#ffffff",
+            "secondary_color": "#452c80",
+            "image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Desktop-KnitWrist-2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/VTG-Image-Web-Hero-Mobile-KnitWrist-1.jpg",
+            "video_url": "",
+            "mobile_video_url": "",
+            "mobile_position": "lg:object-center"
+          }
+        },
         "68322697-4563-48c3-ab89-66e4f3ec7ce4": {
           "type": "hero_slide",
-          "disabled": true,
           "settings": {
-            "title": "FREE SHIPPING ON\nGLOVES & MITTENS\nWITH CODE 'FUNSOVER'",
-            "mobile_title": "FREE SHIPPING ON GLOVES & MITTENS WITH CODE 'FUNSOVER'",
-            "button_text": "SHOP NOW",
-            "button_url": "shopify:\/\/collections",
+            "title": "THAT WAS FUN.\nTIME TO CLEAN UP.",
+            "mobile_title": "THAT WAS FUN.\nTIME TO CLEAN UP.",
+            "button_text": "SHOP FALL GLOVES",
+            "button_url": "shopify:\/\/collections\/all-products",
             "location": "justify-start",
             "primary_color": "#ffffff",
             "secondary_color": "#452c80",
@@ -23,6 +39,7 @@
         },
         "cab8a4be-4648-4e7f-92fe-25ff65448681": {
           "type": "hero_slide",
+          "disabled": true,
           "settings": {
             "title": "DESIGNED FOR THE PROS,\nMADE FOR YOU",
             "mobile_title": "DESIGNED FOR THE PROS, MADE FOR YOU",
@@ -40,6 +57,7 @@
         },
         "d92e3b7d-5422-4fdb-9191-c163a0802752": {
           "type": "hero_slide",
+          "disabled": true,
           "settings": {
             "title": "IMPENETRABLE\nHAND FORTRESS",
             "mobile_title": "IMPENETRABLE HAND FORTRESS",
@@ -57,6 +75,7 @@
         }
       },
       "block_order": [
+        "aedc400d-2c69-482f-b2d6-08ab95e301d3",
         "68322697-4563-48c3-ab89-66e4f3ec7ce4",
         "cab8a4be-4648-4e7f-92fe-25ff65448681",
         "d92e3b7d-5422-4fdb-9191-c163a0802752"
@@ -72,6 +91,13 @@
           "settings": {
             "product": "the-vermonter",
             "tagline": "Our flagship work glove"
+          }
+        },
+        "077b4aa1-69de-4ac1-8239-f97c51b08a4c": {
+          "type": "product",
+          "settings": {
+            "product": "tuttle",
+            "tagline": "Lined winter work glove"
           }
         },
         "fd9becec-b574-4b46-a51b-d1655137ab05": {
@@ -91,6 +117,7 @@
         },
         "2d0f7b4e-1ee7-4b51-a79c-f95dbe0efdec": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "the-jefflo-mitt",
             "tagline": "Lined winter workhorse"
@@ -107,6 +134,7 @@
       },
       "block_order": [
         "44361ba1-de0d-40ef-bea1-85a5a2ccf3d0",
+        "077b4aa1-69de-4ac1-8239-f97c51b08a4c",
         "fd9becec-b574-4b46-a51b-d1655137ab05",
         "f16e5cd5-aa1f-4f32-9264-8e662ca906de",
         "2d0f7b4e-1ee7-4b51-a79c-f95dbe0efdec",
@@ -154,7 +182,7 @@
       "type": "image-title",
       "settings": {
         "image": "shopify:\/\/shop_images\/VTG-ProductImage-FeatureCallout-45-Vermonter.png",
-        "title": "FEATURE RICH, NO INSTRUCTIONS REQUIRED",
+        "title": "An exceptionally high performing glove.",
         "button_text": "SHOP NOW",
         "button_url": "shopify:\/\/collections\/all-products",
         "primary_color": "#452c80",

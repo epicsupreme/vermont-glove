@@ -87,8 +87,8 @@ function cartRemoveItem(key) {
 
     const addOnRemove = state.items.forEach((item) => {
       if (
-        item.properties._cartParent != null &&
-        key === item.properties._cartParent
+        item.properties?._cartParent != null &&
+        key === item.properties?._cartParent
       ) {
         removeProducts[item.key] = 0
       }

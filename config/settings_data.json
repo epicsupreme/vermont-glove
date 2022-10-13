@@ -7,8 +7,8 @@
       "header": {
         "type": "header",
         "settings": {
-          "top_bar": false,
-          "text": "<p><a href=\"\/collections\/all-products\" title=\"Shop All Vermont Glove Products\">FREE SHIPPING ON GLOVES AND MITTENS THROUGH 9\/25 WITH CODE \"FUNSOVER\"<\/a><\/p>",
+          "top_bar": true,
+          "text": "<p><a href=\"\/products\/tuttle\" title=\"Tuttle\"><strong>INTRODUCING: KNIT CUFF LINED GLOVES<\/strong><\/a><\/p>",
           "text_color": "#ffffff",
           "bg_color": "#82cdbb"
         }
@@ -48,7 +48,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {

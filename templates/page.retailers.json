@@ -12,7 +12,7 @@
           "type": "button",
           "settings": {
             "button_text": "DOWNLOAD OUR RETAIL BROCHURE",
-            "button_url": ""
+            "button_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG-Retail-SalesBrochure-22_08-Web.pdf?v=1665500356"
           }
         }
       },
@@ -33,7 +33,7 @@
       "type": "text",
       "settings": {
         "headline": "",
-        "subhead": "Email wholesale [at] vermontglove.com for further inquiries",
+        "subhead": "Email wholesale@vermontglove.com for further inquiries",
         "text": "",
         "link_text": "Read More",
         "link": "",

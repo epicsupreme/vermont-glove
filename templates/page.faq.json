@@ -8,6 +8,13 @@
     "1662046874bfe0f839": {
       "type": "faq",
       "blocks": {
+        "be4e87cf-8870-4c75-b7a1-2881f35b7897": {
+          "type": "faq",
+          "settings": {
+            "question": "EarlyGoat Offer Details 11\/10-11\/13",
+            "answer": "<p>Offer Valid 11\/10 - 11\/13.  Excludes Bespoke, gift cards, and custom items. Free Shipping is available for domestic shipping only.<\/p>"
+          }
+        },
         "3728eeac-b09c-4a73-b3df-d5ac97a66ee5": {
           "type": "faq",
           "settings": {
@@ -115,6 +122,7 @@
         }
       },
       "block_order": [
+        "be4e87cf-8870-4c75-b7a1-2881f35b7897",
         "3728eeac-b09c-4a73-b3df-d5ac97a66ee5",
         "e025ed7a-9f0d-4743-9745-6d9521fe63b3",
         "8563a743-47ca-4891-9062-fb49738f1284",

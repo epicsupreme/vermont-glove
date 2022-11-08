@@ -3,6 +3,40 @@
     "main": {
       "type": "hero",
       "blocks": {
+        "5293c167-f103-4298-b293-9106967bb6de": {
+          "type": "hero_slide",
+          "disabled": true,
+          "settings": {
+            "title": "THE EARLY GOAT\nGETS THE DEALS",
+            "mobile_title": "THE EARLY GOAT GETS THE DEALS",
+            "button_text": "SHOP HOLIDAY DEALS",
+            "button_url": "",
+            "location": "justify-start",
+            "primary_color": "#452C80",
+            "secondary_color": "#ffffff",
+            "image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Desktop-EarlyGoat.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Desktop-EarlyGoat_58832d59-1801-40ab-a43e-7bc87a80410e.jpg",
+            "video_url": "",
+            "mobile_video_url": "",
+            "mobile_position": "lg:object-center"
+          }
+        },
+        "ff79b500-1f73-4488-ac70-e179576182a1": {
+          "type": "hero_slide",
+          "settings": {
+            "title": "BESPOKE, \nMONOGRAMMED\nGLOVES ARE HERE",
+            "mobile_title": "BESPOKE, \nMONOGRAMMED\nGLOVES ARE HERE",
+            "button_text": "SHOP BESPOKE GLOVES NOW",
+            "button_url": "shopify:\/\/products\/bespoke-glove-gift-pack-2022",
+            "location": "justify-start",
+            "primary_color": "#ffffff",
+            "secondary_color": "#452c80",
+            "image": "shopify:\/\/shop_images\/VTG-Bespoke-Glove-Worn54.jpg",
+            "video_url": "",
+            "mobile_video_url": "",
+            "mobile_position": "lg:object-center"
+          }
+        },
         "aedc400d-2c69-482f-b2d6-08ab95e301d3": {
           "type": "hero_slide",
           "settings": {
@@ -22,6 +56,7 @@
         },
         "68322697-4563-48c3-ab89-66e4f3ec7ce4": {
           "type": "hero_slide",
+          "disabled": true,
           "settings": {
             "title": "THAT WAS FUN.\nTIME TO CLEAN UP.",
             "mobile_title": "THAT WAS FUN.\nTIME TO CLEAN UP.",
@@ -75,6 +110,8 @@
         }
       },
       "block_order": [
+        "5293c167-f103-4298-b293-9106967bb6de",
+        "ff79b500-1f73-4488-ac70-e179576182a1",
         "aedc400d-2c69-482f-b2d6-08ab95e301d3",
         "68322697-4563-48c3-ab89-66e4f3ec7ce4",
         "cab8a4be-4648-4e7f-92fe-25ff65448681",
@@ -91,6 +128,13 @@
           "settings": {
             "product": "the-vermonter",
             "tagline": "Our flagship work glove"
+          }
+        },
+        "034c43c3-356c-4a58-9f09-121a5613091c": {
+          "type": "product",
+          "settings": {
+            "product": "bespoke-glove-gift-pack-2022",
+            "tagline": "The ultimate holiday gift"
           }
         },
         "077b4aa1-69de-4ac1-8239-f97c51b08a4c": {
@@ -117,7 +161,6 @@
         },
         "2d0f7b4e-1ee7-4b51-a79c-f95dbe0efdec": {
           "type": "product",
-          "disabled": true,
           "settings": {
             "product": "the-jefflo-mitt",
             "tagline": "Lined winter workhorse"
@@ -134,6 +177,7 @@
       },
       "block_order": [
         "44361ba1-de0d-40ef-bea1-85a5a2ccf3d0",
+        "034c43c3-356c-4a58-9f09-121a5613091c",
         "077b4aa1-69de-4ac1-8239-f97c51b08a4c",
         "fd9becec-b574-4b46-a51b-d1655137ab05",
         "f16e5cd5-aa1f-4f32-9264-8e662ca906de",

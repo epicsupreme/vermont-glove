@@ -1,11 +1,25 @@
 {{ 'section-main-cart.css' | asset_url | stylesheet_tag }}
 
-<div class="cart o-container -medium"></div>
+<div class="h-[calc(var(--window-height)-var(--header-height))]">
+  {% if section.settings.bg_image %}
+    {{
+      section.settings.bg_image
+      | image_url: width: 2000
+      | image_tag: width: null, class: 'w-full h-full object-cover'
+    }}
+  {% endif %}
+</div>
 
 {% schema %}
 {
   "name": "t:sections.cart.name",
   "tag": "section",
-  "settings": []
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    }
+  ]
 }
 {% endschema %}

@@ -7,10 +7,10 @@
       "header": {
         "type": "header",
         "settings": {
-          "top_bar": true,
-          "text": "<p><a href=\"\/products\/tuttle\" title=\"Tuttle\"><strong>INTRODUCING: KNIT CUFF LINED GLOVES<\/strong><\/a><\/p>",
-          "text_color": "#ffffff",
-          "bg_color": "#82cdbb"
+          "top_bar": false,
+          "text": "<p><strong>SPEND $10 - GET 10% OFF  | SPEND $200 - GET 15% OFF | SPEND $300 - GET 20% OFF & FREE SHIPPING!<\/strong><\/p>",
+          "text_color": "#452C80",
+          "bg_color": "#f9f06c"
         }
       },
       "footer": {

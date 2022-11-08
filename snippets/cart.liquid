@@ -1,260 +1,247 @@
 <script
-   src="{{- 'component-add-to-cart.js' | asset_url -}}"></script>
+  src="{{- 'component-add-to-cart.js' | asset_url -}}"
+></script>
 
 <div
-   :class="{'hidden': !cartOpen}"
-   class="w-full h-[calc(var(--window-height))] bg-[rgba(255,255,255,0.5)] fixed top-0 z-50"
-   id="cart"
+  {% unless template == 'cart' %}
+    :class="{'hidden': !cartOpen}"
+  {% endunless %}
+  class="
+    w-full h-[calc(var(--window-height))]
+      {% unless template == 'cart' %}
+       bg-[rgba(255,255,255,0.5)]
 
-   x-data="{ cart: {total: '', products: [], note: ''}}"
-   x-on:updateproducts.window="cart = $event.detail.cart">
+    {% endunless %}
 
-   <button
+    {% if template == 'cart' %}
+      pointer-events-none
+     {% endif %}
+
+
+
+    fixed top-0 z-50
+  "
+  id="cart"
+  x-data="{ cart: {total: '', products: [], note: ''}}"
+  x-on:updateproducts.window="cart = $event.detail.cart"
+>
+  {% unless template == 'cart' %}
+    <button
       @click.prevent="cartOpen = false"
-      class="absolute top-0 z-0 w-full h-full"></button>
+      class="absolute top-0 z-0 w-full h-full"
+    ></button>
+  {% endunless %}
 
-   <div
-      class="absolute right-0 z-10 h-[calc(var(--window-height))] bottom-0 bg-white w-full max-w-xl pt-16 px-4 md:px-6"
-      id="cart-container">
+  <div
+    class="
+    {% if template == 'cart' %}
+      pointer-events-auto
+     {% endif %}
+     absolute right-0 z-10 h-[calc(var(--window-height))] bottom-0 bg-white w-full max-w-xl pt-16 px-4 md:px-6"
+    id="cart-container"
+  >
+    <div class="flex items-center justify-between mb-9">
+      {% unless template == 'cart' %}
+        <button
+          @click="cartOpen = false"
+          class="w-8 text-brand"
+          id="cart-cart-close"
+        >
+          {%- render 'svg-arrow-right' -%}
+        </button>
+      {% endunless %}
+    </div>
 
-      <div
-         class="flex items-center justify-between mb-9">
+    {% if template == 'cart' %}
+      <h1 class="text-3xl not-italic uppercase font-display text-brand">Your Cart</h1>
+    {% endif %}
 
-         <button
-            @click="cartOpen = false"
-            class="w-8 text-brand"
-            id="cart-cart-close">
-            {%- render 'svg-arrow-right' -%}
-         </button>
-      </div>
+    <template x-if="cart.products.length < 1">
+      <div class="px-6 py-20 italic border-b border-primary">No Products</div>
+    </template>
 
-
-      <template
-         x-if="cart.products.length < 1">
-         <div
-            class="px-6 py-20 italic border-b border-primary">
-            No Products
-         </div>
-      </template>
-
-      <div
-         class="h-[calc(var(--window-height)-var(--header-height))] pb-96  overflow-y-auto">
-         <div
-            class="relative mx-auto border-primary">
-            <template
-               x-for="product in cart.products">
-               <div
-                  class="grid grid-cols-4 gap-4 mb-6">
-                  <div
-                     class="relative col-span-1 aspect-square">
-                     <img
-                        :alt="product.title"
-                        :src="product.image"
-                        class="object-contain w-full h-full"
-                        loading="lazy">
-
-                  </div>
-                  <div
-                     class="grid grid-cols-3 col-span-3 gap-4 pt-6">
-                     <div
-                        class="flex flex-col justify-between col-span-2">
-                        <div>
-                           <div
-                              class="text-sm leading-none uppercase md:text-xl font-display"
-                              x-text="product.title"></div>
-
-                           <div>
-                              <template
-                                 x-for="option in product.options">
-                                 <template
-                                    x-if="option.value != 'Default Title'">
-                                    <div
-                                       class="mb-2 text-xs "
-                                       x-text="option.value"></div>
-                                 </template>
-                              </template>
-                           </div>
-
-                           <div>
-
-                                 <template
-                                    x-if="product.properties && product.properties['Monogram']">
-                                    <div
-                                       class="mb-2 text-xs "
-                                       x-text="`Monogram: ${product.properties['Monogram']}`"></div>
-                                 </template>
-                           </div>
-                        </div>
-
-                        <div
-                           class="">
-                           <label
-                              :for="'id_' + product.id">QTY</label>
-                           <input
-                              :id="'id_' + product.id"
-                              :value="product.qty"
-                              @change="product.update($event.target.value)"
-                              @keyup="product.update($event.target.value)"
-                              type="number">
-                        </div>
-
-                     </div>
-
-                     <div
-                        class="flex flex-col justify-between text-right">
-                        <div
-                           class="text-2xl font-headline">$<span
-                              x-text="product.price"></span>
-                        </div>
-                        <div>
-                           <button
-                              class="text-xs font-bold underline"
-                              x-on:click.prevent="product.remove()">Remove</button>
-                        </div>
-                     </div>
-
-
-                  </div>
-
-                  <template
-                     x-if="product.addOnProducts">
-                     <div
-                        class="col-span-4 pl-10">
-                        <div
-                           class="uppercase font-headline" x-show="product.addOnProducts.length > 0">Add On Products</div>
-                        <template
-                           x-for="addOnProduct in product.addOnProducts">
-                           <template
-                              x-if="addOnProduct">
-                              <div
-                                 class="">
-
-                                 <div
-                                    class="grid grid-cols-4 gap-4 mb-2">
-                                    <div
-                                       class="relative col-span-1 aspect-square">
-                                       <img
-                                          :alt="addOnProduct.title"
-                                          :src="addOnProduct.image"
-                                          class="object-contain w-full h-full"
-                                          loading="lazy">
-
-                                    </div>
-                                    <div
-                                       class="grid grid-cols-3 col-span-3 gap-4 pt-6">
-                                       <div
-                                          class="flex flex-col col-span-2">
-                                          <div>
-                                             <div
-                                                class="text-sm leading-none uppercase font-display"
-                                                x-text="addOnProduct.title"></div>
-
-                                             <div>
-                                                <template
-                                                   x-for="option in addOnProduct.options">
-                                                   <template
-                                                      x-if="option.value != 'Default Title'">
-                                                      <div
-                                                         class="mb-2 text-xs "
-                                                         x-text="option.value"></div>
-                                                   </template>
-                                                </template>
-                                             </div>
-                                          </div>
-
-                                          <div
-                                             class="text-sm ">
-                                             <label
-                                                :for="'id_' + addOnProduct.id">QTY:
-                                                <span
-                                                   x-text="addOnProduct.qty"></span>
-                                             </label>
-                                          </div>
-
-                                       </div>
-
-                                       <div
-                                          class="flex flex-col text-right">
-                                          <div
-                                             class="text-sm font-headline">$<span
-                                                x-text="addOnProduct.price"></span>
-                                          </div>
-                                          <div>
-                                             <button
-                                                class="text-xs font-bold underline"
-                                                x-on:click.prevent="addOnProduct.remove()">Remove</button>
-                                          </div>
-
-                                       </div>
-                                    </div>
-
-                                 </div>
-                              </div>
-                           </template>
-                        </template>
-                     </div>
-                  </template>
-
-
-               </div>
-
-            </template>
-
-
-         </div>
-
-         <template
-            x-if="cart.products.length > 0">
-
-
-            <div
-               class="absolute bottom-0 left-0 w-full px-6 bg-white">
-
-               <div
-                  class="w-full max-w-xl py-6 mx-auto">
-                  <div
-                     class="uppercase font-headline">
-                     Add Note
-                  </div>
-                  <textarea
-                     :value="cart.note"
-                     @keyup="$event.target.dispatchEvent(new CustomEvent('cartUpdate', $event))"
-                     class="w-full h-32 p-2 border-2 border-brand"
-                     id="cart-note"
-                     name="note"
-                     placeholder="Note..."></textarea>
-
-               </div>
-
-               <div
-                  class="w-full max-w-xl py-6 mx-auto border-t-2 border-black">
-                  <div
-                     class="flex justify-between text-xl font-headline">
-                     <div
-                        class="uppercase ">
-                        Subtotal
-                     </div>
-                     <div
-                        class=""
-                        x-text="'$' + cart.total"></div>
-                  </div>
-
-                  <form action="/checkout" method="POST"></form>
-                  <a
-                     class="block w-full py-4 mt-6 text-xl text-center text-white uppercase bg-brand font-headline"
-                     href="/checkout/"
-                     title="Checkout">
-                     Checkout
-                  </a>
-               </div>
+    <div class="h-[calc(var(--window-height)-var(--header-height))] pb-96  overflow-y-auto">
+      <div class="relative mx-auto border-primary">
+        <template x-for="product in cart.products">
+          <div class="grid grid-cols-4 gap-4 mb-6">
+            <div class="relative col-span-1 aspect-square">
+              <img
+                :alt="product.title"
+                :src="product.image"
+                class="object-contain w-full h-full"
+                loading="lazy"
+              >
             </div>
-         </template>
+            <div class="grid grid-cols-3 col-span-3 gap-4 pt-6">
+              <div class="flex flex-col justify-between col-span-2">
+                <div>
+                  <div
+                    class="text-sm leading-none uppercase md:text-xl font-display"
+                    x-text="product.title"
+                  ></div>
 
+                  <div>
+                    <template x-for="option in product.options">
+                      <template x-if="option.value != 'Default Title'">
+                        <div
+                          class="mb-2 text-xs "
+                          x-text="option.value"
+                        ></div>
+                      </template>
+                    </template>
+                  </div>
 
+                  <div>
+                    <template x-if="product.properties && product.properties['Monogram']">
+                      <div
+                        class="mb-2 text-xs "
+                        x-text="`Monogram: ${product.properties['Monogram']}`"
+                      ></div>
+                    </template>
+                  </div>
+                </div>
+
+                <div class="">
+                  <label :for="'id_' + product.id"
+                    >QTY</label
+                  >
+                  <input
+                    :id="'id_' + product.id"
+                    :value="product.qty"
+                    @change="product.update($event.target.value)"
+                    @keyup="product.update($event.target.value)"
+                    type="number"
+                  >
+                </div>
+              </div>
+
+              <div class="flex flex-col justify-between text-right">
+                <div class="text-2xl font-headline">
+                  $<span
+                    x-text="product.price"
+                  ></span>
+                </div>
+                <div>
+                  <button
+                    class="text-xs font-bold underline"
+                    x-on:click.prevent="product.remove()"
+                  >
+                    Remove
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <template x-if="product.addOnProducts">
+              <div class="col-span-4 pl-10">
+                <div
+                  class="uppercase font-headline"
+                  x-show="product.addOnProducts.length > 0"
+                >
+                  Add On Products
+                </div>
+                <template x-for="addOnProduct in product.addOnProducts">
+                  <template x-if="addOnProduct">
+                    <div class="">
+                      <div class="grid grid-cols-4 gap-4 mb-2">
+                        <div class="relative col-span-1 aspect-square">
+                          <img
+                            :alt="addOnProduct.title"
+                            :src="addOnProduct.image"
+                            class="object-contain w-full h-full"
+                            loading="lazy"
+                          >
+                        </div>
+                        <div class="grid grid-cols-3 col-span-3 gap-4 pt-6">
+                          <div class="flex flex-col col-span-2">
+                            <div>
+                              <div
+                                class="text-sm leading-none uppercase font-display"
+                                x-text="addOnProduct.title"
+                              ></div>
+
+                              <div>
+                                <template x-for="option in addOnProduct.options">
+                                  <template x-if="option.value != 'Default Title'">
+                                    <div
+                                      class="mb-2 text-xs "
+                                      x-text="option.value"
+                                    ></div>
+                                  </template>
+                                </template>
+                              </div>
+                            </div>
+
+                            <div class="text-sm ">
+                              <label :for="'id_' + addOnProduct.id"
+                                >QTY:
+                                <span
+                                  x-text="addOnProduct.qty"
+                                ></span>
+                              </label>
+                            </div>
+                          </div>
+
+                          <div class="flex flex-col text-right">
+                            <div class="text-sm font-headline">
+                              $<span
+                                x-text="addOnProduct.price"
+                              ></span>
+                            </div>
+                            <div>
+                              <button
+                                class="text-xs font-bold underline"
+                                x-on:click.prevent="addOnProduct.remove()"
+                              >
+                                Remove
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </template>
+                </template>
+              </div>
+            </template>
+          </div>
+        </template>
       </div>
 
+      <template x-if="cart.products.length > 0">
+        <div class="absolute bottom-0 left-0 w-full px-6 bg-white">
+          <div class="w-full max-w-xl py-6 mx-auto">
+            <div class="uppercase font-headline">Add Note</div>
+            <textarea
+              :value="cart.note"
+              @keyup="$event.target.dispatchEvent(new CustomEvent('cartUpdate', $event))"
+              class="w-full h-32 p-2 border-2 border-brand"
+              id="cart-note"
+              name="note"
+              placeholder="Note..."
+            ></textarea>
+          </div>
 
-   </div>
+          <div class="w-full max-w-xl py-6 mx-auto border-t-2 border-black">
+            <div class="flex justify-between text-xl font-headline">
+              <div class="uppercase ">Subtotal</div>
+              <div
+                class=""
+                x-text="'$' + cart.total"
+              ></div>
+            </div>
 
-
+            <form action="/checkout" method="POST"></form>
+            <a
+              class="block w-full py-4 mt-6 text-xl text-center text-white uppercase bg-brand font-headline"
+              href="/checkout/"
+              title="Checkout"
+            >
+              Checkout
+            </a>
+          </div>
+        </div>
+      </template>
+    </div>
+  </div>
 </div>

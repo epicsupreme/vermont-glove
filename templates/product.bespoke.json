@@ -170,6 +170,7 @@
     },
     "1660158343930fee78": {
       "type": "video-image",
+      "disabled": true,
       "settings": {
         "image_1": "shopify:\/\/shop_images\/VTG-Drone-Factory_Team-4.jpg",
         "video_url_1": "",
@@ -230,6 +231,7 @@
     },
     "16600693525c2b15f4": {
       "type": "compare",
+      "disabled": true,
       "blocks": {
         "605fca98-4aa2-42a4-bbbe-cbd2202a73fa": {
           "type": "product",

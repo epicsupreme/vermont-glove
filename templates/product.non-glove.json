@@ -86,6 +86,20 @@
             "icon": "shopify:\/\/shop_images\/VTG-Icons22-TougherNNails.png",
             "text": "Tuffer'n Nails"
           }
+        },
+        "1e170891-3ab1-4f41-a0dc-731ebf3874f0": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-CustomMeasured.png",
+            "text": "Custom Measured"
+          }
+        },
+        "74bd8bc8-df15-4ae4-85f8-b479564d5ae1": {
+          "type": "icon_choices",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/VTG-Icons22-Engraved.png",
+            "text": "Engraved Monogram"
+          }
         }
       },
       "block_order": [
@@ -100,7 +114,9 @@
         "ba8e7eb1-0abd-41e6-9f5a-7a96fb9a079d",
         "8bb74f8b-e649-41ad-aff6-a1e2908b5e53",
         "c1af1673-507b-458b-b611-739a76a719c9",
-        "ceb3ade7-c474-4d3d-952e-5ad15c0f13db"
+        "ceb3ade7-c474-4d3d-952e-5ad15c0f13db",
+        "1e170891-3ab1-4f41-a0dc-731ebf3874f0",
+        "74bd8bc8-df15-4ae4-85f8-b479564d5ae1"
       ],
       "settings": {
         "sizing_guide_title": "Sizing Guide",
@@ -115,7 +131,6 @@
     },
     "1660158343930fee78": {
       "type": "video-image",
-      "disabled": true,
       "settings": {
         "image_1": "shopify:\/\/shop_images\/VTG-Web-Portraits-11-UphillSkier-MatthewTufts.jpg",
         "video_url_1": "",
@@ -236,6 +251,7 @@
       "blocks": {
         "172de59a-d609-4e6f-b024-86f6ee27f960": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_text": "",
             "button_url": ""

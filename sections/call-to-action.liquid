@@ -2,12 +2,18 @@
    class="relative flex flex-col items-center justify-center px-4  w-full h-mobile-fullscreen lg:h-auto lg:aspect-[var(--ratio)]"
    style="--primary:{{ section.settings.primary_color }};--secondary:{{ section.settings.secondary_color }};--ratio:{{ section.settings.ratio }}/100;">
 
+   {%- if section.settings.video_url -%}
+      <video src="{{ section.settings.video_url }}" fullscreen autoplay playsinline muted loop></video>
+   {%- else -%}
    {% if section.settings.mobile_image %}
       {{ section.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full absolute hidden lg:block object-cover z-[-1]' }}
       {{ section.settings.mobile_image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full absolute lg:hidden object-cover z-[-1]' }}
    {% else %}
       {{ section.settings.image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full h-full absolute object-cover z-[-1]' }}
    {% endif %}
+   {%- endif -%}
+
+
 
    <div
       class="text-3xl lg:text-5xl  lg:text-center text-[color:var(--primary)] font-display mb-4 lg:mb-6">

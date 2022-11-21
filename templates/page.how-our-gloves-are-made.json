@@ -4,9 +4,129 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "00ea3005-a07c-4461-9eac-8e8b57ddf9b5": {
+      "type": "call-to-action",
+      "settings": {
+        "title": "HOW OUR GLOVES ARE MADE",
+        "primary_color": "#ffffff",
+        "secondary_color": "#ffffff",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/0cc5983e6daa4b2ab80423ed3e19341a.mp4",
+        "full": false,
+        "ratio": 250
+      }
+    },
+    "fccf0092-dff6-48b9-8fc3-ef9773bdb5a4": {
+      "type": "text",
+      "disabled": true,
+      "settings": {
+        "headline": "EVERY PAIR OF VERMONT GLOVES ARE MADE IN OUR RANDOLPH, VERMONT FACTORY.",
+        "subhead": "",
+        "text": "",
+        "link_text": "Read More",
+        "link": "",
+        "bg_color": "#ffffff",
+        "text_color": "#452c80"
+      }
+    },
+    "8c0d164d-2ef2-4096-af60-c5392a410860": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "it all starts on pasture",
+        "text": "<p>You can't get leather without ruminants. Sorry to break it to ya, but it's just one of those things.<\/p><p>Goats that live on pasture year round make the rugged hides that we prize for their leather's durability and longevity.<\/p>",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/VTG-Goats.jpg",
+        "upload_video_url": "",
+        "youtube_video_url": "",
+        "button_link": "link",
+        "button_text": "Learn why we use goat leather",
+        "button_url": "shopify:\/\/pages\/guides",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
+    "9823badd-5731-48c5-8f74-2c0688042f99": {
+      "type": "call-to-action",
+      "settings": {
+        "title": "WE ONLY USE THE BEST",
+        "primary_color": "#ffffff",
+        "secondary_color": "#ffffff",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/0cc5983e6daa4b2ab80423ed3e19341a.mp4",
+        "full": true,
+        "ratio": 200
+      }
+    },
+    "bf7c5704-20fd-4e85-9289-d70f6d56c905": {
+      "type": "text",
+      "settings": {
+        "headline": "",
+        "subhead": "WE ARE GUIDED BY THE THREE Q'S: QUALITY, QUALITY AND QUALITY",
+        "text": "<p>Once the goat hides are shipped from the pasture to our factory, we gauge the thickness of every single one. The thicker the leather, the more durable and the less pliable it is. We use the different thicknesses for different parts of your glove.<\/p>",
+        "link_text": "Read More",
+        "link": "",
+        "bg_color": "#ffffff",
+        "text_color": "#452c80"
+      }
+    },
+    "45500144-f871-434e-b39d-e597afc891c5": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "DEFECT AND STRETCH",
+        "text": "<p>First, we mark out every defect so can cut it out. Then, we lay out each one of the 24 pieces that make up a Vermonter glove in the correct location on the hide.<\/p><p>Every part of a goat hide stretches in a different direction. We make every piece of the glove is cut from the right part of the hide so it works like it's sposeda.<\/p>",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/VTG-Goats.jpg",
+        "upload_video_url": "",
+        "youtube_video_url": "",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "9de376dd-2657-4639-8393-167f1c9ea2f7": {
+      "type": "call-to-action",
+      "settings": {
+        "title": "(Image) All pieces of Vermonter laid out on table",
+        "primary_color": "#ffffff",
+        "secondary_color": "#ffffff",
+        "image": "shopify:\/\/shop_images\/VTG-Goats.jpg",
+        "video_url": "",
+        "full": true,
+        "ratio": 150
+      }
+    },
+    "c554bad6-09b4-437b-bfc0-fe4ef8b2c289": {
+      "type": "history",
+      "settings": {
+        "title": "Title",
+        "subhead": "Subhead",
+        "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>",
+        "media_type": "image",
+        "upload_video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/0cc5983e6daa4b2ab80423ed3e19341a.mp4",
+        "youtube_video_url": "",
+        "button_link": "button",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "00ea3005-a07c-4461-9eac-8e8b57ddf9b5",
+    "fccf0092-dff6-48b9-8fc3-ef9773bdb5a4",
+    "8c0d164d-2ef2-4096-af60-c5392a410860",
+    "9823badd-5731-48c5-8f74-2c0688042f99",
+    "bf7c5704-20fd-4e85-9289-d70f6d56c905",
+    "45500144-f871-434e-b39d-e597afc891c5",
+    "9de376dd-2657-4639-8393-167f1c9ea2f7",
+    "c554bad6-09b4-437b-bfc0-fe4ef8b2c289"
   ]
 }

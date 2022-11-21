@@ -8,9 +8,9 @@
         "type": "header",
         "settings": {
           "top_bar": false,
-          "text": "<p><strong>SPEND $10 - GET 10% OFF  | SPEND $200 - GET 15% OFF | SPEND $300 - GET 20% OFF & FREE SHIPPING!<\/strong><\/p>",
-          "text_color": "#452C80",
-          "bg_color": "#f9f06c"
+          "text": "<p>FREE SHIPPING ON GLOVES & MITTENS | FREE CONDITIONER OVER $200 (MUST ADD TO CART)<\/p>",
+          "text_color": "#ffffff",
+          "bg_color": "#452C80"
         }
       },
       "footer": {

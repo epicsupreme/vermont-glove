@@ -3,16 +3,33 @@
     "main": {
       "type": "hero",
       "blocks": {
-        "5293c167-f103-4298-b293-9106967bb6de": {
+        "baf79a89-a2b1-4a6e-bcff-00bca2a21415": {
           "type": "hero_slide",
           "disabled": true,
           "settings": {
-            "title": "THE EARLY GOAT\nGETS THE DEALS",
-            "mobile_title": "THE EARLY GOAT GETS THE DEALS",
-            "button_text": "SHOP HOLIDAY DEALS",
+            "title": "SHOP SMALL TO\nMAKE A BIG\nIMPACT",
+            "mobile_title": "SHOP SMALL TO MAKE A BIG IMPACT",
+            "button_text": "SHOP CYBER DEALS NOW",
             "button_url": "",
             "location": "justify-start",
-            "primary_color": "#452C80",
+            "primary_color": "#ffffff",
+            "secondary_color": "#452c80",
+            "image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Desktop-Cyberweek22.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/VTG-Image-Web-Hero-Mobile-Cyberweek22.jpg",
+            "video_url": "",
+            "mobile_video_url": "",
+            "mobile_position": "lg:object-center"
+          }
+        },
+        "5293c167-f103-4298-b293-9106967bb6de": {
+          "type": "hero_slide",
+          "settings": {
+            "title": "HERE COMES\nTHE SNOW",
+            "mobile_title": "HERE COMES THE SNOW",
+            "button_text": "SHOP WINTER GLOVES",
+            "button_url": "shopify:\/\/collections\/gloves-mittens",
+            "location": "justify-start",
+            "primary_color": "#452c80",
             "secondary_color": "#ffffff",
             "image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Desktop-EarlyGoat.jpg",
             "mobile_image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Desktop-EarlyGoat_58832d59-1801-40ab-a43e-7bc87a80410e.jpg",
@@ -110,6 +127,7 @@
         }
       },
       "block_order": [
+        "baf79a89-a2b1-4a6e-bcff-00bca2a21415",
         "5293c167-f103-4298-b293-9106967bb6de",
         "ff79b500-1f73-4488-ac70-e179576182a1",
         "aedc400d-2c69-482f-b2d6-08ab95e301d3",

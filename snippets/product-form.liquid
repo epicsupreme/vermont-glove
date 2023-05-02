@@ -69,7 +69,10 @@
    enctype="multipart/form-data"
    id="product-form"
    method="post"
-   x-data="product({{ productJson | escape | replace: '"', "'" }})">
+   x-data="product({{ productJson | escape | replace: '"', "'" }})"
+   x-ref="product_form"
+   @unload.window="$refs.product_form.reset()"
+>
    <input
       name="form_type"
       type="hidden"

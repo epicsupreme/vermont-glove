@@ -3,8 +3,42 @@
     "main": {
       "type": "hero",
       "blocks": {
+        "239fdffb-b148-4983-81d7-9d6272dded10": {
+          "type": "hero_slide",
+          "settings": {
+            "title": "FATHERS DAY\nIS COMING",
+            "mobile_title": "FATHERS DAY\nIS COMING",
+            "button_text": "SHOP DAD GLOVES",
+            "button_url": "shopify:\/\/collections\/gloves-mittens",
+            "location": "justify-start",
+            "primary_color": "#ffffff",
+            "secondary_color": "#452c80",
+            "image": "shopify:\/\/shop_images\/VTG-Ploughgate_GCGCo-Fathers23-11.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/VTG-Ploughgate_GCGCo-Fathers23-11.jpg",
+            "video_url": "",
+            "mobile_video_url": "",
+            "mobile_position": "lg:object-center"
+          }
+        },
+        "329e0583-1ea1-4f01-9a5c-d548b1adeef6": {
+          "type": "hero_slide",
+          "settings": {
+            "title": "DESIGNED FOR THE PROS,\nMADE FOR YOU",
+            "mobile_title": "DESIGNED FOR THE PROS, MADE FOR YOU",
+            "button_text": "SHOP NOW",
+            "button_url": "shopify:\/\/collections\/gloves-mittens",
+            "location": "justify-start",
+            "primary_color": "#ffffff",
+            "secondary_color": "#452c80",
+            "image": "shopify:\/\/shop_images\/VTG_September_2019_Selects_5_of_126.jpg",
+            "video_url": "",
+            "mobile_video_url": "",
+            "mobile_position": "lg:object-center"
+          }
+        },
         "41b773c1-d13b-4956-a285-cb1ff7067cdb": {
           "type": "hero_slide",
+          "disabled": true,
           "settings": {
             "title": "Take 10% OFF with 'THANKSMOM' through Tuesday 5\/2",
             "mobile_title": "Take 10% OFF with 'THANKSMOM' through Sunday 4\/30",
@@ -22,8 +56,8 @@
         "028c6196-bac2-40c2-b105-6dc21ff9f429": {
           "type": "hero_slide",
           "settings": {
-            "title": "ITS GARDEN TIME",
-            "mobile_title": "ITS GARDEN TIME",
+            "title": "IT'S GARDEN TIME",
+            "mobile_title": "IT'S GARDEN TIME",
             "button_text": "SHOP GARDENING GLOVES",
             "button_url": "shopify:\/\/collections\/gloves-mittens",
             "location": "justify-start",
@@ -33,23 +67,6 @@
             "video_url": "",
             "mobile_video_url": "",
             "mobile_position": "lg:object-center"
-          }
-        },
-        "cab8a4be-4648-4e7f-92fe-25ff65448681": {
-          "type": "hero_slide",
-          "settings": {
-            "title": "DESIGNED FOR THE PROS,\nMADE FOR YOU",
-            "mobile_title": "DESIGNED FOR THE PROS, MADE FOR YOU",
-            "button_text": "Shop Now",
-            "button_url": "shopify:\/\/collections\/all",
-            "location": "justify-start",
-            "primary_color": "#ffffff",
-            "secondary_color": "#452c80",
-            "image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Desktop-Vermonter1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/VTG-Image-Web-Hero-Mobile-Vermonter4.jpg",
-            "video_url": "",
-            "mobile_video_url": "",
-            "mobile_position": "object-right"
           }
         },
         "92acab0f-b661-40d1-b509-7e2c6ae063c0": {
@@ -67,6 +84,24 @@
             "video_url": "",
             "mobile_video_url": "",
             "mobile_position": "lg:object-center"
+          }
+        },
+        "cab8a4be-4648-4e7f-92fe-25ff65448681": {
+          "type": "hero_slide",
+          "disabled": true,
+          "settings": {
+            "title": "DESIGNED FOR THE PROS,\nMADE FOR YOU",
+            "mobile_title": "DESIGNED FOR THE PROS, MADE FOR YOU",
+            "button_text": "Shop Now",
+            "button_url": "shopify:\/\/collections\/all",
+            "location": "justify-start",
+            "primary_color": "#ffffff",
+            "secondary_color": "#452c80",
+            "image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Desktop-Vermonter1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/VTG-Image-Web-Hero-Mobile-Vermonter4.jpg",
+            "video_url": "",
+            "mobile_video_url": "",
+            "mobile_position": "object-right"
           }
         },
         "891a9ff2-dbc4-46b2-8b07-f3ecab06512a": {
@@ -246,10 +281,12 @@
         }
       },
       "block_order": [
+        "239fdffb-b148-4983-81d7-9d6272dded10",
+        "329e0583-1ea1-4f01-9a5c-d548b1adeef6",
         "41b773c1-d13b-4956-a285-cb1ff7067cdb",
         "028c6196-bac2-40c2-b105-6dc21ff9f429",
-        "cab8a4be-4648-4e7f-92fe-25ff65448681",
         "92acab0f-b661-40d1-b509-7e2c6ae063c0",
+        "cab8a4be-4648-4e7f-92fe-25ff65448681",
         "891a9ff2-dbc4-46b2-8b07-f3ecab06512a",
         "1145a362-1309-456d-bd7e-6fbe52394c99",
         "df8bee13-d9dc-4efb-b8a4-84ed56d2348b",

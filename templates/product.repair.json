@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-product-repair",
+      "type": "main-product",
       "blocks": {
         "2bd0b3ce-8efd-4466-b014-3822a5bb5343": {
           "type": "icon_choices",
@@ -162,7 +162,7 @@
         "sizing_guide_image": "shopify:\/\/shop_images\/VTG-SizingChart-Hero-45_b44ad528-f0ea-4bb1-a60b-d59bbf34a6ce.jpg",
         "sizing_guide_text": "The most accurate way to determine your glove size is to download and print our hand tracing template.",
         "button_text": "Download Here",
-        "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG_Size_Chart_2022.pdf?v=1663182821",
+        "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG-SizeChart-2023.pdf?v=1677110639",
         "footer_title": "For more info",
         "footer_link_text": "Visit our sizing page",
         "footer_url": "shopify:\/\/pages\/sizing"
@@ -170,7 +170,6 @@
     },
     "1660158343930fee78": {
       "type": "video-image",
-      "disabled": true,
       "settings": {
         "image_1": "shopify:\/\/shop_images\/VTG-Drone-Factory_Team-4.jpg",
         "video_url_1": "",
@@ -231,7 +230,6 @@
     },
     "16600693525c2b15f4": {
       "type": "compare",
-      "disabled": true,
       "blocks": {
         "605fca98-4aa2-42a4-bbbe-cbd2202a73fa": {
           "type": "product",
@@ -253,8 +251,19 @@
             "liner_text": "Removable Merino Wool"
           }
         },
+        "a833aac9-12f8-437f-a3ca-eba3cbcb5f0e": {
+          "type": "product",
+          "settings": {
+            "product": "tuttle",
+            "text": "",
+            "glove_text": "100% Goat Leather",
+            "cuff_text": "100% Goat Leather",
+            "liner_text": ""
+          }
+        },
         "0681eced-8bb2-43b0-8c75-a87426208331": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "the-jefflo-mitt",
             "text": "",
@@ -279,12 +288,13 @@
       "block_order": [
         "605fca98-4aa2-42a4-bbbe-cbd2202a73fa",
         "1f23043c-901c-402b-9ff1-db349e2ce32c",
+        "a833aac9-12f8-437f-a3ca-eba3cbcb5f0e",
         "0681eced-8bb2-43b0-8c75-a87426208331",
         "6d41153e-08ac-4925-8f8c-628bd23bcd9b"
       ],
       "settings": {
         "title": "Compare Gloves",
-        "button_text": "Buy Now"
+        "button_text": "Explore Now"
       }
     },
     "165812977493b0d20f": {
@@ -292,10 +302,9 @@
       "blocks": {
         "172de59a-d609-4e6f-b024-86f6ee27f960": {
           "type": "button",
-          "disabled": true,
           "settings": {
-            "button_text": "",
-            "button_url": ""
+            "button_text": "LEARN HOW OUR GLOVES ARE MADE",
+            "button_url": "shopify:\/\/pages\/how-our-gloves-are-made"
           }
         }
       },
@@ -307,13 +316,14 @@
         "primary_color": "#ffffff",
         "secondary_color": "#452c80",
         "image": "shopify:\/\/shop_images\/VermontGloveCompany-12_15ff963c-683d-4d0c-a7d8-197593dd7baf.jpg",
-        "video_url": "",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/8047b70091b24315b64e4c2cfc7a8b8c.mp4",
         "full": true,
-        "ratio": 250
+        "ratio": 210
       }
     },
     "16581299038ac67c2a": {
       "type": "image-title",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/VTG-SDF_Aug21-18.jpg",
         "title": "A little glove love goes a long way.",
@@ -322,6 +332,30 @@
         "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": true
+      }
+    },
+    "f874e092-f41f-46dd-a83f-95d2b9e93140": {
+      "type": "image-title",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/VTG-HowToCondition-Thumb-1.jpg",
+        "title": "HOW TO CONDITION YOUR GLOVES",
+        "button_text": "WATCH THE VIDEO",
+        "button_url": "shopify:\/\/pages\/glove-care",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "fdd5c29c-ee19-41aa-822b-33d89e9fd8d7": {
+      "type": "image-title",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/VTG-HowTo-Waterproof-Thumbnail-1-2.jpg",
+        "title": "HOW TO WATERPROOF YOUR GLOVES",
+        "button_text": "WATCH THE VIDEO",
+        "button_url": "shopify:\/\/pages\/glove-care",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": false
       }
     },
     "1660158547c754289a": {
@@ -355,6 +389,7 @@
           "settings": {
             "only_photos": false,
             "aggregated": false,
+            "limit": 20,
             "hide_thumbnails": false,
             "maxwidth": 1080
           }
@@ -381,6 +416,8 @@
     "16600693525c2b15f4",
     "165812977493b0d20f",
     "16581299038ac67c2a",
+    "f874e092-f41f-46dd-a83f-95d2b9e93140",
+    "fdd5c29c-ee19-41aa-822b-33d89e9fd8d7",
     "1660158547c754289a",
     "loox-product-reviews-app-section",
     "cross-sell"

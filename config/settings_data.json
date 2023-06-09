@@ -8,9 +8,9 @@
         "type": "header",
         "settings": {
           "top_bar": true,
-          "text": "<p>Take 10% OFF with 'THANKSMOM' through Tuesday 5\/2<\/p>",
-          "text_color": "#452C80",
-          "bg_color": "#82CDBB"
+          "text": "<p><a href=\"\/collections\/all-products\" title=\"Shop All Vermont Glove Products\">Take 10% OFF orders over $100 with 'YAYDAD23' through 6\/12<\/a><\/p>",
+          "text_color": "#ffffff",
+          "bg_color": "#452c80"
         }
       },
       "footer": {

@@ -26,10 +26,45 @@
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/VTG-SizingChart-Hero-45_b44ad528-f0ea-4bb1-a60b-d59bbf34a6ce.jpg",
         "upload_video_url": "",
+        "youtube_video_url": "",
         "button_link": "button",
         "button_text": "DOWNLOAD & PRINT HERE",
-        "button_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG_Size_Chart_2022.pdf?v=1663182821",
-        "primary_color": "#452C80",
+        "button_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG-SizeChart-2023.pdf?v=1677110639",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
+    "a1b2c7aa-3c81-4761-90b3-d2e9057f0854": {
+      "type": "history",
+      "settings": {
+        "title": "How To Use the Size Chart",
+        "subhead": "",
+        "text": "<p>Watch Sam with the expert ham slam.<\/p>",
+        "media_type": "youtube_video",
+        "upload_video_url": "",
+        "youtube_video_url": "https:\/\/youtu.be\/Ym7zT-VKRdg",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "4e70edec-386f-41b7-a9ca-d0d45c1f6864": {
+      "type": "history",
+      "settings": {
+        "title": "DO I WEAR THE SAME SIZE IN AN UPHILL SKIER AND VERMONTER?",
+        "subhead": "",
+        "text": "<p>The answer is Yes, our sizing is consistent across all of our gloves & mittens. Learn more about our glove sizing in this video. <\/p>",
+        "media_type": "youtube_video",
+        "upload_video_url": "",
+        "youtube_video_url": "https:\/\/youtu.be\/lxl1ZEeI_y8",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
       }
@@ -106,6 +141,8 @@
     "main",
     "16602455754e7b2437",
     "16637542065f865c6f",
+    "a1b2c7aa-3c81-4761-90b3-d2e9057f0854",
+    "4e70edec-386f-41b7-a9ca-d0d45c1f6864",
     "166204788625e96eda"
   ]
 }

@@ -7,10 +7,10 @@
       "header": {
         "type": "header",
         "settings": {
-          "top_bar": false,
-          "text": "<p>FREE SHIPPING ON GLOVES & MITTENS | FREE CONDITIONER OVER $200 (MUST ADD TO CART)<\/p>",
-          "text_color": "#ffffff",
-          "bg_color": "#452C80"
+          "top_bar": true,
+          "text": "<p>Take 10% OFF with 'THANKSMOM' through Tuesday 5\/2<\/p>",
+          "text_color": "#452C80",
+          "bg_color": "#82CDBB"
         }
       },
       "footer": {
@@ -41,7 +41,7 @@
           "27feeef6-1526-4160-8270-5a02e0eb9024"
         ],
         "settings": {
-          "contact": "<p>18 Pearl St.<\/p><p>Randolph, VT 05032<\/p>",
+          "contact": "<p>18 Pearl St.<\/p><p>Randolph, VT 05060<\/p>",
           "copyright": "©2022 Vermont Glove All Rights Reserved"
         }
       }

@@ -1,0 +1,262 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "b6a17af0-a3fe-4c3a-97eb-c6cdc69f864a": {
+      "type": "text",
+      "settings": {
+        "headline": "DEPARTMENT OF REPAIRS",
+        "subhead": "",
+        "text": "",
+        "link_text": "Read More",
+        "link": "",
+        "bg_color": "#ffffff",
+        "text_color": "#452c80"
+      }
+    },
+    "9375cae1-56af-43a7-b34d-2763dc93e9e9": {
+      "type": "text",
+      "disabled": true,
+      "settings": {
+        "headline": "WOULDN'T BE A LONG TERM RELATIONSHIP IF IT DIDN'T NEED REPAIRS NOW AND THEN.",
+        "subhead": "",
+        "text": "",
+        "link_text": "Read More",
+        "link": "",
+        "bg_color": "#ffffff",
+        "text_color": "#452c80"
+      }
+    },
+    "1658324329a53551a6": {
+      "type": "call-to-action",
+      "settings": {
+        "title": "KEEP 'EM OUT OF THE LANDFILL",
+        "primary_color": "#ffffff",
+        "secondary_color": "#ffffff",
+        "image": "shopify:\/\/shop_images\/VTG-Repairs-2.jpg",
+        "video_url": "",
+        "full": false,
+        "ratio": 190
+      }
+    },
+    "a1d962e8-c4eb-4781-bd70-f6a61fa17f41": {
+      "type": "history",
+      "settings": {
+        "title": "OUR GLOVES ARE DURABLE AS FRIG",
+        "subhead": "BUT EVEN THE MIGHTIEST SHIPS RUN INTO ICEBERGS",
+        "text": "<p>We stand by our craftsmanship and believe that we should fix everything possible before replacing anything.<\/p><p>Worn spots, rips, tears, busted seams, slices, bonks, twisters, oopsies and ohshits are all no problem.<\/p><p>If you ran a pair through the chipper or left them in the burn pile, those are not coming back, sorry to break it tooya. We can work magic but we draw the line at bringing back the dead. We also can't make anyone fall in love with you so please stop asking.<\/p>",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/VTG-Repairs-2-2.jpg",
+        "upload_video_url": "",
+        "youtube_video_url": "",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
+    "c22fa153-2a5c-4f4d-9a28-22f560ee59b6": {
+      "type": "faq",
+      "blocks": {
+        "85e71502-22ed-4f5f-8dc0-1f80100c673e": {
+          "type": "faq",
+          "settings": {
+            "question": "Follow the link below to initiate a return",
+            "answer": "<p><a href=\"\/products\/glove-repair\" title=\"Glove Repair\">This link right here<\/a>. You'll tell us what happened, provide your information and upload a picture of your glove so we can assess the stitch sitch.<\/p>"
+          }
+        },
+        "4ce468ea-9801-42e2-87c1-8c1bc24702fe": {
+          "type": "faq",
+          "settings": {
+            "question": "Repairs take an average of 4 weeks",
+            "answer": "<p>Our glove doctors are thorough and the best in the field.<\/p>"
+          }
+        },
+        "2be3851c-5a9c-47d2-ae0e-e48ad81ed397": {
+          "type": "faq",
+          "settings": {
+            "question": "Repairs cost $30",
+            "answer": "<p>Glove doctor school ain't free, knowhatimean? This fee includes return shipping once surgery is complete. <\/p>"
+          }
+        },
+        "14a5d052-d0d9-45d4-b97d-b490df67c075": {
+          "type": "faq",
+          "settings": {
+            "question": "You'll pay shipping to the factory",
+            "answer": "<p>We're at 18 Pearl St., Randolph, VT 05060<\/p>"
+          }
+        },
+        "62ad5059-55b7-4d4f-bd14-751b072d85f0": {
+          "type": "faq",
+          "settings": {
+            "question": "Clean your gloves before sending them in",
+            "answer": "<p>We need clean leather to work with so your scum, grime and gook doesn't mess with our sewing machines. If you send us gloves caked with nasties, there will be an additional $10 cleaning fee associated with the repair.<\/p>"
+          }
+        },
+        "eb1d1b66-136b-477c-b316-2be96d531145": {
+          "type": "faq",
+          "settings": {
+            "question": "Send in the pair of gloves",
+            "answer": "<p>Even if only one glove needs repair, send them both in so we can assess the pair and make sure they're running in tip top shape when we send them back.<\/p>"
+          }
+        },
+        "c7b0b2a6-22fc-4b63-9808-27e06ecc95f1": {
+          "type": "faq",
+          "settings": {
+            "question": "You can also purchase individual gloves",
+            "answer": "<p>We now sell individual gloves of all styles. If your dog swallowed a glove whole, head on over here and pick up a replacement so you don't have to navigate a triglove situation. <\/p>"
+          }
+        },
+        "e308804f-59e7-4574-8eea-b1cdb7ccb0a7": {
+          "type": "faq",
+          "settings": {
+            "question": "If you simply can't possibly wait 4 weeks",
+            "answer": "<p>Consider scooping a <a href=\"\/collections\/gloves-mittens\" title=\"Gloves & Mittens\">back up pair.<\/a><\/p>"
+          }
+        },
+        "abdd65ac-13d5-43e3-b620-e89b6c08552d": {
+          "type": "faq",
+          "settings": {
+            "question": "Don't send us hardware store gloves",
+            "answer": "<p>We can only repair our own gloves. We know you knew that.<\/p>"
+          }
+        },
+        "e70ce2d2-9732-4b7d-8b1c-a7d3f711ad71": {
+          "type": "faq",
+          "settings": {
+            "question": "Repairs are sexy",
+            "answer": "<p>Patina, scars and patches add to your story - every one a chapter of your epic tale of being a rad bad boss.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "85e71502-22ed-4f5f-8dc0-1f80100c673e",
+        "4ce468ea-9801-42e2-87c1-8c1bc24702fe",
+        "2be3851c-5a9c-47d2-ae0e-e48ad81ed397",
+        "14a5d052-d0d9-45d4-b97d-b490df67c075",
+        "62ad5059-55b7-4d4f-bd14-751b072d85f0",
+        "eb1d1b66-136b-477c-b316-2be96d531145",
+        "c7b0b2a6-22fc-4b63-9808-27e06ecc95f1",
+        "e308804f-59e7-4574-8eea-b1cdb7ccb0a7",
+        "abdd65ac-13d5-43e3-b620-e89b6c08552d",
+        "e70ce2d2-9732-4b7d-8b1c-a7d3f711ad71"
+      ],
+      "settings": {
+        "title": "HOW REPAIRS WORK",
+        "text": ""
+      }
+    },
+    "2ee15e5c-6276-4044-b3a5-ecfa2bd358dc": {
+      "type": "call-to-action",
+      "blocks": {
+        "bd8e4e70-6744-454a-81ff-11f7e60ced85": {
+          "type": "button",
+          "settings": {
+            "button_text": "LFG",
+            "button_url": "shopify:\/\/products\/glove-repair"
+          }
+        }
+      },
+      "block_order": [
+        "bd8e4e70-6744-454a-81ff-11f7e60ced85"
+      ],
+      "settings": {
+        "title": "INITIATE A REPAIR",
+        "primary_color": "#ffffff",
+        "secondary_color": "#452c80",
+        "image": "shopify:\/\/shop_images\/VTG_March_2019_Selects_110_of_359.jpg",
+        "video_url": "",
+        "full": true,
+        "ratio": 200
+      }
+    },
+    "e054eb92-f043-451d-a74b-c6b5890d6f7d": {
+      "type": "text",
+      "settings": {
+        "headline": "",
+        "subhead": "HERE ARE SOME GLOVES WE CAN REPAIR:",
+        "text": "",
+        "link_text": "Read More",
+        "link": "",
+        "bg_color": "#ffffff",
+        "text_color": "#452c80"
+      }
+    },
+    "eadb6be4-489b-44ef-bcd9-f7a9ed9b0a3c": {
+      "type": "image-set",
+      "blocks": {
+        "c6351271-8b17-4bc1-af8f-4e8d51d09306": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG-Repairs-3.jpg"
+          }
+        },
+        "d67474f4-94cf-44be-b608-6cf535bc9558": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG-Repairs-1-3.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "c6351271-8b17-4bc1-af8f-4e8d51d09306",
+        "d67474f4-94cf-44be-b608-6cf535bc9558"
+      ],
+      "settings": {
+      }
+    },
+    "301fbce3-5008-4aae-b2c5-d272df367088": {
+      "type": "text",
+      "settings": {
+        "headline": "",
+        "subhead": "HERE ARE SOME GLOVES WE CAN'T REPAIR:",
+        "text": "",
+        "link_text": "Read More",
+        "link": "",
+        "bg_color": "#ffffff",
+        "text_color": "#452c80"
+      }
+    },
+    "7e6ef064-94f3-4047-bc4d-cd9f7e6a3be2": {
+      "type": "image-set",
+      "blocks": {
+        "281779ae-ae3a-4374-8aba-5ab26523cf42": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG-Repairs-1-2.jpg"
+          }
+        },
+        "068cb0b8-aba7-4940-af9a-28b7cf496d16": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VTG-Repairs-3-2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "281779ae-ae3a-4374-8aba-5ab26523cf42",
+        "068cb0b8-aba7-4940-af9a-28b7cf496d16"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b6a17af0-a3fe-4c3a-97eb-c6cdc69f864a",
+    "9375cae1-56af-43a7-b34d-2763dc93e9e9",
+    "1658324329a53551a6",
+    "a1d962e8-c4eb-4781-bd70-f6a61fa17f41",
+    "c22fa153-2a5c-4f4d-9a28-22f560ee59b6",
+    "2ee15e5c-6276-4044-b3a5-ecfa2bd358dc",
+    "e054eb92-f043-451d-a74b-c6b5890d6f7d",
+    "eadb6be4-489b-44ef-bcd9-f7a9ed9b0a3c",
+    "301fbce3-5008-4aae-b2c5-d272df367088",
+    "7e6ef064-94f3-4047-bc4d-cd9f7e6a3be2"
+  ]
+}

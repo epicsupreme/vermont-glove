@@ -9,7 +9,7 @@
       "type": "text",
       "settings": {
         "headline": "ARE YOU READY FOR A LONG-TERM RELATIONSHIP?",
-        "subhead": "TWO SIMPLE STEPS TO ENSURE A HARD-WEARING PAIR OF GLOVES",
+        "subhead": "TAKE CARE OF YOUR GLOVES TO PROTECT YOUR INVESTMENT",
         "text": "",
         "link_text": "Read More",
         "link": "",
@@ -22,7 +22,7 @@
       "settings": {
         "title": "",
         "subhead": "Conditioning Your Gloves",
-        "text": "<p>Lanolin is the unsung hero of our gloves. The cheddar to our patty melt. The vapor barrier to our dream home. The oil change to our #adventure van.<br\/><\/p><p>Seriously though, the lanolin’s the natural oil in goat leather that keeps it supple, and no matter how you use your gloves, it will eventually begin to leave your leather.<\/p><p>That’s why you’ll want to condition your gloves every now and then. We use Fiebing’s Neatsfoot Oil, a 100% natural oil that is the best in the biz.<\/p><p><\/p><p>INSTRUCTIONS FOR USE<\/p><p>Apply oil to gloves or mittens (we just wear ours and pour it on)<\/p><p>Rub thoroughly until it's saturated the surface and seams.<\/p><p>Repeat any time the leather feels dry.<\/p><p>Conditioning the gloves will make the leather darker in color.<\/p>",
+        "text": "<p>Lanolin is the unsung hero of our gloves. The cheddar to our patty melt. The vapor barrier to our dream home. The oil change to our #adventure van.<br\/><\/p><p>Seriously though, the lanolin’s the natural oil in goat leather that keeps it supple, and no matter how you use your gloves, it will eventually begin to leave your leather.<\/p><p>That’s why you’ll want to condition your gloves every now and then. We use Fiebing’s Neatsfoot Oil, a 100% natural oil that is the best in the biz.<\/p><p><\/p><p><span style=\"text-decoration:underline\">INSTRUCTIONS<\/span><\/p><p>1. Apply oil to gloves or mittens (we just wear ours and pour it on)<\/p><p>2. Rub thoroughly until it's saturated the surface and seams.<\/p><p>3. Repeat any time the leather feels dry.<\/p><p>4. Conditioning the gloves will make the leather darker in color.<\/p>",
         "media_type": "youtube_video",
         "upload_video_url": "",
         "youtube_video_url": "https:\/\/www.youtube.com\/watch?v=-whL16_3t-Q",
@@ -39,13 +39,47 @@
       "settings": {
         "title": "",
         "subhead": "WATERPROOFING YOUR GLOVES",
-        "text": "<p>Despite being as rugged as your grandma, and protective as your grandma’s pit bull, in wet environments your goat leather gloves will eventually saturate with water.<br\/><br\/>If you’re a big skier or work underwater, you’ll want to add a waterproofing agent to your gloves, to keep as much water out as possible.<br\/><br\/>We use Skidmore’s Waterproofing, a blend of beeswax and natural oils - we’d never put petroleum products on our gloves.<\/p><p>INSTRUCTIONS FOR USE<\/p><p>Apply wax to gloves or mittens (we just wear ours and scoop it on).<\/p><p>Rub thoroughly until it has coated the surface, making sure to work wax into all seams.<\/p><p>Bake gloves in a 225° oven for 1-2 minutes.<\/p><p>Repeat whole process 2-3 times for maximum waterproofing.<\/p>",
+        "text": "<p>Despite being as rugged as your grandma, and protective as your grandma’s pit bull, in wet environments your goat leather gloves will eventually saturate with water.<br\/><br\/>If you’re a big skier or work underwater, you’ll want to add a waterproofing agent to your gloves, to keep as much water out as possible.<br\/><br\/><span style=\"text-decoration:underline\">INSTRUCTIONS<\/span><\/p><p>1. Condition your gloves first, if you want to do both<\/p><p>2. Warm your gloves in a 200º oven for 1 minute<\/p><p>3. Rub beeswax waterproofer all over  warm gloves<\/p><p>4. Put gloves back in oven for 1 minute<\/p><p>5. Repeat the wax\/oven cycle at least 3 times.<\/p><p>6. Tear it up (metaphorically)<\/p>",
         "media_type": "youtube_video",
         "upload_video_url": "",
-        "youtube_video_url": "https:\/\/www.youtube.com\/watch?v=pGeVdJZYGRc",
+        "youtube_video_url": "https:\/\/youtu.be\/fd-bibo5z9E",
         "button_link": "button",
         "button_text": "BUY WATERPROOFER",
         "button_url": "shopify:\/\/products\/beeswax-waterproofing",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "c2b1c5ee-05ae-4c21-99f8-db2383be9910": {
+      "type": "history",
+      "settings": {
+        "title": "WATERPROOFING YOUR GLOVES",
+        "subhead": "THE QUICK'N'DIRTY VERSION",
+        "text": "<p>That video above is comprehensive. Here's the Cliffs Notes version.<\/p>",
+        "media_type": "youtube_video",
+        "upload_video_url": "",
+        "youtube_video_url": "https:\/\/youtu.be\/M5YRCsiA3fA",
+        "button_link": "button",
+        "button_text": "BUY WATERPROOFER",
+        "button_url": "shopify:\/\/products\/beeswax-waterproofing",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
+    "f95162da-5d33-40ea-abcf-7753421f0ade": {
+      "type": "history",
+      "settings": {
+        "title": "HOW TO RESTORE YOUR GROSS, MOLDY GLOVES",
+        "subhead": "",
+        "text": "<p>We've all been there. You forgot where you put your gloves. You found them 9 months later and they look scary. To chuck or not to chuck? The answer is a resounding: not to chuck.<\/p>",
+        "media_type": "youtube_video",
+        "upload_video_url": "",
+        "youtube_video_url": "https:\/\/youtu.be\/PvlSEPaVpBw",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
         "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": true
@@ -75,6 +109,8 @@
     "166205242313051bca",
     "166205238507a8bb5f",
     "16620527290bee7a53",
+    "c2b1c5ee-05ae-4c21-99f8-db2383be9910",
+    "f95162da-5d33-40ea-abcf-7753421f0ade",
     "1662052998a5416410"
   ]
 }

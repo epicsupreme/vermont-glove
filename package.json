@@ -12,7 +12,9 @@
     "init": "shx rm -rf .git && git init -b main",
     "clean": "shx rm -rf assets/* && touch assets/.gitkeep",
     "start": "run-p serve watch",
+    "start-dev": "run-p serve-dev watch",
     "serve": "shopify theme dev --store=vermont-glove.myshopify.com",
+    "serve-dev": "shopify theme dev --store=vermont-glove-playground.myshopify.com",
     "build": "webpack --config .config/webpack/webpack.config.prod.js",
     "watch": "webpack watch --config .config/webpack/webpack.config.dev.js",
     "zip": "run-s build && shopify theme package .",
@@ -24,7 +26,7 @@
     "push-files": "shopify theme push --ignore \"*.json\"",
     "deploy": "run-s format build push",
     "deploy-files": "run-s format build push-files",
-    "create": "run-s format build && shopify theme push --unpublished",
+    "deploy-new": "run-s format build && shopify theme push --unpublished",
     "prepare": "husky install .config/.husky"
   },
   "devDependencies": {

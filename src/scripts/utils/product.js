@@ -262,6 +262,6 @@ export default (product) => {
       this.disabled = newVariant.available ? false : true
       this.button = newVariant.available ? 'Add to Cart' : 'Unavailable'
       this.options = currentOptions(newVariant.id)
-    }
+    },
   }
 }

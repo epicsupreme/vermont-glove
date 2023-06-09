@@ -8,11 +8,20 @@
     "1662046874bfe0f839": {
       "type": "faq",
       "blocks": {
+        "1ee33697-bdd6-4a56-a323-2e45bc2e2bee": {
+          "type": "faq",
+          "disabled": true,
+          "settings": {
+            "question": "HOLIDAY SHIPPING DEADLINES",
+            "answer": "<p>Ground -&gt; <a href=\"https:\/\/wwwapps.ups.com\/calTimeCost?loc=en_US\" title=\"https:\/\/wwwapps.ups.com\/calTimeCost?loc=en_US\">Review UPS Calculator<\/a><\/p><p>3-Day -&gt; Sunday, December 18th<\/p><p>2nd Day -&gt; Monday, December 19th<\/p><p>Next Day -&gt; Tuesday, December 20th<\/p>"
+          }
+        },
         "be4e87cf-8870-4c75-b7a1-2881f35b7897": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "CyberWeek Offer Details 11\/25-11\/28",
-            "answer": "<p>Offer Valid 11\/25 - 11\/28.  Excludes Bespoke, gift cards, and custom items. Free Shipping is available for domestic shipping only.<\/p>"
+            "answer": "<p>Free shipping on gloves & mittens. Free conditioner on orders over $200 (must add conditioner to cart). Offer Valid 11\/25 - 11\/28.  Excludes Bespoke, gift cards, and custom items. Free Shipping is available for domestic shipping only.<\/p>"
           }
         },
         "3728eeac-b09c-4a73-b3df-d5ac97a66ee5": {
@@ -122,6 +131,7 @@
         }
       },
       "block_order": [
+        "1ee33697-bdd6-4a56-a323-2e45bc2e2bee",
         "be4e87cf-8870-4c75-b7a1-2881f35b7897",
         "3728eeac-b09c-4a73-b3df-d5ac97a66ee5",
         "e025ed7a-9f0d-4743-9745-6d9521fe63b3",

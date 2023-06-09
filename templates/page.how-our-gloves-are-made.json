@@ -11,9 +11,11 @@
         "title": "HOW OUR GLOVES ARE MADE",
         "primary_color": "#ffffff",
         "secondary_color": "#ffffff",
-        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/0cc5983e6daa4b2ab80423ed3e19341a.mp4",
-        "full": false,
-        "ratio": 250
+        "image": "shopify:\/\/shop_images\/VTG-Factory22-1.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/VTG-Image-Web-Hero-Mobile-HowTheyreMade.jpg",
+        "video_url": "",
+        "full": true,
+        "ratio": 275
       }
     },
     "fccf0092-dff6-48b9-8fc3-ef9773bdb5a4": {
@@ -34,51 +36,27 @@
       "settings": {
         "title": "",
         "subhead": "it all starts on pasture",
-        "text": "<p>You can't get leather without ruminants. Sorry to break it to ya, but it's just one of those things.<\/p><p>Goats that live on pasture year round make the rugged hides that we prize for their leather's durability and longevity.<\/p>",
+        "text": "<p>You can't get leather without ruminants. Sorry to break it to ya bud, it's just one of those things.<\/p><p>Healthy goats that live on pasture year round make the rugged hides that we prize for their leather's durability and longevity.<\/p>",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/VTG-Goats.jpg",
+        "image": "shopify:\/\/shop_images\/bianca-ackermann-F9nmLY0jzrg-unsplash.jpg",
         "upload_video_url": "",
         "youtube_video_url": "",
         "button_link": "link",
-        "button_text": "Learn why we use goat leather",
+        "button_text": "",
         "button_url": "shopify:\/\/pages\/guides",
         "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
       }
     },
-    "9823badd-5731-48c5-8f74-2c0688042f99": {
-      "type": "call-to-action",
-      "settings": {
-        "title": "WE ONLY USE THE BEST",
-        "primary_color": "#ffffff",
-        "secondary_color": "#ffffff",
-        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/0cc5983e6daa4b2ab80423ed3e19341a.mp4",
-        "full": true,
-        "ratio": 200
-      }
-    },
-    "bf7c5704-20fd-4e85-9289-d70f6d56c905": {
-      "type": "text",
-      "settings": {
-        "headline": "",
-        "subhead": "WE ARE GUIDED BY THE THREE Q'S: QUALITY, QUALITY AND QUALITY",
-        "text": "<p>Once the goat hides are shipped from the pasture to our factory, we gauge the thickness of every single one. The thicker the leather, the more durable and the less pliable it is. We use the different thicknesses for different parts of your glove.<\/p>",
-        "link_text": "Read More",
-        "link": "",
-        "bg_color": "#ffffff",
-        "text_color": "#452c80"
-      }
-    },
     "45500144-f871-434e-b39d-e597afc891c5": {
       "type": "history",
       "settings": {
         "title": "",
-        "subhead": "DEFECT AND STRETCH",
-        "text": "<p>First, we mark out every defect so can cut it out. Then, we lay out each one of the 24 pieces that make up a Vermonter glove in the correct location on the hide.<\/p><p>Every part of a goat hide stretches in a different direction. We make every piece of the glove is cut from the right part of the hide so it works like it's sposeda.<\/p>",
-        "media_type": "image",
-        "image": "shopify:\/\/shop_images\/VTG-Goats.jpg",
-        "upload_video_url": "",
+        "subhead": "WE ARE GUIDED BY THE THREE Q'S: QUALITY, QUALITY AND QUALITY",
+        "text": "<p>We gauge the thickness of every single hide. The thicker the leather, the more durable and the less pliable it is. We use the different thicknesses for different parts of your glove.<\/p>",
+        "media_type": "uploaded_video",
+        "upload_video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/9b26ebb38906462795fa9ffaffda3974.mp4",
         "youtube_video_url": "",
         "button_link": "link",
         "button_text": "",
@@ -88,33 +66,228 @@
         "flip": true
       }
     },
+    "c554bad6-09b4-437b-bfc0-fe4ef8b2c289": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "SHORTCUTS AREN'T WELCOME HERE",
+        "text": "<p>We mark every defect in every hide and cut them out. The smallest issue in the leather can create a weak spot that will compromise a pair of gloves.<\/p><p>Rather than use every inch of leather to maximize our profits, we only use the best leather to ensure our gloves last as long as possible.<\/p>",
+        "media_type": "uploaded_video",
+        "upload_video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/18bb4d000eaa4aa3b663862c7f9b5368.mp4",
+        "youtube_video_url": "",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
     "9de376dd-2657-4639-8393-167f1c9ea2f7": {
       "type": "call-to-action",
       "settings": {
-        "title": "(Image) All pieces of Vermonter laid out on table",
+        "title": "",
         "primary_color": "#ffffff",
         "secondary_color": "#ffffff",
-        "image": "shopify:\/\/shop_images\/VTG-Goats.jpg",
-        "video_url": "",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/dfe8967eb9554730988c973bba8dc7bb.mp4",
         "full": true,
         "ratio": 150
       }
     },
-    "c554bad6-09b4-437b-bfc0-fe4ef8b2c289": {
+    "51b8bedb-7336-4a15-9d51-568840189976": {
+      "type": "text",
+      "settings": {
+        "headline": "",
+        "subhead": "STRETCH GLOVESTRONG",
+        "text": "<p>It takes a tremendous understanding of hide dynamics to cut out all 24 pieces that make up our flagship Vermonter glove. Every section of a hide stretches in a particular way, and we make sure that each piece we cut stretches in the way we want it to, taking advantage of the natural properties of the leather.<\/p>",
+        "link_text": "Read More",
+        "link": "",
+        "bg_color": "#ffffff",
+        "text_color": "#452c80"
+      }
+    },
+    "1d3a052d-d49d-40f1-9444-2ef32c61ab4a": {
       "type": "history",
       "settings": {
-        "title": "Title",
-        "subhead": "Subhead",
-        "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>",
-        "media_type": "image",
-        "upload_video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/0cc5983e6daa4b2ab80423ed3e19341a.mp4",
+        "title": "",
+        "subhead": "DID WE MENTION OUR COMMITMENT TO QUALITY?",
+        "text": "<p>After all the pieces are cut, they come upstairs to Heidi's desk. Fourth generation glove maker, Heidi Haupt uses her eagle eyes to ensure every single piece is unblemished and fit to become a glove.<\/p>",
+        "media_type": "uploaded_video",
+        "upload_video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d246188ef7a94518a0e2b830e07d00aa.mp4",
         "youtube_video_url": "",
-        "button_link": "button",
+        "button_link": "link",
         "button_text": "",
         "button_url": "",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
+      }
+    },
+    "bcbabe75-5378-4c4c-9649-6e4dfda94a59": {
+      "type": "call-to-action",
+      "settings": {
+        "title": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f85a42b727884f48aafb0bacacd1e450.mp4",
+        "full": false,
+        "ratio": 250
+      }
+    },
+    "722e27bd-9504-4da8-bf04-4437d0e867e1": {
+      "type": "text",
+      "settings": {
+        "headline": "",
+        "subhead": "HAND-SEWN BY SKILLED CRAFTSPEOPLE",
+        "text": "<p>Every pair of gloves we make is sewn by hand, in our factory. Due to the many 3D planes and complexity of the patterns, glove sewing is impossible to automate and both difficult & expensive to sew by hand. You may think it tempting to outsource this part of the process to parts of the world where labor is cheap and the margins are high, but we choose every day to invest in our workforce, our process and the quality of gloves by keeping our sewing right here at home.<\/p>",
+        "link_text": "Read More",
+        "link": "",
+        "bg_color": "#ffffff",
+        "text_color": "#452c80"
+      }
+    },
+    "cf30f716-5c43-46c7-a518-df77cab842ba": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "MODERN WHERE IT COUNTS",
+        "text": "<p>We have been making the same  gloves for 100+ years, but we're not stuck in the past. We engrave every cuff right here in the factory. We also use the engraving machine for select top-secret projects.<\/p><p>In addition to our engraving machine, we have invested in solar panels and a wood pellet boiler, which makes our entire factory Net Zero.<\/p>",
+        "media_type": "uploaded_video",
+        "upload_video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/1485abf6479e44c383d04c663f7a792d.mp4",
+        "youtube_video_url": "",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "shopify:\/\/pages\/guides",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
+    "46c27e13-2089-4d08-8458-c3fae0d9fe9b": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "CUFF IT & CLOSE IT",
+        "text": "<p>Next up the cuffs are sewn to the already-assembled palms, and finally the glove is sewn closed.<\/p>",
+        "media_type": "uploaded_video",
+        "upload_video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/be94de657eed4776b7c3e638a5237f4a.mp4",
+        "youtube_video_url": "",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "df2b829b-434d-4fb2-964d-31946326c246": {
+      "type": "call-to-action",
+      "settings": {
+        "title": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e80c9f7aa42a4dfe8b23886ca2fead59.mp4",
+        "full": true,
+        "ratio": 200
+      }
+    },
+    "9e9507ee-ee9c-4272-a342-55cf2d94b73d": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "NO THREAD LEFT BEHIND",
+        "text": "<p>Once the glove is sewn, we trim every outstanding thread.<\/p>",
+        "media_type": "uploaded_video",
+        "upload_video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5b7d4fb035ac4e7296f6823b896d5aee.mp4",
+        "youtube_video_url": "",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
+    "65f253b3-4c4e-468c-add6-2efc06720a20": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "A SCHVITZ, FOR HEALTH",
+        "text": "<p>Each glove is then steamed on a specialized heated hand-mold. The heat and steam help to properly shape the glove and align the seams for best use.<\/p>",
+        "media_type": "uploaded_video",
+        "upload_video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5364350f0c5542ac855bc18f9c079246.mp4",
+        "youtube_video_url": "",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": true
+      }
+    },
+    "08b45b19-3417-4781-8e31-74c24478e6c3": {
+      "type": "history",
+      "settings": {
+        "title": "",
+        "subhead": "A GLOVE BEYOND COMPARE",
+        "text": "<p>Leather is a natural material. There are subtle variations in the color, tone and overall appearance from hide to hide. Since we pay an extreme amount of attention to detail through our entire process, our last step is to match a left and right glove by eye. <\/p>",
+        "media_type": "uploaded_video",
+        "upload_video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/4ce49e8e03554b1ba2917b27cdc2c9fa.mp4",
+        "youtube_video_url": "",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
+    "031d07cd-8538-409c-813e-1a5c5fcfef38": {
+      "type": "call-to-action",
+      "blocks": {
+        "2a56761f-a65b-4dcb-b1d4-cf2925d0e5dd": {
+          "type": "button",
+          "settings": {
+            "button_text": "ALL",
+            "button_url": "shopify:\/\/collections\/gloves-mittens"
+          }
+        },
+        "315dbda8-bc80-4e38-8f3c-209e6e8cf8a1": {
+          "type": "button",
+          "settings": {
+            "button_text": "VERMONTER",
+            "button_url": "shopify:\/\/products\/the-vermonter"
+          }
+        },
+        "72ee109b-e15d-4fd8-8471-504ec3886f02": {
+          "type": "button",
+          "settings": {
+            "button_text": "UPHILL SKIER",
+            "button_url": "shopify:\/\/products\/the-uphill-skier"
+          }
+        },
+        "7eee1c97-4a1e-49c1-9b5a-8b6e72357f19": {
+          "type": "button",
+          "settings": {
+            "button_text": "TUTTLE",
+            "button_url": "shopify:\/\/products\/tuttle"
+          }
+        }
+      },
+      "block_order": [
+        "2a56761f-a65b-4dcb-b1d4-cf2925d0e5dd",
+        "315dbda8-bc80-4e38-8f3c-209e6e8cf8a1",
+        "72ee109b-e15d-4fd8-8471-504ec3886f02",
+        "7eee1c97-4a1e-49c1-9b5a-8b6e72357f19"
+      ],
+      "settings": {
+        "title": "SHOP GLOVES",
+        "primary_color": "#ffffff",
+        "secondary_color": "#452c80",
+        "image": "shopify:\/\/shop_images\/VTG-Factory22-1-2.jpg",
+        "video_url": "",
+        "full": true,
+        "ratio": 275
       }
     }
   },
@@ -123,10 +296,19 @@
     "00ea3005-a07c-4461-9eac-8e8b57ddf9b5",
     "fccf0092-dff6-48b9-8fc3-ef9773bdb5a4",
     "8c0d164d-2ef2-4096-af60-c5392a410860",
-    "9823badd-5731-48c5-8f74-2c0688042f99",
-    "bf7c5704-20fd-4e85-9289-d70f6d56c905",
     "45500144-f871-434e-b39d-e597afc891c5",
+    "c554bad6-09b4-437b-bfc0-fe4ef8b2c289",
     "9de376dd-2657-4639-8393-167f1c9ea2f7",
-    "c554bad6-09b4-437b-bfc0-fe4ef8b2c289"
+    "51b8bedb-7336-4a15-9d51-568840189976",
+    "1d3a052d-d49d-40f1-9444-2ef32c61ab4a",
+    "bcbabe75-5378-4c4c-9649-6e4dfda94a59",
+    "722e27bd-9504-4da8-bf04-4437d0e867e1",
+    "cf30f716-5c43-46c7-a518-df77cab842ba",
+    "46c27e13-2089-4d08-8458-c3fae0d9fe9b",
+    "df2b829b-434d-4fb2-964d-31946326c246",
+    "9e9507ee-ee9c-4272-a342-55cf2d94b73d",
+    "65f253b3-4c4e-468c-add6-2efc06720a20",
+    "08b45b19-3417-4781-8e31-74c24478e6c3",
+    "031d07cd-8538-409c-813e-1a5c5fcfef38"
   ]
 }

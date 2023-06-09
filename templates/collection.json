@@ -26,9 +26,33 @@
         "text": "Our durable and dexterous gloves are made in our own Vermont, USA factory, powered by 100% renewable energy.",
         "color": "#ffffff"
       }
+    },
+    "5b7cdd1a-87bc-403b-9803-8dac4741c55f": {
+      "type": "call-to-action",
+      "blocks": {
+        "770c3d53-0ee1-4b2e-a866-91352c8523dd": {
+          "type": "button",
+          "settings": {
+            "button_text": "LEARN HOW OUR GLOVES ARE MADE",
+            "button_url": "shopify:\/\/pages\/how-our-gloves-are-made"
+          }
+        }
+      },
+      "block_order": [
+        "770c3d53-0ee1-4b2e-a866-91352c8523dd"
+      ],
+      "settings": {
+        "title": "ACTUALLY MADE IN VERMONT SINCE 1920",
+        "primary_color": "#ffffff",
+        "secondary_color": "#452C80",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/b358e8f3a5734126aef0ed79f1970235.mp4",
+        "full": true,
+        "ratio": 200
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "5b7cdd1a-87bc-403b-9803-8dac4741c55f"
   ]
 }

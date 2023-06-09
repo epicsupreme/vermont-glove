@@ -3,6 +3,7 @@ import collapse from '@alpinejs/collapse'
 import { subscribe } from 'klaviyo-subscribe'
 
 import product from './utils/product'
+import productRepair from './utils/productRepair'
 
 import './utils/header-height'
 import './utils/cart'
@@ -11,6 +12,7 @@ import './utils/cart'
 Alpine.plugin(collapse)
 
 Alpine.data('product', product)
+Alpine.data('productRepair', productRepair)
 
 window.Alpine = Alpine
 

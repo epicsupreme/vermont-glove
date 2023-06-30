@@ -5,6 +5,7 @@
       "blocks": {
         "239fdffb-b148-4983-81d7-9d6272dded10": {
           "type": "hero_slide",
+          "disabled": true,
           "settings": {
             "title": "FATHERS DAY\nIS COMING",
             "mobile_title": "FATHERS DAY\nIS COMING",

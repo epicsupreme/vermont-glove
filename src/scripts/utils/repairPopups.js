@@ -2,7 +2,7 @@ import * as cart from "@shopify/theme-cart";
 import { Loader } from "@googlemaps/js-api-loader";
 
 const loader = new Loader({
-	apiKey: "AIzaSyCnwNJFrWDA3y5YFeYXHDRifHIvlX9QQHc",
+	apiKey: "AIzaSyCd-_6-0-HRNhoopifhM5olBJITPsZAjI8",
 	version: "weekly",
 	libraries: ["places"],
 });

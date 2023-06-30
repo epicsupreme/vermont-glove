@@ -1,42 +1,62 @@
 {{ 'component-product-images.css' | asset_url | stylesheet_tag }}
 <script
-   src="{{- 'component-product-images.js' | asset_url -}}" defer></script>
+  src="{{- 'component-product-images.js' | asset_url -}}"
+  defer
+></script>
 
-
-  <style>
-    .swiper-button-next, .swiper-button-prev {
-      top: 0;
-      width: 50%;
-      height: 100%;
-   }
-  </style>
+<style>
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 0;
+    width: 50%;
+    height: 100%;
+  }
+</style>
 <div
-   id="product-images"
-   class="relative max-h-screen"
-   style="--swiper-theme-color:#452C80">
-   <div
-      class="swiper">
+  id="product-images"
+  class="relative max-h-screen"
+  style="--swiper-theme-color:#452C80"
+>
+  <div
+    class="swiper"
+  >
+    <div
+      class="swiper-wrapper"
+    >
+      {% for image in product.images -%}
+        {%- capture image_variants -%}
+            {%- for image_variant in image.variants -%}
+               {{image_variant.id}}
+               {%- unless forloop.last -%}
+                  ,
+               {%- endunless -%}
+            {%- endfor -%}
+         {%- endcapture -%}
+        <div
+          class="swiper-slide"
+          data-variants="{{ image_variants | strip | strip_newlines }}"
+        >
+          <div
+            class="max-h-[calc(100vh-var(--header-height))] aspect-square flex justify-center w-full"
+          >
+            {{ image | image_url: width: 2000 | image_tag: width: null, class: 'w-full  object-contain h-full' }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div
+      class="hidden md:block"
+    >
       <div
-         class="swiper-wrapper">
-         {% for image in product.images %}
-            <div
-               class="swiper-slide">
-               <div
-                  class="max-h-[calc(100vh-var(--header-height))] aspect-square flex justify-center w-full">
-                  {{ image | image_url: width: 2000 | image_tag: width: nil, class: 'w-full  object-contain h-full' }}
-               </div>
-            </div>
-         {% endfor %}
-      </div>
+        class="top-0 w-1/2 h-full swiper-button-prev after:absolute after:left-0"
+      ></div>
       <div
-         class="hidden md:block">
-         <div
-            class="top-0 w-1/2 h-full swiper-button-prev after:absolute after:left-0"></div>
-         <div
-            class="top-0 w-1/2 h-full swiper-button-next after:absolute after:right-0"></div>
-      </div>
+        class="top-0 w-1/2 h-full swiper-button-next after:absolute after:right-0"
+      ></div>
+    </div>
 
-      <div
-         class="swiper-pagination"></div>
-   </div>
+    <div
+      class="swiper-pagination"
+    ></div>
+  </div>
 </div>

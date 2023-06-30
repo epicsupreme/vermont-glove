@@ -7,7 +7,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "top_bar": true,
+          "top_bar": false,
           "text": "<p><a href=\"\/collections\/all-products\" title=\"Shop All Vermont Glove Products\">Take 10% OFF orders over $100 with 'YAYDAD23' through 6\/12<\/a><\/p>",
           "text_color": "#ffffff",
           "bg_color": "#452c80"

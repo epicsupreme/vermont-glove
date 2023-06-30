@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-product",
+      "type": "main-product-repair",
       "blocks": {
         "2bd0b3ce-8efd-4466-b014-3822a5bb5343": {
           "type": "icon_choices",

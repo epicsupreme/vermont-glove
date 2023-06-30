@@ -66,7 +66,7 @@
         "85e71502-22ed-4f5f-8dc0-1f80100c673e": {
           "type": "faq",
           "settings": {
-            "question": "Follow the link below to initiate a return",
+            "question": "Follow the link below to initiate a repair",
             "answer": "<p><a href=\"\/products\/glove-repair\" title=\"Glove Repair\">This link right here<\/a>. You'll tell us what happened, provide your information and upload a picture of your glove so we can assess the stitch sitch.<\/p>"
           }
         },
@@ -95,7 +95,7 @@
           "type": "faq",
           "settings": {
             "question": "Clean your gloves before sending them in",
-            "answer": "<p>We need clean leather to work with so your scum, grime and gook doesn't mess with our sewing machines. If you send us gloves caked with nasties, there will be an additional $10 cleaning fee associated with the repair.<\/p>"
+            "answer": "<p>You don’t have to go nuts, but make sure there’s no globs of dirt lodged in the seams.<\/p>"
           }
         },
         "eb1d1b66-136b-477c-b316-2be96d531145": {
@@ -109,7 +109,7 @@
           "type": "faq",
           "settings": {
             "question": "You can also purchase individual gloves",
-            "answer": "<p>We now sell individual gloves of all styles. If your dog swallowed a glove whole, head on over here and pick up a replacement so you don't have to navigate a triglove situation. <\/p>"
+            "answer": "<p>We now sell <a href=\"\/products\/single-glove\" title=\"Single Glove\">individual gloves of all styles<\/a>. If your dog swallowed a glove whole, head on over here and pick up a replacement so you don't have to navigate a triglove situation. <\/p>"
           }
         },
         "e308804f-59e7-4574-8eea-b1cdb7ccb0a7": {
@@ -157,7 +157,7 @@
         "bd8e4e70-6744-454a-81ff-11f7e60ced85": {
           "type": "button",
           "settings": {
-            "button_text": "LFG",
+            "button_text": "LET'S GO",
             "button_url": "shopify:\/\/products\/glove-repair"
           }
         }

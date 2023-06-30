@@ -1,109 +1,139 @@
 <!doctype html>
 <html
-   class="no-js scroll-smooth scroll-mt-[var(--header-height)] "
-   lang="{{- request.locale.iso_code -}}" dir="ltr">
-   <head>
-     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N8Q642P');</script>
-<!-- End Google Tag Manager -->
-      
-     <meta
-         charset="utf-8">
-      <meta
-         content="IE=edge,chrome=1"
-         http-equiv="X-UA-Compatible">
-      <meta
-         content="width=device-width,initial-scale=1,shrink-to-fit=no"
-         name="viewport">
+  class="no-js scroll-smooth scroll-mt-[var(--header-height)] "
+  lang="{{- request.locale.iso_code -}}"
+  dir="ltr"
+>
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-N8Q642P');
+    </script>
+    <!-- End Google Tag Manager -->
 
+    <meta
+      charset="utf-8"
+    >
+    <meta
+      content="IE=edge,chrome=1"
+      http-equiv="X-UA-Compatible"
+    >
+    <meta
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+      name="viewport"
+    >
+
+    <link
+      crossorigin
+      href="https://cdn.shopify.com"
+      rel="preconnect"
+    >
+    {%- unless settings.fonts_header.system? and settings.fonts_body.system? -%}
       <link
-         crossorigin
-         href="https://cdn.shopify.com"
-         rel="preconnect">
-      {%- unless settings.fonts_header.system? and settings.fonts_body.system? -%}
-         <link
-            crossorigin
-            href="https://fonts.shopifycdn.com"
-            rel="preconnect">
-      {%- endunless -%}
+        crossorigin
+        href="https://fonts.shopifycdn.com"
+        rel="preconnect"
+      >
+    {%- endunless -%}
 
-      {%- unless settings.fonts_header.system? -%}
-         <link
-            rel="preload"
-            href="{{ settings.fonts_header | font_url }}" type="font/woff2"
-            as="font"
-            crossorigin>
-      {%- endunless -%}
-
-      {%- unless settings.fonts_body.system? -%}
-         <link
-            rel="preload"
-            href="{{ settings.fonts_body | font_url }}" type="font/woff2"
-            as="font"
-            crossorigin>
-      {%- endunless -%}
-
+    {%- unless settings.fonts_header.system? -%}
       <link
-         rel="preload"
-         href="{{ 'base.css' | asset_url }}" as="style">
-      <link
-         rel="preload"
-         href="{{ 'base.js' | asset_url }}" as="script">
+        rel="preload"
+        href="{{ settings.fonts_header | font_url }}"
+        type="font/woff2"
+        as="font"
+        crossorigin
+      >
+    {%- endunless -%}
 
-      {%- liquid
+    {%- unless settings.fonts_body.system? -%}
+      <link
+        rel="preload"
+        href="{{ settings.fonts_body | font_url }}"
+        type="font/woff2"
+        as="font"
+        crossorigin
+      >
+    {%- endunless -%}
+
+    <link
+      rel="preload"
+      href="{{ 'base.css' | asset_url }}"
+      as="style"
+    >
+    <link
+      rel="preload"
+      href="{{ 'base.js' | asset_url }}"
+      as="script"
+    >
+
+    {%- liquid
       render 'head-seo'
       render 'head-metas'
       render 'head-settings'
     -%}
 
-      {{ 'base.css' | asset_url | stylesheet_tag }}
-      <script
-         src="{{- 'base.js' | asset_url -}}" defer="defer"></script>
+    {{ 'base.css' | asset_url | stylesheet_tag }}
+    <script
+      src="{{- 'base.js' | asset_url -}}"
+      defer="defer"
+    ></script>
 
-      <!-- Start vendor third party libaries -->
-      <script
-         src="{{- 'vendors.js' | asset_url -}}" defer="defer"></script>
-      <!-- End vendor third party libaries -->
+    <!-- Start vendor third party libaries -->
+    <script
+      src="{{- 'vendors.js' | asset_url -}}"
+      defer="defer"
+    ></script>
+    <!-- End vendor third party libaries -->
 
-          <!-- Header hook for plugins -->
-      {{ content_for_header }}
+    <!-- Header hook for plugins -->
+    {{ content_for_header }}
 
-	{{ shop.metafields.loox["global_html_head"] }}
-</head>
-   <body
-      :class="{'overflow-hidden': cartOpen}"
-      class="layout-theme template-{{- template.name -}}{%- if template.suffix -%}-{{- template.suffix -}}{%- endif -%}"
-      x-data="{ template: '{{- template.name | handleize -}}', newsletterOpen: false, cartOpen: false, cartCount: {{ cart.item_count }}, navStatus: {%- if template.name == 'index' -%} true {% else %} false {%- endif  -%}, navOpen: false, sizingGuide: false }"
-      x-on:updatecartcount.window="cartCount = $event.detail.cartTotal"
-      x-on:updatecartstatus.window="cartOpen = $event.detail.cartOpen"
-      x-on:updatenavstatus.window="navStatus = $event.detail.navStatus"
-      >
-     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8Q642P"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    {{ shop.metafields.loox.global_html_head }}
+  </head>
+  <body
+    :class="{'overflow-hidden': cartOpen}"
+    class="layout-theme template-{{- template.name -}}{%- if template.suffix -%}-{{- template.suffix -}}{%- endif -%}"
+    x-data="{ template: '{{- template.name | handleize -}}', newsletterOpen: false, cartOpen: false, cartCount: {{ cart.item_count }}, navStatus: {%- if template.name == 'index' -%} true {% else %} false {%- endif  -%}, navOpen: false, sizingGuide: false }"
+    x-on:updatecartcount.window="cartCount = $event.detail.cartTotal"
+    x-on:updatecartstatus.window="cartOpen = $event.detail.cartOpen"
+    x-on:updatenavstatus.window="navStatus = $event.detail.navStatus"
+  >
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N8Q642P"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
+    {%- section 'header' -%}
 
-      {%- section 'header' -%}
+    {%- render 'cart' -%}
 
-      {%- render 'cart' -%}
+    <main
+      class="min-h-[calc(100vh-var(--header-height)-var(--footer-height))] pt-[var(--mobile-header-height)] lg:pt-[calc(var(--header-height))] "
+      id="main-content"
+      role="main"
+      tabindex="-1"
+    >
+      {{ content_for_layout }}
+    </main>
 
-      <main
-         class="min-h-[calc(100vh-var(--header-height)-var(--footer-height))] pt-[var(--mobile-header-height)] lg:pt-[calc(var(--header-height))] "
-         id="main-content"
-         role="main"
-         tabindex="-1">
-         {{ content_for_layout }}
-      </main>
+    {%- section 'footer' -%}
 
-      {%- section 'footer' -%}
-
-
-
-	{{ shop.metafields.loox["global_html_body"] }}
-</body>
+    {{ shop.metafields.loox.global_html_body }}
+  </body>
 </html>

@@ -28,7 +28,7 @@
           "type": "faq",
           "settings": {
             "question": "How long will my gloves last?",
-            "answer": "<p>Hard sayin' not knowin. We don’t know how hard you work or what kind of dumb stuff you'll be doing in them. What we do know is that our gloves outlast hardware store gloves about 5 pairs to 1.<\/p>"
+            "answer": "<p>Hard sayin' not knowin'. We don’t know how hard you work or what kind of dumb stuff you'll be doing in them. What we do know is that our gloves outlast hardware store gloves about 5 pairs to 1.<\/p>"
           }
         },
         "e025ed7a-9f0d-4743-9745-6d9521fe63b3": {
@@ -36,6 +36,13 @@
           "settings": {
             "question": "Do you have a guarantee?",
             "answer": "<p>We can’t offer a guarantee because our gloves are a handmade wearable product. Eventually, by wear and tear or pterodactyl, they'll wear out. We take a lot of pride in what we do and we do it really well, so we want you to be satisfied. If you think you did not receive a good value from your gloves get in touch and we'll do what we can to make the situation right.<\/p>"
+          }
+        },
+        "98711fc4-df4c-4c45-b382-33b229c2390e": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you offer repairs?",
+            "answer": "<p>Sure do. <a href=\"\/pages\/repairs\" title=\"Repairs\">Head on over here<\/a> to learn how to initiate a repair.<\/p>"
           }
         },
         "8563a743-47ca-4891-9062-fb49738f1284": {
@@ -98,7 +105,7 @@
           "type": "faq",
           "settings": {
             "question": "What if the gloves don’t fit?",
-            "answer": "<p>Head on over to our Returns & Exchanges page and initiate a swaperoo. <\/p>"
+            "answer": "<p>Head on over to our <a href=\"https:\/\/vermontglove.com\/a\/returns\" title=\"Returns & Exchanges\">Returns & Exchanges<\/a> page and initiate a swaperoo. <\/p>"
           }
         },
         "e2393ea8-e31a-4941-a563-20c638ea40be": {
@@ -115,13 +122,6 @@
             "answer": "<p>79% Merino wool, 19% nylon, 2% elastic.<\/p>"
           }
         },
-        "98711fc4-df4c-4c45-b382-33b229c2390e": {
-          "type": "faq",
-          "settings": {
-            "question": "Do you offer repairs?",
-            "answer": "<p>Sure do. Email hello@vermontglove.com to initiate a repair.<\/p>"
-          }
-        },
         "9e374345-8490-4346-8e17-ebea27215505": {
           "type": "faq",
           "settings": {
@@ -135,6 +135,7 @@
         "be4e87cf-8870-4c75-b7a1-2881f35b7897",
         "3728eeac-b09c-4a73-b3df-d5ac97a66ee5",
         "e025ed7a-9f0d-4743-9745-6d9521fe63b3",
+        "98711fc4-df4c-4c45-b382-33b229c2390e",
         "8563a743-47ca-4891-9062-fb49738f1284",
         "e8568ed9-f697-4c7c-8f7f-8d63e83046eb",
         "9d7d8dff-b45e-4441-ae01-47c05f9e1c35",
@@ -146,7 +147,6 @@
         "0a493ae7-0763-49b4-b400-50cca8a5e40e",
         "e2393ea8-e31a-4941-a563-20c638ea40be",
         "eba8efb2-8bfe-48be-aba8-8b8e2f66176e",
-        "98711fc4-df4c-4c45-b382-33b229c2390e",
         "9e374345-8490-4346-8e17-ebea27215505"
       ],
       "settings": {

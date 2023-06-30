@@ -2,6 +2,8 @@
   src="{{- 'component-add-to-cart.js' | asset_url -}}"
 ></script>
 
+{% comment %} {%- render 'cart-repair-pop-ups' -%} {% endcomment %}
+
 <div
   {% unless template == 'cart' %}
     :class="{'hidden': !cartOpen}"
@@ -34,10 +36,11 @@
 
   <div
     class="
-    {% if template == 'cart' %}
-      pointer-events-auto
-     {% endif %}
-     absolute right-0 z-10 h-[calc(var(--window-height))] bottom-0 bg-white w-full max-w-xl pt-16 px-4 md:px-6"
+          {% if template == 'cart' %}
+       pointer-events-auto
+      {% endif %}
+      absolute right-0 z-10 h-[calc(var(--window-height))] bottom-0 bg-white w-full max-w-xl pt-16 px-4 md:px-6
+    "
     id="cart-container"
   >
     <div class="flex items-center justify-between mb-9">
@@ -80,6 +83,36 @@
                     x-text="product.title"
                   ></div>
 
+                  <template
+                    x-if="product.title === 'Glove Repair'"
+                  >
+                    <div>
+                      <details class="text-xs ">
+                        <summary class=" cursor-pointer">Repair Info</summary>
+                        <div class="py-2">
+                          <template x-for="property in product.propertiesArray">
+                            <p class="mb-2">
+                              <template x-if="property[0] === 'image_url'">
+                                <img :src="property[1]" alt="" class="w-10">
+                              </template>
+                              <template x-if="property[0] != 'image_url'">
+                                <span>
+                                  <strong class="font-bold" x-text="`${property[0]}: `"></strong><br>
+                                  <span x-text="`${property[1]}`"></span>
+                                </span>
+                              </template>
+                            </p>
+                          </template>
+                          {% comment %}
+                            <button class="mt-1 uppercase text-xs underline" @click.prevenet="product.showRepair = true">
+                              Edit
+                            </button>
+                          {% endcomment %}
+                        </div>
+                      </details>
+                    </div>
+                  </template>
+
                   <div>
                     <template x-for="option in product.options">
                       <template x-if="option.value != 'Default Title'">
@@ -102,9 +135,7 @@
                 </div>
 
                 <div class="">
-                  <label :for="'id_' + product.id"
-                    >QTY</label
-                  >
+                  <label :for="'id_' + product.id">QTY</label>
                   <input
                     :id="'id_' + product.id"
                     :value="product.qty"

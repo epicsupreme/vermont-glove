@@ -2,7 +2,7 @@ import { convertColorVariables } from '@mertasan/tailwindcss-variables/src/helpe
 import * as cart from '@shopify/theme-cart'
 
 cart.getState().then((state) => {
-  console.log(state)
+  // console.log(state);
   cartUpdateAll(state)
 })
 
@@ -57,12 +57,15 @@ function cartToAlpine(state) {
           price: realPrice,
           id: e.variant_id,
           options: e.options_with_values,
+          propertiesArray: e.properties ? Object.entries(e.properties) : null,
           image: f,
           addOnProducts: addOnProducts,
           qty: e.quantity,
-          properties: e.properties,
           remove() {
             cartRemoveItem(this.key)
+          },
+          updateProperties() {
+            cartUpdateProperties(this.key, this.newProperties)
           },
           update(qty) {
             cartUpdateItem(this.key, parseInt(qty))
@@ -124,6 +127,12 @@ function cartRemoveItem(key) {
   // cart.removeItem(key).then((state) => {
   //   cartUpdateAll(state)
   // })
+}
+
+function cartUpdateProperties(key, properties) {
+  cart.updateItem(key, { properties: properties }).then((state) => {
+    cartUpdateAll(state)
+  })
 }
 
 function cartUpdateItem(key, qty) {

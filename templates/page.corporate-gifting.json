@@ -1,0 +1,140 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "16583238777ef57ff8": {
+      "type": "text",
+      "settings": {
+        "headline": "BULK & CUSTOMIZED GLOVES",
+        "subhead": "Need to thank an important client? show appreciation for your staff? impress your bar mitzvah guests?",
+        "text": "<p>We can customize our gloves with any logo or design engraved on the cuff. Nothing says hey you're special like an eternally engraved goat leather work glove that they'll use for years to come.<\/p>",
+        "link_text": "Read More",
+        "link": "",
+        "bg_color": "#ffffff",
+        "text_color": "#452c80"
+      }
+    },
+    "1658324329a53551a6": {
+      "type": "call-to-action",
+      "settings": {
+        "title": "",
+        "primary_color": "#ffffff",
+        "secondary_color": "#ffffff",
+        "image": "shopify:\/\/shop_images\/VTG-CorporateGifting_6cfb0407-0b51-4788-ab6b-66a5cfa0d98c.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/VTG-CorporateGifting-Mobile_ec666972-fc96-4919-802f-19a190ec0673.jpg",
+        "video_url": "",
+        "full": true,
+        "ratio": 300
+      }
+    },
+    "8be788ec-e70c-4b2e-9371-51c199fed13f": {
+      "type": "faq",
+      "blocks": {
+        "f354f94d-141f-47f1-9a49-de0b5bde1304": {
+          "type": "faq",
+          "settings": {
+            "question": "What's the minimum order quantity for a custom order?",
+            "answer": "<p>Custom engraved gloves start at 24 pairs.<\/p>"
+          }
+        },
+        "161e1f2c-6cbd-4393-b681-9c1d4c781cad": {
+          "type": "faq",
+          "settings": {
+            "question": "Which gloves can I get engraved?",
+            "answer": "<p>The Vermonter is the only glove we currently offer for our custom program.<\/p>"
+          }
+        },
+        "05cbd5c0-f684-4498-b1cc-bfb45a27f6f2": {
+          "type": "faq",
+          "settings": {
+            "question": "Where can I get the glove engraved?",
+            "answer": "<p>The top side of the cuff is our standard engraving location.<\/p>"
+          }
+        },
+        "ec4efb1f-d442-48c2-8f47-c7fc0ebde6ff": {
+          "type": "faq",
+          "settings": {
+            "question": "What design can I get engraved?",
+            "answer": "<p>We can engrave any design. However, the more detailed the design, the less clearly it may appear in the final product. You must provide your own design.<\/p>"
+          }
+        },
+        "79b568b2-38d3-4aa7-b0e1-0f83232ce691": {
+          "type": "faq",
+          "settings": {
+            "question": "How much does it cost?",
+            "answer": "<p>We offer volume based discounts starting at 48 pairs.<\/p>"
+          }
+        },
+        "1361212a-fc58-4523-be9b-c87532ff4122": {
+          "type": "faq",
+          "settings": {
+            "question": "What's the lead time?",
+            "answer": "<p>Typically custom orders take 6-8 weeks.<\/p>"
+          }
+        },
+        "2a70678e-9574-4605-bb6f-851436eff6f6": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I place an order?",
+            "answer": "<p>Email info@vermontglove.com with details (quantity, design, timeline) and we can get things rolling from there. <\/p>"
+          }
+        },
+        "def036be-b56a-443c-aa39-7321b19b5302": {
+          "type": "faq",
+          "settings": {
+            "question": "Want a custom glove without buying 24 pairs?",
+            "answer": "<p>Check out our <a href=\"\/products\/bespoke-glove-gift-pack-2022\" title=\"Bespoke Glove Gift Pack\">bespoke glove gift pack<\/a>, with custom engraved initials.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "f354f94d-141f-47f1-9a49-de0b5bde1304",
+        "161e1f2c-6cbd-4393-b681-9c1d4c781cad",
+        "05cbd5c0-f684-4498-b1cc-bfb45a27f6f2",
+        "ec4efb1f-d442-48c2-8f47-c7fc0ebde6ff",
+        "79b568b2-38d3-4aa7-b0e1-0f83232ce691",
+        "1361212a-fc58-4523-be9b-c87532ff4122",
+        "2a70678e-9574-4605-bb6f-851436eff6f6",
+        "def036be-b56a-443c-aa39-7321b19b5302"
+      ],
+      "settings": {
+        "title": "ORDERING INFO & FAQ",
+        "text": ""
+      }
+    },
+    "99000442-18ba-4d37-84f3-26436a38fb4e": {
+      "type": "call-to-action",
+      "blocks": {
+        "fe819005-005b-4863-a8e5-6363fcfac056": {
+          "type": "button",
+          "settings": {
+            "button_text": "INITIATE A CUSTOM ORDER",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "fe819005-005b-4863-a8e5-6363fcfac056"
+      ],
+      "settings": {
+        "title": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "image": "shopify:\/\/shop_images\/VTG_September_2019_Selects_122_of_126_copy.jpg",
+        "video_url": "",
+        "full": true,
+        "ratio": 400
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16583238777ef57ff8",
+    "1658324329a53551a6",
+    "8be788ec-e70c-4b2e-9371-51c199fed13f",
+    "99000442-18ba-4d37-84f3-26436a38fb4e"
+  ]
+}

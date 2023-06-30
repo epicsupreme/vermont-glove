@@ -2,22 +2,47 @@ import * as cart from '@shopify/theme-cart'
 import * as currency from '@shopify/theme-currency'
 import { cartUpdateAll } from '../utils/cart'
 import { isEqual } from 'lodash'
+import { Loader } from '@googlemaps/js-api-loader'
 
 export default (product) => {
   // console.log("product", product);
   const currentVariant = product.product.variants[0]
+
+  const loader = new Loader({
+    apiKey: 'AIzaSyCnwNJFrWDA3y5YFeYXHDRifHIvlX9QQHc',
+    version: 'weekly',
+    libraries: ['places'],
+  })
+
   return {
     //defaults
     price: product.price,
     submitText: 'Add to Cart',
     disabled: currentVariant.available ? false : true,
     button: currentVariant.available ? 'Add to Cart' : 'Unavailable',
-    properties: {},
+    properties: {
+      'Shipping Address': '',
+    },
     formData: {
       id: currentVariant.id,
       qty: 1,
     },
+    init() {
+      loader.load().then(() => {
+        // Create the autocomplete object
+        const autocomplete = new google.maps.places.Autocomplete(
+          this.$refs.address,
+          { types: ['geocode'] } // Restrict the search results to addresses
+        )
 
+        // When a place is selected, get its details
+        autocomplete.addListener('place_changed', () => {
+          const place = autocomplete.getPlace()
+          console.log(place.formatted_address)
+          this.properties['Shipping Address'] = place.formatted_address
+        })
+      })
+    },
     onUpdate(field, value) {
       this.properties[field] = value
     },

@@ -56,6 +56,7 @@
   },
   "dependencies": {
     "@alpinejs/collapse": "^3.10.2",
+    "@googlemaps/js-api-loader": "^1.16.2",
     "@mertasan/tailwindcss-variables": "^2.3.0",
     "@shopify/theme-cart": "^4.1.1",
     "@shopify/theme-currency": "^4.1.1",

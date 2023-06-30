@@ -9,10 +9,15 @@ import './utils/header-height'
 import './utils/cart'
 // import './animations/header'
 
+import repairPopups from './utils/repairPopups'
+import singleRepairPopup from './utils/singleRepairPopup'
+
 Alpine.plugin(collapse)
 
 Alpine.data('product', product)
 Alpine.data('productRepair', productRepair)
+Alpine.data('repairPopups', repairPopups)
+Alpine.data('singleRepairPopup', singleRepairPopup)
 
 window.Alpine = Alpine
 

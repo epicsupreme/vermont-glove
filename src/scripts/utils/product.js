@@ -250,18 +250,30 @@ export default (product) => {
         return isEqual(variant.options, newOptions)
       })[0]
 
-      // console.log(newVariant);
+      if (newVariant !== undefined) {
+        ;(this.liner.linerInfo = linerId(newVariant.id)),
+          (this.price = price(
+            newVariant.id,
+            this.selectedAddOnProducts,
+            this.liner.addLiner ? this.liner.linerInfo.linerPrice : false
+          ))
+        this.formData.id = newVariant.id
+        this.options = currentOptions(newVariant.id)
+        this.disabled = newVariant.available ? false : true
+        this.button = newVariant.available ? 'Add to Cart' : 'Unavailable'
 
-      ;(this.liner.linerInfo = linerId(newVariant.id)),
-        (this.price = price(
-          newVariant.id,
-          this.selectedAddOnProducts,
-          this.liner.addLiner ? this.liner.linerInfo.linerPrice : false
-        ))
-      this.formData.id = newVariant.id
-      this.disabled = newVariant.available ? false : true
-      this.button = newVariant.available ? 'Add to Cart' : 'Unavailable'
-      this.options = currentOptions(newVariant.id)
+        const variantImage = document.querySelector(
+          `[data-variants*="${newVariant.id}"`
+        )
+        if (variantImage) {
+          window.proudctSwiper.slideTo(
+            parseInt(variantImage.getAttribute('data-swiper-slide-index')) + 1
+          )
+        }
+      } else {
+        this.disabled = true
+        this.button = 'Unavailable'
+      }
     },
   }
 }

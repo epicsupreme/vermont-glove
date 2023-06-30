@@ -110,8 +110,8 @@
         id="repair_shipping_address"
         class="w-full border-2 max-w-sm border-primary px-3 py-2 text-black placeholder:text-opacity-40"
         required
+        x-ref="address"
         placeholder="Shipping Address*"
-        @keyup="properties['Shipping Address'] = $event.target.value"
       >
     </div>
     <div class="form-row mb-3">
@@ -136,7 +136,7 @@
         required
         x-model="date"
         placeholder="When did you purchase your gloves?*"
-        @input="date = formatDate($event.target.value); properties['Date'] = formatDate($event.target.value)"
+        @keyup="properties['Date'] = $event.target.value"
       >
     </div>
     <div class="form-row mb-3">

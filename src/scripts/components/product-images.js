@@ -7,7 +7,7 @@ import 'swiper/css/pagination'
 
 const slides = document.querySelector('#product-images .swiper')
 
-const proudctSwiper = new Swiper(slides, {
+window.proudctSwiper = new Swiper(slides, {
   modules: [Navigation, Pagination],
   loop: true,
 

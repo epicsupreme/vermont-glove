@@ -1,0 +1,140 @@
+<div x-data="repairPopups()">
+  <template x-for="(product, index) in products">
+    <div
+      {% comment %} x-show="showRepair === product.key" {% endcomment %}
+      class="fixed top-0 z-[100] left-0 w-screen  min-h-screen md:flex md:items-center md:justify-center px-5 bg-white bg-opacity-60 overflow-scroll"
+    >
+      <div class="max-w-md w-full p-4 bg-white border border-gray-200">
+        <div>
+          <h2 class="text-3xl font-headline text-center mb-4 uppercase font-bold">Edit your repair</h2>
+          <div class="form-row mb-3">
+            <label for="repair_name"></label>
+            <input
+              type="text"
+              name="name"
+              id="repair_name"
+              class="w-full border-2 max-w-sm border-primary px-3 py-2 text-black placeholder:text-opacity-40"
+              required
+              placeholder="Name*"
+              x-model="product.updatedProperties['Name']"
+            >
+          </div>
+          <div class="form-row mb-3">
+            <label for="repair_email"></label>
+            <input
+              type="email"
+              name="email"
+              id="repair_email"
+              class="w-full border-2 max-w-sm border-primary px-3 py-2 text-black placeholder:text-opacity-40"
+              required
+              placeholder="Email Address*"
+              x-model="product.updatedProperties['Email']"
+            >
+          </div>
+          <div class="form-row mb-3">
+            <label for="repair_shipping_address"></label>
+            <input
+              type="text"
+              name="shipping_address"
+              id="repair_shipping_address"
+              class="w-full border-2 max-w-sm border-primary px-3 py-2 text-black placeholder:text-opacity-40 repair-edit-address"
+              required
+              placeholder="Shipping Address*"
+            >
+          </div>
+          <div class="form-row mb-3">
+            <label for="repair_phone"></label>
+            <input
+              type="text"
+              name="phone"
+              id="repair_phone"
+              class="w-full border-2 max-w-sm border-primary px-3 py-2 text-black placeholder:text-opacity-40"
+              required
+              placeholder="Phone Number*"
+              x-model="product.updatedProperties['Phone']"
+            >
+          </div>
+          <div class="form-row mb-3">
+            <label for="repair_purchase_date"></label>
+            <input
+              type="text"
+              name="date"
+              id="repair_purchase_date"
+              class="w-full border-2 max-w-sm border-primary px-3 py-2 text-black placeholder:text-opacity-40"
+              required
+
+              placeholder="When did you purchase your gloves?*"
+              x-model="product.updatedProperties['Date']"
+            >
+          </div>
+          <div class="form-row mb-3">
+            <label for="repair_where"></label>
+            <input
+              type="text"
+              3
+              name="where"
+              id="repair_where"
+              class="w-full border-2 max-w-sm border-primary px-3 py-2 text-black placeholder:text-opacity-40"
+              placeholder="Where did you purchase your gloves?"
+              x-model="product.updatedProperties['Where did you purchase your gloves?']"
+            >
+          </div>
+          <div class="form-row mb-3">
+            <label for="repair_what"></label>
+            <textarea
+              id="repair_what"
+              name="what"
+              class="w-full border-2 max-w-sm h-32 border-primary px-3 py-2 text-black placeholder:text-opacity-40"
+              placeholder="What happened / What’s wrong with them?"
+              x-model="product.updatedProperties['What happened / What’s wrong with them?']"
+            ></textarea>
+          </div>
+        </div>
+
+        <input
+          type="file"
+          id="imageInput"
+          accept="image/*"
+          x-ref="imageInput"
+          style="display: none;"
+          @change="product.uploadImage"
+        >
+        <label
+          for="imageInput"
+          :class="{ 'disabled': uploading }"
+          x-show="!updatedProperties.image_url"
+          class="
+            transition-all duration-200 ease-in-out inline-block
+            px-4   w-full text-center max-w-sm py-3 mb-2 text-lg bg-white text-brand  cursor-pointer uppercase border-2 border-brand hover:text-white hover:bg-brand  font-headline
+          "
+        >
+          <span x-text="buttonText" x-show="!uploading"></span>
+          <span x-show="uploading" class="inline-flex items-center animate-pulse">
+            <span>Uploading</span>
+          </span>
+        </label>
+
+        <div class="mb-4 w-10" x-show="product.properties.image_url">
+          <img :src="product.properties.image_url" alt="Uploaded Image" class="w-full">
+        </div>
+
+        <button
+          class="w-full max-w-sm py-3 mb-2 text-lg border-2 border-brand hover:text-white cursor-pointer hover:bg-brand uppercase bg-white text-brand  font-headline"
+          type="submit"
+          x-show="product.properties.image_url"
+          @click.prevent="updatedProperties = {...updatedProperties, image_url: null}"
+        >
+          Remove Image
+        </button>
+
+        <button
+          class="w-full max-w-sm py-3 mb-2 text-lg border-2 border-brand hover:text-white cursor-pointer hover:bg-brand uppercase bg-white text-brand  font-headline"
+
+          @click.prevent="showRepair===null;updatedProperties = properties"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </template>
+</div>

@@ -37,10 +37,11 @@
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/VTG-Factory-2.jpg",
         "upload_video_url": "",
+        "youtube_video_url": "",
         "button_link": "link",
         "button_text": "",
         "button_url": "",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
       }
@@ -54,10 +55,11 @@
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/VTG-WoodHeat.jpg",
         "upload_video_url": "",
+        "youtube_video_url": "",
         "button_link": "link",
         "button_text": "",
         "button_url": "",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": true
       }
@@ -71,10 +73,11 @@
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/VTG-Factory22-1-2.jpg",
         "upload_video_url": "",
+        "youtube_video_url": "",
         "button_link": "link",
         "button_text": "",
         "button_url": "",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
       }
@@ -88,10 +91,11 @@
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/VTG-SupplyChain.jpg",
         "upload_video_url": "",
+        "youtube_video_url": "",
         "button_link": "link",
         "button_text": "",
         "button_url": "",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": true
       }
@@ -105,10 +109,11 @@
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/VTG-Repair-1.jpg",
         "upload_video_url": "",
-        "button_link": "link",
-        "button_text": "",
+        "youtube_video_url": "",
+        "button_link": "button",
+        "button_text": "EXPLORE OUR REPAIR PROGRAM",
         "button_url": "",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
       }
@@ -130,7 +135,7 @@
       "settings": {
         "title": "",
         "primary_color": "#ffffff",
-        "secondary_color": "#452C80",
+        "secondary_color": "#452c80",
         "image": "shopify:\/\/shop_images\/VTG-EastHillTreeFarm-24.jpg",
         "video_url": "",
         "full": true,

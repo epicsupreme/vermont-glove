@@ -1,171 +1,227 @@
 <div
-   class="relative z-50 px-4 py-12 mt-20 text-white bg-brand"
-   id="footer">
+  class="relative z-50 px-4 py-12 mt-20 text-white bg-brand"
+  id="footer"
+>
+  {%- render 'footer-mark' -%}
 
-   {%- render 'footer-mark' -%}
-
-   <div
-      class="container relative z-10 px-4 mx-auto">
+  <div
+    class="container relative z-10 px-4 mx-auto"
+  >
+    <div
+      class="gap-5 lg:grid lg:grid-cols-2"
+    >
       <div
-         class="gap-5 lg:grid lg:grid-cols-2">
+        class="xl:grid xl:grid-cols-6 xl:gap-5 xl:items-start"
+      >
+        <div
+          class="hidden pt-2 md:block xl:col-span-2 md:mb-6"
+        >
+          <div
+            class="mb-2 w-36 lg:hidden xl:block md:mx-auto xl:mx-auto"
+          >
+            {%- render 'svg-logo-stacked' -%}
+          </div>
 
-         <div
-            class="xl:grid xl:grid-cols-6 xl:gap-5 xl:items-start">
-            <div
-               class="hidden pt-2 md:block xl:col-span-2 md:mb-6">
-               <div
-                  class="mb-2 w-36 lg:hidden xl:block md:mx-auto xl:mx-auto">
-                  {%- render 'svg-logo-stacked' -%}
-               </div>
+          <div
+            class="w-56 mb-2 md:hidden lg:block xl:hidden"
+          >
+            {%- render 'svg-logotype' -%}
+          </div>
 
-               <div
-                  class="w-56 mb-2 md:hidden lg:block xl:hidden">
-                  {%- render 'svg-logotype' -%}
-               </div>
+          <div
+            class="leading-tight text-left md:text-center lg:text-left xl:text-center "
+          >
+            {{ section.settings.contact }}
+          </div>
+        </div>
 
-               <div
-                  class="leading-tight text-left md:text-center lg:text-left xl:text-center ">
-                  {{ section.settings.contact }}
-               </div>
-            </div>
-
-
-            <div
-               class="lg:max-w-sm lg:mt-6 xl:mt-0 xl:col-span-3">
-               <div
-                  class="mb-3 text-xl uppercase font-headline">
-                  Subscribe to our newsletter
-               </div>
-               <form
-                  id="footer-subscribe"
-                  action=""
-                  class="relative flex items-center">
-                  <input
-                     class="w-full p-4 text-black placeholder:text-gray-400"
-                     placeholder="EMAIL ADDRESS"
-                     id="footer-subscribe-email"
-                     type="email">
-                  <input
-                     class="absolute -mt-0.5 text-xl leading-none text-black uppercase right-5 font-headline"
-                     type="submit"
-                     value="Subscribe →">
-               </form>
-               <div class="mt-2 text-xs email-message empty:hidden"></div>
-            </div>
-            <div
-               class="flex justify-center gap-3 lg:justify-start">
-               <a href="{{ settings.social_instagram_link }}" title="Instagram" target="_blank"
-                  class="w-10 mt-6 md:mt-6 md:mb-6 xl:mt-11 xl:mx-auto lg:mt-6">
-                  {%- render 'svg-ig' -%}
-               </a>
-               <a href="{{ settings.social_facebook_link }}" title="Facebook"  target="_blank"
-                  class="w-10 mt-6 md:mt-6 md:mb-6 xl:mt-11 xl:mx-auto lg:mt-6">
-                  {%- render 'svg-fb' -%}
-               </a>
-            </div>
-
-         </div>
-
-         <div
-            class="w-10/12 mx-auto mt-6 mb-8 md:hidden">
-            {% for block in section.blocks %}
-               {%- assign nav = linklists[block.settings.nav] -%}
-               <div
-                  class="mb-2 text-left md:block"
-                  x-data="{open: false}">
-                  <button
-                     @click="open = !open"
-                     class="pb-1.5 flex mb-1 text-xl uppercase border-b border-white w-full font-headline">
-                     <div
-                        :class="open ? 'rotate-45' : ''"
-                        class="transition-transform duration-300 origin-center">+</div>
-                     <div
-                        class="pl-2">
-                        {{ nav.title }}</div>
-                  </button>
-                  <ul
-                     class="list-none"
-                     x-collapse
-                     x-show="open">
-                     {% for link in nav.links %}
-                        <li
-                           class="mb-0.5">
-                           <a
-                              href="{{ link.url }}" title="{{ link.title }}" class="text-xs font-light uppercase">{{ link.title }}</a>
-                        </li>
-                     {% endfor %}
-                  </ul>
-               </div>
-            {% endfor %}
-         </div>
-
-         <div
-            class="hidden md:block">
-            <div
-               class="grid-cols-3 gap-5 md:grid">
-               {% for block in section.blocks %}
-                  {%- assign nav = linklists[block.settings.nav] -%}
-                  <div
-                     class="mb-8 text-center md:text-left md:block">
-                     <div
-                        class="pb-1.5 mb-3 text-xl uppercase border-b border-white font-headline">
-                        {{ nav.title }}
-                     </div>
-                     <ul
-                        class="list-none">
-                        {% for link in nav.links %}
-                           <li
-                              class="mb-0.5">
-                              <a
-                                 href="{{ link.url }}" title="{{ link.title }}" class="text-xs font-light uppercase">{{ link.title }}</a>
-                           </li>
-                        {% endfor %}
-                     </ul>
-                  </div>
-               {% endfor %}
-            </div>
-
-            <div
-               class="hidden col-span-2 col-start-2 mt-6 text-sm text-center lg:text-left lg:block xl:flex lg:gap-3 xl:gap-8">
-               <div
-                  class="mb-2">
-                  {{ section.settings.copyright }}
-               </div>
-               <div
-                  class="flex gap-3 xl:gap-8">
-                  {% for link in linklists.footer-policy-menu.links %}
-                     <a
-                        href="{{ link.url }}" title="{{ link.title }}" class="">{{ link.title }}</a>
-                  {% endfor %}
-               </div>
-            </div>
-
-         </div>
-
-         <div
-            class="col-span-2 col-start-2 text-sm text-center lg:text-left lg:hidden lg:gap-3 xl:gap-8">
-            <div
-               class="mb-2">
-               {{ section.settings.copyright }}
-            </div>
-            <div
-               class="flex justify-center gap-3 xl:gap-8">
-               {% for link in linklists.footer-policy-menu.links %}
-                  <a
-                     href="{{ link.url }}" title="{{ link.title }}" class="">{{ link.title }}</a>
-               {% endfor %}
-            </div>
-         </div>
-
+        <div
+          class="lg:max-w-sm lg:mt-6 xl:mt-0 xl:col-span-3"
+        >
+          <div
+            class="mb-3 text-xl uppercase font-headline"
+          >
+            Subscribe to our newsletter
+          </div>
+          <form
+            id="footer-subscribe"
+            action=""
+            class="relative flex items-center"
+          >
+            <input
+              class="w-full p-4 text-black placeholder:text-gray-400"
+              placeholder="EMAIL ADDRESS"
+              id="footer-subscribe-email"
+              type="email"
+            >
+            <input
+              class="absolute -mt-0.5 text-xl leading-none text-black uppercase right-5 font-headline"
+              type="submit"
+              value="Subscribe →"
+            >
+          </form>
+          <div class="mt-2 text-xs email-message empty:hidden"></div>
+        </div>
+        <div
+          class="flex justify-center gap-3 lg:justify-start"
+        >
+          <a
+            href="{{ settings.social_instagram_link }}"
+            title="Instagram"
+            target="_blank"
+            class="w-10 mt-6 md:mt-6 md:mb-6 xl:mt-11 xl:mx-auto lg:mt-6"
+          >
+            {%- render 'svg-ig' -%}
+          </a>
+          <a
+            href="{{ settings.social_facebook_link }}"
+            title="Facebook"
+            target="_blank"
+            class="w-10 mt-6 md:mt-6 md:mb-6 xl:mt-11 xl:mx-auto lg:mt-6"
+          >
+            {%- render 'svg-fb' -%}
+          </a>
+        </div>
       </div>
 
+      <div
+        class="w-10/12 mx-auto mt-6 mb-8 md:hidden"
+      >
+        {% for block in section.blocks %}
+          {%- assign nav = linklists[block.settings.nav] -%}
+          <div
+            class="mb-2 text-left md:block"
+            x-data="{open: false}"
+          >
+            <button
+              @click="open = !open"
+              class="pb-1.5 flex mb-1 text-xl uppercase border-b border-white w-full font-headline"
+            >
+              <div
+                :class="open ? 'rotate-45' : ''"
+                class="transition-transform duration-300 origin-center"
+              >
+                +
+              </div>
+              <div
+                class="pl-2"
+              >
+                {{ nav.title }}
+              </div>
+            </button>
+            <ul
+              class="list-none"
+              x-collapse
+              x-show="open"
+            >
+              {% for link in nav.links %}
+                <li
+                  class="mb-0.5"
+                >
+                  <a
+                    href="{{ link.url }}"
+                    title="{{ link.title }}"
+                    class="text-xs font-light uppercase"
+                  >
+                    {{- link.title -}}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
 
-   </div>
+      <div
+        class="hidden md:block"
+      >
+        <div
+          class="grid-cols-3 gap-5 md:grid"
+        >
+          {% for block in section.blocks %}
+            {%- assign nav = linklists[block.settings.nav] -%}
+            <div
+              class="mb-8 text-center md:text-left md:block"
+            >
+              <div
+                class="pb-1.5 mb-3 text-xl uppercase border-b border-white font-headline"
+              >
+                {{ nav.title }}
+              </div>
+              <ul
+                class="list-none"
+              >
+                {% for link in nav.links %}
+                  <li
+                    class="mb-0.5"
+                  >
+                    <a
+                      href="{{ link.url }}"
+                      title="{{ link.title }}"
+                      class="text-xs font-light uppercase"
+                    >
+                      {{- link.title -}}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endfor %}
+        </div>
 
+        <div
+          class="hidden col-span-2 col-start-2 mt-6 text-sm text-center lg:text-left lg:block xl:flex lg:gap-3 xl:gap-8"
+        >
+          <div
+            class="mb-2"
+          >
+            &copy; {{ 'now' | date: '%Y' }}
+            {{ section.settings.copyright }}
+          </div>
+          <div
+            class="flex gap-3 xl:gap-8"
+          >
+            {% for link in linklists['footer-policy-menu'].links %}
+              <a
+                href="{{ link.url }}"
+                title="{{ link.title }}"
+                class=""
+              >
+                {{- link.title -}}
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-span-2 col-start-2 text-sm text-center lg:text-left lg:hidden lg:gap-3 xl:gap-8"
+      >
+        <div
+          class="mb-2"
+        >
+          &copy; {{ 'now' | date: '%Y' }}
+          {{ section.settings.copyright }}
+        </div>
+        <div
+          class="flex justify-center gap-3 xl:gap-8"
+        >
+          {% for link in linklists['footer-policy-menu'].links %}
+            <a
+              href="{{ link.url }}"
+              title="{{ link.title }}"
+              class=""
+            >
+              {{- link.title -}}
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 {% schema %}
-
 {
   "name": "t:sections.footer.name",
   "tag": "footer",
@@ -174,7 +230,8 @@
       "type": "richtext",
       "id": "contact",
       "label": "Contact Info"
-    }, {
+    },
+    {
       "type": "text",
       "id": "copyright",
       "label": "Copyright",
@@ -196,5 +253,4 @@
     }
   ]
 }
-
 {% endschema %}

@@ -10,11 +10,21 @@
       "settings": {
         "headline": "FIND A RETAILER",
         "subhead": "",
-        "text": "<p>Inventory levels fluctuate at all retailers, with some having low to zero inventory over the summer. Check availability before heading to any retail location.<\/p><p>Stores with asterisks tend to carry a larger inventory around the winter holidays.<\/p>",
+        "text": "<p>Inventory levels fluctuate at all retailers, with some having low to zero inventory over the summer. Check availability before heading to any retail location.<\/p>",
         "link_text": "Read More",
         "link": "",
         "bg_color": "#ffffff",
-        "text_color": "#000000"
+        "text_color": "#452C80"
+      }
+    },
+    "503c7a85-7fa3-41a1-b096-825cd91124a2": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "custom_liquid": "<!-- Start Stockist.co widget -->\n<div data-stockist-widget-tag=\"u18405\">Loading store locator\nfrom <a href=\"https:\/\/stockist.co\">Stockist store locator<\/a>...<\/div>\n<script>\n  (function(s,t,o,c,k){c=s.createElement(t);c.src=o;c.async=1;\n  k=s.getElementsByTagName(t)[0];k.parentNode.insertBefore(c,k);\n  })(document,'script','\/\/stockist.co\/embed\/v1\/widget.min.js');\n<\/script>\n<!-- End Stockist.co widget -->"
       }
     },
     "1661372264f1eaaeb5": {
@@ -33,6 +43,7 @@
   "order": [
     "main",
     "1661372417a2747b1e",
+    "503c7a85-7fa3-41a1-b096-825cd91124a2",
     "1661372264f1eaaeb5"
   ]
 }

@@ -45,6 +45,13 @@
             "answer": "<p>Sure do. <a href=\"\/pages\/repairs\" title=\"Repairs\">Head on over here<\/a> to learn how to initiate a repair.<\/p>"
           }
         },
+        "869f1737-cd66-4682-924f-557b9abe5031": {
+          "type": "faq",
+          "settings": {
+            "question": "I lost one of my gloves :(",
+            "answer": "<p><a href=\"\/products\/single-glove\" title=\"Single Glove\">We sell single gloves in all styles.<\/a><\/p>"
+          }
+        },
         "8563a743-47ca-4891-9062-fb49738f1284": {
           "type": "faq",
           "settings": {
@@ -136,6 +143,7 @@
         "3728eeac-b09c-4a73-b3df-d5ac97a66ee5",
         "e025ed7a-9f0d-4743-9745-6d9521fe63b3",
         "98711fc4-df4c-4c45-b382-33b229c2390e",
+        "869f1737-cd66-4682-924f-557b9abe5031",
         "8563a743-47ca-4891-9062-fb49738f1284",
         "e8568ed9-f697-4c7c-8f7f-8d63e83046eb",
         "9d7d8dff-b45e-4441-ae01-47c05f9e1c35",

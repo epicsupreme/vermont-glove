@@ -7,10 +7,10 @@
       "header": {
         "type": "header",
         "settings": {
-          "top_bar": false,
-          "text": "<p><a href=\"\/collections\/all-products\" title=\"Shop All Vermont Glove Products\">Take 10% OFF orders over $100 with 'YAYDAD23' through 6\/12<\/a><\/p>",
+          "top_bar": true,
+          "text": "<p>Thank you for helping us support the VCF Flood Relief Fund with our ltd. Vermont Strong Glove<\/p>",
           "text_color": "#ffffff",
-          "bg_color": "#452c80"
+          "bg_color": "#00756f"
         }
       },
       "footer": {
@@ -42,7 +42,7 @@
         ],
         "settings": {
           "contact": "<p>18 Pearl St.<\/p><p>Randolph, VT 05060<\/p>",
-          "copyright": "©2022 Vermont Glove All Rights Reserved"
+          "copyright": "Vermont Glove All Rights Reserved"
         }
       }
     },

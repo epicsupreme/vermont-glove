@@ -78,85 +78,74 @@
   </div>
 
   <div class="mb-4">
-    <div class="form-row mb-3">
+    <div class="mb-3 form-row">
       <label for="repair_name"></label>
       <input
         type="text"
         name="name"
         id="repair_name"
-        class="w-full border-2 max-w-sm border-primary px-3 py-2 text-black placeholder:text-opacity-40"
+        class="w-full max-w-sm px-3 py-2 text-black border-2 border-primary placeholder:text-opacity-40"
         required
         placeholder="Name*"
         @keyup="properties['Name'] = $event.target.value"
       >
     </div>
-    <div class="form-row mb-3">
+    <div class="mb-3 form-row">
       <label for="repair_email"></label>
       <input
         type="email"
         name="email"
         id="repair_email"
-        class="w-full border-2 max-w-sm border-primary px-3 py-2 text-black placeholder:text-opacity-40"
+        class="w-full max-w-sm px-3 py-2 text-black border-2 border-primary placeholder:text-opacity-40"
         required
         placeholder="Email Address*"
         @keyup="properties['Email'] = $event.target.value"
       >
     </div>
-    <div class="form-row mb-3">
-      <label for="repair_shipping_address"></label>
-      <input
-        type="text"
-        name="shipping_address"
-        id="repair_shipping_address"
-        class="w-full border-2 max-w-sm border-primary px-3 py-2 text-black placeholder:text-opacity-40"
-        required
-        x-ref="address"
-        placeholder="Shipping Address*"
-      >
-    </div>
-    <div class="form-row mb-3">
+
+    <div class="mb-3 form-row">
       <label for="repair_phone"></label>
       <input
         type="text"
         name="phone"
         id="repair_phone"
-        class="w-full border-2 max-w-sm border-primary px-3 py-2 text-black placeholder:text-opacity-40"
+        class="w-full max-w-sm px-3 py-2 text-black border-2 border-primary placeholder:text-opacity-40"
         required
         placeholder="Phone Number*"
         @keyup="properties['Phone'] = $event.target.value"
       >
     </div>
-    <div class="form-row mb-3">
+    <div class="mb-3 form-row">
       <label for="repair_purchase_date"></label>
       <input
         type="text"
         name="date"
         id="repair_purchase_date"
-        class="w-full border-2 max-w-sm border-primary px-3 py-2 text-black placeholder:text-opacity-40"
+        class="w-full max-w-sm px-3 py-2 text-black border-2 border-primary placeholder:text-opacity-40"
         required
         x-model="date"
         placeholder="When did you purchase your gloves?*"
         @keyup="properties['Date'] = $event.target.value"
       >
     </div>
-    <div class="form-row mb-3">
+    <div class="mb-3 form-row">
       <label for="repair_where"></label>
       <input
         type="text"
         3
         name="where"
         id="repair_where"
-        class="w-full border-2 max-w-sm border-primary px-3 py-2 text-black placeholder:text-opacity-40"
+        class="w-full max-w-sm px-3 py-2 text-black border-2 border-primary placeholder:text-opacity-40"
         placeholder="Where did you purchase your gloves?"
         @keyup="properties['Where did you purchase your gloves?'] = $event.target.value"
       >
     </div>
-    <div class="form-row mb-3">
+    <div class="mb-3 form-row">
       <label for="repair_what"></label>
       <textarea
         id="repair_what"
         name="what"
-        class="w-full border-2 max-w-sm h-32 border-primary px-3 py-2 text-black placeholder:text-opacity-40"
+        class="w-full h-32 max-w-sm px-3 py-2 text-black border-2 border-primary placeholder:text-opacity-40"
         placeholder="What happened / What’s wrong with them?"
         @keyup="properties['What happened / What’s wrong with them?'] = $event.target.value"
       ></textarea>
@@ -168,10 +157,7 @@
     for="imageInput"
     :class="{ 'disabled': uploading }"
     x-show="!imageUrl"
-    class="
-      transition-all duration-200 ease-in-out inline-block
-      px-4   w-full text-center max-w-sm py-3 mb-2 text-lg bg-white text-brand  cursor-pointer uppercase border-2 border-brand hover:text-white hover:bg-brand  font-headline
-    "
+    class="inline-block w-full max-w-sm px-4 py-3 mb-2 text-lg text-center uppercase transition-all duration-200 ease-in-out bg-white border-2 cursor-pointer text-brand border-brand hover:text-white hover:bg-brand font-headline"
   >
     <span x-text="buttonText" x-show="!uploading"></span>
     <span x-show="uploading" class="inline-flex items-center animate-pulse">
@@ -179,12 +165,12 @@
     </span>
   </label>
 
-  <p class="mb-4 max-w-sm" x-show="imageUrl">
+  <p class="max-w-sm mb-4" x-show="imageUrl">
     <img :src="imageUrl" alt="Uploaded Image" class="w-full">
   </p>
 
   <button
-    class="w-full max-w-sm py-3 mb-2 text-lg border-2 border-brand hover:text-white cursor-pointer hover:bg-brand uppercase bg-white text-brand  font-headline"
+    class="w-full max-w-sm py-3 mb-2 text-lg uppercase bg-white border-2 cursor-pointer border-brand hover:text-white hover:bg-brand text-brand font-headline"
     type="submit"
     x-show="imageUrl"
     @click.prevent="imageUrl = null;this.properties['image_url'] = null"

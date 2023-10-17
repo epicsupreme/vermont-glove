@@ -1,151 +1,204 @@
 {% if section.settings.top_bar %}
-   {% assign headerHeight = "176px" %}
-   {% assign mobileHeaderHeight = "148px" %}
+  {% assign headerHeight = '176px' %}
+  {% assign mobileHeaderHeight = '148px' %}
 {% else %}
-   {% assign headerHeight = "140px" %}
-   {% assign mobileHeaderHeight = "112px" %}
+  {% assign headerHeight = '140px' %}
+  {% assign mobileHeaderHeight = '112px' %}
 {% endif %}
 
-
 <style>
-   :root {
-      --header-height: {{ headerHeight }};
-      --mobile-header-height: {{ mobileHeaderHeight }};
-   }
-
+  :root {
+     --header-height: {{ headerHeight }};
+     --mobile-header-height: {{ mobileHeaderHeight }};
+  }
 </style>
 
 <header
-   class="fixed z-40 w-full"
-   id="header"
-   style="--header-color:{{ section.settings.text_color }};--header-bg:{{ section.settings.bg_color }}">
+  class="fixed z-40 w-full"
+  id="header"
+  style="--header-color:{{ section.settings.text_color }};--header-bg:{{ section.settings.bg_color }}"
+>
+  {%- render 'header-top-bar' -%}
 
-   {%- render 'header-top-bar' -%}
+  <div
+    class="flex items-center justify-between px-6 transition-all duration-500 bg-white h-[var(--sizes-mobile-header)] md:h-[var(--sizes-header)] text-brand header-container"
+  >
+    <div
+      class="w-1/6 md:hidden"
+    >
+      <button
+        @click="navOpen = !navOpen"
+        class="relative flex flex-col justify-between h-7 w-9"
+      >
+        <div
+          :class="navOpen ? 'opacity-0' : ''"
+          class="h-[3px] bg-brand w-full"
+        ></div>
+        <div
+          :class="navOpen ? '-rotate-45 origin-center' : ''"
+          class="h-[3px] bg-brand w-full "
+        ></div>
+        <div
+          :class="navOpen ? 'rotate-45 origin-center opacity-100' : ''"
+          class="h-[3px] bg-brand w-full absolute top-1/2 -translate-y-1/2 left-0 opacity-0"
+        ></div>
+        <div
+          :class="navOpen ? 'opacity-0' : ''"
+          class="h-[3px] bg-brand w-full"
+        ></div>
+      </button>
+    </div>
+    <div
+      class="hidden text-xl uppercase md:flex md:w-1/3 font-headline"
+    >
+      {% for link in linklists.desktop_left_nav.links %}
+        <div
+          class="relative mr-16 last:mr-0 group"
+        >
+          <a
+            href="{{ link.url }}"
+            title="{{ link.title }}"
+            class=""
+          >
+            {{- link.title -}}
+          </a>
 
-   <div
-      class="flex items-center justify-between px-6 transition-all duration-500 bg-white h-[var(--sizes-mobile-header)] md:h-[var(--sizes-header)] text-brand header-container">
-      <div
-         class="w-1/6 md:hidden">
-         <button
-            @click="navOpen = !navOpen"
-            class="relative flex flex-col justify-between h-7 w-9">
-            <div
-               :class="navOpen ? 'opacity-0' : ''"
-               class="h-[3px] bg-brand w-full"></div>
-            <div
-               :class="navOpen ? '-rotate-45 origin-center' : ''"
-               class="h-[3px] bg-brand w-full "></div>
-            <div
-               :class="navOpen ? 'rotate-45 origin-center opacity-100' : ''"
-               class="h-[3px] bg-brand w-full absolute top-1/2 -translate-y-1/2 left-0 opacity-0"></div>
-            <div
-               :class="navOpen ? 'opacity-0' : ''"
-               class="h-[3px] bg-brand w-full"></div>
-         </button>
+          {% if link.links %}
+            <ul
+              class="absolute hidden w-48 px-4 pt-1 -ml-4 bg-white top-full group-hover:block"
+            >
+              {% for child in link.links %}
+                <li class="mb-1">
+                  <a
+                    href="{{ child.url }}"
+                    title="{{ child.title }}"
+                    class=""
+                  >
+                    {{- child.title -}}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    <div
+      class="flex items-center justify-center w-2/3 md:w-1/3"
+    >
+      <a
+        href="/"
+        title="{{ shop.name }}"
+        class="absolute w-24 transition-all duration-500 md:w-32 text-brand logo"
+      >
+        {%- render 'svg-logo' -%}
+      </a>
 
-      </div>
-      <div
-         class="hidden text-xl uppercase md:flex md:w-1/3 font-headline">
-         {% for link in linklists.desktop_left_nav.links %}
-            <div
-               class="relative mr-16 last:mr-0 group">
-               <a
-                  href="{{ link.url }}" title="{{ link.title }}" class="">{{ link.title }}</a>
+      <a
+        href="/"
+        title="{{ shop.name }}"
+        class="absolute w-56 transition-all duration-500 opacity-0 pointer-events-none text-brand logotype"
+      >
+        {%- render 'svg-logotype' -%}
+      </a>
+    </div>
+    <div
+      class="flex justify-end w-1/6 md:w-1/3"
+    >
+      <a
+        @click.prevent="cartOpen = true"
+        class="relative flex items-center justify-center w-6 text-xs text-brand"
+        href="/cart"
+        title="Cart"
+      >
+        {%- render 'svg-bag' -%}
 
-               {% if link.links %}
-                  <ul
-                     class="absolute hidden w-48 px-4 pt-1 -ml-4 bg-white top-full group-hover:block">
-                     {% for child in link.links %}
-                        <li class="mb-1">
-                           <a
-                              href="{{ child.url }}" title="{{ child.title }}" class="">{{ child.title }}</a>
-                        </li>
-                     {% endfor %}
-                  </ul>
-               {% endif %}
-            </div>
-         {% endfor %}
-      </div>
-      <div
-         class="flex items-center justify-center w-2/3 md:w-1/3">
-         <a
-            href="/"
-            title="{{ shop.name }}" class="absolute w-24 transition-all duration-500 md:w-32 text-brand logo">
-            {%- render 'svg-logo' -%}
-         </a>
-
-         <a
-            href="/"
-            title="{{ shop.name }}" class="absolute w-56 transition-all duration-500 opacity-0 pointer-events-none text-brand logotype">
-            {%- render 'svg-logotype' -%}
-         </a>
-      </div>
-      <div
-         class="flex justify-end w-1/6 md:w-1/3">
-
-         <a
-            @click.prevent="cartOpen = true"
-            class="relative flex items-center justify-center w-6 text-xs text-brand"
-            href="/cart"
-            title="Cart">
-            {%- render 'svg-bag' -%}
-
-            <span
-               class="absolute font-bold bottom-1"
-               id="cart-count"
-               x-text="cartCount">
-               {{ cart.item_count }}
-            </span>
-         </a>
-
-
-      </div>
-   </div>
+        <span
+          class="absolute font-bold bottom-1"
+          id="cart-count"
+          x-text="cartCount"
+        >
+          {{ cart.item_count }}
+        </span>
+      </a>
+    </div>
+  </div>
 </header>
 
 <div
-   :class="navOpen ? 'fixed' : 'hidden'"
-   x-cloak=""
-   class=" w-full bottom-0 h-[calc(100vh_-_var(--sizes-mobile-header)_-_36px)] bg-brand text-white z-50 p-24">
-   <a
-      class="block text-5xl uppercase font-headline"
-      href="/"
-      title="Home">Home</a>
-   {% for link in linklists.desktop_left_nav.links %}
+  :class="navOpen ? 'fixed' : 'hidden'"
+  x-cloak=""
+  class=" w-full top-[112px] h-[calc(100vh_-_112px)] bg-brand text-white z-50 py-12 px-24"
+>
+  <a
+    class="block text-5xl uppercase font-headline"
+    href="/"
+    title="Home"
+    >Home</a
+  >
+  {% for link in linklists.desktop_left_nav.links %}
+    {%- if link.links.size > 0 -%}
+      <details>
+        <summary class=" list-none [&:marker]:hidden [&::-webkit-details-marker]:hidden appearance-none ">
+          <div class="block text-5xl uppercase font-headline">{{- link.title -}}</div>
+        </summary>
+        {% if link.links %}
+          <ul
+            class="flex flex-col gap-1 mt-1 "
+          >
+            {% for child in link.links %}
+              <li class="mb-1">
+                <a
+                  href="{{ child.url }}"
+                  title="{{ child.title }}"
+                  class="block text-2xl uppercase font-headline"
+                >
+                  {{- child.title -}}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </details>
+    {%- else -%}
       <a
-         href="{{ link.url }}" title="{{ link.title }}" class="block text-5xl uppercase font-headline">{{ link.title }}</a>
-   {% endfor %}
+        href="{{ link.url }}"
+        title="{{ link.title }}"
+        class="block text-5xl uppercase font-headline"
+      >
+        {{- link.title -}}
+      </a>
+    {%- endif -%}
+  {% endfor %}
 </div>
 
 {% schema %}
-
 {
-"name": "t:sections.header.name",
-"settings": [
-   {
+  "name": "t:sections.header.name",
+  "settings": [
+    {
       "type": "checkbox",
       "id": "top_bar",
       "label": "Top Bar Active",
       "default": true
-   },
-   {
+    },
+    {
       "type": "richtext",
       "id": "text",
       "label": "Text"
-   },
-   {
+    },
+    {
       "type": "color",
       "id": "text_color",
       "label": "Text Color",
       "default": "#ffffff"
-   },
-   {
+    },
+    {
       "type": "color",
       "id": "bg_color",
       "label": "Background Color",
       "default": "#82CDBB"
-   }
-]
+    }
+  ]
 }
-
 {% endschema %}

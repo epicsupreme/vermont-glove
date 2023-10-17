@@ -14,12 +14,11 @@
         "link_text": "Read More",
         "link": "",
         "bg_color": "#ffffff",
-        "text_color": "#452C80"
+        "text_color": "#452c80"
       }
     },
     "503c7a85-7fa3-41a1-b096-825cd91124a2": {
       "type": "custom-liquid",
-      "disabled": true,
       "custom_css": [
 
       ],
@@ -29,6 +28,7 @@
     },
     "1661372264f1eaaeb5": {
       "type": "text",
+      "disabled": true,
       "settings": {
         "headline": "",
         "subhead": "",

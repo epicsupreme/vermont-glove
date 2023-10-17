@@ -7,10 +7,10 @@
       "header": {
         "type": "header",
         "settings": {
-          "top_bar": true,
-          "text": "<p>Thank you for helping us support the VCF Flood Relief Fund with our ltd. Vermont Strong Glove<\/p>",
+          "top_bar": false,
+          "text": "<p>FREE CONDITIONER WITH $110 PURCHASE: USE CODE ‘LABORDAY23’ AND ADD CONTITIONER TO CART TO REDEEM<\/p>",
           "text_color": "#ffffff",
-          "bg_color": "#00756f"
+          "bg_color": "#452c80"
         }
       },
       "footer": {

@@ -15,6 +15,7 @@ node_modules
 .docs
 src/public/*.json
 package.json
+package-lock.json
 
 # Other files #
 /\.(txt|md|lock)$/

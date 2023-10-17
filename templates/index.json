@@ -3,6 +3,22 @@
     "main": {
       "type": "hero",
       "blocks": {
+        "d9884f87-48da-4ebf-a6d5-5f6f8e10b4b4": {
+          "type": "hero_slide",
+          "settings": {
+            "title": "GOAT LEATHER\nWORK GLOVES",
+            "mobile_title": "GOAT LEATHER WORK GLOVES",
+            "button_text": "SHOP NOW",
+            "button_url": "shopify:\/\/collections\/gloves-mittens",
+            "location": "justify-start",
+            "primary_color": "#ffffff",
+            "secondary_color": "#452c80",
+            "image": "shopify:\/\/shop_images\/VTG-Pickhardt-Fence1-1_ac86339d-712b-4a06-99e6-3548e4a711f0.jpg",
+            "video_url": "",
+            "mobile_video_url": "",
+            "mobile_position": "lg:object-center"
+          }
+        },
         "fc50a050-b4e8-438b-9e9f-a00e0230a3fe": {
           "type": "hero_slide",
           "settings": {
@@ -11,7 +27,7 @@
             "button_text": "SHOP WORK GLOVES",
             "button_url": "shopify:\/\/collections\/gloves-mittens",
             "location": "justify-start",
-            "primary_color": "#452C80",
+            "primary_color": "#452c80",
             "secondary_color": "#ffffff",
             "image": "shopify:\/\/shop_images\/VTG_Sept2020_16_of_24_8e4832a3-0853-40e8-bddd-09aed91a76ff.jpg",
             "video_url": "",
@@ -28,7 +44,7 @@
             "button_url": "shopify:\/\/pages\/repairs",
             "location": "justify-start",
             "primary_color": "#ffffff",
-            "secondary_color": "#452C80",
+            "secondary_color": "#452c80",
             "image": "shopify:\/\/shop_images\/VTG-WebHero-Repairs_Desktop.png",
             "mobile_image": "shopify:\/\/shop_images\/VTG-WebHero-Repairs_Mobile_copy_2x_28919c58-b9d3-473f-b4ff-f9ae4bb327f3.png",
             "video_url": "",
@@ -333,6 +349,7 @@
         }
       },
       "block_order": [
+        "d9884f87-48da-4ebf-a6d5-5f6f8e10b4b4",
         "fc50a050-b4e8-438b-9e9f-a00e0230a3fe",
         "951a4c40-54e7-4c8c-a50f-2e7a887c4b16",
         "e3d6458f-07b9-4293-a88d-e36afd3be1bd",

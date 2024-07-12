@@ -159,10 +159,10 @@
       ],
       "settings": {
         "sizing_guide_title": "Sizing Guide",
-        "sizing_guide_image": "shopify:\/\/shop_images\/VTG-SizingChart-Hero-45_b44ad528-f0ea-4bb1-a60b-d59bbf34a6ce.jpg",
+        "sizing_guide_image": "shopify:\/\/shop_images\/VTG-Sizing-2024-2.jpg",
         "sizing_guide_text": "The most accurate way to determine your glove size is to download and print our hand tracing template.",
         "button_text": "Download Here",
-        "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG-SizeChart-2023.pdf?v=1677110639",
+        "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG-SizeChart-2024.pdf?v=1708707021",
         "footer_title": "For more info",
         "footer_link_text": "Visit our sizing page",
         "footer_url": "shopify:\/\/pages\/sizing"
@@ -179,7 +179,6 @@
     },
     "1658129066b65c424e": {
       "type": "excellent-for",
-      "disabled": true,
       "blocks": {
         "1d6bbccb-c327-427b-be7c-ac76e1072de2": {
           "type": "Icon",
@@ -224,6 +223,7 @@
         "178cb9d2-cdc6-4ea9-8a9b-71672177302b",
         "37320272-dee0-482e-889e-ff04dbcafc8f"
       ],
+      "disabled": true,
       "settings": {
         "title": "Excellent For"
       }
@@ -248,7 +248,7 @@
             "text": "",
             "glove_text": "100% Goat Leather",
             "cuff_text": "100% Goat Leather",
-            "liner_text": "Removable Merino Wool"
+            "liner_text": "Removable Wool"
           }
         },
         "a833aac9-12f8-437f-a3ca-eba3cbcb5f0e": {
@@ -283,6 +283,17 @@
             "cuff_text": "100% Goat Leather",
             "liner_text": "Recycled poly liner"
           }
+        },
+        "product_LVjqnk": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "jeezum",
+            "text": "Jeezum",
+            "glove_text": "100% Goat Leather",
+            "cuff_text": "Woven Acrylic",
+            "liner_text": "100% Recycled Poly"
+          }
         }
       },
       "block_order": [
@@ -290,7 +301,8 @@
         "1f23043c-901c-402b-9ff1-db349e2ce32c",
         "a833aac9-12f8-437f-a3ca-eba3cbcb5f0e",
         "0681eced-8bb2-43b0-8c75-a87426208331",
-        "6d41153e-08ac-4925-8f8c-628bd23bcd9b"
+        "6d41153e-08ac-4925-8f8c-628bd23bcd9b",
+        "product_LVjqnk"
       ],
       "settings": {
         "title": "Compare Gloves",
@@ -360,7 +372,6 @@
     },
     "1660158547c754289a": {
       "type": "testimonials",
-      "disabled": true,
       "blocks": {
         "ff85be8f-647b-48e2-99f1-ee59f7220ce7": {
           "type": "testimonial",
@@ -378,6 +389,7 @@
       "block_order": [
         "ff85be8f-647b-48e2-99f1-ee59f7220ce7"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -385,13 +397,14 @@
       "type": "apps",
       "blocks": {
         "loox-product-reviews": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "aggregated": false,
             "limit": 20,
             "hide_thumbnails": false,
-            "maxwidth": 1080
+            "maxwidth": 1080,
+            "is_sample": true
           }
         }
       },

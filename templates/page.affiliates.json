@@ -1,0 +1,31 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "history_7wNbD7": {
+      "type": "history",
+      "settings": {
+        "title": "BECOME A VERMONT GLOVE AFFILIATE",
+        "subhead": "",
+        "text": "<p>Think your audience would love the greatest gloves on planet earth? Join our affiliate network of select rugged, brilliant, talented, beautiful, influential and authentic content creators to help us spread the glove gospel.<\/p>",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/ConvertOut-Resized-HWF-31.jpg",
+        "upload_video_url": "",
+        "youtube_video_url": "",
+        "button_link": "button",
+        "button_text": "APPLY NOW",
+        "button_url": "http:\/\/www.shareasale.com\/join\/vermontglove",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "history_7wNbD7"
+  ]
+}

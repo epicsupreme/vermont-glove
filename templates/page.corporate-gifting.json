@@ -88,6 +88,13 @@
             "question": "Want a custom glove without buying 24 pairs?",
             "answer": "<p>Check out our <a href=\"\/products\/bespoke-glove-gift-pack-2022\" title=\"Bespoke Glove Gift Pack\">bespoke glove gift pack<\/a>, with custom engraved initials.<\/p>"
           }
+        },
+        "46705f27-a1c7-41d8-837b-614ff48d7cbf": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I buy gloves with my brand's logo to resell?",
+            "answer": "<p>No. We are not offering custom branded gloves for resale at this time. <\/p>"
+          }
         }
       },
       "block_order": [
@@ -98,7 +105,8 @@
         "79b568b2-38d3-4aa7-b0e1-0f83232ce691",
         "1361212a-fc58-4523-be9b-c87532ff4122",
         "2a70678e-9574-4605-bb6f-851436eff6f6",
-        "def036be-b56a-443c-aa39-7321b19b5302"
+        "def036be-b56a-443c-aa39-7321b19b5302",
+        "46705f27-a1c7-41d8-837b-614ff48d7cbf"
       ],
       "settings": {
         "title": "ORDERING INFO & FAQ",
@@ -107,26 +115,14 @@
     },
     "99000442-18ba-4d37-84f3-26436a38fb4e": {
       "type": "call-to-action",
-      "blocks": {
-        "fe819005-005b-4863-a8e5-6363fcfac056": {
-          "type": "button",
-          "settings": {
-            "button_text": "INITIATE A CUSTOM ORDER",
-            "button_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "fe819005-005b-4863-a8e5-6363fcfac056"
-      ],
       "settings": {
         "title": "",
         "primary_color": "#452c80",
         "secondary_color": "#ffffff",
-        "image": "shopify:\/\/shop_images\/VTG_September_2019_Selects_122_of_126_copy.jpg",
+        "image": "shopify:\/\/shop_images\/VTG-USFS.jpg",
         "video_url": "",
         "full": true,
-        "ratio": 400
+        "ratio": 150
       }
     }
   },

@@ -8,7 +8,7 @@
     "16602455754e7b2437": {
       "type": "text",
       "settings": {
-        "headline": "If you have hands, we make gloves that will fit them.",
+        "headline": "If you are a human with hands, we make gloves that will fit them.",
         "subhead": "We don't gender our gloves because, frankly, it's stupid.",
         "text": "",
         "link_text": "Read More",
@@ -24,12 +24,12 @@
         "subhead": "",
         "text": "<p>Make sure to print at '100% Scale' or 'Do Not Resize' <\/p>",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/VTG-SizingChart-Hero-45_b44ad528-f0ea-4bb1-a60b-d59bbf34a6ce.jpg",
+        "image": "shopify:\/\/shop_images\/VTG-Sizing-2024-2.jpg",
         "upload_video_url": "",
         "youtube_video_url": "",
         "button_link": "button",
         "button_text": "DOWNLOAD & PRINT HERE",
-        "button_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG-SizeChart-2023.pdf?v=1677110639",
+        "button_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG-SizeChart-2024.pdf?v=1708707021",
         "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
@@ -67,6 +67,23 @@
         "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "flip": false
+      }
+    },
+    "19c3190f-0528-40e7-a00b-5722fec88184": {
+      "type": "history",
+      "settings": {
+        "title": "Don't have a printer?",
+        "subhead": "",
+        "text": "<p>We've got you covered. While this method is less accurate than the printed chart, it will get you there.<\/p><p>1. Making a loose fist, measure around your knuckles.<\/p><p>2. The number of inches is your glove size.<\/p><p>3. See FAQs below if you have further questions.<\/p>",
+        "media_type": "youtube_video",
+        "upload_video_url": "",
+        "youtube_video_url": "https:\/\/youtu.be\/R8GrSLeA6gQ",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452c80",
+        "secondary_color": "#ffffff",
+        "flip": true
       }
     },
     "166204788625e96eda": {
@@ -143,6 +160,7 @@
     "16637542065f865c6f",
     "a1b2c7aa-3c81-4761-90b3-d2e9057f0854",
     "4e70edec-386f-41b7-a9ca-d0d45c1f6864",
+    "19c3190f-0528-40e7-a00b-5722fec88184",
     "166204788625e96eda"
   ]
 }

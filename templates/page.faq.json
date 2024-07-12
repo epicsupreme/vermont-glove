@@ -135,6 +135,27 @@
             "question": "How do I get in touch about a wholesale inquiry?",
             "answer": "<p>hello@vermontglove.com<\/p>"
           }
+        },
+        "09e510b1-851b-43e3-ace3-d7f4412f0710": {
+          "type": "faq",
+          "settings": {
+            "question": "I bought gloves and then you ran a promotion. Can I have that?",
+            "answer": "<p>We feel your pain. Unfortunately, special offers are only redeemable during the promotion dates and can't be applied to past or future purchases outside of the promotion dates. Multiple special offers cannot be combined. <\/p>"
+          }
+        },
+        "faq_bdaqNW": {
+          "type": "faq",
+          "settings": {
+            "question": "What's your warmest glove?",
+            "answer": "<p>It depends on the dew point and your propensity to blood circulation.  Generally speaking, the <a href=\"\/products\/the-jefflo-mitt\" title=\"The Jefflo Mitt\">Jefflo Mitt<\/a> is our warmest option. If you run cold, you can size up in a mitten, which creates a larger cavity to trap the heat coming off of your hand. If you run really cold, you can wear a <a href=\"\/products\/wool-glove-liner-w11\" title=\"Wool Glove Liner\">glove liner<\/a> inside the mitten. Our warmest glove will be the <a href=\"\/products\/tuttle\" title=\"Tuttle\">Tuttle<\/a>.<\/p>"
+          }
+        },
+        "faq_hDVJkx": {
+          "type": "faq",
+          "settings": {
+            "question": "What is the temperature rating of your gloves?",
+            "answer": "<p>Sorry to be the bearer of the bummer, but temp ratings don't mean anything unless it's suggesting the temp at which the material will freeze solid, or burn your hand through the material. As with most things, the temp at which your hand will be comfortable in a certain glove depends on your hands, your body, the ambient temp, air mosture content, wind factor and approximately millions of other factors. In conclusion, our gloves work really well in a wide range of temperatures. We wouldn't wear them on an arctic expedition though, to be perfectly honest.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -155,7 +176,10 @@
         "0a493ae7-0763-49b4-b400-50cca8a5e40e",
         "e2393ea8-e31a-4941-a563-20c638ea40be",
         "eba8efb2-8bfe-48be-aba8-8b8e2f66176e",
-        "9e374345-8490-4346-8e17-ebea27215505"
+        "9e374345-8490-4346-8e17-ebea27215505",
+        "09e510b1-851b-43e3-ace3-d7f4412f0710",
+        "faq_bdaqNW",
+        "faq_hDVJkx"
       ],
       "settings": {
         "title": "Formidably Answered Questions",

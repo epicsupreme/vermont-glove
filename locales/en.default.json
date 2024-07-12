@@ -40,5 +40,12 @@
       "copy_code_success": "Code copied successfully",
       "print_gift_card": "Print"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "contact": {
+        "address1_label": "Address (No PO Boxes)"
+      }
+    }
   }
 }

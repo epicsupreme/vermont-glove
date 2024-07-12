@@ -1,0 +1,127 @@
+<div
+  class="lg:flex lg:px-8 container relative gap-4 mx-auto"
+>
+  <div
+    class="lg:w-8/12 block"
+  >
+    <div
+      class="product-images"
+    >
+      <div
+        class="max-h-[calc(100vh-var(--header-height))] aspect-square flex justify-center w-full"
+      >
+        {{
+          metaobject.image_test.value
+          | image_url: width: 2000
+          | image_tag: width: null, class: 'w-full  object-contain h-full'
+        }}
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="lg:w-4/12 "
+  >
+    <div
+      class="md:px-0 flex flex-col gap-3 px-4 pb-10"
+    >
+      <div class="bg-tertiary text-brand px-4 py-2 font-headline [&_a]:underline">
+        {{ section.settings.retail_message }}
+      </div>
+      <div class=" flex flex-col">
+        <h1
+          class="font-headline text-4xl"
+        >
+          {{ metaobject.title }}
+        </h1>
+        <div
+          class=" text-xl"
+        >
+          {{ metaobject.tagline }}
+        </div>
+      </div>
+      <div class=" flex flex-col">
+        <details name="dropdowns">
+          <summary
+            class="font-headline text-lg cursor-pointer"
+          >
+            &gt; Product Description
+          </summary>
+          <div>
+            {{ metaobject.product_description | metafield_tag }}
+          </div>
+        </details>
+        <details name="dropdowns">
+          <summary
+            class="font-headline text-lg cursor-pointer"
+          >
+            &gt; Tech Specs
+          </summary>
+          <div>
+            {{ metaobject.tech_specs | metafield_tag }}
+          </div>
+        </details>
+      </div>
+      <form class="flex flex-col gap-3">
+        {%- for attribute in metaobject.attributes.value -%}
+          <div class="flex flex-col gap-1">
+            <h2>
+              {{ attribute.title }}
+            </h2>
+            <div class="flex flex-wrap w-full gap-2">
+              {%- for option in attribute.options.value -%}
+                <label
+                  class=" relative"
+                  for="option_{{  attribute.title | handleize }}_{{ option | handleize }}"
+                >
+                  <input
+                    type="radio"
+                    id="option_{{  attribute.title | handleize }}_{{ option | handleize }}"
+                    name="options[{{ attribute.title  | escape }}]"
+                    value="{{ option | escape }}"
+                    {% if forloop.first %}
+                      checked
+                    {% endif %}
+                    class="peer hidden"
+                  >
+                  <span class="border-brand peer-checked:text-white text-brand hover:text-white peer-checked:bg-brand hover:bg-brand font-headline min-w-12 flex items-center justify-center h-12 px-2 border-2 cursor-pointer">
+                    {{ option }}
+                  </span>
+                </label>
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- endfor -%}
+        <button
+          class="bg-brand hover:bg-white hover:text-brand border-brand font-headline w-full py-3 mb-2 text-lg text-white uppercase border-2"
+          type="submit"
+        >
+          INQUIRE TO PLACE AN ORDER
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Wholesale Product",
+  "tag": "section",
+
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "retail_message",
+      "label": "Retail Message"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Wholesale Product"
+    }
+  ],
+  "enabled_on": {
+    "templates": ["*"]
+  }
+}
+{% endschema %}

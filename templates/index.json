@@ -3,171 +3,134 @@
     "main": {
       "type": "hero",
       "blocks": {
-        "d9884f87-48da-4ebf-a6d5-5f6f8e10b4b4": {
+        "hero_slide_czq8kr": {
           "type": "hero_slide",
+          "disabled": true,
           "settings": {
-            "title": "GOAT LEATHER\nWORK GLOVES",
-            "mobile_title": "GOAT LEATHER WORK GLOVES",
-            "button_text": "SHOP NOW",
+            "title": "TAKE 10% OFF\nORDERS OF\n$110 OR MORE\nFOR MOTHERS DAY",
+            "mobile_title": "TAKE 10% OFF ORDERS OF $110 OR MORE FOR MOTHERS DAY",
+            "button_text": "SHOP MOM GLOVES",
             "button_url": "shopify:\/\/collections\/gloves-mittens",
             "location": "justify-start",
             "primary_color": "#ffffff",
             "secondary_color": "#452c80",
-            "image": "shopify:\/\/shop_images\/VTG-Pickhardt-Fence1-1_ac86339d-712b-4a06-99e6-3548e4a711f0.jpg",
+            "image": "shopify:\/\/shop_images\/VTG-MothersDay24-12.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/VTG-MothersDay24-14.jpg",
             "video_url": "",
             "mobile_video_url": "",
             "mobile_position": "lg:object-center"
           }
         },
-        "fc50a050-b4e8-438b-9e9f-a00e0230a3fe": {
+        "hero_slide_DiVd8Y": {
           "type": "hero_slide",
           "settings": {
-            "title": "DURABLE &\nDEXTEROUS",
-            "mobile_title": "DURABLE AND DEXTEROUS",
+            "title": "TOUGH AS NAILS",
+            "mobile_title": "TOUGH AS NAILS",
             "button_text": "SHOP WORK GLOVES",
+            "button_url": "shopify:\/\/collections\/gloves-mittens",
+            "location": "justify-start",
+            "primary_color": "#ffffff",
+            "secondary_color": "#452c80",
+            "image": "shopify:\/\/shop_images\/VTG-SDF_Aug21-43_421ff25c-1f21-41bd-a972-325288387cfb.jpg",
+            "video_url": "",
+            "mobile_video_url": "",
+            "mobile_position": "lg:object-center"
+          }
+        },
+        "hero_slide_qEQTDr": {
+          "type": "hero_slide",
+          "settings": {
+            "title": "HERE COMES\nTHE GARDEN",
+            "mobile_title": "HERE COMES\nTHE GARDEN",
+            "button_text": "SHOP GARDENING GLOVES",
             "button_url": "shopify:\/\/collections\/gloves-mittens",
             "location": "justify-start",
             "primary_color": "#452c80",
             "secondary_color": "#ffffff",
-            "image": "shopify:\/\/shop_images\/VTG_Sept2020_16_of_24_8e4832a3-0853-40e8-bddd-09aed91a76ff.jpg",
+            "image": "shopify:\/\/shop_images\/VTG-SDF-SpringGreenhouse-6_c9305bef-686c-423c-b14b-f564b9725d42.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/VTG-SDF-SpringGreenhouse-6_c9305bef-686c-423c-b14b-f564b9725d42.jpg",
             "video_url": "",
             "mobile_video_url": "",
             "mobile_position": "lg:object-center"
           }
         },
-        "951a4c40-54e7-4c8c-a50f-2e7a887c4b16": {
-          "type": "hero_slide",
-          "settings": {
-            "title": "INTRODUCING:\nGLOVE REPAIRS",
-            "mobile_title": "INTRODUCING: GLOVE REPAIRS",
-            "button_text": "EXPLORE REPAIRS",
-            "button_url": "shopify:\/\/pages\/repairs",
-            "location": "justify-start",
-            "primary_color": "#ffffff",
-            "secondary_color": "#452c80",
-            "image": "shopify:\/\/shop_images\/VTG-WebHero-Repairs_Desktop.png",
-            "mobile_image": "shopify:\/\/shop_images\/VTG-WebHero-Repairs_Mobile_copy_2x_28919c58-b9d3-473f-b4ff-f9ae4bb327f3.png",
-            "video_url": "",
-            "mobile_video_url": "",
-            "mobile_position": "lg:object-center"
-          }
-        },
-        "e3d6458f-07b9-4293-a88d-e36afd3be1bd": {
+        "hero_slide_gzNBPH": {
           "type": "hero_slide",
           "disabled": true,
           "settings": {
-            "title": "WE ARE DONATING \n50% OF PROCEEDS \nFROM THIS \n'VERMONT STRONG'\nGLOVE TO FLOOD RELIEF\nACROSS VERMONT",
-            "mobile_title": "WE ARE DONATING 50% OF PROCEEDS FROM THIS 'VERMONT STRONG' GLOVE TO VT FLOOD RELIEF",
-            "button_text": "SUPPORT VERMONTERS IN NEED",
-            "button_url": "shopify:\/\/products\/vermont-strong",
+            "title": "YOUR WINTER\nWORKHORSE",
+            "mobile_title": "YOUR WINTER\nWORKHORSE",
+            "button_text": "SHOP WORK GLOVES",
+            "button_url": "shopify:\/\/collections\/gloves-mittens",
             "location": "justify-start",
             "primary_color": "#ffffff",
             "secondary_color": "#452c80",
-            "image": "shopify:\/\/shop_images\/VTG-Email-Repairs-1_copy.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/VTG-Email-Repairs-1_copy_4.jpg",
+            "image": "shopify:\/\/shop_images\/VTG-Web-Portraits-45-Vermonter-KeithSprague.jpg",
             "video_url": "",
             "mobile_video_url": "",
             "mobile_position": "lg:object-center"
           }
         },
-        "329e0583-1ea1-4f01-9a5c-d548b1adeef6": {
+        "hero_slide_x8RURY": {
           "type": "hero_slide",
           "settings": {
-            "title": "DESIGNED FOR THE PROS,\nMADE FOR YOU",
+            "title": "FROM WORK\nTO PLAY,\nEVERY DAY",
+            "mobile_title": "FROM WORK\nTO PLAY,\nEVERY DAY",
+            "button_text": "SHOP WINTER GLOVES",
+            "button_url": "shopify:\/\/collections\/gloves-mittens",
+            "location": "justify-start",
+            "primary_color": "#452c80",
+            "secondary_color": "#ffffff",
+            "image": "shopify:\/\/shop_images\/Arisman-1041-SM_b42862af-1c6a-4227-8d26-475fc6ae2dd7.jpg",
+            "video_url": "",
+            "mobile_video_url": "",
+            "mobile_position": "lg:object-center"
+          }
+        },
+        "530c653a-e052-411a-98e8-4cbe714c251a": {
+          "type": "hero_slide",
+          "settings": {
+            "title": "DESIGNED FOR\nTHE PROS,\nMADE FOR YOU",
             "mobile_title": "DESIGNED FOR THE PROS, MADE FOR YOU",
             "button_text": "SHOP NOW",
             "button_url": "shopify:\/\/collections\/gloves-mittens",
             "location": "justify-start",
             "primary_color": "#ffffff",
             "secondary_color": "#452c80",
-            "image": "shopify:\/\/shop_images\/VTG_September_2019_Selects_5_of_126.jpg",
+            "image": "shopify:\/\/shop_images\/ConvertOut-Resized-HWF-31.jpg",
             "video_url": "",
             "mobile_video_url": "",
             "mobile_position": "lg:object-center"
           }
         },
-        "239fdffb-b148-4983-81d7-9d6272dded10": {
+        "69fccba7-be7f-4940-81e0-152b95c6c8cb": {
           "type": "hero_slide",
-          "disabled": true,
           "settings": {
-            "title": "FATHERS DAY\nIS COMING",
-            "mobile_title": "FATHERS DAY\nIS COMING",
-            "button_text": "SHOP DAD GLOVES",
-            "button_url": "shopify:\/\/collections\/gloves-mittens",
+            "title": "WORK GLOVES,\nMADE TO LAST",
+            "mobile_title": "WORK GLOVES, MADE TO LAST",
+            "button_text": "SHOP THE VERMONTER",
+            "button_url": "shopify:\/\/products\/the-vermonter",
             "location": "justify-start",
             "primary_color": "#ffffff",
             "secondary_color": "#452c80",
-            "image": "shopify:\/\/shop_images\/VTG-Ploughgate_GCGCo-Fathers23-11.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/VTG-Ploughgate_GCGCo-Fathers23-11.jpg",
+            "image": "shopify:\/\/shop_images\/VTG-BenFalk-23_09-87.jpg",
             "video_url": "",
             "mobile_video_url": "",
             "mobile_position": "lg:object-center"
           }
         },
-        "41b773c1-d13b-4956-a285-cb1ff7067cdb": {
-          "type": "hero_slide",
-          "disabled": true,
-          "settings": {
-            "title": "Take 10% OFF with 'THANKSMOM' through Tuesday 5\/2",
-            "mobile_title": "Take 10% OFF with 'THANKSMOM' through Sunday 4\/30",
-            "button_text": "SHOP FOR MOM",
-            "button_url": "shopify:\/\/collections\/gloves-mittens",
-            "location": "justify-start",
-            "primary_color": "#ffffff",
-            "secondary_color": "#452c80",
-            "image": "shopify:\/\/shop_images\/VTG_September_2019_Selects_122_of_126_copy.jpg",
-            "video_url": "",
-            "mobile_video_url": "",
-            "mobile_position": "lg:object-center"
-          }
-        },
-        "028c6196-bac2-40c2-b105-6dc21ff9f429": {
+        "bc795b32-665c-484c-aa8e-5dc6ce886444": {
           "type": "hero_slide",
           "settings": {
-            "title": "IT'S GARDEN TIME",
-            "mobile_title": "IT'S GARDEN TIME",
-            "button_text": "SHOP GARDENING GLOVES",
-            "button_url": "shopify:\/\/collections\/gloves-mittens",
-            "location": "justify-start",
-            "primary_color": "#452c80",
-            "secondary_color": "#ffffff",
-            "image": "shopify:\/\/shop_images\/VTG-SDF-SpringGreenhouse-6.jpg",
-            "video_url": "",
-            "mobile_video_url": "",
-            "mobile_position": "lg:object-center"
-          }
-        },
-        "891a9ff2-dbc4-46b2-8b07-f3ecab06512a": {
-          "type": "hero_slide",
-          "disabled": true,
-          "settings": {
-            "title": "WORK OR PLAY,\nGO ALL DAY",
-            "mobile_title": "WORK OR PLAY, GO ALL DAY",
+            "title": "SUPERCHARGE\nYOUR GLOVE LIFE\nWITH OUR NEW\nGLOVE CARE\nBUNDLE",
+            "mobile_title": "SUPERCHARGE YOUR GLOVE LIFE WITH OUR NEW GLOVE CARE BUNDLE",
             "button_text": "SHOP NOW",
-            "button_url": "",
+            "button_url": "shopify:\/\/products\/glove-care-bundle",
             "location": "justify-start",
-            "primary_color": "#452c80",
-            "secondary_color": "#ffffff",
-            "image": "shopify:\/\/shop_images\/12_19_22_VermontGlove_StoneHut-07.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/12_19_22_VermontGlove_StoneHut-07.jpg",
-            "video_url": "",
-            "mobile_video_url": "",
-            "mobile_position": "lg:object-center"
-          }
-        },
-        "1145a362-1309-456d-bd7e-6fbe52394c99": {
-          "type": "hero_slide",
-          "disabled": true,
-          "settings": {
-            "title": "HAPPY HOLIDAYS, NOW\nHIT THE SLOPES",
-            "mobile_title": "HAPPY HOLIDAYS, NOW HIT THE SLOPES",
-            "button_text": "OR BUY SOME MORE GLOVES",
-            "button_url": "shopify:\/\/collections\/gloves-mittens",
-            "location": "justify-end",
             "primary_color": "#ffffff",
             "secondary_color": "#452c80",
-            "image": "shopify:\/\/shop_images\/CEK_4307.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/CEK_4480.jpg",
+            "image": "shopify:\/\/shop_images\/VTG-GloveCareBundle-Hero_a09cf297-7452-44af-820c-3a4c0f3ae04c.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/VTG-GloveCareBundle-Hero-Mobile4.jpg",
             "video_url": "",
             "mobile_video_url": "",
             "mobile_position": "lg:object-center"
@@ -175,10 +138,9 @@
         },
         "92acab0f-b661-40d1-b509-7e2c6ae063c0": {
           "type": "hero_slide",
-          "disabled": true,
           "settings": {
-            "title": "GLOVES THAT\nWEAR IN, NOT OUT",
-            "mobile_title": "GLOVES THAT WEAR IN, NOT OUT",
+            "title": "DURABLE HAND\nFORTRESSES?\nWE'VE GOT PLENTY",
+            "mobile_title": "DURABLE HAND FORTRESSES? WE'VE GOT PLENTY",
             "button_text": "SHOP NOW",
             "button_url": "shopify:\/\/collections\/gloves-mittens",
             "location": "justify-start",
@@ -190,185 +152,18 @@
             "mobile_video_url": "",
             "mobile_position": "lg:object-center"
           }
-        },
-        "cab8a4be-4648-4e7f-92fe-25ff65448681": {
-          "type": "hero_slide",
-          "settings": {
-            "title": "DESIGNED FOR THE PROS,\nMADE FOR YOU",
-            "mobile_title": "DESIGNED FOR THE PROS, MADE FOR YOU",
-            "button_text": "Shop Now",
-            "button_url": "shopify:\/\/collections\/all",
-            "location": "justify-start",
-            "primary_color": "#ffffff",
-            "secondary_color": "#452c80",
-            "image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Desktop-Vermonter1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/VTG-Image-Web-Hero-Mobile-Vermonter4.jpg",
-            "video_url": "",
-            "mobile_video_url": "",
-            "mobile_position": "object-right"
-          }
-        },
-        "df8bee13-d9dc-4efb-b8a4-84ed56d2348b": {
-          "type": "hero_slide",
-          "disabled": true,
-          "settings": {
-            "title": "LAST DAY FOR \nNATIONWIDE OVERNIGHT\nSHIPPING (12\/20)",
-            "mobile_title": "LAST DAY FOR \nNATIONWIDE OVERNIGHT\nSHIPPING (12\/20)",
-            "button_text": "ORDER NOW FOR CHRISTMAS",
-            "button_url": "shopify:\/\/collections\/gloves-mittens",
-            "location": "justify-start",
-            "primary_color": "#ffffff",
-            "secondary_color": "#452c80",
-            "image": "shopify:\/\/shop_images\/VTG-Images-Web54-Jefflo-NelsonBrown.jpg",
-            "video_url": "",
-            "mobile_video_url": "",
-            "mobile_position": "lg:object-center"
-          }
-        },
-        "baf79a89-a2b1-4a6e-bcff-00bca2a21415": {
-          "type": "hero_slide",
-          "disabled": true,
-          "settings": {
-            "title": "SHOP SMALL TO\nMAKE A BIG\nIMPACT",
-            "mobile_title": "SHOP SMALL TO MAKE A BIG IMPACT",
-            "button_text": "SHOP CYBER DEALS NOW",
-            "button_url": "shopify:\/\/collections\/gloves-mittens",
-            "location": "justify-start",
-            "primary_color": "#ffffff",
-            "secondary_color": "#452c80",
-            "image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Desktop-Cyberweek22.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/VTG-Image-Web-Hero-Mobile-Cyberweek22.jpg",
-            "video_url": "",
-            "mobile_video_url": "",
-            "mobile_position": "lg:object-center"
-          }
-        },
-        "5293c167-f103-4298-b293-9106967bb6de": {
-          "type": "hero_slide",
-          "disabled": true,
-          "settings": {
-            "title": "HEAD FOR\nTHE HILLS",
-            "mobile_title": "HEAD FOR THE HILLS",
-            "button_text": "SHOP WINTER GLOVES",
-            "button_url": "shopify:\/\/collections\/gloves-mittens",
-            "location": "justify-start",
-            "primary_color": "#452c80",
-            "secondary_color": "#ffffff",
-            "image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Desktop-EarlyGoat.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Desktop-EarlyGoat_58832d59-1801-40ab-a43e-7bc87a80410e.jpg",
-            "video_url": "",
-            "mobile_video_url": "",
-            "mobile_position": "lg:object-center"
-          }
-        },
-        "aedc400d-2c69-482f-b2d6-08ab95e301d3": {
-          "type": "hero_slide",
-          "disabled": true,
-          "settings": {
-            "title": "INTRODUCING:\nKNIT WRISTS",
-            "mobile_title": "INTRODUCING: KNIT WRISTS",
-            "button_text": "SHOP NEW GLOVES",
-            "button_url": "shopify:\/\/products\/tuttle",
-            "location": "justify-start",
-            "primary_color": "#ffffff",
-            "secondary_color": "#452c80",
-            "image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Desktop-KnitWrist-2.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/VTG-Image-Web-Hero-Mobile-KnitWrist-1.jpg",
-            "video_url": "",
-            "mobile_video_url": "",
-            "mobile_position": "lg:object-center"
-          }
-        },
-        "ff79b500-1f73-4488-ac70-e179576182a1": {
-          "type": "hero_slide",
-          "disabled": true,
-          "settings": {
-            "title": "BESPOKE, \nMONOGRAMMED\nGLOVES ARE HERE",
-            "mobile_title": "BESPOKE, \nMONOGRAMMED\nGLOVES ARE HERE",
-            "button_text": "SHOP BESPOKE GLOVES NOW",
-            "button_url": "shopify:\/\/products\/bespoke-glove-gift-pack-2022",
-            "location": "justify-start",
-            "primary_color": "#ffffff",
-            "secondary_color": "#452c80",
-            "image": "shopify:\/\/shop_images\/VTG-Bespoke-Glove-Worn54.jpg",
-            "video_url": "",
-            "mobile_video_url": "",
-            "mobile_position": "lg:object-center"
-          }
-        },
-        "cdadeadf-a2cd-42fb-a8c9-18ac22a254b5": {
-          "type": "hero_slide",
-          "settings": {
-            "title": "HAND SEWN \nIN VERMONT",
-            "mobile_title": "HAND SEWN  IN VERMONT",
-            "button_text": "LEARN HOW OUR GLOVES ARE MADE",
-            "button_url": "shopify:\/\/pages\/how-our-gloves-are-made",
-            "location": "justify-start",
-            "primary_color": "#ffffff",
-            "secondary_color": "#452c80",
-            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e80c9f7aa42a4dfe8b23886ca2fead59.mp4",
-            "mobile_video_url": "",
-            "mobile_position": "lg:object-center"
-          }
-        },
-        "68322697-4563-48c3-ab89-66e4f3ec7ce4": {
-          "type": "hero_slide",
-          "disabled": true,
-          "settings": {
-            "title": "THAT WAS FUN.\nTIME TO CLEAN UP.",
-            "mobile_title": "THAT WAS FUN.\nTIME TO CLEAN UP.",
-            "button_text": "SHOP FALL GLOVES",
-            "button_url": "shopify:\/\/collections\/all-products",
-            "location": "justify-start",
-            "primary_color": "#ffffff",
-            "secondary_color": "#452c80",
-            "image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Desktop-FallGiveaway22_09-2.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/VTG-Images-Hero_Home-Mobile-FallGiveaway22_09-2.jpg",
-            "video_url": "",
-            "mobile_video_url": "",
-            "mobile_position": "lg:object-center"
-          }
-        },
-        "d92e3b7d-5422-4fdb-9191-c163a0802752": {
-          "type": "hero_slide",
-          "disabled": true,
-          "settings": {
-            "title": "IMPENETRABLE\nHAND FORTRESS",
-            "mobile_title": "IMPENETRABLE HAND FORTRESS",
-            "button_text": "Shop Now",
-            "button_url": "shopify:\/\/collections\/all",
-            "location": "justify-start",
-            "primary_color": "#ffffff",
-            "secondary_color": "#452c80",
-            "image": "shopify:\/\/shop_images\/VTG-SDF_Aug21-43.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/VTG-Image-Web-Hero-Mobile-Vermonter3.jpg",
-            "video_url": "",
-            "mobile_video_url": "",
-            "mobile_position": "object-center"
-          }
         }
       },
       "block_order": [
-        "d9884f87-48da-4ebf-a6d5-5f6f8e10b4b4",
-        "fc50a050-b4e8-438b-9e9f-a00e0230a3fe",
-        "951a4c40-54e7-4c8c-a50f-2e7a887c4b16",
-        "e3d6458f-07b9-4293-a88d-e36afd3be1bd",
-        "329e0583-1ea1-4f01-9a5c-d548b1adeef6",
-        "239fdffb-b148-4983-81d7-9d6272dded10",
-        "41b773c1-d13b-4956-a285-cb1ff7067cdb",
-        "028c6196-bac2-40c2-b105-6dc21ff9f429",
-        "891a9ff2-dbc4-46b2-8b07-f3ecab06512a",
-        "1145a362-1309-456d-bd7e-6fbe52394c99",
-        "92acab0f-b661-40d1-b509-7e2c6ae063c0",
-        "cab8a4be-4648-4e7f-92fe-25ff65448681",
-        "df8bee13-d9dc-4efb-b8a4-84ed56d2348b",
-        "baf79a89-a2b1-4a6e-bcff-00bca2a21415",
-        "5293c167-f103-4298-b293-9106967bb6de",
-        "aedc400d-2c69-482f-b2d6-08ab95e301d3",
-        "ff79b500-1f73-4488-ac70-e179576182a1",
-        "cdadeadf-a2cd-42fb-a8c9-18ac22a254b5",
-        "68322697-4563-48c3-ab89-66e4f3ec7ce4",
-        "d92e3b7d-5422-4fdb-9191-c163a0802752"
+        "hero_slide_czq8kr",
+        "hero_slide_DiVd8Y",
+        "hero_slide_qEQTDr",
+        "hero_slide_gzNBPH",
+        "hero_slide_x8RURY",
+        "530c653a-e052-411a-98e8-4cbe714c251a",
+        "69fccba7-be7f-4940-81e0-152b95c6c8cb",
+        "bc795b32-665c-484c-aa8e-5dc6ce886444",
+        "92acab0f-b661-40d1-b509-7e2c6ae063c0"
       ],
       "settings": {
       }

@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "wholesale_product_8mNxWX": {
+      "type": "wholesale-product",
+      "settings": {
+        "retail_message": ""
+      }
+    }
+  },
+  "order": [
+    "wholesale_product_8mNxWX"
+  ]
+}

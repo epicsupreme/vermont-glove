@@ -1,0 +1,53 @@
+{%- liquid
+  capture categories
+    for item in shop.metaobjects.wholesale_products.values
+      echo item.category_2
+      unless forloop.last
+        echo ','
+      endunless
+    endfor
+  endcapture
+  assign categories = categories | split: ',' | uniq
+-%}
+<div class="bg-gray-300">
+  <div class="prose-p:mt-0 prose-headings:mb-0 prose-headings:font-headline prose-h2:text-4xl container py-20 mx-auto text-xl prose text-black">
+    {{ page.content }}
+  </div>
+</div>
+<div class="container grid grid-cols-12 gap-10 py-20 mx-auto align-baseline">
+  <div class="relative col-span-2">
+    <div class="top-40 sticky flex flex-col gap-2">
+      <h3 class="font-headline pb-1 mt-2 text-xl border-b border-black">Categories</h3>
+      <div class="flex flex-col gap-1">
+        {%- for category in categories -%}
+          <a href="#{{ category | handleize }}">{{ category }}</a>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col col-span-10 gap-10">
+    {%- for category in categories -%}
+      <div class="flex flex-col gap-4">
+        <h2 id="{{ category | handleize }}" class="font-headline text-4xl">
+          {{ category }}
+        </h2>
+        <div class="grid grid-cols-3 gap-8">
+          {%- for item in shop.metaobjects.wholesale_products.values -%}
+            {%- if item.category_2 == category -%}
+              <div class="flex flex-col gap-2 text-center">
+                <a href="{{ item.system.url }}">
+                  {{
+                    item.image_test.value
+                    | image_url: width: 2000
+                    | image_tag: width: null, class: 'w-full  object-contain h-full'
+                  }}
+                </a>
+                <a href="{{ item.system.url }}" class="font-headline text-xl">{{ item.title }}</a>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>

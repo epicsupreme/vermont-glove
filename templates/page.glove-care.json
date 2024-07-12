@@ -102,6 +102,73 @@
         "secondary_color": "#ffffff",
         "flip": false
       }
+    },
+    "faq_bapDGP": {
+      "type": "faq",
+      "blocks": {
+        "faq_TiEcwL": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I take care of my gloves?",
+            "answer": "<p>Seriously bud? Scroll up.<\/p>"
+          }
+        },
+        "faq_T3Latd": {
+          "type": "faq",
+          "settings": {
+            "question": "How long will my gloves last?",
+            "answer": "<p>Hard sayin' not knowin'. We don’t know how hard you work or what kind of dumb stuff you'll be doing in them. What we do know is that our gloves outlast hardware store gloves about 5 pairs to 1.<\/p>"
+          }
+        },
+        "faq_yHnBgU": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you have a guarantee?",
+            "answer": "<p>We can’t offer a guarantee because our gloves are a handmade wearable product. Eventually, by wear and tear or pterodactyl, they'll wear out. We take a lot of pride in what we do and we do it really well, so we want you to be satisfied. If you think you did not receive a good value from your gloves get in touch and we'll do what we can to make the situation right.<\/p>"
+          }
+        },
+        "faq_LaUFWw": {
+          "type": "faq",
+          "settings": {
+            "question": "Should I apply conditioner before wearing?",
+            "answer": "<p>Nope! Not required. Some people like to use it at first. Some people don't.<\/p>"
+          }
+        },
+        "faq_eQMx8F": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I use both conditioner and beeswax?",
+            "answer": "<p>You bet. In fact your gloves prefer it. Just make sure to use the conditioner first, as the beeswax makes an impenetrable shield around the glove, and we want that conditioner to soak deep.<\/p>"
+          }
+        },
+        "faq_jUfdMD": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I clean my gloves?",
+            "answer": "<p>Honestly, we never do. The grit, gouges & patina are part of your story and will make you look really cool on the internet. If you are going to the opera and absolutely must clean them, use saddle soap. If you've just cleaned your saddle and are fresh out, you can use a bit of dish soap and water as a backup. Use an old (or your enemy's) toothbrush to clean seams and hard to reach spots.<\/p>"
+          }
+        },
+        "faq_Um4zYm": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you offer repairs?",
+            "answer": "<p>Sure do. <a href=\"https:\/\/vermontglove.com\/pages\/repairs\" title=\"Repairs\">Head on over here<\/a>to learn how to initiate a repair.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_TiEcwL",
+        "faq_T3Latd",
+        "faq_yHnBgU",
+        "faq_LaUFWw",
+        "faq_eQMx8F",
+        "faq_jUfdMD",
+        "faq_Um4zYm"
+      ],
+      "settings": {
+        "title": "GLOVE CARE FAQs",
+        "text": ""
+      }
     }
   },
   "order": [
@@ -111,6 +178,7 @@
     "16620527290bee7a53",
     "c2b1c5ee-05ae-4c21-99f8-db2383be9910",
     "f95162da-5d33-40ea-abcf-7753421f0ade",
-    "1662052998a5416410"
+    "1662052998a5416410",
+    "faq_bapDGP"
   ]
 }

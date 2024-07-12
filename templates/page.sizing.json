@@ -86,6 +86,23 @@
         "flip": true
       }
     },
+    "history_qjyxyE": {
+      "type": "history",
+      "settings": {
+        "title": "Measured your hands the ol fashinned way?",
+        "subhead": "",
+        "text": "",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/VTG-Sizing-Meaurements-24_07.png",
+        "upload_video_url": "",
+        "button_link": "link",
+        "button_text": "",
+        "button_url": "",
+        "primary_color": "#452C80",
+        "secondary_color": "#ffffff",
+        "flip": false
+      }
+    },
     "166204788625e96eda": {
       "type": "faq",
       "blocks": {
@@ -161,6 +178,7 @@
     "a1b2c7aa-3c81-4761-90b3-d2e9057f0854",
     "4e70edec-386f-41b7-a9ca-d0d45c1f6864",
     "19c3190f-0528-40e7-a00b-5722fec88184",
+    "history_qjyxyE",
     "166204788625e96eda"
   ]
 }

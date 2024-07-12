@@ -12,7 +12,7 @@
           "type": "button",
           "settings": {
             "button_text": "DOWNLOAD OUR WHOLESALE BROCHURE",
-            "button_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG_Catalogue_Industry_August_2019.pdf?v=1617382306"
+            "button_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0553\/9967\/8132\/files\/VTG-Catalogue-Wholesale-24_06-sm.pdf?v=1719498638"
           }
         }
       },
@@ -21,7 +21,7 @@
       ],
       "settings": {
         "title": "",
-        "primary_color": "#452C80",
+        "primary_color": "#452c80",
         "secondary_color": "#ffffff",
         "image": "shopify:\/\/shop_images\/VTG-Images-Web54-WholesaleHero_8815a745-1849-4141-9d22-0d1984b51f27.jpg",
         "video_url": "",
@@ -38,7 +38,7 @@
         "link_text": "Read More",
         "link": "",
         "bg_color": "#ffffff",
-        "text_color": "#452C80"
+        "text_color": "#452c80"
       }
     }
   },

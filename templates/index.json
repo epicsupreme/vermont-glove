@@ -3,19 +3,18 @@
     "main": {
       "type": "hero",
       "blocks": {
-        "hero_slide_czq8kr": {
+        "hero_slide_PgXfnC": {
           "type": "hero_slide",
-          "disabled": true,
           "settings": {
-            "title": "TAKE 10% OFF\nORDERS OF\n$110 OR MORE\nFOR MOTHERS DAY",
-            "mobile_title": "TAKE 10% OFF ORDERS OF $110 OR MORE FOR MOTHERS DAY",
-            "button_text": "SHOP MOM GLOVES",
+            "title": "HARDEST WORKING \nGLOVES ON\nPLANET EARTH",
+            "mobile_title": "HARDEST WORKING  GLOVES ON PLANET EARTH",
+            "button_text": "SHOP NOW",
             "button_url": "shopify:\/\/collections\/gloves-mittens",
-            "location": "justify-start",
+            "location": "justify-end",
             "primary_color": "#ffffff",
             "secondary_color": "#452c80",
-            "image": "shopify:\/\/shop_images\/VTG-MothersDay24-12.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/VTG-MothersDay24-14.jpg",
+            "image": "shopify:\/\/shop_images\/VTG-FathersDay24-30.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/VTG-FathersDay24-27.jpg",
             "video_url": "",
             "mobile_video_url": "",
             "mobile_position": "lg:object-center"
@@ -73,6 +72,7 @@
         },
         "hero_slide_x8RURY": {
           "type": "hero_slide",
+          "disabled": true,
           "settings": {
             "title": "FROM WORK\nTO PLAY,\nEVERY DAY",
             "mobile_title": "FROM WORK\nTO PLAY,\nEVERY DAY",
@@ -121,6 +121,7 @@
         },
         "bc795b32-665c-484c-aa8e-5dc6ce886444": {
           "type": "hero_slide",
+          "disabled": true,
           "settings": {
             "title": "SUPERCHARGE\nYOUR GLOVE LIFE\nWITH OUR NEW\nGLOVE CARE\nBUNDLE",
             "mobile_title": "SUPERCHARGE YOUR GLOVE LIFE WITH OUR NEW GLOVE CARE BUNDLE",
@@ -155,7 +156,7 @@
         }
       },
       "block_order": [
-        "hero_slide_czq8kr",
+        "hero_slide_PgXfnC",
         "hero_slide_DiVd8Y",
         "hero_slide_qEQTDr",
         "hero_slide_gzNBPH",

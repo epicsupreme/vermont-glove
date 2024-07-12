@@ -1,8 +1,12 @@
 {
   "sections": {
     "main": {
-      "type": "main-adresses"
+      "type": "main-adresses",
+      "settings": {
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }

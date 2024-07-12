@@ -4,8 +4,8 @@
     "theme_name": "Vermont Glove",
     "theme_version": "1.2",
     "theme_author": "Hair Interactive",
-    "theme_documentation_url": "https://team-hair.com/",
-    "theme_support_url": "https://team-hair"
+    "theme_documentation_url": "https:\/\/team-hair.com\/",
+    "theme_support_url": "https:\/\/team-hair"
   },
   {
     "name": "t:settings_schema.colors.name",

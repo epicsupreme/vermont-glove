@@ -8,9 +8,9 @@
         "type": "header",
         "settings": {
           "top_bar": false,
-          "text": "<p>TAKE 10% OFF ORDERS OF $110 OR MORE FOR MOTHERS DAY<\/p>",
-          "text_color": "#452c80",
-          "bg_color": "#f9f06c"
+          "text": "<p>ENJOY FREE SHIPPING FOR THE 4TH OF JULY <\/p>",
+          "text_color": "#ffffff",
+          "bg_color": "#452c80"
         }
       },
       "footer": {

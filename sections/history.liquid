@@ -1,174 +1,171 @@
 <div
-   class="container px-4 py-10 mx-auto md:py-20 md:px-0"
-   style="--primary:{{ section.settings.primary_color }};--secondary:{{ section.settings.secondary_color }};">
+  class=" md:px-5 container px-4 mx-auto"
+  style="--primary:{{ section.settings.primary_color }};--secondary:{{ section.settings.secondary_color }};"
+>
+  <div
+    class=" md:flex items-center justify-between md:-ml-4  {% if section.settings.flip %}flex-row-reverse{% endif %}"
+  >
+    <div
+      class="md:px-4 md:w-1/2 self-stretch w-full"
+    >
+      {%- render 'media-content' -%}
+    </div>
+    <div
+      class="md:px-4 md:w-1/2 w-full"
+    >
+      {% if section.settings.title %}
+        <div
+          class="text-4xl uppercase font-display text-[color:var(--primary)] mb-1"
+        >
+          {{ section.settings.title | newline_to_br }}
+        </div>
+      {% endif %}
 
-   <div
-      class=" md:flex items-center justify-between md:-ml-4  {% if section.settings.flip %}flex-row-reverse{% endif %}">
-      <div
-         class="self-stretch w-full md:px-4 md:w-1/2">
-         {%- render 'media-content' -%}
-      </div>
-      <div
-         class="w-full md:px-4 md:w-1/2">
+      {% if section.settings.subhead %}
+        <div
+          class="text-3xl uppercase font-headline text-[color:var(--primary)] mb-2 md:mb-3 empty:hidden"
+        >
+          {{ section.settings.subhead | newline_to_br }}
+        </div>
+      {% endif %}
 
-         {% if section.settings.title %}
+      {% if section.settings.text %}
+        <div
+          class="md:text-base max-w-none mb-2 text-sm prose"
+        >
+          {{ section.settings.text }}
+        </div>
+      {% endif %}
 
-            <div
-               class="text-4xl uppercase font-display text-[color:var(--primary)] mb-1">
-               {{ section.settings.title | newline_to_br }}
-            </div>
-
-         {% endif %}
-
-         {% if section.settings.subhead %}
-
-            <div
-               class="text-3xl uppercase font-headline text-[color:var(--primary)] mb-2 md:mb-3 empty:hidden">{{ section.settings.subhead | newline_to_br }}</div>
-
-         {% endif %}
-
-         {% if section.settings.text %}
-
-            <div
-               class="mb-2 text-sm prose md:text-base max-w-none">
-               {{ section.settings.text }}
-            </div>
-         {% endif %}
-
-         {% if section.settings.button_text %}
-
-            {% if section.settings.button_link == "button" %}
-               <div
-                  class="mt-8">
-                  {%- render 'button', url: section.settings.button_url, text: section.settings.button_text, size: "m" -%}
-               </div>
-            {% else %}
-               <a
-                  href="{{ section.settings.button_url }}" title="{{ section.settings.button_text }}" class="underline uppercase font-headline">{{ section.settings.button_text }}</a>
-            {% endif %}
-         {% endif %}
-
-
-      </div>
-
-   </div>
-
+      {% if section.settings.button_text %}
+        {% if section.settings.button_link == 'button' %}
+          <div
+            class="mt-8"
+          >
+            {%- render 'button', url: section.settings.button_url, text: section.settings.button_text, size: 'm' -%}
+          </div>
+        {% else %}
+          <a
+            href="{{ section.settings.button_url }}"
+            title="{{ section.settings.button_text }}"
+            class="font-headline underline uppercase"
+          >
+            {{- section.settings.button_text -}}
+          </a>
+        {% endif %}
+      {% endif %}
+    </div>
+  </div>
 </div>
-
 
 {% schema %}
 {
-   "name": "History",
-   "settings": [
-     {
-       "type": "textarea",
-       "id": "title",
-       "label": "Title",
-       "default": "Title"
-     },
-     {
-       "type": "textarea",
-       "id": "subhead",
-       "label": "Subhead",
-       "default": "Subhead"
-     },
-     {
+  "name": "History",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "subhead",
+      "label": "Subhead",
+      "default": "Subhead"
+    },
+    {
       "type": "richtext",
       "id": "text",
       "label": "Text",
       "default": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
-              },
-              {
-                "type": "radio",
-                "id": "media_type",
-                "label": "Media Type",
-                "default": "image",
-                "options": [
-                  {
-                    "value": "image",
-                    "label": "Image"
-                  },
-                  {
-                    "value": "uploaded_video",
-                    "label": "Uploaded Video"
-                  },
-                  {
-                    "value": "youtube_video",
-                    "label": "Youtube/Vimeo Video"
-                  }
-                ]
-              },
-              {
-               "type": "image_picker",
-               "id": "image",
-               "label": "Image"
-              },
-              {
-                "type": "url",
-                "id": "upload_video_url",
-                "label": "Uploaded Video URL"
-              },
-              {
-                "type": "video_url",
-                "id": "youtube_video_url",
-                "accept": [
-                  "youtube",
-                  "vimeo"
-                ],
-                "label": "Youtube/Vimeo URL"
-              },
-              {
-                "type": "radio",
-                "id": "button_link",
-                "label": "Button or Link",
-                "default": "button",
-                "options": [
-                  {
-                    "value": "button",
-                    "label": "Button"
-                  },
-                  {
-                    "value": "link",
-                    "label": "Link"
-                  }
-                ]
-              },
-              {
-                "type": "text",
-                "id": "button_text",
-                "label": "Button or Link Text"
-              },
-              {
-                "type": "url",
-                "id": "button_url",
-                "label": "Button or LInk URL"
-              },
-              {
-                "type": "color",
-                "id": "primary_color",
-                "label": "Primary Color",
-                "default": "#452C80"
-              },
-              {
-                "type": "color",
-                "id": "secondary_color",
-                "label": "Secondary Color",
-                "default": "#ffffff"
-              },
-              {
-                "type": "checkbox",
-                "id": "flip",
-                "label": "Flip?",
-                "default": false
-              }
-            ],
-            "presets": [
-              {
-                "name": "History"
-              }
-            ],
-            "templates": [
-              "page"
-            ]
-          }
+    },
+    {
+      "type": "radio",
+      "id": "media_type",
+      "label": "Media Type",
+      "default": "image",
+      "options": [
+        {
+          "value": "image",
+          "label": "Image"
+        },
+        {
+          "value": "uploaded_video",
+          "label": "Uploaded Video"
+        },
+        {
+          "value": "youtube_video",
+          "label": "Youtube/Vimeo Video"
+        }
+      ]
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "url",
+      "id": "upload_video_url",
+      "label": "Uploaded Video URL"
+    },
+    {
+      "type": "video_url",
+      "id": "youtube_video_url",
+      "accept": ["youtube", "vimeo"],
+      "label": "Youtube/Vimeo URL"
+    },
+    {
+      "type": "radio",
+      "id": "button_link",
+      "label": "Button or Link",
+      "default": "button",
+      "options": [
+        {
+          "value": "button",
+          "label": "Button"
+        },
+        {
+          "value": "link",
+          "label": "Link"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button or Link Text"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button or LInk URL"
+    },
+    {
+      "type": "color",
+      "id": "primary_color",
+      "label": "Primary Color",
+      "default": "#452C80"
+    },
+    {
+      "type": "color",
+      "id": "secondary_color",
+      "label": "Secondary Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "checkbox",
+      "id": "flip",
+      "label": "Flip?",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "History"
+    }
+  ],
+  "templates": ["page"]
+}
 {% endschema %}
